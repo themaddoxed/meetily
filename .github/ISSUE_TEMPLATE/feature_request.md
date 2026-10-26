@@ -38,4 +38,4 @@ So that [benefit]
 - [ ] I have searched for similar feature requests
 - [ ] I have provided all required information
 - [ ] I have included any relevant screenshots/mockups
-- [ ] I have described the problem and proposed solution clearly 
+- [ ] I have described the problem and proposed solution clearly

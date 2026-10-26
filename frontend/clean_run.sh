@@ -42,4 +42,3 @@ echo "Setting up build environment..."
 echo "Building Tauri app..."
 pnpm run tauri dev
 sleep
-

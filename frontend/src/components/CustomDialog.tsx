@@ -23,7 +23,7 @@ export function CustomDialog({ triggerComponent, dialogContent, dialogTitle = "D
                 <VisuallyHidden>
                     <DialogTitle>{dialogTitle}</DialogTitle>
                 </VisuallyHidden>
-                {dialogContent}                  
+                {dialogContent}
                 <DialogFooter>
                     
                 </DialogFooter>

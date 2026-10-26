@@ -43,4 +43,4 @@ assignees: ''
 - [ ] I have searched for similar issues
 - [ ] I have provided all required information
 - [ ] I have included screenshots/videos if applicable
-- [ ] I have included error messages if applicable 
+- [ ] I have included error messages if applicable

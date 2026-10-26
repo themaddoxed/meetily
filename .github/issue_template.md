@@ -24,4 +24,4 @@
 [Add any other context about the problem here]
 
 ## Possible Solution
-[If you have suggestions on how to fix the issue, please describe them here] 
+[If you have suggestions on how to fix the issue, please describe them here]

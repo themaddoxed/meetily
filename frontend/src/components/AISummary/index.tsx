@@ -179,7 +179,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
       ...currentSummary,
       [sectionKey]: {
         ...currentSummary[sectionKey],
-        blocks: currentSummary[sectionKey].blocks.map(block => 
+        blocks: currentSummary[sectionKey].blocks.map(block =>
           block.id === blockId ? { ...block, content: newContent } : block
         )
       }
@@ -202,7 +202,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
       ...currentSummary,
       [blockSectionKey]: {
         ...currentSummary[blockSectionKey],
-        blocks: currentSummary[blockSectionKey].blocks.map(block => 
+        blocks: currentSummary[blockSectionKey].blocks.map(block =>
           block.id === blockId ? { ...block, type: newType } : block
         )
       }
@@ -550,8 +550,8 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
             {status === 'processing' ? 'Processing Transcript' : 'Generating Summary'}
           </h3>
           <p className="text-info text-sm">
-            {status === 'processing' 
-              ? 'Analyzing your transcript...' 
+            {status === 'processing'
+              ? 'Analyzing your transcript...'
               : 'Creating a detailed summary of your meeting...'}
           </p>
         </div>
@@ -567,7 +567,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
     return renderLoadingState();
   }
 
-  const hasContent = Object.values(currentSummary).some(section => 
+  const hasContent = Object.values(currentSummary).some(section =>
     section?.blocks?.length > 0 && section?.blocks?.some(block => block.content.trim())
   );
 
@@ -599,8 +599,8 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
         <div
           className="fixed z-50 bg-card shadow-lg rounded-lg py-1 min-w-[160px] border border-border
                      animate-in fade-in zoom-in-95 duration-150"
-          style={{ 
-            left: contextMenu.x, 
+          style={{
+            left: contextMenu.x,
             top: contextMenu.y
           }}
           onClick={e => e.stopPropagation()}

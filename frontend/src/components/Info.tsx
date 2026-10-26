@@ -12,10 +12,10 @@ const Info = React.forwardRef<HTMLButtonElement, InfoProps>(({ isCollapsed }, re
   return (
     <Dialog aria-describedby={undefined}>
       <DialogTrigger asChild>
-        <button 
-          ref={ref} 
+        <button
+          ref={ref}
           className={`flex items-center justify-center mb-2 cursor-pointer border-none transition-colors ${
-            isCollapsed 
+            isCollapsed
               ? "bg-transparent p-2 hover:bg-muted rounded-lg"
               : "w-full px-3 py-1.5 mt-1 text-sm font-medium text-foreground bg-muted hover:bg-muted rounded-lg shadow-sm"
           }`}

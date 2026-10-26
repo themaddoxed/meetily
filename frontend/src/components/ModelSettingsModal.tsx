@@ -259,7 +259,7 @@ export function ModelSettingsModal({
     return () => clearTimeout(timer);
   }, [ollamaEndpoint]);
 
-  // Auto-unlock when API key becomes empty, 
+  // Auto-unlock when API key becomes empty,
   useEffect(() => {
     const hasContent = !!apiKey?.trim();
     if (!hasContent) {

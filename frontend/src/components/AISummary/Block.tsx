@@ -27,33 +27,33 @@ interface CommandOption {
 }
 
 const COMMANDS: CommandOption[] = [
-  { 
-    id: 'text', 
-    label: 'Text', 
-    type: 'text', 
-    icon: 'T', 
-    description: 'Just start writing with plain text' 
+  {
+    id: 'text',
+    label: 'Text',
+    type: 'text',
+    icon: 'T',
+    description: 'Just start writing with plain text'
   },
-  { 
-    id: 'bullet', 
-    label: 'Bullet List', 
-    type: 'bullet', 
-    icon: '•', 
-    description: 'Create a bulleted list' 
+  {
+    id: 'bullet',
+    label: 'Bullet List',
+    type: 'bullet',
+    icon: '•',
+    description: 'Create a bulleted list'
   },
-  { 
-    id: 'h1', 
-    label: 'Heading 1', 
-    type: 'heading1', 
-    icon: 'H1', 
-    description: 'Big section heading' 
+  {
+    id: 'h1',
+    label: 'Heading 1',
+    type: 'heading1',
+    icon: 'H1',
+    description: 'Big section heading'
   },
-  { 
-    id: 'h2', 
-    label: 'Heading 2', 
-    type: 'heading2', 
-    icon: 'H2', 
-    description: 'Medium section heading' 
+  {
+    id: 'h2',
+    label: 'Heading 2',
+    type: 'heading2',
+    icon: 'H2',
+    description: 'Medium section heading'
   },
 ];
 
@@ -100,7 +100,7 @@ export const BlockComponent: React.FC<BlockProps> = ({
     }
   }, [selectedCommandIndex, showCommands]);
 
-  const filteredCommands = COMMANDS.filter(cmd => 
+  const filteredCommands = COMMANDS.filter(cmd =>
     cmd.label.toLowerCase().includes(commandFilter.toLowerCase())
   );
 
@@ -108,7 +108,7 @@ export const BlockComponent: React.FC<BlockProps> = ({
     if (showCommands) {
       if (e.key === 'ArrowDown') {
         e.preventDefault();
-        setSelectedCommandIndex(prev => 
+        setSelectedCommandIndex(prev =>
           prev < filteredCommands.length - 1 ? prev + 1 : prev
         );
       } else if (e.key === 'ArrowUp') {
@@ -219,7 +219,7 @@ export const BlockComponent: React.FC<BlockProps> = ({
   };
 
   return (
-    <div 
+    <div
       className={`group relative min-h-[24px] flex items-start rounded transition-[background-color,box-shadow] duration-150 ease-in-out
         ${isSelected ? 'bg-info/10 ring-1 ring-info/30 shadow-sm' : 'hover:bg-muted/40'}`}
       onMouseDown={onMouseDown}
@@ -254,7 +254,7 @@ export const BlockComponent: React.FC<BlockProps> = ({
         />
 
         {showCommands && (
-          <div 
+          <div
             ref={commandsRef}
             className="absolute left-0 top-full mt-1 w-64 bg-card rounded-lg shadow-lg border border-border py-2 z-50
                        animate-in fade-in slide-in-from-top-2 duration-150"

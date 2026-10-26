@@ -27,7 +27,7 @@ export function ModelDownloadProgress({ status, modelName }: ModelDownloadProgre
       
       <div className="relative">
         <div className="w-full bg-info/20 rounded-full h-2">
-          <div 
+          <div
             className="bg-info h-2 rounded-full transition-[width] duration-300 ease-out"
             style={{ width: `${Math.min(progress, 100)}%` }}
           />

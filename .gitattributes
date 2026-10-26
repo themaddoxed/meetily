@@ -1,0 +1,6 @@
+# This already-published SQLx migration is byte-immutable: removing its two
+# existing trailing spaces changes its checksum and breaks existing databases.
+# Only blank-at-EOL lint is disabled for this exact legacy file. Its original
+# SHA-256 is enforced by migration-source-integrity.test.mjs; other migrations
+# retain the normal whitespace rules.
+frontend/src-tauri/migrations/20250920155811_add_openrouter_api_key.sql whitespace=-blank-at-eol

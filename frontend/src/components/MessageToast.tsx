@@ -20,7 +20,7 @@ export function MessageToast({ message, type, show, setShow }: MessageToastProps
         }, 3000);
         
         return () => clearTimeout(timer);
-    }, []); 
+    }, []);
     
     return (
         show && (

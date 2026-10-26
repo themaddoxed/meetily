@@ -104,7 +104,7 @@ export const Section: React.FC<SectionProps> = ({
                 onBlockDelete(block.id, mergeContent);
               }}
               onContextMenu={onContextMenu}
-              onNavigate={onBlockNavigate ? 
+              onNavigate={onBlockNavigate ?
                 (direction, cursorPosition) => onBlockNavigate(block.id, direction, cursorPosition)
                 : undefined}
               onCreateNewBlock={onCreateNewBlock}

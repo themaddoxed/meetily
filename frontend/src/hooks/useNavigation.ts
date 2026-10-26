@@ -17,4 +17,3 @@ export const useNavigation = (meetingId: string, meetingTitle: string) => {
 
     return handleNavigation;
 };
-
