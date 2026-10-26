@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Reject private source and commit identities
+        run: node frontend/scripts/check-publication-privacy.mjs
       - name: Reject committed whitespace errors
         env:
           MEETILY_CHECK_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before || '' }}
