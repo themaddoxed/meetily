@@ -1,3 +1,9 @@
+> Current public snapshot: legacy commit IDs/worktrees below are historical local
+> archive records. Privacy edits mean their original byte/hash claims do not
+> verify the edited public copies. The omitted UI screenshots/animations are
+> recorded in [publication notes](public-source-snapshot.md). Active build and CI
+> instructions are [BUILDING.md](../BUILDING.md) and [testing.md](../testing.md).
+
 # Структура проекта и происхождение работ
 
 Снимок навигации: 18 октября 2026. Вход в проект — [корневой индекс](../../INDEX.md).
@@ -27,7 +33,7 @@
 | `docs/migration/` | Реестр выборочного переноса legacy и его контракты | Фиксировать источник и подтверждённое место назначения |
 | `docs/superpowers/` | Исторические планы/specs июня–августа | Сохранены из-за provenance и ссылок проверяющих скриптов; новые планы идут в `docs/plans/` |
 | `docs/release/` | Шаблоны приёмки точного артефакта | Заполнять на финальном кандидате по `docs/testing.md` |
-| `docs/assets/` | Иллюстрации документации | Имена и байты сохранены; ссылки README обновлены |
+| `docs/assets/` | Иллюстрации документации | Публичная графика и исторические схемы; приватные UI-примеры исключены |
 | `outputs/` | Существующий локальный отчёт воспроизведения ошибки | Исторический результат с собственной областью проверки |
 
 `docs/BUILDING.md`, `docs/building_in_linux.md`, `docs/GPU_ACCELERATION.md`,
@@ -69,7 +75,7 @@
 хеши файлов, последнее зафиксированное авторство и исходное состояние рабочих
 деревьев. Для новых материалов этой реорганизации исполнитель — Codex в текущем
 чате, область — документация и навигация, база — `53f4415058fb01e38b8892a47ac036bfffa394ba`.
-Коммит для этих изменений не создан.
+Эта строка описывала локальное состояние 18 октября. В публичном снимке файлы уже закоммичены.
 
 ## Старые пути и контрольные суммы
 

@@ -120,16 +120,16 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
   const handleBlockNavigate = (blockId: string, direction: 'up' | 'down') => {
     const allBlocks = getAllBlocks();
     const currentIndex = allBlocks.findIndex(b => b.id === blockId);
-    
+
     if (currentIndex === -1) return;
-    
+
     let targetIndex: number;
     if (direction === 'up') {
       targetIndex = currentIndex > 0 ? currentIndex - 1 : currentIndex;
     } else {
       targetIndex = currentIndex < allBlocks.length - 1 ? currentIndex + 1 : currentIndex;
     }
-    
+
     if (targetIndex !== currentIndex) {
       const targetBlock = allBlocks[targetIndex];
       setSelectedBlocks([targetBlock.id]);
@@ -141,12 +141,12 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
     const allBlocks = getAllBlocks();
     const startIndex = allBlocks.findIndex(b => b.id === startId);
     const endIndex = allBlocks.findIndex(b => b.id === endId);
-    
+
     if (startIndex === -1 || endIndex === -1) return [];
-    
+
     const start = Math.min(startIndex, endIndex);
     const end = Math.max(startIndex, endIndex);
-    
+
     return allBlocks.slice(start, end + 1).map(b => b.id);
   };
 
@@ -234,7 +234,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
     // Find the section key for this block
     let blockSectionKey: string | null = null;
     let currentBlockIndex = -1;
-    
+
     for (const [sectionKey, section] of Object.entries(currentSummary)) {
       currentBlockIndex = section.blocks.findIndex(b => b.id === blockId);
       if (currentBlockIndex !== -1) {
@@ -247,15 +247,15 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
 
     const currentBlock = currentSummary[blockSectionKey].blocks[currentBlockIndex];
     if (!currentBlock) return;
-    
+
     const newId = generateUniqueId(blockSectionKey);
-    
+
     // Update the blocks array for the specific section
     const updatedBlocks = [...currentSummary[blockSectionKey].blocks];
-    
+
     // Get the type of the new block (inherit from current block for bullets)
     const newBlockType = blockType === 'bullet' ? 'bullet' : 'text';
-    
+
     // Update the current block's content if provided
     if (currentBlockContent !== undefined) {
       updatedBlocks[currentBlockIndex] = {
@@ -263,7 +263,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
         content: currentBlockContent
       };
     }
-    
+
     // Insert new block after current block
     updatedBlocks.splice(currentBlockIndex + 1, 0, {
       id: newId,
@@ -271,7 +271,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
       content: newBlockContent,
       color: currentBlock.color || 'default'
     });
-    
+
     onSummaryChange({
       ...currentSummary,
       [blockSectionKey]: {
@@ -279,11 +279,11 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
         blocks: updatedBlocks
       }
     });
-    
+
     // Focus and select the new block
     setSelectedBlocks([newId]);
     setLastSelectedBlock(newId);
-    
+
     // Use setTimeout to ensure the textarea is mounted
     setTimeout(() => {
       const newTextarea = document.querySelector(`[data-block-id="${newId}"]`) as HTMLTextAreaElement;
@@ -310,22 +310,22 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
     if (!blockSectionKey) return;
 
     const updatedBlocks = [...currentSummary[blockSectionKey].blocks];
-    
+
     // If there's content to merge and a previous block exists
     if (mergeContent && currentBlockIndex > 0) {
       const previousBlock = updatedBlocks[currentBlockIndex - 1];
       const previousContent = previousBlock.content;
       const cursorPosition = previousContent.length;
-      
+
       // Update previous block with merged content
       updatedBlocks[currentBlockIndex - 1] = {
         ...previousBlock,
         content: previousContent + mergeContent
       };
-      
+
       // Remove current block
       updatedBlocks.splice(currentBlockIndex, 1);
-      
+
       onSummaryChange({
         ...currentSummary,
         [blockSectionKey]: {
@@ -337,7 +337,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
       // Select the previous block and set cursor at merge point
       setSelectedBlocks([previousBlock.id]);
       setLastSelectedBlock(previousBlock.id);
-      
+
       // Use setTimeout to ensure the textarea is mounted
       setTimeout(() => {
         const textarea = document.querySelector(`[data-block-id="${previousBlock.id}"]`) as HTMLTextAreaElement;
@@ -349,7 +349,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
     } else {
       // Just remove the block if no content to merge
       updatedBlocks.splice(currentBlockIndex, 1);
-      
+
       onSummaryChange({
         ...currentSummary,
         [blockSectionKey]: {
@@ -479,33 +479,33 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
 
   const handleContextMenu = (e: React.MouseEvent) => {
     e.preventDefault();
-    
+
     const menuWidth = 160;
     const menuHeight = 80; // Approximate height for 2 items
-    
+
     let x = e.clientX;
     let y = e.clientY;
-    
+
     // Check right boundary
     if (x + menuWidth > window.innerWidth) {
       x = window.innerWidth - menuWidth - 10;
     }
-    
+
     // Check bottom boundary
     if (y + menuHeight > window.innerHeight) {
       y = window.innerHeight - menuHeight - 10;
     }
-    
+
     // Check left boundary
     if (x < 10) {
       x = 10;
     }
-    
+
     // Check top boundary
     if (y < 10) {
       y = 10;
     }
-    
+
     setContextMenu({
       x,
       y,
@@ -583,7 +583,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
   return (
     <div className="relative">
 
-      
+
       {selectedBlocks.length > 1 && (
         <textarea
           ref={hiddenInputRef}
@@ -593,7 +593,7 @@ export const AISummary = ({ summary, status, error, onSummaryChange }: Props) =>
           tabIndex={-1}
         />
       )}
-      
+
       {/* Context Menu */}
       {contextMenu.visible && selectedBlocks.length > 0 && (
         <div

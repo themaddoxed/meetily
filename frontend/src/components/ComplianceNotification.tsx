@@ -23,13 +23,13 @@ export const ComplianceNotification: React.FC<ComplianceNotificationProps> = ({
   useEffect(() => {
     if (isOpen) {
       setIsVisible(true);
-      
+
       // Calculate position relative to recording button
       if (recordingButtonRef?.current) {
         const buttonRect = recordingButtonRef.current.getBoundingClientRect();
         const buttonWidth = buttonRect.width;
         const notificationWidth = buttonWidth * 1.5; // 1.5x the button width
-        
+
         setPosition({
           top: buttonRect.top - 100, // 100px above the button
           left: buttonRect.left + (buttonWidth - notificationWidth) / 2, // Center the notification relative to button

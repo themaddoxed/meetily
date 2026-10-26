@@ -1,8 +1,9 @@
 # macOS platform support
 
-The fork is distributed as one Universal macOS application with native
-`x86_64` and `arm64` slices. Intel and Apple Silicon are supported starting
-with macOS 14.2 Sonoma.
+The product build targets one Universal macOS application with native
+`x86_64` and `arm64` slices and a configured minimum of macOS 14.2 Sonoma.
+The public source snapshot is not a distributed or accepted application release;
+runtime support must be proven by the evidence below.
 
 Support below macOS 14.2 is not claimed. Lower versions would require a
 separate system-audio fallback and a new product decision.

@@ -75,7 +75,7 @@ WebView/build output, модели и локальные логи описаны
 | Запись и источники аудио | [audio](frontend/src-tauri/src/audio), [RecordingSession](frontend/src-tauri/src/audio/recording_session.rs) |
 | SQLite и данные встречи | [database](frontend/src-tauri/src/database), [migrations](frontend/src-tauri/migrations) |
 | Summary и providers | [summary](frontend/src-tauri/src/summary), [API](frontend/src-tauri/src/api) |
-| Вопросы по встрече | [meeting_questions.rs](frontend/src-tauri/src/meeting_questions.rs), [MeetingQuestions.tsx](frontend/src/components/MeetingDetails/MeetingQuestions.tsx) — локальные правки, см. реестр |
+| Вопросы по встрече | [meeting_questions.rs](frontend/src-tauri/src/meeting_questions.rs), [MeetingQuestions.tsx](frontend/src/components/MeetingDetails/MeetingQuestions.tsx) — код включён в публичный снимок |
 | Распознавание и модели | [whisper_engine](frontend/src-tauri/src/whisper_engine), [parakeet_engine](frontend/src-tauri/src/parakeet_engine), [model_download.rs](frontend/src-tauri/src/model_download.rs) |
 | Диаризация | [diarization](frontend/src-tauri/src/diarization) |
 | Экспорт | [export.rs](frontend/src-tauri/src/export.rs), [MeetingDetails](frontend/src/components/MeetingDetails) |
@@ -116,13 +116,14 @@ WebView/build output, модели и локальные логи описаны
 
 <!-- project-files:start -->
 
-Всего файлов: **1010**. Каталог включает существующие tracked и
+Всего файлов: **1017**. Каталог включает существующие tracked и
 неигнорируемые untracked-файлы; наличие в списке не означает коммит или готовность.
 Служебные каталоги и локальные runtime-артефакты описаны выше, без обхода содержимого.
 
 <details>
-<summary>Корень — 13</summary>
+<summary>Корень — 14</summary>
 
+- [.gitattributes](.gitattributes)
 - [.gitignore](.gitignore)
 - [.mdtaskrc](.mdtaskrc)
 - [AGENTS.md](AGENTS.md)
@@ -615,8 +616,9 @@ WebView/build output, модели и локальные логи описаны
 </details>
 
 <details>
-<summary>docs/reviews/cross-cutting — 4</summary>
+<summary>docs/reviews/cross-cutting — 5</summary>
 
+- [ci-docs-fix-2026-10-27.md](docs/reviews/cross-cutting/ci-docs-fix-2026-10-27.md)
 - [completed-work-audit-2026-10-25.md](docs/reviews/cross-cutting/completed-work-audit-2026-10-25.md)
 - [development-resume-notes-2026-10-26.md](docs/reviews/cross-cutting/development-resume-notes-2026-10-26.md)
 - [plan-review-2026-10-02.md](docs/reviews/cross-cutting/plan-review-2026-10-02.md)
@@ -834,9 +836,10 @@ WebView/build output, модели и локальные логи описаны
 </details>
 
 <details>
-<summary>frontend/scripts — 12</summary>
+<summary>frontend/scripts — 13</summary>
 
 - [build-universal-macos.js](frontend/scripts/build-universal-macos.js)
+- [check-publication-privacy.mjs](frontend/scripts/check-publication-privacy.mjs)
 - [check-theme-tokens.mjs](frontend/scripts/check-theme-tokens.mjs)
 - [diarization-artifacts.js](frontend/scripts/diarization-artifacts.js)
 - [macos-sidecar-tools.js](frontend/scripts/macos-sidecar-tools.js)
@@ -1646,7 +1649,7 @@ WebView/build output, модели и локальные логи описаны
 </details>
 
 <details>
-<summary>frontend/tests — 43</summary>
+<summary>frontend/tests — 47</summary>
 
 - [cargo-workspace-config.test.mjs](frontend/tests/cargo-workspace-config.test.mjs)
 - [check-command.test.mjs](frontend/tests/check-command.test.mjs)
@@ -1655,6 +1658,7 @@ WebView/build output, модели и локальные логи описаны
 - [diarization-artifacts.test.mjs](frontend/tests/diarization-artifacts.test.mjs)
 - [e2e-build-boundary.test.mjs](frontend/tests/e2e-build-boundary.test.mjs)
 - [fixture-contracts.spec.ts](frontend/tests/fixture-contracts.spec.ts)
+- [global-setup.ts](frontend/tests/global-setup.ts)
 - [indexeddb-transcript-contract.spec.ts](frontend/tests/indexeddb-transcript-contract.spec.ts)
 - [interface-language.spec.ts](frontend/tests/interface-language.spec.ts)
 - [interface-polish-acceptance.spec.ts](frontend/tests/interface-polish-acceptance.spec.ts)
@@ -1667,10 +1671,12 @@ WebView/build output, модели и локальные логи описаны
 - [meeting-export-contract.test.mjs](frontend/tests/meeting-export-contract.test.mjs)
 - [meeting-questions.spec.ts](frontend/tests/meeting-questions.spec.ts)
 - [meeting-search.spec.ts](frontend/tests/meeting-search.spec.ts)
+- [migration-source-integrity.test.mjs](frontend/tests/migration-source-integrity.test.mjs)
 - [model-config-react-effects.test.mjs](frontend/tests/model-config-react-effects.test.mjs)
 - [onboarding-react-effects.test.mjs](frontend/tests/onboarding-react-effects.test.mjs)
 - [platform-surface.test.mjs](frontend/tests/platform-surface.test.mjs)
 - [playwright-config.test.mjs](frontend/tests/playwright-config.test.mjs)
+- [publication-privacy.test.mjs](frontend/tests/publication-privacy.test.mjs)
 - [react-hooks-lifecycle.test.mjs](frontend/tests/react-hooks-lifecycle.test.mjs)
 - [recording-controls.test.mjs](frontend/tests/recording-controls.test.mjs)
 - [recording-folder-selection.spec.ts](frontend/tests/recording-folder-selection.spec.ts)
@@ -1690,6 +1696,7 @@ WebView/build output, модели и локальные логи описаны
 - [universal-build-config.spec.ts](frontend/tests/universal-build-config.spec.ts)
 - [universal-feature-contract.spec.ts](frontend/tests/universal-feature-contract.spec.ts)
 - [universal-onnx-runtime.test.mjs](frontend/tests/universal-onnx-runtime.test.mjs)
+- [whitespace-command.test.mjs](frontend/tests/whitespace-command.test.mjs)
 - [workflow-gate.test.mjs](frontend/tests/workflow-gate.test.mjs)
 
 </details>

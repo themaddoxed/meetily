@@ -1,7 +1,7 @@
 # Clean public source snapshot
 
-This repository is a new source snapshot with one root commit and neutral commit
-identity. It intentionally omits the previous Git graph, branches, tags and Git
+This repository starts from a history-free source snapshot with one root commit.
+Subsequent source/CI corrections retain neutral commit identity. It intentionally omits the previous Git graph, branches, tags and Git
 author/committer identities. The original repository, full history and unmodified
 evidence are retained locally, outside this publication. License notices and
 upstream attribution remain intact.
@@ -33,8 +33,8 @@ the private archive and are not fresh-clone acceptance checks for this snapshot.
 
 Outstanding platform-surface and native/release checks remain documented in
 [resume notes](../reviews/cross-cutting/development-resume-notes-2026-10-26.md).
-The previous full automatic gate is historical and is not claimed for this new
-root commit. No app/DMG, native smoke, signing or notarization was run here.
+The previous full automatic gate is historical and is not claimed for this
+source bootstrap or later corrections; each correction records its own checks. No app/DMG, native smoke, signing or notarization was run here.
 
 ## Scope of the publication audit
 

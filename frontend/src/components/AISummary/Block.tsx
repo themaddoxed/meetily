@@ -135,11 +135,11 @@ export const BlockComponent: React.FC<BlockProps> = ({
 
         const cursorPosition = textarea.selectionStart || 0;
         const selectionEnd = textarea.selectionEnd || cursorPosition;
-        
+
         // Get the text before and after the cursor/selection
         const textBeforeCursor = block.content.substring(0, cursorPosition);
         const textAfterCursor = block.content.substring(selectionEnd);
-        
+
         // Create new block with remaining content and pass the updated current block content
         onCreateNewBlock(block.id, textAfterCursor, block.type, textBeforeCursor);
       }
@@ -149,11 +149,11 @@ export const BlockComponent: React.FC<BlockProps> = ({
 
       const cursorPosition = textarea.selectionStart || 0;
       const selectionLength = (textarea.selectionEnd || 0) - cursorPosition;
-      
+
       // Only handle backspace at the start of the block (no selection)
       if (cursorPosition === 0 && selectionLength === 0) {
         e.preventDefault();
-        
+
         if (block.content === '') {
           // Empty block - just delete it
           onDelete();
@@ -183,7 +183,7 @@ export const BlockComponent: React.FC<BlockProps> = ({
 
   const handleCommandSelect = (command: CommandOption) => {
     if (!textareaRef.current) return;
-    
+
     // Remove the slash command text completely
     onChange('');
     onTypeChange(command.type);
@@ -192,7 +192,7 @@ export const BlockComponent: React.FC<BlockProps> = ({
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
-    
+
     if (value.endsWith('/')) {
       setShowCommands(true);
       setCommandFilter('');
@@ -210,9 +210,9 @@ export const BlockComponent: React.FC<BlockProps> = ({
         setShowCommands(false);
       }
     }
-    
+
     onChange(value);
-    
+
     // Auto-resize
     e.target.style.height = 'auto';
     e.target.style.height = e.target.scrollHeight + 'px';

@@ -1,6 +1,6 @@
 # System Architecture
 
-Meetily is a self-contained desktop application built with [Tauri](https://tauri.app/). It combines a Rust-based backend with a Next.js frontend into a single, efficient, and cross-platform application.
+Meetily is a self-contained desktop application built with [Tauri](https://tauri.app/). It combines a Rust-based backend with a Next.js frontend into the macOS application. The packaged UI is a static export, not a development server.
 
 ## High-Level Architecture Diagram
 
@@ -39,3 +39,12 @@ graph TD
 *   **Transcription Engine:** Uses local speech-to-text models (Whisper or Parakeet) to transcribe the captured audio. It can be accelerated with a GPU.
 *   **Database:** A local SQLite database that stores meeting metadata, transcripts, and summaries.
 *   **Summary Engine:** Generates meeting summaries using various Large Language Models (LLMs), including local models via Ollama.
+
+## Provider and historical boundaries
+
+Summary and meeting-Q&A can call a selected remote provider with meeting text.
+Local providers run on the device when their models/runtimes are available.
+See [data handling](../PRIVACY_POLICY.md). The old FastAPI/vector-database and
+Electron images in `docs/assets` are historical illustrations; the current
+runtime has no separate Python server, vector-database service or Electron
+process. Architecture presence is not installed/native acceptance.

@@ -31,7 +31,7 @@ jobs:
           echo "Current branch: $CURRENT_BRANCH"
 
           if [[ "$CURRENT_BRANCH" == "main" ]]; then
-            echo "On main branch - ready for release"
+            echo "On main branch - source checks only; release acceptance is separate"
           elif [[ "$CURRENT_BRANCH" == "devtest" ]]; then
             echo "On devtest branch - ready for testing"
           else
@@ -60,6 +60,6 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "1. Run **Build and Test - DevTest** for unsigned builds" >> $GITHUB_STEP_SUMMARY
-          echo "2. Run **Build and Test** for signed builds on all platforms" >> $GITHUB_STEP_SUMMARY
-          echo "3. Run **Release** to create a production release" >> $GITHUB_STEP_SUMMARY
+          echo "1. Run the current reusable **Meetily quality gate** workflow" >> $GITHUB_STEP_SUMMARY
+          echo "2. Follow docs/testing.md for a clean exact macOS candidate and verifier" >> $GITHUB_STEP_SUMMARY
+          echo "3. Complete exact-artifact smoke and trust checks, then the release gate" >> $GITHUB_STEP_SUMMARY

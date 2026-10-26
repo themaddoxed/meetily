@@ -602,14 +602,14 @@ export function OnboardingProvider({ children }: { children: React.ReactNode }) 
         (model) =>
           typeof model.status === 'object' && 'Downloading' in model.status
       );
-      
+
       if (isDownloading) {
         console.log('[OnboardingContext] Detected active background downloads on mount');
         setIsBackgroundDownloading(true);
       }
-      
+
       // Also check for Built-in AI downloads if possible (though less critical as Parakeet is the main blocker)
-      
+
     } catch (error) {
       console.warn('[OnboardingContext] Failed to check active downloads:', error);
     }

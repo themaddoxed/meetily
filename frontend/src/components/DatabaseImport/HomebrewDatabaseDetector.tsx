@@ -113,7 +113,7 @@ export function HomebrewDatabaseDetector({ onDecline }: HomebrewDatabaseDetector
           <p className="text-sm text-info mb-3">
             Would you like to import your previous meetings, transcripts, and summaries?
           </p>
-          
+
           {/* Yes/No Buttons */}
           <div className="flex gap-2">
             <button
@@ -133,7 +133,7 @@ export function HomebrewDatabaseDetector({ onDecline }: HomebrewDatabaseDetector
                 </>
               )}
             </button>
-            
+
             <button
               onClick={handleNo}
               disabled={isImporting}

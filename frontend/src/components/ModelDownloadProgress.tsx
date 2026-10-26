@@ -24,7 +24,7 @@ export function ModelDownloadProgress({ status, modelName }: ModelDownloadProgre
           </span>
         </div>
       </div>
-      
+
       <div className="relative">
         <div className="w-full bg-info/20 rounded-full h-2">
           <div
@@ -39,7 +39,7 @@ export function ModelDownloadProgress({ status, modelName }: ModelDownloadProgre
           )}
         </div>
       </div>
-      
+
       {isCompleted && (
         <div className="mt-2 text-xs text-success">
           ✓ Download completed, loading model...

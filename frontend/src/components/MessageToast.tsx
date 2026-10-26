@@ -13,15 +13,15 @@ export function MessageToast({ message, type, show, setShow }: MessageToastProps
     useEffect(() => {
         setShowRef.current = setShow;
     }, [setShow]);
-    
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowRef.current(false);
         }, 3000);
-        
+
         return () => clearTimeout(timer);
     }, []);
-    
+
     return (
         show && (
             <span className={`${type === 'success' ? 'text-success' : 'text-destructive'}`}>{message}</span>
