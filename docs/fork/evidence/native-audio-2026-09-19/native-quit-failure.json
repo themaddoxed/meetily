@@ -1,0 +1,80 @@
+{
+  "Meeting 20_09_26_09_32_17_2026-09-20_06-32": {
+    "metadata": {
+      "audio_file": "audio.mp4",
+      "completed_at": null,
+      "created_at": "2026-09-20T06:32:17.033+00:00",
+      "devices": {
+        "microphone": null,
+        "system_audio": null
+      },
+      "duration_seconds": null,
+      "meeting_id": "80b44314-57ad-4f1f-89aa-76726c92bb14",
+      "meeting_name": "Meeting 20_09_26_09_32_17",
+      "sample_rate": 48000,
+      "session_id": "53b97578-4ebb-4028-849a-35beef921214",
+      "status": "recording",
+      "transcript_file": "transcripts.json",
+      "version": "1.0"
+    },
+    "files": {
+      "transcripts.json": {
+        "bytes": 117,
+        "sha256": "954bedc16c5c837c9add5deff1b045445e7a53dca1ff49cadaff87c654492b5c"
+      },
+      "metadata.json": {
+        "bytes": 470,
+        "sha256": "2dc3cdbc3e3f71d2d03e1aa586bfc376fc5c4dea339e415e13a083023bac623d"
+      },
+      ".checkpoints/audio_chunk_000.mp4": {
+        "bytes": 550595,
+        "sha256": "b2802235866c417032e4163f4da2feb077a7d113a5623c569be44f0e23903024"
+      },
+      ".tracks/microphone/track.json": {
+        "bytes": 270,
+        "sha256": "e19e204a120bdf60318b8c8b6318dc17698f8c61b815ecda4afc842f7e587324"
+      },
+      ".tracks/system/track.json": {
+        "bytes": 266,
+        "sha256": "ae3e8b9df0855eb224cf9b53df1870a396298a3a0bc7dd5960a5ea587eee78cd"
+      },
+      ".tracks/system/.checkpoints/system_chunk_000.mp4": {
+        "bytes": 139141,
+        "sha256": "34616427257817e6a3cf53682e16ab366127e5ca6ee0072ca9e99514843fbe95"
+      },
+      ".tracks/microphone/.checkpoints/microphone_chunk_000.mp4": {
+        "bytes": 727302,
+        "sha256": "d8e5bed6f26d01584c43d78d2c8d8d32ee6b63093470887f09723ffa74c2d19d"
+      }
+    }
+  },
+  "Meeting 20_09_26_09_35_14_2026-09-20_06-35": {
+    "metadata": {
+      "audio_file": "audio.mp4",
+      "completed_at": null,
+      "created_at": "2026-09-20T06:35:14.178+00:00",
+      "devices": {
+        "microphone": null,
+        "system_audio": null
+      },
+      "duration_seconds": null,
+      "meeting_id": "e6370d54-4c39-4315-8116-a65676a4cd66",
+      "meeting_name": "Meeting 20_09_26_09_35_14",
+      "sample_rate": 48000,
+      "session_id": "a404cfff-9379-49df-8380-764adf48316c",
+      "status": "recording",
+      "transcript_file": "transcripts.json",
+      "version": "1.0"
+    },
+    "files": {
+      "transcripts.json": {
+        "bytes": 117,
+        "sha256": "fbaf69dcd1e3154e3ce8648c418b4b235aefa53cb6622a2aeb76541d809dabd9"
+      },
+      "metadata.json": {
+        "bytes": 470,
+        "sha256": "fbad87057d7b1391d7aff2395ff617401908ca088437eb77903effec0b3b7a59"
+      }
+    }
+  }
+}

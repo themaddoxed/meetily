@@ -1,0 +1,895 @@
+{
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "tree": "bb8b8bdda6b53deaa926362f59b661410479ef78",
+  "original_plan_sha256": "076e8cdb505d284b81d5382a1575faa1b3047799bacbad059f26360b307182a3",
+  "plan_sha256": "ee091492f7fef678e8cf2c07f62c2e6615fe150c747a49d321273720f5f41d17",
+  "allowlist": [
+    {
+      "path": "frontend/tests/theme-foundation.spec.ts",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "ba9800d8633a4a79061bc2a96824210109ae9288305250f0e6ced9d2a48e048f",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/tests/theme-primitives.spec.ts",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "437903165739552210bd71f52ed269fd6102e54203f2f7fb7ea0daa1408731e2",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/tests/theme-dark-surfaces.spec.ts",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "0029581236ddc977a9aa4b83f8e44a1df400555aee36127a23be7173888f07c9",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/tests/theme-secondary-surfaces.spec.ts",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "87a5dc1689bef99550f4a09acafb151f950591a76ec8ae0959ee5692b029c6bd",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/tests/theme-shell.spec.ts",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "31ca3eb53f9bf6262162f3f59c86b06707dd92bdcd423421ac5c612af2f3485f",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/tests/e2e-build-boundary.test.mjs",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "e995f7ce2021f9a0598e111eaa2b46bb37e32861fe8af184c9b86ee2f2f6493f",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/scripts/check-theme-tokens.mjs",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "bb9cc97b853213c17be319b68c8a9c116f3e8ef5d74cfc35f58d553c3d40a82b",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/lib/theme.ts",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "6283eb0bfcbc88f400eb239fb538e0890bef733b69d39497ad291d26a22c5064",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/ThemeScript.tsx",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "11e2dfca5441cb2417a9d4089f8c27a516578d2cbdd8bda5f93201199b01eab6",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/contexts/ConfigContext.tsx",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "9430eed994ec2f8fee2a27606b4609a1e0e8272ccc79089e9751044d76efd4ea",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/PreferenceSettings.tsx",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "b5193068ab468c076833fee8268f45b5d2cffda2c6e93a9169cbd31d769e0eaa",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "2b55982ac9adb5a8dd9c7c506fa3c12f338a5021cb9a2758e9c74c07a0757c99",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/tailwind.config.js",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "b89fe6e39888f89480c3d7bf2be53ceaa442f09a5618548838159af245e2e980",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/testing/tauri-browser-mocks.ts",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "006985f3fd81881e7e228bd3f7c25a6aca0e17ee71d25ef1dddc33f3a72927eb",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/tauri.conf.json",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "f433187d282bd644add0917d9910ae4a9def7e3c096a997613e98c104c6c934e",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "8acfd90d71814a9653065cfbe97bf911106c09c34ef8b9ebcb9d3966d523801a",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/BlockNoteEditor/Editor.tsx",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "ea21cec73901fe6f993cf7ae41763d1da6724e12f724c06da65ecf48b9a1fe4e",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/AISummary/BlockNoteSummaryView.tsx",
+      "action": "characterize_or_conditional_correction",
+      "exists": true,
+      "sha256": "f64ad509fabdfb47873ffc96b8d1c0030d031b6c61dbdbe9d14e648f680e7d9b",
+      "matches_base": true
+    }
+  ],
+  "caller_paths": {
+    "frontend/src-tauri/tauri.conf.json": {
+      "decision": "Native capability/config intent only; actual app NOT_RUN.",
+      "sha256": "f433187d282bd644add0917d9910ae4a9def7e3c096a997613e98c104c6c934e",
+      "matches": [
+        {
+          "line": 62,
+          "match": "\"core:app:allow-set-app-theme\","
+        }
+      ]
+    },
+    "frontend/tests/theme-primitives.spec.ts": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "437903165739552210bd71f52ed269fd6102e54203f2f7fb7ea0daa1408731e2",
+      "matches": [
+        {
+          "line": 8,
+          "match": "type ThemeMode = 'light' | 'dark';"
+        },
+        {
+          "line": 85,
+          "match": "async function openSettings(page: Page, mode: ThemeMode) {"
+        },
+        {
+          "line": 87,
+          "match": "localStorage.setItem('themeMode', value);"
+        }
+      ]
+    },
+    "frontend/tests/model-config-react-effects.test.mjs": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "adb16919cacf9016fab0bb16819615b4455070270f9878731ab531f97db3ef32",
+      "matches": [
+        {
+          "line": 286,
+          "match": "THEME_STORAGE_KEY: 'theme',"
+        },
+        {
+          "line": 287,
+          "match": "applyEffectiveTheme: () => undefined,"
+        },
+        {
+          "line": 288,
+          "match": "createNativeThemeSyncController: () => ({ dispose() {}, sync: async () => undefined }),"
+        },
+        {
+          "line": 289,
+          "match": "readStoredThemeMode: () => 'system',"
+        },
+        {
+          "line": 290,
+          "match": "resolveEffectiveTheme: () => 'light',"
+        }
+      ]
+    },
+    "frontend/tests/theme-shell.spec.ts": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "31ca3eb53f9bf6262162f3f59c86b06707dd92bdcd423421ac5c612af2f3485f",
+      "matches": [
+        {
+          "line": 12,
+          "match": "localStorage.setItem('themeMode', value);"
+        }
+      ]
+    },
+    "frontend/tests/theme-foundation.spec.ts": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "ba9800d8633a4a79061bc2a96824210109ae9288305250f0e6ced9d2a48e048f",
+      "matches": [
+        {
+          "line": 2,
+          "match": "import { createNativeThemeSyncController } from '../src/lib/theme';"
+        },
+        {
+          "line": 23,
+          "match": "if (theme) localStorage.setItem('themeMode', theme);"
+        },
+        {
+          "line": 41,
+          "match": "const controller = createNativeThemeSyncController({"
+        },
+        {
+          "line": 61,
+          "match": "localStorage.setItem('themeMode', 'dark');"
+        },
+        {
+          "line": 99,
+          "match": "await page.emulateMedia({ colorScheme: 'dark' });"
+        },
+        {
+          "line": 100,
+          "match": "await page.addInitScript(() => localStorage.setItem('themeMode', 'system'));"
+        },
+        {
+          "line": 104,
+          "match": "await page.emulateMedia({ colorScheme: 'light' });"
+        },
+        {
+          "line": 115,
+          "match": ".poll(() => page.evaluate(() => localStorage.getItem('themeMode')))"
+        },
+        {
+          "line": 122,
+          "match": ".poll(() => page.evaluate(() => localStorage.getItem('themeMode')))"
+        },
+        {
+          "line": 209,
+          "match": "await invoke('plugin:app|set_app_theme', payload);"
+        },
+        {
+          "line": 219,
+          "match": "'[E2E fixture invalid] set_app_theme requires light, dark, or null',"
+        },
+        {
+          "line": 220,
+          "match": "'[E2E fixture invalid] set_app_theme requires light, dark, or null',"
+        },
+        {
+          "line": 221,
+          "match": "'[E2E fixture invalid] set_app_theme requires light, dark, or null',"
+        },
+        {
+          "line": 250,
+          "match": "await page.addInitScript(() => localStorage.setItem('themeMode', 'system'));"
+        },
+        {
+          "line": 308,
+          "match": "await page.emulateMedia({ colorScheme: 'dark' });"
+        },
+        {
+          "line": 309,
+          "match": "await page.addInitScript(() => localStorage.setItem('themeMode', 'sepia'));"
+        },
+        {
+          "line": 322,
+          "match": "await page.emulateMedia({ colorScheme: 'dark' });"
+        },
+        {
+          "line": 326,
+          "match": "if (key === 'themeMode') {"
+        },
+        {
+          "line": 346,
+          "match": "await page.emulateMedia({ colorScheme: 'light' });"
+        },
+        {
+          "line": 350,
+          "match": "if (key === 'themeMode') {"
+        }
+      ]
+    },
+    "frontend/tests/fixtures/tauri-fixtures.ts": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "e20e3f67c49f4f04029758fb7c355752018266485c5329d3eb3c0764b9a2877f",
+      "matches": [
+        {
+          "line": 11,
+          "match": "localStorage.setItem('themeMode', value);"
+        }
+      ]
+    },
+    "frontend/src/services/webMigration.ts": {
+      "decision": "Migration preservation: opaque themeMode, not a resolver.",
+      "sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf",
+      "matches": [
+        {
+          "line": 21,
+          "match": "'themeMode',"
+        }
+      ]
+    },
+    "frontend/tests/e2e-build-boundary.test.mjs": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "e995f7ce2021f9a0598e111eaa2b46bb37e32861fe8af184c9b86ee2f2f6493f",
+      "matches": [
+        {
+          "line": 70,
+          "match": "assert.ok(permissions.includes('core:app:allow-set-app-theme'));"
+        }
+      ]
+    },
+    "frontend/tests/lib/web-migration.test.ts": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "e0022737941ac01a3129f575cac836697c59b5333ba6f7229a10040a4f2c62ca",
+      "matches": [
+        {
+          "line": 42,
+          "match": "themeMode: 'dark',"
+        },
+        {
+          "line": 66,
+          "match": "['themeMode', 'dark'],"
+        },
+        {
+          "line": 79,
+          "match": "'themeMode',"
+        },
+        {
+          "line": 90,
+          "match": "'themeMode',"
+        },
+        {
+          "line": 101,
+          "match": "entry.key === 'themeMode' ? { ...entry, value: 'light' } : entry,"
+        },
+        {
+          "line": 179,
+          "match": "const storage = storageFrom({ themeMode: 'dark', 'private-key': 'omit' });"
+        },
+        {
+          "line": 195,
+          "match": "expect(pkg.localStorage.map((entry) => entry.key)).toEqual(['themeMode']);"
+        },
+        {
+          "line": 199,
+          "match": "const storage = storageFrom({ themeMode: 'light' });"
+        },
+        {
+          "line": 221,
+          "match": "expect(storage.getItem('themeMode')).toBe('dark');"
+        },
+        {
+          "line": 226,
+          "match": "const storage = storageFrom({ themeMode: 'light' });"
+        },
+        {
+          "line": 234,
+          "match": "expect(storage.getItem('themeMode')).toBe('light');"
+        }
+      ]
+    },
+    "frontend/tests/lib/product-analytics-startup-behavior.test.mjs": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "e55915ab8d7ba819dcba34dd9fb8a9aaf4ba4ccac8398421f7088101eb5585aa",
+      "matches": [
+        {
+          "line": 451,
+          "match": "'@/components/ThemeScript': noopNamed('ThemeScript'),"
+        },
+        {
+          "line": 522,
+          "match": "applyEffectiveTheme() {},"
+        },
+        {
+          "line": 523,
+          "match": "createNativeThemeSyncController: () => ({"
+        },
+        {
+          "line": 527,
+          "match": "readStoredThemeMode: () => 'system',"
+        },
+        {
+          "line": 528,
+          "match": "resolveEffectiveTheme: () => 'light',"
+        },
+        {
+          "line": 529,
+          "match": "THEME_STORAGE_KEY: 'theme',"
+        }
+      ]
+    },
+    "frontend/src/app/layout.tsx": {
+      "decision": "Owner retained: single ThemeScript mount/order.",
+      "sha256": "8acfd90d71814a9653065cfbe97bf911106c09c34ef8b9ebcb9d3966d523801a",
+      "matches": [
+        {
+          "line": 26,
+          "match": "import { ThemeScript } from '@/components/ThemeScript'"
+        },
+        {
+          "line": 244,
+          "match": "<ThemeScript />"
+        }
+      ]
+    },
+    "frontend/src/contexts/ConfigContext.tsx": {
+      "decision": "Owner retained: sole runtime preference/media/effective-theme projection.",
+      "sha256": "9430eed994ec2f8fee2a27606b4609a1e0e8272ccc79089e9751044d76efd4ea",
+      "matches": [
+        {
+          "line": 10,
+          "match": "applyEffectiveTheme,"
+        },
+        {
+          "line": 11,
+          "match": "createNativeThemeSyncController,"
+        },
+        {
+          "line": 12,
+          "match": "readStoredThemeMode,"
+        },
+        {
+          "line": 13,
+          "match": "resolveEffectiveTheme,"
+        },
+        {
+          "line": 14,
+          "match": "THEME_STORAGE_KEY,"
+        },
+        {
+          "line": 15,
+          "match": "type ThemeMode,"
+        },
+        {
+          "line": 18,
+          "match": "export type { ThemeMode } from '@/lib/theme';"
+        },
+        {
+          "line": 74,
+          "match": "themeMode: ThemeMode;"
+        },
+        {
+          "line": 75,
+          "match": "setThemeMode: (mode: ThemeMode) => void;"
+        },
+        {
+          "line": 76,
+          "match": "isDarkTheme: boolean;"
+        },
+        {
+          "line": 181,
+          "match": "const [themeMode, setThemeModeState] = useState<ThemeMode>(() => readStoredThemeMode());"
+        },
+        {
+          "line": 182,
+          "match": "const [isDarkTheme, setIsDarkTheme] = useState("
+        },
+        {
+          "line": 446,
+          "match": "const setThemeMode = useCallback((mode: ThemeMode) => {"
+        },
+        {
+          "line": 447,
+          "match": "setThemeModeState(mode);"
+        },
+        {
+          "line": 450,
+          "match": "window.localStorage.setItem(THEME_STORAGE_KEY, mode);"
+        },
+        {
+          "line": 458,
+          "match": "const media = window.matchMedia('(prefers-color-scheme: dark)');"
+        },
+        {
+          "line": 460,
+          "match": "const effectiveTheme = resolveEffectiveTheme(themeMode, media.matches);"
+        },
+        {
+          "line": 461,
+          "match": "applyEffectiveTheme(effectiveTheme);"
+        },
+        {
+          "line": 467,
+          "match": "if (themeMode !== 'system') return;"
+        },
+        {
+          "line": 471,
+          "match": "}, [themeMode]);"
+        },
+        {
+          "line": 475,
+          "match": "typeof createNativeThemeSyncController"
+        },
+        {
+          "line": 479,
+          "match": "const controller = createNativeThemeSyncController({"
+        },
+        {
+          "line": 498,
+          "match": "if (!ownsNativeThemeRef.current && themeMode === 'system') return;"
+        },
+        {
+          "line": 500,
+          "match": "void nativeThemeSyncRef.current?.sync(themeMode);"
+        },
+        {
+          "line": 501,
+          "match": "}, [themeMode]);"
+        },
+        {
+          "line": 613,
+          "match": "themeMode,"
+        },
+        {
+          "line": 614,
+          "match": "setThemeMode,"
+        },
+        {
+          "line": 615,
+          "match": "isDarkTheme,"
+        },
+        {
+          "line": 639,
+          "match": "themeMode,"
+        },
+        {
+          "line": 640,
+          "match": "setThemeMode,"
+        },
+        {
+          "line": 641,
+          "match": "isDarkTheme,"
+        }
+      ]
+    },
+    "frontend/src/lib/theme.ts": {
+      "decision": "Owner retained: pure resolution + serialized native sync.",
+      "sha256": "6283eb0bfcbc88f400eb239fb538e0890bef733b69d39497ad291d26a22c5064",
+      "matches": [
+        {
+          "line": 1,
+          "match": "export type ThemeMode = 'light' | 'dark' | 'system';"
+        },
+        {
+          "line": 8,
+          "match": "sync: (mode: ThemeMode) => Promise<void>;"
+        },
+        {
+          "line": 11,
+          "match": "export const THEME_STORAGE_KEY = 'themeMode';"
+        },
+        {
+          "line": 13,
+          "match": "export function parseThemeMode(value: string | null | undefined): ThemeMode {"
+        },
+        {
+          "line": 19,
+          "match": "export function readStoredThemeMode(): ThemeMode {"
+        },
+        {
+          "line": 23,
+          "match": "return parseThemeMode(window.localStorage.getItem(THEME_STORAGE_KEY));"
+        },
+        {
+          "line": 29,
+          "match": "export function createNativeThemeSyncController("
+        },
+        {
+          "line": 38,
+          "match": "const { setTheme } = await import('@tauri-apps/api/app');"
+        },
+        {
+          "line": 39,
+          "match": "return setTheme;"
+        },
+        {
+          "line": 57,
+          "match": "const setTheme = await loadSetTheme();"
+        },
+        {
+          "line": 59,
+          "match": "await setTheme(mode === 'system' ? null : mode);"
+        },
+        {
+          "line": 71,
+          "match": "export function resolveEffectiveTheme("
+        },
+        {
+          "line": 72,
+          "match": "mode: ThemeMode,"
+        },
+        {
+          "line": 82,
+          "match": "export function applyEffectiveTheme(theme: EffectiveTheme) {"
+        },
+        {
+          "line": 87,
+          "match": "root.style.colorScheme = theme;"
+        }
+      ]
+    },
+    "frontend/src/testing/tauri-browser-mocks.ts": {
+      "decision": "Existing test/mock/fixture: characterize, preserve unrelated behavior; amendment/review before editing outside the 18 paths.",
+      "sha256": "006985f3fd81881e7e228bd3f7c25a6aca0e17ee71d25ef1dddc33f3a72927eb",
+      "matches": [
+        {
+          "line": 938,
+          "match": "if (command === 'plugin:app|set_app_theme') {"
+        },
+        {
+          "line": 950,
+          "match": "'[E2E fixture invalid] set_app_theme requires light, dark, or null',"
+        }
+      ]
+    },
+    "frontend/src/components/AISummary/BlockNoteSummaryView.tsx": {
+      "decision": "Consumer characterized: effective isDarkTheme only.",
+      "sha256": "f64ad509fabdfb47873ffc96b8d1c0030d031b6c61dbdbe9d14e648f680e7d9b",
+      "matches": [
+        {
+          "line": 91,
+          "match": "const { isDarkTheme } = useConfig();"
+        },
+        {
+          "line": 280,
+          "match": "theme={isDarkTheme ? \"dark\" : \"light\"}"
+        }
+      ]
+    },
+    "frontend/src/components/PreferenceSettings.tsx": {
+      "decision": "Consumer characterized: raw mode, labels/icons, aria-pressed.",
+      "sha256": "b5193068ab468c076833fee8268f45b5d2cffda2c6e93a9169cbd31d769e0eaa",
+      "matches": [
+        {
+          "line": 24,
+          "match": "themeMode,"
+        },
+        {
+          "line": 25,
+          "match": "setThemeMode"
+        },
+        {
+          "line": 136,
+          "match": "aria-pressed={themeMode === value}"
+        },
+        {
+          "line": 137,
+          "match": "onClick={() => setThemeMode(value)}"
+        },
+        {
+          "line": 138,
+          "match": "className={`flex min-h-10 items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-[color,background-color,box-shadow,transform] duration-150 motion-safe:active:scale-[0.96] motion-reduce:transform-none motion-reduce:transition-none ${themeMode === value"
+        }
+      ]
+    },
+    "frontend/src/components/BlockNoteEditor/Editor.tsx": {
+      "decision": "Consumer characterized: effective isDarkTheme only.",
+      "sha256": "ea21cec73901fe6f993cf7ae41763d1da6724e12f724c06da65ecf48b9a1fe4e",
+      "matches": [
+        {
+          "line": 19,
+          "match": "const { isDarkTheme } = useConfig();"
+        },
+        {
+          "line": 54,
+          "match": "return <BlockNoteView editor={editor} editable={editable} theme={isDarkTheme ? \"dark\" : \"light\"} />;"
+        }
+      ]
+    },
+    "frontend/src/components/ThemeScript.tsx": {
+      "decision": "Owner retained: pre-hydration only.",
+      "sha256": "11e2dfca5441cb2417a9d4089f8c27a516578d2cbdd8bda5f93201199b01eab6",
+      "matches": [
+        {
+          "line": 1,
+          "match": "import { THEME_STORAGE_KEY } from '@/lib/theme';"
+        },
+        {
+          "line": 8,
+          "match": "storedMode = window.localStorage.getItem(${JSON.stringify(THEME_STORAGE_KEY)});"
+        },
+        {
+          "line": 17,
+          "match": "(mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);"
+        },
+        {
+          "line": 21,
+          "match": "root.style.colorScheme = isDark ? 'dark' : 'light';"
+        },
+        {
+          "line": 25,
+          "match": "export function ThemeScript() {"
+        }
+      ]
+    }
+  },
+  "contribution_head_ancestor": "9cd089afac3a9ced4adc7e3cb4a622cb8e0319e9",
+  "baseline": {
+    "static_audit_exit": 0,
+    "native_config_node": {
+      "exit": 0,
+      "passed": 2,
+      "native_runtime": false
+    },
+    "sandbox_browser": {
+      "exit": 1,
+      "tests": 0,
+      "server_error": "listen EPERM 127.0.0.1:3118",
+      "direct_next_exit": 0
+    },
+    "authorized_browser": {
+      "exit": 1,
+      "passed": 30,
+      "failed": 3,
+      "skipped": 0,
+      "flaky": 0,
+      "report_sha256": "4fda91e9623003db904f7a44ee9df31865e6a24a5888a766da549281f8751dc2"
+    },
+    "diagnostic_probe": {
+      "exit": 0,
+      "passed": 1,
+      "observations": {
+        "observations": [
+          {
+            "force": true,
+            "bodyAbsent": true,
+            "readyState": "loading",
+            "className": "dark"
+          },
+          {
+            "force": true,
+            "bodyAbsent": false,
+            "readyState": "complete",
+            "className": "dark"
+          }
+        ],
+        "head": [
+          {
+            "tag": "META",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "META",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "LINK",
+            "stylesheet": true,
+            "themeScript": false
+          },
+          {
+            "tag": "LINK",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "SCRIPT",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "SCRIPT",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "SCRIPT",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "SCRIPT",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "LINK",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "SCRIPT",
+            "stylesheet": false,
+            "themeScript": true
+          },
+          {
+            "tag": "SCRIPT",
+            "stylesheet": false,
+            "themeScript": false
+          },
+          {
+            "tag": "STYLE",
+            "stylesheet": false,
+            "themeScript": false
+          }
+        ]
+      }
+    },
+    "snapshot_change": false,
+    "native_acceptance": "NOT_RUN",
+    "first_stylesheet_release_proof": "NOT_RUN",
+    "full_hydration_focus_real_surface_contrast": "NOT_PROVEN",
+    "failure_confirmation": {
+      "exit": 1,
+      "passed": 0,
+      "failed": 3,
+      "artifact_records": [
+        {
+          "name": "screenshot",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/foundation-test-failed-1.png",
+          "sha256": "50521bfc6db29e2c8d272a156e67bae9ac3fa24457827327c74cee9f413dea34"
+        },
+        {
+          "name": "error-context",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/foundation-error-context.md",
+          "sha256": "f598c244ff6b1f310414de4b1c8ad36761ca5ec0d033b11fced837132441da6e"
+        },
+        {
+          "name": "trace",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/foundation-trace.zip",
+          "sha256": "4b11681da4e82834099aad5f0423ad0a8a51acd9d8ac2dedc19d2b6b26f6f508"
+        },
+        {
+          "name": "home-light-expected.png",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/light-home-light-chromium-darwin.png",
+          "sha256": "aa3981eb38e051e6c64bdd17939d6b6f16c26ccfd6156b59f3662bf9f41fd44a"
+        },
+        {
+          "name": "home-light-actual.png",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/light-home-light-actual.png",
+          "sha256": "1a3a23e5e9a7f67758d7b90ecca1ce617d6193113a86e8ab7f68de9ea36b3e54"
+        },
+        {
+          "name": "home-light-diff.png",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/light-home-light-diff.png",
+          "sha256": "12f7005dc17a04f3e68287fe4830168882314564a6d0ca6fa31ec6a897b8516f"
+        },
+        {
+          "name": "screenshot",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/light-test-failed-1.png",
+          "sha256": "e2c883493f2e17d12cd9b278634d22c053c6e7d9a6302c7b2879419795860e7e"
+        },
+        {
+          "name": "error-context",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/light-error-context.md",
+          "sha256": "ed299e555851245b1f3e26f99ba2ea6cafd0aca3b781efcd39cee0370333c50c"
+        },
+        {
+          "name": "trace",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/light-trace.zip",
+          "sha256": "0aff4b7b46eba5c90319fa8f7b6d6f91618c71317e0e35eb894080d5a2b791c6"
+        },
+        {
+          "name": "home-dark-expected.png",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/dark-home-dark-chromium-darwin.png",
+          "sha256": "90d179e0141ec046eea4255e03ade4dcb1159f7f7dada411f14e440e1a3842e7"
+        },
+        {
+          "name": "home-dark-actual.png",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/dark-home-dark-actual.png",
+          "sha256": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee"
+        },
+        {
+          "name": "home-dark-diff.png",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/dark-home-dark-diff.png",
+          "sha256": "0beaf286746af1c0c7f2c712402faa2140070ec6d464536c85ef9e4c85f4a09b"
+        },
+        {
+          "name": "screenshot",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/dark-test-failed-1.png",
+          "sha256": "06153c103d26069f2964fe2b061a37bd078159c5a97456442b3a14acc3584572"
+        },
+        {
+          "name": "error-context",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/dark-error-context.md",
+          "sha256": "7446a904663409558414ea274f39744eb285f79bd6f4d57e6b4c8cffeac0d0a9"
+        },
+        {
+          "name": "trace",
+          "local_evidence": ".worktrees/integration-backups-2026-10-02/theme-baseline/confirmation/dark-trace.zip",
+          "sha256": "543e42bf4c368957b37fd032a2774353cdc8109aa37b4c534cf707f55c647a1f"
+        }
+      ],
+      "report_sha256": "8be765f2ab77fa7db40d63108f97cce1dbfab81ba0db7db6971b9f2637461146"
+    }
+  },
+  "source_changes_performed": false,
+  "independent_review": "NOT_RUN",
+  "implementation_admitted": false
+}

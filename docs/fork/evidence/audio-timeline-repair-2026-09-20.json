@@ -1,0 +1,68 @@
+{
+  "status": "PASS_AUTOMATED_ONLY",
+  "createdAt": "2026-09-20T20:47:49Z",
+  "verifiedAt": "2026-09-20T21:19:45Z",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprintBefore": "cbf0160ceba3644676ff6bdc2c017ce19901dc4f84d0170e8b792a803a41ff99",
+  "sourceFingerprintAfter": "eceffe76df108b18460a317ea5156d2d8d4707bb239f28fec9b35f9a8f02002a",
+  "worktree": ".worktrees/feat071-audio-controls",
+  "changes": [
+    "shared active-time CaptureTimeline is used by microphone and system sources",
+    "pause/resume increments a source epoch without counting the paused interval",
+    "native and implicit source spans are mapped to the shared timeline",
+    "SourceTrackSaver materializes bounded forward gaps as silence and rejects overlaps",
+    "raw and downstream spans are scaled to their actual sample rates"
+  ],
+  "automated": {
+    "cargoFmt": "PASS",
+    "gitDiffCheck": "PASS",
+    "cargoClippyMeetilyLibTests": "PASS",
+    "captureBackendTests": "25 passed, 0 failed",
+    "captureMacosTests": "23 passed, 0 failed",
+    "incrementalSaverTests": "25 passed, 0 failed",
+    "meetilyLibTests": "437 passed, 0 failed, 5 ignored",
+    "integrationTests": "99 passed, 0 failed, 5 ignored across all integration suites",
+    "timelineRegressionTests": "2 passed, 0 failed",
+    "gapAndOverlapRegressionTests": "2 passed, 0 failed",
+    "integrationTestsCompile": "PASS: all unit and integration test executables built before execution",
+    "fullRustTestCommand": "cargo test -p meetily --tests --locked --offline",
+    "fullAutomaticGate": {
+      "command": "./scripts/check.sh --full",
+      "status": "PASS",
+      "durationSeconds": 1085,
+      "stages": {
+        "patchWhitespace": "PASS",
+        "productionPolicy": "PASS",
+        "frontendLint": "PASS",
+        "typescript": "PASS",
+        "frontendNode": "401 passed, 0 failed",
+        "frontendVitest": "49 passed, 0 failed",
+        "criticalPlaywright": "26 passed, 0 failed",
+        "productionFrontendBuild": "PASS",
+        "rustFormat": "PASS",
+        "workspaceClippy": "PASS",
+        "workspaceRustTests": "PASS",
+        "packagedFfmpegRecovery": "1 passed, 0 failed"
+      }
+    },
+    "execution": "outside sandbox with local sherpa-onnx cache and Xcode access"
+  },
+  "native": {
+    "status": "NOT_RERUN",
+    "reason": "The current source is dirty and no new app launch was performed; existing TCC grants were preserved and no permission prompt or TCC reset was requested.",
+    "remaining": [
+      "exact current package has no native relaunch after this source change",
+      "physical microphone disconnect/reconnect is not exercised",
+      "full TCC deny/recovery matrix is not exercised",
+      "current-artifact system.mp4, mute/gain signal and pause/resume synchronization are not accepted"
+    ]
+  },
+  "power": {
+    "temporaryCaffeinate": "active for this work session",
+    "permanentPmsetChange": "not performed"
+  },
+  "limits": [
+    "This evidence proves source-level behavior and automated tests only.",
+    "It does not close FORK-051, FEAT-071, FORK-036, FORK-037, or FORK-053 by itself."
+  ]
+}

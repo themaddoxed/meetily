@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-18",
+  "scope": "documentation and repository navigation only",
+  "base_commit": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "result": "PASS for organization; no product or release readiness claim",
+  "preservation": {
+    "original_project_files": 1003,
+    "moved_files": 155,
+    "moved_sha256_matches": 155,
+    "original_files_missing": 0,
+    "existing_navigation_files_changed": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "README.md",
+      "docs/fork/execution-plan-2026-09-22.md",
+      "docs/fork/meeting-questions-2026-10-02.md",
+      "docs/fork/meeting-questions-local-model-2026-10-03.md",
+      "docs/prd/fork-features.md",
+      "docs/prd/macos-fork.md"
+    ],
+    "other_original_files_sha256_unchanged": 995,
+    "task_statuses_and_dependencies": "unchanged; the six navigation-only documents reproduce their before hashes after reversing path/link edits; AGENTS and CLAUDE changes inspected separately",
+    "product_source_changes_by_this_task": 0,
+    "worktree_heads_unchanged": 18,
+    "other_worktree_statuses_unchanged": 17
+  },
+  "checks": [
+    {
+      "command": "python3 scripts/project-index.py --check",
+      "exit": 0,
+      "output": "INDEX.md: 1017 files, current"
+    },
+    {
+      "command": "mdtask validate",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": "mdtask validate --path docs/prd",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "check": "local Markdown and HTML link targets",
+      "documents": 139,
+      "links_checked": 1369,
+      "missing": [],
+      "exit": 0
+    },
+    {
+      "check": "new document/script whitespace",
+      "exit": 0
+    },
+    {
+      "check": "default mdtask discovery equals explicit docs/prd",
+      "exit": 0
+    },
+    {
+      "check": "all original non-navigation files and all relocated files retain SHA-256",
+      "exit": 0
+    }
+  ],
+  "not_run": [
+    {
+      "check": "product full suite, native/manual acceptance, packaging, signing and notarization",
+      "reason": "organization-only change; these remain required for a future exact release candidate"
+    }
+  ],
+  "indexed_files": 1017
+}

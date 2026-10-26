@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-04",
+  "scope": "Read-only bounded startup-managed-state constructor census; direct local source, not native effects execution or full transitive sysinfo audit",
+  "sources": [
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "working_sha256": "c74c350d01f5395c4e46d2aca6d962f48b674919d96dc45006229074b8c3aecf",
+      "base53_sha256": "085076e349686a5d43d4d385a0f9ba4d4f0c5a8797cbea44f7d8a02b78fc90ae",
+      "matches_base53": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/permissions.rs",
+      "working_sha256": "e2303bc6ab845dda796d65bfe76fbee974a7b6548d34bd3e9529282392a2aa81",
+      "base53_sha256": "e2303bc6ab845dda796d65bfe76fbee974a7b6548d34bd3e9529282392a2aa81",
+      "matches_base53": true
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/recording_session.rs",
+      "working_sha256": "5451fc9f84e13744facf456555740a80d400c291f2ffda4fe557c6f5b8605dbc",
+      "base53_sha256": "5451fc9f84e13744facf456555740a80d400c291f2ffda4fe557c6f5b8605dbc",
+      "matches_base53": true
+    },
+    {
+      "path": "frontend/src-tauri/src/whisper_engine/parallel_commands.rs",
+      "working_sha256": "3d85e99b08cfda5362f917eb8c003fcaa5c901926cdb469e57e23f83f87ee1b7",
+      "base53_sha256": "3d85e99b08cfda5362f917eb8c003fcaa5c901926cdb469e57e23f83f87ee1b7",
+      "matches_base53": true
+    },
+    {
+      "path": "frontend/src-tauri/src/whisper_engine/system_monitor.rs",
+      "working_sha256": "883649dfaec034b2d37a9e7e534b6897f976f1abd0937fe2c88fb64af5890477",
+      "base53_sha256": "883649dfaec034b2d37a9e7e534b6897f976f1abd0937fe2c88fb64af5890477",
+      "matches_base53": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/setup.rs",
+      "working_sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "base53_sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "matches_base53": true
+    }
+  ],
+  "builder_managed_states": [
+    {
+      "state": "RecordingSession",
+      "construction": "new -> new_with_capture_factory",
+      "effects": "Allocates empty in-memory store/mutex/notify/factory; sets process-global weak projection OnceLock. No capture start called by shown constructor.",
+      "location": "audio/recording_session.rs:882-900",
+      "recovery_policy": "Move creation to normal admission; do not seed ordinary session projection during recovery."
+    },
+    {
+      "state": "AudioPermissionCoordinator",
+      "construction": "default",
+      "effects": "Mutex and atomic Unknown only; snapshot/request methods separate. Constructor does not call microphone query/request.",
+      "location": "audio/permissions.rs:50-57",
+      "recovery_policy": "Create only normal branch; recovery does not expose audio commands."
+    },
+    {
+      "state": "ParallelProcessorState",
+      "construction": "new -> SystemMonitor::new",
+      "effects": "System::new_all then refresh_all performs ordinary system inventory; not merely empty inert managed state. No worker started in this constructor.",
+      "location": "whisper_engine/parallel_commands.rs:17-22; system_monitor.rs:44-56",
+      "recovery_policy": "Defer entire state construction until normal admission; no sysinfo initialization before recovery classification."
+    },
+    {
+      "state": "NotificationManagerState",
+      "construction": "Arc<RwLock<Option<manager>>> with None",
+      "effects": "Empty managed holder; actual manager consent/permission is later setup spawn.",
+      "location": "lib.rs:355-358",
+      "recovery_policy": "Normal-only holder and all notification initialization; no recovery permission."
+    },
+    {
+      "state": "ModelManagerState",
+      "construction": "Arc<tokio Mutex<Option>> with None",
+      "effects": "Empty holder, actual init_model_manager_at_startup later setup spawn.",
+      "location": "lib.rs:359-361",
+      "recovery_policy": "Normal-only holder and initialization."
+    }
+  ],
+  "startup_calls_after_existing_database_gate": [
+    "tray create",
+    "notification initialization/consent/request_permission async",
+    "Whisper models directory and whisper_init async",
+    "Parakeet models directory and parakeet_init async",
+    "summary model manager initialization async",
+    "bundled templates resource path/static setup"
+  ],
+  "existing_database_startup": "Current setup checks legacy incomplete migration; first launch schedules event instead of new typed recovery classification. It is not the proposed complete first-intent/receipt bootstrap.",
+  "admission_rule": "Evaluate typed native bootstrap before ordinary state constructors, configured windows, tray or setup spawns; then manage normal states/services only in normal branch. Keep scoped recovery coordinator state separate. Failures never fall through to normal branch.",
+  "open": [
+    "Canonical lib.rs differs from clean base53; read-only overlay census cannot admit implementation checkout.",
+    "Actual startup ordering, constructor denial, command State extraction and runtime no-service evidence required.",
+    "Native profile/permission/model/hardware behavior not executed."
+  ],
+  "implementation_admitted": false,
+  "product_source_changed": false,
+  "git_refs_changed": false
+}

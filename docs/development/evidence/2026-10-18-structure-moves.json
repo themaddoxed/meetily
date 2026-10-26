@@ -1,0 +1,1339 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "scope": "documentation-only organization; no product, task-status, Git-ref or worktree mutation",
+  "base_commit": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "path_semantics": "Historical path strings in immutable evidence and source-authored plans/reviews resolve through moves[].from to moves[].to. Content SHA-256 remains unchanged. Existing pinned Git URLs retain their historical meaning.",
+  "moves": [
+    {
+      "from": "docs/1.png",
+      "to": "docs/assets/1.png",
+      "sha256": "915160f60d62110229ec5fca8de05db2528b2774c350d5d368f6e275a0839835",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/2.png",
+      "to": "docs/assets/2.png",
+      "sha256": "0ccbe043ea7527f5168666458daff1a985174ab8521058f5d60063cd8c13f90c",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/3.png",
+      "to": "docs/assets/3.png",
+      "sha256": "73cf3ff444f0c8decf1c9ec0fa3f7ee5bca99d2b364527e522474c36e8e0fb07",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/4.png",
+      "to": "docs/assets/4.png",
+      "sha256": "cdd7f695aa361b7086f16ff2cc352992cb69b1de58573902fcb6c80f4bfa19b1",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/5.png",
+      "to": "docs/assets/5.png",
+      "sha256": "4fe66900d1b78aee635cfe46e15f2c302d9dd0e762c082ad9fa2d120fbcca75e",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/6.png",
+      "to": "docs/assets/6.png",
+      "sha256": "c26639813b58090e1365927bdd5f53913cf31694aeecf6a0c95158d6a6be9959",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/7.png",
+      "to": "docs/assets/7.png",
+      "sha256": "e32afc77f9d321c671bb154fc6a1599e2433f780c99f72a0a3a0b58778c0affc",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/8.png",
+      "to": "docs/assets/8.png",
+      "sha256": "83507501838ed464ff50aa2a4682a515e07503c96153e981ceddae14a4aa87da",
+      "last_committed_change": {
+        "commit": "bb46a484505bc57a36e357b6482ea7a9dd6fe15f",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T16:10:40+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/Diagram-High level architecture diagram.jpg",
+      "to": "docs/assets/Diagram-High level architecture diagram.jpg",
+      "sha256": "60d2197958d4b48e2bc949034bc7c34b8310bf07078dbd11e8c0d544790e3759",
+      "last_committed_change": {
+        "commit": "fb3aacf0fb8ce11c9292e49734984b23a61fffac",
+        "author": "Contributor",
+        "authored_at": "2024-12-26T19:32:41+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/HighLevel.jpg",
+      "to": "docs/assets/HighLevel.jpg",
+      "sha256": "508e3c8916e45d489a90afda4de6516973c2809e899ca6605f9b22fd2d9796b4",
+      "last_committed_change": {
+        "commit": "45e68d65ba94c71d0120d2687058639a060d1588",
+        "author": "Contributor",
+        "authored_at": "2025-02-01T19:01:12+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/Meetily-6.png",
+      "to": "docs/assets/Meetily-6.png",
+      "sha256": "8ef1da90de2ccaec7fcb3cf1fee799ff7b32180c13f947a7f3cce24ec6f7c6ad",
+      "last_committed_change": {
+        "commit": "634bced4317762372f22aec77b5ad1755e5366d6",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-05-01T04:44:42+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/audio.png",
+      "to": "docs/assets/audio.png",
+      "sha256": "b5e80eb3e4471a0c757c6d7b3e7a738645babc50ca3a570e7f90ac41bd48c351",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/custom.png",
+      "to": "docs/assets/custom.png",
+      "sha256": "b7cfc6c0a9c0d14c5d2d0c4abd9c1996f566d3cb6a68dd1916fd0d6081389c87",
+      "last_committed_change": {
+        "commit": "20b9a7a9a60d671f5cbe280c98f1ab8343643862",
+        "author": "Contributor",
+        "authored_at": "2025-12-31T11:16:02+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/demo_small.gif",
+      "to": "docs/assets/demo_small.gif",
+      "sha256": "25c3b34f960fb4c5f032fc4f52d308385221a595cbfed16541ae1f6e006a6858",
+      "last_committed_change": {
+        "commit": "6c81e073c76dc8befe77ba3d65af1e9139f4def6",
+        "author": "Contributor",
+        "authored_at": "2025-02-10T15:52:52+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/device_selection.png",
+      "to": "docs/assets/device_selection.png",
+      "sha256": "fed9e0b99a050556ac127457a7b938c3b87d6ff2758138995c12392a27d0b8c6",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/editor.png",
+      "to": "docs/assets/editor.png",
+      "sha256": "1c0ed32117f100050331e83969cfd923e3dc5b2f847cfc64c00cc355bf077858",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/editor1.png",
+      "to": "docs/assets/editor1.png",
+      "sha256": "148aca961c00dc4fa78ba803f05717f7a280ad80bd2bae1048f94fc69cedbc16",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/macos-ci-native-acquisition-quality-review-2026-10-04.md",
+      "to": "docs/reviews/macos-ci/macos-ci-native-acquisition-quality-review-2026-10-04.md",
+      "sha256": "18b79daf6bc4d41e67c7b4ca47cba20fbf7dc34a74d2a07744df724283c75297",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/macos-ci-native-acquisition-spec-review-2026-10-04.md",
+      "to": "docs/reviews/macos-ci/macos-ci-native-acquisition-spec-review-2026-10-04.md",
+      "sha256": "d1853d79e5860af4b1941e89a9642ec21ec881c9d3be345516d189aba7af03d2",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/macos-ci-prerequisite-quality-review-2026-10-03.md",
+      "to": "docs/reviews/macos-ci/macos-ci-prerequisite-quality-review-2026-10-03.md",
+      "sha256": "e5ffa6c4425ecd4ba22d03e5280b585c14e0f2a2d94533c13a1d14d99368a98e",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/macos-ci-prerequisite-spec-review-2026-10-03.md",
+      "to": "docs/reviews/macos-ci/macos-ci-prerequisite-spec-review-2026-10-03.md",
+      "sha256": "e10a990281f8db5f3fb7a0b576b6c6d8a1926e96efd77c77970e3a6e74f700e7",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/meeting-context-review-2026-10-02.md",
+      "to": "docs/reviews/meeting-questions/meeting-context-review-2026-10-02.md",
+      "sha256": "7307c7ce9c244112a59b31f11803250d0dfc71b114fd85223b930df871c46a69",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/meeting-questions-cold-cancel-quality-review-2026-10-03.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-cold-cancel-quality-review-2026-10-03.md",
+      "sha256": "ad5bc9d450b58bd67c1c7066bdae534f8b32e5606a1e7a0e21b77860b2cee892",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/meeting-questions-cold-cancel-spec-review-2026-10-03.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-cold-cancel-spec-review-2026-10-03.md",
+      "sha256": "2f1f3402967e9ad222310bc896a7379016840bae2addbe7159d474db4e2bc81d",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/meeting-questions-local-model-quality-review-2026-10-03.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-local-model-quality-review-2026-10-03.md",
+      "sha256": "34b94cffb9affe0d5c079ceebe6fb95fcbf2c0320d63db0a43a599100a91cec1",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/meeting-questions-local-model-spec-review-2026-10-03.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-local-model-spec-review-2026-10-03.md",
+      "sha256": "2876d4132547d925e1bcef9e2fb3d81554b3fc148f2759c77135a4b228b7cdab",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/meeting-questions-local-test-review-2026-10-03.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-local-test-review-2026-10-03.md",
+      "sha256": "7c32e2249d2cd1d67201ae156005c8895a817008cfa78ae2bd93f35f7a692b96",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/meeting-questions-plan-review-2026-10-02.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-plan-review-2026-10-02.md",
+      "sha256": "a3533d9abaa403b4bcd71cff515a57cad1c2c06a6f6e9c9d28b56542687dae42",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/meeting-questions-quality-review-2026-10-03.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-quality-review-2026-10-03.md",
+      "sha256": "c17a65de866a851142896d163b5f6560d67b52c97f5d456a89714b1d158ef52e",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/meeting-questions-spec-review-2026-10-03.md",
+      "to": "docs/reviews/meeting-questions/meeting-questions-spec-review-2026-10-03.md",
+      "sha256": "a14f3dbfa52f636034be29830b4fe757117be4ca5362c85fb2ca6921a2f71589",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/plan-review-2026-10-02.md",
+      "to": "docs/reviews/cross-cutting/plan-review-2026-10-02.md",
+      "sha256": "41ea4d99fe5af3649339978c5617dd569b8a0e0dc4e919830425b95ebfc3555d",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-admission-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-admission-quality-review-2026-10-03.md",
+      "sha256": "d2e80fb77feb401913a43a3b37538eef7329fe388ed21660014dec0714db365c",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-admission-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-admission-spec-review-2026-10-03.md",
+      "sha256": "dcd6199254940fdb9a0c9f7127e411ad46db6af472e8da348e941864762452b2",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-background-proof-final-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-final-quality-review-2026-10-04.md",
+      "sha256": "8cd57971b6d62e4d5cbd34f9aa6f9ec720ae0515cf58bb7901c70e965d27ceea",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-background-proof-final-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-final-spec-review-2026-10-04.md",
+      "sha256": "b6035b8467e9e5dd221b11683c33d7a94337b832a1aa012c9b920d303ca2f6d8",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-background-proof-implementation-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-implementation-quality-review-2026-10-04.md",
+      "sha256": "5d5b09dbb0e715e4c79ae91e27324ded0126904b2c9ee0e3d782f12894300ab8",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-background-proof-implementation-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-implementation-spec-review-2026-10-04.md",
+      "sha256": "be8253a69029f192c11c1e19d336cf69ca8f20f35527b7bbbcb4305d89b9bfe1",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-quality-review-2026-10-04.md",
+      "sha256": "ba51b9be1f9cff7b2a782ca4b8fb441f9b16477dd9d7c645092f51858796b212",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-spec-review-2026-10-04.md",
+      "sha256": "db847588e5008f11e9fe60637cf89f261c1f72bec1c8dcaff6cb4be8c1939b65",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-v2-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-v2-quality-review-2026-10-04.md",
+      "sha256": "d0656fe3b70877b51d5005f82f26d744efe2f2fab7e1076aa30c6415d55931ac",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-v2-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-v2-spec-review-2026-10-04.md",
+      "sha256": "180064c81fe7c55d8e4c948163980ab2db3a8e729372fa89774e1bba5dc4c7f8",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-v3-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-v3-quality-review-2026-10-04.md",
+      "sha256": "35dd433c563ea8203189aba187a72bddfda69d630191a4792e6c42edc7a169be",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-v3-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-v3-spec-review-2026-10-04.md",
+      "sha256": "dfe6211fb1ad28d9e3ccb5b0bcd753c02a958e9f88fa2584fd24d7dc8c32d8f0",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-v4-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-v4-quality-review-2026-10-04.md",
+      "sha256": "deda9f0b369e82bcee6cbca15ede184e4afd034717cdddcb155ed4ba07012a60",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-background-proof-plan-v4-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-plan-v4-spec-review-2026-10-04.md",
+      "sha256": "9b1381c56f719d497dfffc0a7459afc6c73ebef0e74e79d5f51254d94f4d74a7",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-background-proof-review-fix-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-review-fix-quality-review-2026-10-04.md",
+      "sha256": "fffd16ac8520266da45053fbbd83594a1cd7fa42878dd6ca8deaf9d7c83ef72d",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-background-proof-review-fix-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-background-proof-review-fix-spec-review-2026-10-04.md",
+      "sha256": "a0cc38b0252f310fb8196e5ff0abd807edfdd344909f1272353126b6a640b05d",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-clean-admission-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-clean-admission-quality-review-2026-10-03.md",
+      "sha256": "be7e287ac055c0a86a29a5f42acc8f499c00dc032c8e39263219b8c504b4065a",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-clean-admission-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-clean-admission-spec-review-2026-10-03.md",
+      "sha256": "15b5c862bf472ae507c87151be45c23963b779c41ed0b25163a10649798a7544",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-contrast-helper-amendment-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-contrast-helper-amendment-quality-review-2026-10-03.md",
+      "sha256": "99d3c6a14ef9113a80db8a1b1be5bc8a7707ddc8ca8e4ce19f56e146fa5fbd57",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-contrast-helper-amendment-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-contrast-helper-amendment-spec-review-2026-10-03.md",
+      "sha256": "6c4b5b24fee2a6ae7f9cd34abf2d92ebd868d3c133ee54cad2abaf7727326a3a",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-diagnostic-v2-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-diagnostic-v2-quality-review-2026-10-03.md",
+      "sha256": "84327bb921714728e35f06be61e54907c716a64efecccefbe225b1e44f95f61a",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-e2e-locators-implementation-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-e2e-locators-implementation-quality-review-2026-10-04.md",
+      "sha256": "35f81184ab3693d615c08635a66e1ef3f16c8fee36584c19e56d3d7100300e8e",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-e2e-locators-implementation-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-e2e-locators-implementation-spec-review-2026-10-04.md",
+      "sha256": "58a4f1f4858b1fca47bbb4c5f65a5d7374f3e93ab122170571d479fbe81e40ea",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-e2e-locators-plan-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-e2e-locators-plan-quality-review-2026-10-04.md",
+      "sha256": "cf4b7a670deedbcac0dc0deb7d8d6cbdcc62c8280b6509d92894640bcb21514b",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-e2e-locators-plan-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-e2e-locators-plan-spec-review-2026-10-04.md",
+      "sha256": "199bd340cc1504af45c09bee799df0a9985e990c553b39facaec82df5b1a21d3",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-focus-gap-amendment-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-gap-amendment-quality-review-2026-10-03.md",
+      "sha256": "32a14e4fea224b0ad09c7ae20c5e2c93205ba4ee7f9225fa96ded934fd18ff3a",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-focus-gap-amendment-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-gap-amendment-spec-review-2026-10-03.md",
+      "sha256": "d2cd233c47ecf9a1bcaf9f565af2ee212ec9ae7302c1e356312e186deb00b168",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-focus-geometry-amendment-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-geometry-amendment-quality-review-2026-10-03.md",
+      "sha256": "8c2c4e635444346e7331f9b55d718cb6d9da8f0eef24ea6d753339a4f95413e6",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-focus-geometry-amendment-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-geometry-amendment-spec-review-2026-10-03.md",
+      "sha256": "131fd3e59e154cb2cc101c54890c1c29878b2d7c555bd6aac398985b98ae12b3",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-focus-implementation-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-implementation-quality-review-2026-10-03.md",
+      "sha256": "607f47f80f5b6c2240b15a2a464bdec0c2e97fb093c3d5564f0947a83aade36a",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-focus-implementation-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-implementation-spec-review-2026-10-03.md",
+      "sha256": "1c10d00a7a10d8ce95d9fcefeb49097f78661efaef992ea29821cd0a036aeb78",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-focus-review-fix-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-review-fix-quality-review-2026-10-03.md",
+      "sha256": "65d42b4841eff1c6fc1827e38bb0b35573d23878f5d551d9d4f10e0f6d99731c",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-focus-review-fix-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-focus-review-fix-spec-review-2026-10-03.md",
+      "sha256": "4ec70a54c7d268f732b841b42291f399b9ed67caa87ecb02905d3a5f9daad9e3",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-matrix-red-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-matrix-red-quality-review-2026-10-03.md",
+      "sha256": "d8c93426884cabcbe05b6e1ad956f47789fc80498ca91cb5ee7f82ec966d044b",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-matrix-red-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-matrix-red-spec-review-2026-10-03.md",
+      "sha256": "d7d43e66caca1f8e267c4246b56672e4203e40b88d28739793903e944a071675",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-oracle-round3-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-oracle-round3-quality-review-2026-10-03.md",
+      "sha256": "083b112f5588fe47464e558f4b7689b19a545d62034701b98c9282617843c524",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-oracle-round3-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-oracle-round3-spec-review-2026-10-03.md",
+      "sha256": "bde49abdb1202a9e7185d5858b3670caae9b5b636745ca9ee194e1be15613cda",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-persistence-final-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-persistence-final-quality-review-2026-10-03.md",
+      "sha256": "45f8e68c9bf5f16917929a0d69a47d4e353b588b8dc40fd1f2ee2f81caa69f5f",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-persistence-final-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-persistence-final-spec-review-2026-10-03.md",
+      "sha256": "5fa2310c03d0674743854e67b73803675749ec9a0deff0a43adb521283624a91",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-policy-fixtures-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-policy-fixtures-quality-review-2026-10-03.md",
+      "sha256": "e7cf9eb4f52b7d6aec4555e153a29ec7618d8b2b5868321f1bbd9c7ac2e59dfe",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-policy-fixtures-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-policy-fixtures-spec-review-2026-10-03.md",
+      "sha256": "edd34c75ee17edb80ae6b275c708f19b1c93a14e7e0115bda94a697948e49f48",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-post-token-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-post-token-quality-review-2026-10-03.md",
+      "sha256": "0cbadb3a495a5e4285646aeedca284ff0ce82248570af24e163f05f1e388e6e4",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-post-token-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-post-token-spec-review-2026-10-03.md",
+      "sha256": "ebdf581164f14bf1a970165526866a95511e6b5ded6a31d65e6cf9d5aaea803a",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-prepaint-adapter-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-prepaint-adapter-quality-review-2026-10-03.md",
+      "sha256": "c0b36f794faaceaa5b45af3ba8e3da52d5b0e607b4e7c72f5c9f19366d16a0c1",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-prepaint-adapter-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-prepaint-adapter-spec-review-2026-10-03.md",
+      "sha256": "79b1bd4734a9545ac12493bbf29fe8779ae4b9e4f1d7e40da8bf5c235f56ef3a",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-prepaint-amendment-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-prepaint-amendment-quality-review-2026-10-03.md",
+      "sha256": "0f853b0fa0be3512fd3077b53d282b2f5b7b85a64927d22ceae5088a27dc50a1",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-prepaint-hydration-amendment-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-prepaint-hydration-amendment-quality-review-2026-10-03.md",
+      "sha256": "02d98a5ca22797c304e5ee5bb07154fbf4fd5b7423ef1602bf1f73787db6d9fd",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-prepaint-hydration-amendment-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-prepaint-hydration-amendment-spec-review-2026-10-03.md",
+      "sha256": "f58c5ad6c235dc3e069d55e34f720c0ea624f8932a78c0a3c7d59acebf7488a2",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-prepaint-implementation-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-prepaint-implementation-quality-review-2026-10-03.md",
+      "sha256": "803ed5e85d131af151a224d65457c21ec5b924359f1ff627f10b02cd9ea03662",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-prepaint-implementation-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-prepaint-implementation-spec-review-2026-10-03.md",
+      "sha256": "3eadf43960fd9e5d8191b963d7fe7dd0321fc0ea1e934d25fea501b9b06466be",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-rendered-contrast-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-rendered-contrast-quality-review-2026-10-03.md",
+      "sha256": "70375da08127a33e3c1fa46c165df22ad3b5d61a083e053f88e9d939714c9da6",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-rendered-contrast-round3-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-rendered-contrast-round3-quality-review-2026-10-03.md",
+      "sha256": "495d7ddb12cad153827edd1923cb8592fd6c05013c916f52e7df5e8a10055d0c",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-rendered-contrast-round3-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-rendered-contrast-round3-spec-review-2026-10-03.md",
+      "sha256": "fc5f73b4abb5427867d52b252be7e8cbda18dfd01a2a4980e9e6bfa295230284",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-rendered-contrast-round4-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-rendered-contrast-round4-quality-review-2026-10-03.md",
+      "sha256": "e2818c1d684d78791d8a18951a8bafc2a95abbe211e5cc47a7fdae91d1621b53",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-rendered-contrast-round4-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-rendered-contrast-round4-spec-review-2026-10-03.md",
+      "sha256": "47c31dd017c2f1847689a05ae50d3e3197a7040d0e276329183decfa8f53e9b0",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-rendered-contrast-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-rendered-contrast-spec-review-2026-10-03.md",
+      "sha256": "c98234313f3ab9f5d70f34d803ee723718b2a8e7c6249712bb0f86d07fd3129d",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-amendment-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-amendment-quality-review-2026-10-03.md",
+      "sha256": "779904401175b7256994b18104fd12f0bc58ca0042cebe9c6ea1facc5246eaee",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-amendment-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-amendment-spec-review-2026-10-03.md",
+      "sha256": "0c79130fd81662c395f62ebb999c2280fda3e78460cd347cda9e00524b645236",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-amendment-v2-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-amendment-v2-quality-review-2026-10-03.md",
+      "sha256": "e5c103874aeacc4c80b20aacd99eb841b909a4feaf1224cfa533c03cd31ddc81",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-amendment-v2-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-amendment-v2-spec-review-2026-10-03.md",
+      "sha256": "26828f06358227937d73d0168f2fbdebb362d9b562bb40733e609dee08ddd10f",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-atomic-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-atomic-quality-review-2026-10-03.md",
+      "sha256": "6108ef337bc6fa956e4a6eb399c69e9323ae076b347078f967bff02aa0ed77b5",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-atomic-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-atomic-spec-review-2026-10-03.md",
+      "sha256": "4a0eb48440a50a0cd4d1256b7694e8f9eefc6c1cbd27be5e83ccd59a86d2d035",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-implementation-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-implementation-quality-review-2026-10-03.md",
+      "sha256": "f00df23cbac8ab74f141280a6e7529bae582c52ea60eb91ed2aff52b4cb5042b",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-implementation-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-implementation-spec-review-2026-10-03.md",
+      "sha256": "c9a6705979afe81ffe8d15d1059ec190f3a14a36fd6bf18141acdf88c54ca376",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-review-fix-quality-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-review-fix-quality-review-2026-10-03.md",
+      "sha256": "e7a527e5669cc7685b4440122420df251c5e1861b99d53ba92af624601f3d35b",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-shadow-proof-review-fix-spec-review-2026-10-03.md",
+      "to": "docs/reviews/theme/theme-shadow-proof-review-fix-spec-review-2026-10-03.md",
+      "sha256": "5860219c33cca42032abe110ece4df92a05f47328734e827fc9f177be6246981",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-sidebar-snapshot-implementation-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-sidebar-snapshot-implementation-quality-review-2026-10-04.md",
+      "sha256": "5b60c5f7ba09472f4898f6f7ed3140518e39e4c72fdd1968b7c883d46e310ca2",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-sidebar-snapshot-implementation-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-sidebar-snapshot-implementation-spec-review-2026-10-04.md",
+      "sha256": "bf477caad963a78e2808476916f4b71e58089064f51587c22a1f093998397172",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/theme-sidebar-snapshot-plan-quality-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-sidebar-snapshot-plan-quality-review-2026-10-04.md",
+      "sha256": "c2ea784bc672f85f6f1b5cfbb56a47964e592af27c00609cf6caeecbe9634406",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/plans_quality"
+      ]
+    },
+    {
+      "from": "docs/fork/theme-sidebar-snapshot-plan-spec-review-2026-10-04.md",
+      "to": "docs/reviews/theme/theme-sidebar-snapshot-plan-spec-review-2026-10-04.md",
+      "sha256": "b9e5a60ca3b27f8ede1f36cb8d5dbe9e22047b2f507b2c08dfbf00016dd4af5d",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-fresh-persistence-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-fresh-persistence-quality-review-2026-10-04.md",
+      "sha256": "9c85e68f3ae25d965d22a294c13e1c7f895ec3fa4fc4f2c5577ef08f8fd93724",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-fresh-persistence-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-fresh-persistence-spec-review-2026-10-04.md",
+      "sha256": "ca339957bbaad1b17a7d47952e0b949d083c2e6d65bddfa645823e11c2190016",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-fresh-persistence-v2-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-fresh-persistence-v2-quality-review-2026-10-04.md",
+      "sha256": "1fc12e1e34a3ff30bf2efd9ef80abb371dc8d27e9ea7cd94de12a0cc49efecc1",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-fresh-persistence-v2-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-fresh-persistence-v2-spec-review-2026-10-04.md",
+      "sha256": "622cef92bacc93134cc052acc54f4f6eccacacdc5b669ddea86f15bdcb37b1fc",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-mixed-id-fix-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-mixed-id-fix-quality-review-2026-10-04.md",
+      "sha256": "3316356e184be8b6882c8f367632598c409228c47d7e17dff3b2257efee36891",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-mixed-id-fix-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-mixed-id-fix-spec-review-2026-10-04.md",
+      "sha256": "59d4d41ef60b18eacecfae716a16463c8c7ade34a17ff1b52e34dcb8c898b3c7",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-mixed-id-fix-v2-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-mixed-id-fix-v2-quality-review-2026-10-04.md",
+      "sha256": "682e9221c2a7ca2e37c589f79c1226a6b073ffcbb2d160d071f2fd630ecf357a",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-mixed-id-fix-v2-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-mixed-id-fix-v2-spec-review-2026-10-04.md",
+      "sha256": "48d6cd754cc7f24bc1da6b6315da375de6596fe681902e6957ceaee4cecb818a",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-recovery-contract-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-recovery-contract-quality-review-2026-10-04.md",
+      "sha256": "1f78a0af3bdc952391939ae328144d71ce981f9199f5f742525b057ecc237143",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-recovery-contract-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-recovery-contract-spec-review-2026-10-04.md",
+      "sha256": "d293444fb79b516f466b7552db92db58de5f3c2d7d14ec78a4ee25269d3a0436",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-recovery-contract-v2-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-recovery-contract-v2-quality-review-2026-10-04.md",
+      "sha256": "c44ba87b6a68fecf9482d3aae6b9aeadb0eb16c6d12c3b0873105a397e588081",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-recovery-contract-v2-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-recovery-contract-v2-spec-review-2026-10-04.md",
+      "sha256": "0e62c06e44845bb9fcf5491da25ea0af6dfdee2d9a2fdb97bc5010a6491bcf02",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-recovery-contract-v3-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-recovery-contract-v3-quality-review-2026-10-04.md",
+      "sha256": "e7c6e7690fd0fb42c404a69ba732c9f83dde7b6f990c704a72d660ae15a3b76f",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-recovery-contract-v3-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-recovery-contract-v3-spec-review-2026-10-04.md",
+      "sha256": "06e2c44d10a82628ada982ea3deca7b4e83be612e78e24f138e2a9f0b6483aee",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-recovery-transport-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-recovery-transport-spec-review-2026-10-04.md",
+      "sha256": "b7fcbfe12eee22f567eede6fcca43affe16c048a07a5ea3afff3daeaba501da7",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-schema-ownership-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-schema-ownership-quality-review-2026-10-04.md",
+      "sha256": "20fbbf859187e52adba58b83d0acd67c75aacf635728c68a44c4da0993ae6cdf",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-schema-ownership-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-schema-ownership-spec-review-2026-10-04.md",
+      "sha256": "ebee9c0423c1ea85f9c3c5d83da4e1a3ef5d98d1cbbee857b094165e0a0609a2",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-schema-ownership-v2-quality-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-schema-ownership-v2-quality-review-2026-10-04.md",
+      "sha256": "2a90ff729390c0ba3af313ced2f62dea786aedb6c99cbf15133675437ec85206",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/fork/webview-schema-ownership-v2-spec-review-2026-10-04.md",
+      "to": "docs/reviews/webview-migration/webview-schema-ownership-v2-spec-review-2026-10-04.md",
+      "sha256": "9f13ce6844e319746603c65722c8de91a064f49838716bef02b9fa8a875828b4",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/home.png",
+      "to": "docs/assets/home.png",
+      "sha256": "efe3439d327ec719642fef8210e3873ad8a9a6e06d3b6675d05d69949a45da88",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/local.png",
+      "to": "docs/assets/local.png",
+      "sha256": "141635950683c474b28791c5a681af2bafd846716f47f704a32b2dc7ef1b9e2d",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/logo1.png",
+      "to": "docs/assets/logo1.png",
+      "sha256": "e1efa12cf93c7ffff51ed64e1052ba18e2c97d908edfc6b3e56a453a51d31f8e",
+      "last_committed_change": {
+        "commit": "634bced4317762372f22aec77b5ad1755e5366d6",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-05-01T04:44:42+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/logo2.png",
+      "to": "docs/assets/logo2.png",
+      "sha256": "281d02a7b0e29b51d045cff8817c7ab83b44683148352ace17b29be7a07f6147",
+      "last_committed_change": {
+        "commit": "634bced4317762372f22aec77b5ad1755e5366d6",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-05-01T04:44:42+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/logo3.png",
+      "to": "docs/assets/logo3.png",
+      "sha256": "9ccfdd67c8d17ecd28ef844d4c3851aff4835ee24c11a17936ade1cc2641e420",
+      "last_committed_change": {
+        "commit": "634bced4317762372f22aec77b5ad1755e5366d6",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-05-01T04:44:42+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/meetily-export.gif",
+      "to": "docs/assets/meetily-export.gif",
+      "sha256": "836054040e3165b9afa1f6f3b36cef87ed4f3d1982d78e4d948cabcc89c6379f",
+      "last_committed_change": {
+        "commit": "afe0e72dec60d5195f194efd5e137f4ac6b51808",
+        "author": "sujithatzackriya",
+        "authored_at": "2026-03-03T14:47:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/meetily_demo.gif",
+      "to": "docs/assets/meetily_demo.gif",
+      "sha256": "c1496491fc014681e2ebe50124203f6b51bb952379fde18527a9742951619b89",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/pv2.0.png",
+      "to": "docs/assets/pv2.0.png",
+      "sha256": "c76d78e4f66776a895fcf451ed7d78b908346197d1be54475bdc9523d05c138c",
+      "last_committed_change": {
+        "commit": "20b9a7a9a60d671f5cbe280c98f1ab8343643862",
+        "author": "Contributor",
+        "authored_at": "2025-12-31T11:16:02+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/pv2.1.png",
+      "to": "docs/assets/pv2.1.png",
+      "sha256": "5152d3c62aa3322def2d6ae40fb00235488ac8cec2d128aa2085271ce25f5c32",
+      "last_committed_change": {
+        "commit": "20b9a7a9a60d671f5cbe280c98f1ab8343643862",
+        "author": "Contributor",
+        "authored_at": "2025-12-31T11:16:02+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/settings.png",
+      "to": "docs/assets/settings.png",
+      "sha256": "5fe55ae4c12790a91e36c67561b0618f59d810c59777dcf608ab8db01ef36d05",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/summary.png",
+      "to": "docs/assets/summary.png",
+      "sha256": "f08a332939687682e9e6dd343669b67559fc47eb2db856e0ae88906cb7e5db82",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-macos-ci-census.json",
+      "to": "docs/plans/macos-ci/2026-10-02-macos-ci-census.json",
+      "sha256": "465b29488c1bfb3097cab8cd4ddf3203ab679f6c6f8f3d6049abce7a69018ba8",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-macos-ci-release.md",
+      "to": "docs/plans/macos-ci/2026-10-02-macos-ci-release.md",
+      "sha256": "d3066f3b42e854e6db3ee571159b7203486a4d025fc23a32f0a1db8cb4dc21c5",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-meeting-questions.md",
+      "to": "docs/plans/meeting-questions/2026-10-02-meeting-questions.md",
+      "sha256": "82da5c2a8ab3096e976bb4f48a40ea94e7f5442066680adca7f857d5d1537978",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-recording-storage-census.json",
+      "to": "docs/plans/recording-storage/2026-10-02-recording-storage-census.json",
+      "sha256": "267e105bc868342bcb36a688ec5f5071783c56ccbdbeb11de9fb91a5ce9eea33",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-recording-storage.md",
+      "to": "docs/plans/recording-storage/2026-10-02-recording-storage.md",
+      "sha256": "814a48a60b0891fd24bfb03f52e9e65e0ccdf727b55b8061029e3418a9d1361f",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-semantic-theme.md",
+      "to": "docs/plans/theme/2026-10-02-semantic-theme.md",
+      "sha256": "83e82c5891c7d699485ab0910936a67bf4a8e6690e42eb2b6ec43df07767de41",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-theme-census.json",
+      "to": "docs/plans/theme/2026-10-02-theme-census.json",
+      "sha256": "aab13fd017dbdf0026d2980c214afe18695d976074653a76c5dec9818f551d68",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-webview-migration-census.json",
+      "to": "docs/plans/webview-migration/2026-10-02-webview-migration-census.json",
+      "sha256": "2f5bd0c06e10afed8ff2e8a6f2519b72861e9e9f6546fec6ccc5120c7ca81285",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-02-webview-migration-integration.md",
+      "to": "docs/plans/webview-migration/2026-10-02-webview-migration-integration.md",
+      "sha256": "ced5dc22dc4495f8703ddc03b176824fe3a854528327c2270d914cb6a543a603",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/identity"
+      ]
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-theme-background-proof-v2.md",
+      "to": "docs/plans/theme/2026-10-04-theme-background-proof-v2.md",
+      "sha256": "1a8cae8e3f81786a5100ec87ca809e7c25036e4d691223c722db89fdba9e2476",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-theme-background-proof-v3.md",
+      "to": "docs/plans/theme/2026-10-04-theme-background-proof-v3.md",
+      "sha256": "3da22e4b231f5cfabe5b37e09ed56c3ad684971a88d3ccd9e67a2de5ef91fe05",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-theme-background-proof-v4.md",
+      "to": "docs/plans/theme/2026-10-04-theme-background-proof-v4.md",
+      "sha256": "c61c921567f0d6e12f7760c6e0585bd7c529f51cb312585a7d00f08bf512a997",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-theme-background-proof.md",
+      "to": "docs/plans/theme/2026-10-04-theme-background-proof.md",
+      "sha256": "29cbe1742d16e779b21b71285b3a95bb9bc8438db6048b0a5c49bff1185fc222",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-theme-e2e-locators.md",
+      "to": "docs/plans/theme/2026-10-04-theme-e2e-locators.md",
+      "sha256": "432617704a37aec8e2139b7828bdf4c461a7ec2afcdda7068076822fac1fed36",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-theme-sidebar-snapshots.md",
+      "to": "docs/plans/theme/2026-10-04-theme-sidebar-snapshots.md",
+      "sha256": "a751c5d4938cbc9e7469976bda669e1d2942fb27ffd59524c8973c2d08946f03",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-fresh-persistence-amendment-v2.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-fresh-persistence-amendment-v2.md",
+      "sha256": "37332f101672e60a26d443b0c39d75a1c516be8c5406cd4c85bfaf4970f9783b",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/symlink"
+      ]
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-fresh-persistence-amendment.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-fresh-persistence-amendment.md",
+      "sha256": "72d4435d7ae3333667962f2767c5561c8b5ef4c8696801cd90cf8098627ee6e8",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/symlink"
+      ]
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-recovery-contract-v2.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-recovery-contract-v2.md",
+      "sha256": "2d68a99daa247f18d3442b805df9278765f4733e8521bb54818d96518dca4660",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/copy/hash/budget/publication"
+      ]
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-recovery-contract-v3.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-recovery-contract-v3.md",
+      "sha256": "39b7bc3de8bb6f7e9a93207335fc8dcd33c67358be9a8ad9550fd1142a6b36f3",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/copy/hash/budget/publication"
+      ]
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-recovery-contract.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-recovery-contract.md",
+      "sha256": "e517235c686d6ed08c23ac0da5d377298d99910ca2bd9ccdf96749b793e968b3",
+      "last_committed_change": null,
+      "declared_agent_labels": [
+        "/root/ID"
+      ]
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-recovery-transport.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-recovery-transport.md",
+      "sha256": "929bdc73d043b78a8971a9a2f5dd33a00f7f1571e6b65cc56fe24e1154937715",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-schema-ownership-v2.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-schema-ownership-v2.md",
+      "sha256": "86fa8fe7c9932d2b7794ae7330bfaea6ff3a90a177b850242bc9833e8643b53a",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/superpowers/plans/2026-10-04-webview-schema-ownership.md",
+      "to": "docs/plans/webview-migration/2026-10-04-webview-schema-ownership.md",
+      "sha256": "da7c4686f4159c453eac1b9a1d1fcd3dd823a4226dd7bb9a187c960c225f0908",
+      "last_committed_change": null,
+      "declared_agent_labels": []
+    },
+    {
+      "from": "docs/transcription.png",
+      "to": "docs/assets/transcription.png",
+      "sha256": "d89b8395fe04eb9ad1d28be1fff7310f42ac3205e117b28ef4d92fab43c112be",
+      "last_committed_change": {
+        "commit": "1e81fdb384708b7167479bba045d029c0444a434",
+        "author": "sujithatzackriya",
+        "authored_at": "2025-10-23T01:40:34+05:30"
+      },
+      "declared_agent_labels": []
+    }
+  ],
+  "link_updated_files": [
+    "docs/fork/meeting-questions-2026-10-02.md",
+    "docs/fork/meeting-questions-local-model-2026-10-03.md",
+    "README.md",
+    "docs/fork/execution-plan-2026-09-22.md",
+    "docs/prd/fork-features.md",
+    "docs/prd/macos-fork.md"
+  ],
+  "navigation_changed_existing_files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "docs/fork/execution-plan-2026-09-22.md",
+    "docs/fork/meeting-questions-2026-10-02.md",
+    "docs/fork/meeting-questions-local-model-2026-10-03.md",
+    "docs/prd/fork-features.md",
+    "docs/prd/macos-fork.md"
+  ],
+  "new_entry_points": [
+    "INDEX.md",
+    "docs/development/repository-map.md",
+    "docs/development/execution-order.md",
+    "docs/development/worktree-inventory.md"
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

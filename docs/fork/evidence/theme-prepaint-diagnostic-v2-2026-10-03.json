@@ -1,0 +1,68 @@
+{
+  "task": "FORK-152",
+  "date": "2026-10-03",
+  "status": "BOUNDED_DIAGNOSTIC_ONLY",
+  "observed_exit_status": 0,
+  "coordinator_browser_run": true,
+  "corrected_v1_limits": [
+    "Waited up to 3000ms for dark class plus dark colorScheme while first app CSS remained held.",
+    "Markup indexes from the actual navigation response are recorded."
+  ],
+  "script_sha256": "4394d1c212506c19df392278c7e746139ca199ed52c58ca538fae5e9e631daef",
+  "raw_report_sha256": "2f694133d22d63de46c9d59f88b8547972d5ea2ce511337a22bd30051b3c156f",
+  "observations": {
+    "diagnostic": true,
+    "waitedForThemeUnderHeldCss": false,
+    "waitLimitMs": 3000,
+    "navigationHtmlStatus": 200,
+    "navigationCssIndex": 129,
+    "navigationThemeScriptIndex": 736,
+    "navigationThemeBeforeStylesheet": false,
+    "storedMode": "dark",
+    "os": "light",
+    "htmlStatus": 200,
+    "cssIndex": 129,
+    "themeScriptIndex": 736,
+    "themeBeforeStylesheet": false,
+    "beforeCssRelease": {
+      "bodyAbsent": true,
+      "dark": false,
+      "colorScheme": "",
+      "events": [],
+      "readyState": "loading"
+    },
+    "afterReady": {
+      "dark": true,
+      "colorScheme": "dark",
+      "events": [
+        {
+          "force": true,
+          "bodyAbsent": true,
+          "readyState": "loading"
+        },
+        {
+          "force": true,
+          "bodyAbsent": false,
+          "readyState": "complete"
+        }
+      ]
+    },
+    "pageErrors": [],
+    "sourceRoot": "/Users/developer/Desktop/meeting-minutes/.worktrees/main-features-2026-10-02",
+    "sourceAdmission": "theme hashes match reviewed base; checkout has unrelated Q&A/scanner overlay; not implementation admission"
+  },
+  "limits": [
+    "One dark-stored/light-OS navigation only; no reload/full matrix.",
+    "Collection exit0 does not imply theme contract PASS.",
+    "No all-mutation/frame/hydration/focus/contrast assertions.",
+    "No visible-flash, production-build, native-appearance or release proof.",
+    "Dirty fixture source theme paths match reviewed main; clean implementation route remains pending."
+  ],
+  "product_edits": false,
+  "snapshot_updates": false,
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

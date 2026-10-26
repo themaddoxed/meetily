@@ -1,0 +1,8 @@
+{
+  "audio-round2-source-before.txt": "a34718aca2c17ab58fb012818785d7f69a337bcc857e6b0e91a6dc081305bbaf",
+  "audio-round2-source-after.txt": "a34718aca2c17ab58fb012818785d7f69a337bcc857e6b0e91a6dc081305bbaf",
+  "audio-round2-workspace.log": "3701da9a56e5ad24f535d00df755939101d6b19f999f65846cff188054a01629",
+  "audio-round2-clippy.log": "dfdabbc80af931faa87f980c77adde44ef1c5b1bb549ebee37595e216a245b5b",
+  "audio-round2-rustfmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "audio-round2-diff-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

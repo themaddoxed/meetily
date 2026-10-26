@@ -1,0 +1,38 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXWindow | AXTitle=meetily
+ AXRole=AXGroup | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXScrollArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+    AXRole=AXWebArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle=Notifications alt+T | AXDescription=Notifications alt+T | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle=Recover Interrupted Meetings | AXDescription=Recover Interrupted Meetings | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXHeading | AXTitle=Recover Interrupted Meetings | AXDescription= | AXHelp= | AXValue=2 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Recover Interrupted Meetings | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=We found 4 interrupted meetings. Select a meeting to preview and recover it. | AXEnabled=1
+      AXRole=AXHeading | AXTitle=Interrupted Meetings | AXDescription= | AXHelp= | AXValue=3 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Interrupted Meetings | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Meeting 20_09_26_09_04_13 9 minutes ago2 transcripts | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Meeting 19_09_26_23_34_13 about 10 hours ago3 transcripts | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Meeting 19_09_26_21_44_27 about 11 hours ago3 transcripts | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Meeting 19_09_26_21_41_58 about 12 hours ago1 transcript | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXHeading | AXTitle=Preview | AXDescription= | AXHelp= | AXValue=3 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Preview | AXEnabled=1
+      AXRole=AXHeading | AXTitle=Meeting 20_09_26_09_04_13 | AXDescription= | AXHelp= | AXValue=4 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Meeting 20_09_26_09_04_13 | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Started 20.09.2026, 09:04:13 | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=2 transcripts | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=No audio | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=No transcripts to preview | AXEnabled=1
+      AXRole=AXButton | AXTitle=Cancel | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXButton | AXTitle=Delete | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXButton | AXTitle=Recover | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXButton | AXTitle=Close | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXButton | AXHelp=this button also has an action to zoom the window | AXEnabled=1
+  AXRole=AXGroup
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXStaticText | AXValue=meetily | AXEnabled=1

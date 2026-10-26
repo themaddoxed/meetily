@@ -1,0 +1,14 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "worktreeClean": false,
+  "sourceFingerprintBefore": "bdfcf1421dad36bb6a56407de3618f358d7e1680ee34b8b5234fbba03f49f595",
+  "sourceFingerprintAfter": "bdfcf1421dad36bb6a56407de3618f358d7e1680ee34b8b5234fbba03f49f595",
+  "purpose": "Local permission preflight and native quit preservation verification",
+  "releaseEligible": false,
+  "architecture": "x86_64",
+  "createdAt": "2026-09-20T06:48:04.459014+00:00",
+  "executableSha256": "fc63ecaaf2ba75551ccd2bed582b0eff1da5a5acc987242cfee1be8f0a266a75",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN"
+}

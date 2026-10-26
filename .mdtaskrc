@@ -1,0 +1,7 @@
+{
+  "path": "docs/prd",
+  "files": {
+    "include": ["**/*.md"],
+    "exclude": []
+  }
+}

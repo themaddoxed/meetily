@@ -1,0 +1,43 @@
+{
+  "folder": "/Users/developer/Movies/meetily-recordings/Meeting 20_09_26_12_55_20_2026-09-20_09-56",
+  "tracks": [
+    {
+      "name": "audio.mp4",
+      "decoded_seconds": 65.496,
+      "marker_intervals": [
+        [
+          21.7,
+          22.8
+        ],
+        [
+          44.8,
+          45.9
+        ]
+      ]
+    },
+    {
+      "name": "microphone.mp4",
+      "decoded_seconds": 65.77075,
+      "marker_intervals": []
+    },
+    {
+      "name": "system.mp4",
+      "decoded_seconds": 46.24,
+      "marker_intervals": [
+        [
+          2.2,
+          3.3
+        ],
+        [
+          25.2,
+          26.3
+        ]
+      ]
+    }
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

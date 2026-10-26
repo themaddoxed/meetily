@@ -1,0 +1,11 @@
+/private/tmp/meetily-urgent-20260919/press-verified-stop.swift:6:67: warning: 'activateIgnoringOtherApps' was deprecated in macOS 14.0: ignoringOtherApps is deprecated in macOS 14 and will have no effect. [#DeprecatedDeclaration]
+ 4 | let pid = pid_t(CommandLine.arguments[1])!
+ 5 | let title = CommandLine.arguments[2]
+ 6 | NSRunningApplication(processIdentifier: pid)?.activate(options: [.activateIgnoringOtherApps])
+   |                                                                   `- warning: 'activateIgnoringOtherApps' was deprecated in macOS 14.0: ignoringOtherApps is deprecated in macOS 14 and will have no effect. [#DeprecatedDeclaration]
+ 7 | Thread.sleep(forTimeInterval: 0.3)
+ 8 | let app = AXUIElementCreateApplication(pid)
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+MATCHES=1
+PRESS=0

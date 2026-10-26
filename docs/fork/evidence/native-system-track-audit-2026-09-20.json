@@ -1,0 +1,381 @@
+{
+  "schema": "meetily.native-system-track-audit.v1",
+  "generatedAt": "2026-09-20T19:54:43.419089Z",
+  "status": "PASS_SUPPLEMENTAL",
+  "sourceCommit": null,
+  "sourceFingerprint": null,
+  "provenance": "The first row is bound to source commit fcfa6e0 and dirty fingerprint 52a4933b... via round2-native-result.json; the other rows are read-only supplemental recordings without per-recording artifact provenance. None is bound to final10 fingerprint cbf0160c..., so this audit does not close current-artifact acceptance.",
+  "recordings": [
+    {
+      "recording": "Meeting 20_09_26_16_40_45_2026-09-20_13-41",
+      "status": "completed",
+      "durationSeconds": 91.286901881,
+      "sampleRate": 48000,
+      "files": [
+        {
+          "name": "audio.mp4",
+          "relativePath": "Meeting 20_09_26_16_40_45_2026-09-20_13-41/audio.mp4",
+          "size": 1241509,
+          "sha256": "47b46be3a97d9782c0311e5da8667e0c37e536e620d909085fd7defa674c5b15",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "69.021333",
+              "size": "1241509"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 1,
+                "duration": "69.021333"
+              }
+            ]
+          }
+        },
+        {
+          "name": "microphone.mp4",
+          "relativePath": "Meeting 20_09_26_16_40_45_2026-09-20_13-41/microphone.mp4",
+          "size": 1676998,
+          "sha256": "6cd9b03f2a76c64a12949a50647618dd3866ba782fec617cf7d6e85cd6c91dbb",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "69.236667",
+              "size": "1676998"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 2,
+                "duration": "69.236667"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system.mp4",
+          "relativePath": "Meeting 20_09_26_16_40_45_2026-09-20_13-41/system.mp4",
+          "size": 51851,
+          "sha256": "efee3ffa3f8e32815d651a26686c7441889250d14fae3120f93bf27afeade344",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "47.338333",
+              "size": "51851"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 1,
+                "duration": "47.338333"
+              }
+            ]
+          }
+        }
+      ],
+      "tracks": {
+        "microphone": {
+          "sampleRate": 48000,
+          "channels": 2,
+          "sampleCount": 6644736,
+          "checkpointCount": 3,
+          "checkpointInputSampleCounts": [
+            2880512,
+            2880512,
+            883712
+          ],
+          "finalSha256": "6cd9b03f2a76c64a12949a50647618dd3866ba782fec617cf7d6e85cd6c91dbb",
+          "incomplete": false
+        },
+        "system": {
+          "sampleRate": 48000,
+          "channels": 1,
+          "sampleCount": 2271232,
+          "checkpointCount": 2,
+          "checkpointInputSampleCounts": [
+            1440256,
+            830976
+          ],
+          "finalSha256": "efee3ffa3f8e32815d651a26686c7441889250d14fae3120f93bf27afeade344",
+          "incomplete": false
+        }
+      },
+      "provenance": {
+        "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+        "sourceFingerprint": "52a49335bb2d883b18fd8e282917046d0525c3f331c26f1ca45c10f931fa0508",
+        "executableSha256": "bb5391819e7199db81d37af1890eb75d225ada51e01fd569e91bc36d00c5c75d",
+        "controlMarkerEvidence": {
+          "mixed880HzBins": [
+            [
+              24.2,
+              25.2
+            ],
+            [
+              47.3,
+              48.3
+            ]
+          ],
+          "system880HzBins": [
+            [
+              2.2,
+              3.3
+            ],
+            [
+              25.2,
+              26.3
+            ]
+          ],
+          "microphone880HzBins": [],
+          "pauseReadout": "00:49 unchanged across two AX reads; resumed at 01:07",
+          "sourceEvidence": "round2-native-result.json"
+        }
+      }
+    },
+    {
+      "recording": "Meeting 20_09_26_16_45_57_2026-09-20_13-45",
+      "status": "completed",
+      "durationSeconds": 62.949782933,
+      "sampleRate": 48000,
+      "files": [
+        {
+          "name": "audio.mp4",
+          "relativePath": "Meeting 20_09_26_16_45_57_2026-09-20_13-45/audio.mp4",
+          "size": 1101357,
+          "sha256": "2eb796bdee70d77e4cec5759203e1f55ac246934de28ffa191a51704c696726e",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "59.421333",
+              "size": "1101357"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 1,
+                "duration": "59.421333"
+              }
+            ]
+          }
+        },
+        {
+          "name": "microphone.mp4",
+          "relativePath": "Meeting 20_09_26_16_45_57_2026-09-20_13-45/microphone.mp4",
+          "size": 1446531,
+          "sha256": "c733a7dbdadd010328973675a651a5a97bf3d3f69f96d042623da96c51ad928f",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "59.733000",
+              "size": "1446531"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 2,
+                "duration": "59.733000"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system.mp4",
+          "relativePath": "Meeting 20_09_26_16_45_57_2026-09-20_13-45/system.mp4",
+          "size": 55455,
+          "sha256": "318c387527bbf5341181dff2c9d3306d8befec978b7e94a35f16049bf2f1919b",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "56.543667",
+              "size": "55455"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 1,
+                "duration": "56.543667"
+              }
+            ]
+          }
+        }
+      ],
+      "tracks": {
+        "microphone": {
+          "sampleRate": 48000,
+          "channels": 2,
+          "sampleCount": 5732352,
+          "checkpointCount": 2,
+          "checkpointInputSampleCounts": [
+            2880512,
+            2851840
+          ],
+          "finalSha256": "c733a7dbdadd010328973675a651a5a97bf3d3f69f96d042623da96c51ad928f",
+          "incomplete": false
+        },
+        "system": {
+          "sampleRate": 48000,
+          "channels": 1,
+          "sampleCount": 2713088,
+          "checkpointCount": 2,
+          "checkpointInputSampleCounts": [
+            1440256,
+            1272832
+          ],
+          "finalSha256": "318c387527bbf5341181dff2c9d3306d8befec978b7e94a35f16049bf2f1919b",
+          "incomplete": false
+        }
+      },
+      "provenance": {
+        "sourceCommit": null,
+        "sourceFingerprint": null,
+        "executableSha256": null,
+        "note": "No per-recording source fingerprint was preserved; do not use this row for exact-artifact acceptance."
+      }
+    },
+    {
+      "recording": "Meeting 20_09_26_10_31_22_2026-09-20_07-31",
+      "status": "completed",
+      "durationSeconds": 105.509214384,
+      "sampleRate": 48000,
+      "files": [
+        {
+          "name": "audio.mp4",
+          "relativePath": "Meeting 20_09_26_10_31_22_2026-09-20_07-31/audio.mp4",
+          "size": 1489926,
+          "sha256": "ad08a224a6740d255f6d5aa75a3144f7768ec3c487c08438dc54389f6d2ff756",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "81.621333",
+              "size": "1489926"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 1,
+                "duration": "81.621333"
+              }
+            ]
+          }
+        },
+        {
+          "name": "microphone.mp4",
+          "relativePath": "Meeting 20_09_26_10_31_22_2026-09-20_07-31/microphone.mp4",
+          "size": 1981241,
+          "sha256": "7159a9123092496b914b4ee842081729eddc31c1933cab95704374d4c846777b",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "81.823333",
+              "size": "1981241"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 2,
+                "duration": "81.823333"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system.mp4",
+          "relativePath": "Meeting 20_09_26_10_31_22_2026-09-20_07-31/system.mp4",
+          "size": 307018,
+          "sha256": "bc87c1bd71fd32c92c189241285e9de455aa50c35509250782a8f45c1bd14911",
+          "ffprobe": {
+            "probeExit": 0,
+            "decodeExit": 0,
+            "decodeStderr": "",
+            "format": {
+              "duration": "44.831667",
+              "size": "307018"
+            },
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 1,
+                "duration": "44.831667"
+              }
+            ]
+          }
+        }
+      ],
+      "tracks": {
+        "microphone": {
+          "sampleRate": 48000,
+          "channels": 2,
+          "sampleCount": 7853056,
+          "checkpointCount": 3,
+          "checkpointInputSampleCounts": [
+            2880512,
+            2880512,
+            2092032
+          ],
+          "finalSha256": "7159a9123092496b914b4ee842081729eddc31c1933cab95704374d4c846777b",
+          "incomplete": false
+        },
+        "system": {
+          "sampleRate": 48000,
+          "channels": 1,
+          "sampleCount": 2150912,
+          "checkpointCount": 2,
+          "checkpointInputSampleCounts": [
+            1440256,
+            710656
+          ],
+          "finalSha256": "bc87c1bd71fd32c92c189241285e9de455aa50c35509250782a8f45c1bd14911",
+          "incomplete": false
+        }
+      },
+      "provenance": {
+        "sourceCommit": null,
+        "sourceFingerprint": null,
+        "executableSha256": null,
+        "note": "No per-recording source fingerprint was preserved; do not use this row for exact-artifact acceptance."
+      }
+    }
+  ]
+}

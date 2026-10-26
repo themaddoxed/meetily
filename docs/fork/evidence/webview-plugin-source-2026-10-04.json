@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "scope": "Locked plugin source inspection only; no plugin executed or app launched",
+  "plugins": [
+    {
+      "name": "tauri-plugin-dialog",
+      "version": "2.7.1",
+      "crate_sha256": "65981abb771e74e571a38196c3baa11c459379164791eba0e67abc1a5fac9884",
+      "matches_Cargo_lock": true,
+      "source_files": [
+        {
+          "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-plugin-dialog-2.7.1/src/lib.rs",
+          "sha256": "726c52d73872addaa3abffe57eea435014edb36aedc22900b22bc0d6b7792700"
+        }
+      ]
+    },
+    {
+      "name": "tauri-plugin-notification",
+      "version": "2.3.3",
+      "crate_sha256": "01fc2c5ff41105bd1f7242d8201fdf3efd70749b82fa013a17f2126357d194cc",
+      "matches_Cargo_lock": true,
+      "source_files": [
+        {
+          "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-plugin-notification-2.3.3/src/lib.rs",
+          "sha256": "2b1d84ae4cb60f6a44067110090ebb79c40ef10fc99fd46ec115a063a7ecb356"
+        }
+      ]
+    },
+    {
+      "name": "tauri-plugin-single-instance",
+      "version": "2.3.7",
+      "crate_sha256": "acba6b5ca527a96cdfcc96ae09b09ccb91ddff5e33978ca6873b96ea16bb404c",
+      "matches_Cargo_lock": true,
+      "source_files": [
+        {
+          "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-plugin-single-instance-2.3.7/src/lib.rs",
+          "sha256": "d0b835908815e77472d9b95b23360f63d8e37ca8cff064512b4c294c86523fa2"
+        },
+        {
+          "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-plugin-single-instance-2.3.7/src/platform_impl/macos.rs",
+          "sha256": "aa5af11494de24a3feafabd6ae29c070f2f56149a9ebcc08aae32351ec56c4e3"
+        }
+      ]
+    },
+    {
+      "name": "tauri-plugin-store",
+      "version": "2.4.3",
+      "crate_sha256": "6c72dda16786eb4a3f903e43a17b64d8d78dc0f00fe2aa4b757c28f617a8630b",
+      "matches_Cargo_lock": true,
+      "source_files": [
+        {
+          "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-plugin-store-2.4.3/src/lib.rs",
+          "sha256": "9d607cc4c2d55da10a3d91d216d7a765ee326b98157b82d3e9b94f0f6ffa642a"
+        }
+      ]
+    }
+  ],
+  "observations": {
+    "single_instance": "macOS setup notifies or creates identifier-derived /tmp socket, can exit second process, removes socket at lifecycle boundaries; callback must focus admitted window only. Not zero-side-effect bootstrap.",
+    "store": "setup manages empty StoreState; Exit event saves every loaded store. Recovery must not load/register stores inadvertently.",
+    "remaining": "Notification/dialog desktop initialization, exact runtime plugin registration timing, CSP/IPC transport, managed-state constructors and native WebView store continuity still require full source/runtime admission."
+  },
+  "product_source_changed": false,
+  "implementation_admitted": false,
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

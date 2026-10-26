@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "createdAt": "2026-09-21T05:01:31Z",
+  "sourceCommit": "1ae518a1c90e3175539ac03ab286b5519d7e28fe",
+  "sourceFingerprint": "4bfe56ffe5396445cec3957248a066cce52e22f9f1f7f4b284be4548df991b5e",
+  "command": "./scripts/check.sh --full",
+  "durationSeconds": 393,
+  "execution": "outside sandbox with Xcode and local sherpa-onnx/offline artifacts",
+  "stages": {
+    "patchWhitespace": "PASS",
+    "productionPolicy": "PASS",
+    "frontendLint": "PASS",
+    "typescript": "PASS",
+    "frontendNodeSuite": "402 passed, 0 failed",
+    "frontendVitest": "61 passed, 0 failed",
+    "criticalPlaywright": "26 passed, 0 failed",
+    "productionFrontendBuild": "PASS",
+    "rustFormat": "PASS",
+    "workspaceClippy": "PASS",
+    "workspaceRustTests": "469 passed, 0 failed, 5 ignored",
+    "packagedFfmpegRecovery": "1 passed, 0 failed",
+    "migrationStagingCore": "33 migration command/core tests + 1 database-entry-point regression passed, 0 failed; Tauri prepare/publish/status boundary, atomic UUID-temporary copy and hard-link publication, symlink-safe destination validation, monotonic journal phases, resumable publish/readback, durable journal, inter-process lock, checked disk budget, caller-side statvfs, incomplete-journal guard across startup/check/import/fresh paths, SQLite WAL trio close/reopen integrity, and no-clobber verification included",
+    "webViewMigrationProtocol": "12 tests passed, 0 failed; single readonly IndexedDB snapshot transaction, explicit localStorage allowlist, per-entry/package checksums, schema validation including optional timing fields, identity-bound idempotent import marker and rollback"
+  },
+  "notes": [
+    "The escalated run was used only for local tests and artifact inspection; no application launch, TCC reset, user data migration, commit, push, or publication was performed.",
+    "FORK-037 now has registered Tauri prepare/publish/status commands around the verified staging core and a single-transaction IndexedDB snapshot with identity-bound markers; a real old-to-new bundle-ID upgrade remains open.",
+    "The current Universal .app and DMG were rebuilt outside the sandbox from exact commit 1ae518a and source fingerprint 4bfe56ff; the DMG verified and its mounted app matched the verified Universal bundle. The package remains diagnostic because signing/notarization and native smoke are absent; no app launch or TCC prompt was performed."
+  ],
+  "verifiedAt": "2026-09-21T12:33:23Z"
+}

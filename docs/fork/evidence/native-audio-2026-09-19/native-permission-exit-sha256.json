@@ -1,0 +1,10 @@
+{
+  "native-permission-exit-result.json": "fdb59c8c7864858801228c9b917c315995aba4d3ba19a05e83edfc4d37a0b220",
+  "preflight-cancel-result.json": "622ade9e7f32ac237ada79d6da747352ee4df4adfe6f6abb3fedf6307e7fd45f",
+  "ax-permission-allow-recording.txt": "7b08b62c114dd51098831d871cffc64d05c1fcb76236350de1e07d74a44c71c4",
+  "ax-preflight-paused.txt": "5549bd91dc7ee518e8f5cfbfa2fdd3b5c0f1d7892d595f79c65bc602fa450b01",
+  "ax-preflight-paused-later.txt": "5549bd91dc7ee518e8f5cfbfa2fdd3b5c0f1d7892d595f79c65bc602fa450b01",
+  "ax-preflight-resumed.txt": "3ffbb1d9259d002b50b2dbcb2bd90a65980a029dc8cc74f5439fdd0983ff7ba4",
+  "app-preflight-cancel.stderr.log": "031c1679b9a88e0629b2a8596bb491a677a75a18bfe51a59b914b9d58699b4f2",
+  "app-preflight-allow.stderr.log": "1f95e692397519ef4aaa74ccca010f03eb19d8e7ae6ebf241598a9f46d482020"
+}

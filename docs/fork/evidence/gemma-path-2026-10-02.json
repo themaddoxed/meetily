@@ -1,0 +1,131 @@
+{
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "scope": "FORK-133 source and isolated fixture verification",
+  "local_sources": [
+    {
+      "commit": "44d54273264b98ff6cdd5354191bcd5b9264c2d8",
+      "ancestor_check_exit": 0
+    },
+    {
+      "commit": "ee8ae69e02c41c532ee7b41791ee31c608822428",
+      "ancestor_check_exit": 0
+    }
+  ],
+  "inspected_paths": [
+    {
+      "path": "frontend/src-tauri/src/model_download.rs",
+      "sha256": "0c36db0e0acb64dec301e22dc1768cd8317f394abd60058a4e6a35432d0949c9",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/models.rs",
+      "sha256": "62eb8cdaa640a1e432614922d83dca884eda7ff8a944e89e035b88cd7f2cb8c4",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/model_manager.rs",
+      "sha256": "fa084e7f78ead27662e2f8804b49bcb14c75841118338932700f02946abb3958",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/client.rs",
+      "sha256": "d944994753b0ef103e183ccf311c46045d33e436642926183164c4f653b61e49",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/commands.rs",
+      "sha256": "81879de11f7a30e3d905c310ade23eb224d33cffe95b0489ec176d732ff3c9ef",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/BuiltInModelManager.tsx",
+      "sha256": "9b7990b563f2b4bff4112c3cd7024bb89f52b406f49f8432aa362404885ad8a8",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/ModelSettingsModal.tsx",
+      "sha256": "5d60ea1e8d05a77ee027ac1b24d371dc863019556954a7b1f35e70d00022374d",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/SummaryModelSettings.tsx",
+      "sha256": "3d4a6b3f517bdc01cbb027542fc00c78264cc80c788edc28dddeb65a328b9168",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/lib/builtin-ai-models.ts",
+      "sha256": "473b8714d8acb3fe80b110852c9e0d6c55a1e290039ab46cf8141dc6296c5efd",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/lib/onboarding-summary-model.ts",
+      "sha256": "6a0dbbbdb44c7a3b80b3d9b986689d32b9c14d5c3345463649a78685ca11ce46",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/onboarding/steps/SetupOverviewStep.tsx",
+      "sha256": "e4a6b5bbbc269f56ee4eadba291da056982e84fb9de9571fed2fb8710d4f543b",
+      "matches_base": true
+    },
+    {
+      "path": "llama-helper/src/main.rs",
+      "sha256": "7cb1aa8672065e9583f4dc38d5d3eee63deb01c05c8ee04cf4edf155c91eac68",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/api/api.rs",
+      "sha256": "81f4ead67a83e18bb21592337800a5b24a2dcf80cd80ba43883789ee7e0ffb89",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/setting.rs",
+      "sha256": "a0a4be3df825b04da24cf64c7faffd82156b483a599feca6038c0833ce27a063",
+      "matches_base": true
+    }
+  ],
+  "checks": {
+    "shared_downloader": {
+      "exit": 0,
+      "passed": 15,
+      "log": "/private/tmp/meetily-gemma-download-fixtures.log",
+      "command": "cargo test --locked -p meetily --lib model_download::tests -- --nocapture"
+    },
+    "selection_node": {
+      "exit": 0,
+      "passed": 12,
+      "log": "/private/tmp/meetily-gemma-selection-fixtures.log",
+      "test_files": [
+        "tests/lib/builtin-ai-models.test.mjs",
+        "tests/lib/onboarding-summary-model.test.mjs",
+        "tests/model-config-react-effects.test.mjs"
+      ]
+    },
+    "gemma_catalog_rust": {
+      "status": "PASS",
+      "log": "/private/tmp/meetily-gemma-catalog-fixtures.log",
+      "command": "cargo test --locked -p meetily --lib gemma -- --nocapture",
+      "exit": 0,
+      "passed": 7,
+      "failed": 0,
+      "ignored": 0
+    },
+    "browser_first_attempt": {
+      "exit": 1,
+      "tests_executed": 0,
+      "reason": "Missing default Chromium cache; retry uses existing /private/tmp/meetily-integration-browsers",
+      "log": "/private/tmp/meetily-gemma-ui-report.json"
+    },
+    "onboarding_browser": {
+      "exit": 0,
+      "passed": 1,
+      "failed": 0,
+      "fixture_only": true,
+      "log": "/private/tmp/meetily-gemma-ui-report-confirmed.json"
+    }
+  },
+  "native_generation": "NOT_RUN",
+  "remote_weight_bytes_verified": false,
+  "public_release_ready": false,
+  "candidate_source_matches": true,
+  "candidate_worktree": ".worktrees/main-features-2026-10-02"
+}

@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-04",
+  "scope": "Existing legacy IDB import mixed-key scheduling only; not combined coordinator/schema implementation",
+  "task_root": "/private/tmp/meetily-webview-mixed-id-fix-2026-10-04",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "branch": "themaddoxed/webview-mixed-id-2026-10-04",
+  "source_before_sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+  "paths": [
+    {
+      "path": "frontend/src/services/indexedDBService.ts",
+      "sha256": "7911d22335c1761e0af3d9da82e6d68ca1970cb0b0f67abbaec54dcab1d7c62c"
+    },
+    {
+      "path": "frontend/tests/indexeddb-migration-keys.spec.ts",
+      "sha256": "def77eca2308a04eb2657fa4ac1daacb20c51c960ef911a6c8d1a6c3ea859f6f"
+    }
+  ],
+  "regression": {
+    "red_exit": 1,
+    "red_failed": 1,
+    "red_passed": 1,
+    "green_exit": 0,
+    "green_passed": 4,
+    "red_log": "/private/tmp/meetily-mixed-id-regression-red-2026-10-04.log",
+    "green_log": "/private/tmp/meetily-mixed-id-regression-v2-2026-10-04.log",
+    "red_log_sha256": "3f405bc7c1430790ebddc074166e3695d3004896addbee7517598065d94d52e1",
+    "green_log_sha256": "ca80e1190a963901218ead0e329d5a3fc47f842e6ce847092ee27fc6f93e6c91",
+    "note": "Original two test scenarios unchanged; two added scenarios cover the observed v1 boundary regression and multiple reservations."
+  },
+  "checks": {
+    "frontend": {
+      "exit": 0,
+      "node_passed": 424,
+      "vitest_passed": 61,
+      "log": "/private/tmp/meetily-mixed-id-frontend-v2-2026-10-04.log",
+      "log_sha256": "355b64c248db73512ed1ec884fff4719ebb50cb0343c771d52f493049e6b790e"
+    },
+    "typecheck": {
+      "exit": 0,
+      "log": "/private/tmp/meetily-mixed-id-types-v2-2026-10-04.log",
+      "log_sha256": "056c34d0e1c885a6957c09198ddfc28dc35d7a9a60e6a54550056dd65b471b58"
+    },
+    "lint": {
+      "exit": 0,
+      "log": "/private/tmp/meetily-mixed-id-lint-v2-2026-10-04.log",
+      "log_sha256": "f554b0edfdc1ec70e6005cf5fc6ad5d720033eba53a2ceeb7f5c5afc84fbb393"
+    },
+    "critical_browser": {
+      "status": "PASS",
+      "log": "/private/tmp/meetily-mixed-id-critical-v2-2026-10-04.log",
+      "exit": 0,
+      "passed": 29,
+      "log_sha256": "d39e9166a82c6153e4123a9f364b0d1698ad5073c00ec412c70bcee19ce89c27"
+    },
+    "build": {
+      "status": "PASS",
+      "log": "/private/tmp/meetily-mixed-id-build-v2-2026-10-04.log",
+      "exit": 0,
+      "log_sha256": "b8c267e08f1c93a747c4c917693706b1e72e927da235010cce03621bf285aad2"
+    }
+  },
+  "independent_code_review": [
+    {
+      "path": "/Users/developer/Desktop/meeting-minutes/docs/fork/webview-mixed-id-fix-v2-spec-review-2026-10-04.md",
+      "sha256": "48d6cd754cc7f24bc1da6b6315da375de6596fe681902e6957ceaee4cecb818a",
+      "result": "bounded C0/I0/M0, independently read by root"
+    },
+    {
+      "path": "/Users/developer/Desktop/meeting-minutes/docs/fork/webview-mixed-id-fix-v2-quality-review-2026-10-04.md",
+      "sha256": "682e9221c2a7ca2e37c589f79c1226a6b073ffcbb2d160d071f2fd630ecf357a",
+      "result": "bounded C0/I0/M0, independently read by root"
+    }
+  ],
+  "root_product_unchanged": true,
+  "source_refs_changed": false,
+  "committed": false,
+  "integrated": false,
+  "native_or_release_ready": false,
+  "status": "FIX_PROVEN_BOUNDED_CANDIDATE",
+  "reason": "Generated rows skip only keys reserved by explicit package rows; explicit rows and marker queued after all generated allocations in same transaction.",
+  "boundary_probe": {
+    "before": "/private/tmp/meetily-max-key-before.json",
+    "after": "/private/tmp/meetily-max-key-after.json"
+  },
+  "supersedes": "/Users/developer/Desktop/meeting-minutes/docs/fork/evidence/webview-mixed-id-fix-2026-10-04.json",
+  "patch": {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/integration-backups-2026-10-02/webview-mixed-id-fix-v2-2026-10-04.patch",
+    "sha256": "b28a2e9045805e310b438f7cc12619f83d23c98f75009ea712188d54991541d4"
+  },
+  "boundary_v2": {
+    "exit": 0,
+    "path": "/private/tmp/meetily-max-key-v2.json",
+    "sha256": "90b617e86e6e469762dad73fafe35f1fbe3b92dc3cca7ab8920aff5e422f1b82",
+    "outcome": "Actual public importer imported generated1 and explicit2^53, marker true"
+  },
+  "limits": [
+    "Full project --full/Rust and release gates not run for this bounded frontend candidate",
+    "No native WKWebView, exact installed artifact, real user data, migration UI, SQLite/FS coordinator or power-loss evidence",
+    "Uncommitted isolated clone candidate only; main/dev product unchanged"
+  ],
+  "root_main_dev": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "dev_worktree_clean": true,
+  "bug_reproducer_outputs": {
+    "evidence": "/private/tmp/meetily-mixed-id-reports-2026-10-04/outputs/bug-reproducer-evidence.json",
+    "report": "/private/tmp/meetily-mixed-id-reports-2026-10-04/outputs/bug-reproducer-report.md",
+    "report_sha256": "52bea8381ea1dee98bd7c7f156b45a56270f61db92f7832419fb31263f0e79ab"
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

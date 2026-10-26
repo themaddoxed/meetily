@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-04",
+  "scope": "FEAT100 context plus FEAT101/102 questions and local model regression only",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "paths": [
+    {
+      "path": "frontend/src-tauri/src/api/api.rs",
+      "source_sha256": "21b3bd44bf41ce1d12a0d29c22c18a671e98d718a1738f36a6011f3e28d309e7",
+      "exists_in_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/meeting_context.rs",
+      "source_sha256": "64c28e74042a206c8ed4c1bc847165aa1741ee72f498921d62227c2ed3275558",
+      "exists_in_base": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/mod.rs",
+      "source_sha256": "ffd2a7a21a32fd16f69133d1c3066f6dd49a8cc8e3ac5bfa38f14adb077067c8",
+      "exists_in_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "source_sha256": "c74c350d01f5395c4e46d2aca6d962f48b674919d96dc45006229074b8c3aecf",
+      "exists_in_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/meeting_questions.rs",
+      "source_sha256": "4415b364a1fa35ffe36b55b3e40fa5f45b120c77a546118da8835774de3bbcf6",
+      "exists_in_base": false
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/client.rs",
+      "source_sha256": "0a512f4cbd1bd56f26461bd30a6b2d64534f620f69980b1927164ba1726a23bb",
+      "exists_in_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/sidecar.rs",
+      "source_sha256": "94d232e5e9a226246231fdc5785d0749f931fb691461287f06c9c382fd086baa",
+      "exists_in_base": true
+    },
+    {
+      "path": "frontend/src-tauri/tests/meeting_context.rs",
+      "source_sha256": "d067531d282955ee0bb82a5a28de91f75bb8804706acba81fafdca29caf190a9",
+      "exists_in_base": false
+    },
+    {
+      "path": "frontend/src-tauri/tests/meeting_questions.rs",
+      "source_sha256": "90fd76efb42e9019ad8ceebdd48c8647f0b0d50d3453548fe36798a4fdb7e002",
+      "exists_in_base": false
+    },
+    {
+      "path": "frontend/src-tauri/tests/meeting_questions_local_model.rs",
+      "source_sha256": "19d78d66e275d7b96fd30fcd6a5f0e1dfdbf58867c15c7629d171f4c6dc2f2dd",
+      "exists_in_base": false
+    },
+    {
+      "path": "frontend/src/app/meeting-details/page-content.tsx",
+      "source_sha256": "775f744d56111c9e3386f41cebfbce5a2669a7c80463c6e9c17a62aa753150bb",
+      "exists_in_base": true
+    },
+    {
+      "path": "frontend/src/components/MeetingDetails/MeetingQuestions.tsx",
+      "source_sha256": "85a78ae706c5bb32c51143c339e3eb631a9cd28007442441b74b56dc8abd7dff",
+      "exists_in_base": false
+    },
+    {
+      "path": "frontend/src/lib/i18n/catalog.ts",
+      "source_sha256": "32a6d571b04c889bc648a40d02465ede0768cfda565c88bafe0ade462919120c",
+      "exists_in_base": true
+    },
+    {
+      "path": "frontend/tests/meeting-questions.spec.ts",
+      "source_sha256": "c5f66bdde46069442ea8ccec71c8da2bec73f06a9c1e008bdb5ee480f6287725",
+      "exists_in_base": false
+    }
+  ],
+  "path_count": 14,
+  "patch_path": "/Users/developer/Desktop/meeting-minutes/.worktrees/integration-backups-2026-10-02/qa-transfer-candidate-2026-10-04.patch",
+  "patch_sha256": "547bc95e9b3b9cf5cb51b6b3fdc8b8878d80c0ae48cbe959d29ca20eedcacd59",
+  "root_refs_changed": false,
+  "product_root_changed": false,
+  "committed": false,
+  "native_or_release_ready": false,
+  "initial_full_gate": {
+    "exit_code": 1,
+    "log_path": "/private/tmp/meetily-qa-transfer-full-2026-10-04.log",
+    "log_sha256": "e41a8c666682c099d9f5f215f32ed11bb7e399a51d51d9fde3650a6f220c1cdd",
+    "stages": [
+      {
+        "status": "PASS",
+        "stage": "Patch whitespace",
+        "seconds": 1,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "Production policy",
+        "seconds": 5,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "Frontend lint",
+        "seconds": 6,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "TypeScript",
+        "seconds": 9,
+        "exit_code": 0
+      },
+      {
+        "status": "FAIL",
+        "stage": "Frontend unit tests",
+        "seconds": 57,
+        "exit_code": 1
+      },
+      {
+        "status": "PASS",
+        "stage": "Critical browser recovery and contracts",
+        "seconds": 94,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "Production frontend build",
+        "seconds": 40,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "Rust format",
+        "seconds": 2,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "Rust clippy",
+        "seconds": 41,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "Rust tests",
+        "seconds": 305,
+        "exit_code": 0
+      },
+      {
+        "status": "PASS",
+        "stage": "Packaged FFmpeg recovery",
+        "seconds": 23,
+        "exit_code": 0
+      }
+    ],
+    "passed": 10,
+    "failed": 1,
+    "duration_seconds": 583
+  },
+  "invalid_repeat": {
+    "status": "ABORTED_PREPARATION_FAILED",
+    "exit_code": 143,
+    "reason": "Repeat started before harness patch preparation succeeded; still original 14 paths",
+    "log_path": "/private/tmp/meetily-qa-transfer-full-fixed-2026-10-04.log",
+    "log_sha256": "bf052835636cfea50434c9ae691ee0618cdfd06a72ca77589f6cc38c4493591e"
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

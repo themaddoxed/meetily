@@ -1,0 +1,11 @@
+{
+  "sourceFingerprint": "c7a099438522206b7a4bec029e10ea3caff3994f24f3df2f8eb4916cfaa0eb8e",
+  "fullCheckExit": 1,
+  "failedStage": "Rust clippy: ort-sys empty library search path; retry with explicit ORT_LIB_LOCATION pending",
+  "nodeTestsPassed": 400,
+  "vitestPassed": 48,
+  "browserPassed": 26,
+  "rustPassedIncludingSeparateFFmpegRecovery": 519,
+  "rustIgnored": 10,
+  "logSha256": "47d101252bc0ee79ebe54ab1095a5b8a8f5d388198f0f3bc23b4dad5a6ca1b4c"
+}

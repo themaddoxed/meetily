@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-04",
+  "scope": "Task0 acquisition progress; not complete plan admission",
+  "input_families": {
+    "ffmpeg": {
+      "fresh_packages": 2,
+      "hash_size_architecture": "PASS",
+      "intel_and_arm_byte_identical_publisher_archives": "OBSERVED",
+      "complete_producer_source_license_provenance": "NOT_VERIFIED"
+    },
+    "onnxruntime": {
+      "fresh_packages": 2,
+      "locked_distribution_package_hash_binding": "PASS",
+      "hash_architecture": "PASS",
+      "complete_producer_source_license_provenance": "NOT_VERIFIED"
+    },
+    "sherpa_onnx_and_models": {
+      "fresh_packages": 4,
+      "size_sha256": "PASS",
+      "static_archive_libraries_expected_architecture": 30,
+      "observed_root_licenses_match_bundled_texts": "PASS (sherpa trailing whitespace difference)",
+      "complete_producer_source_license_provenance": "NOT_VERIFIED"
+    }
+  },
+  "total_fresh_inputs_matching_manifest": 8,
+  "fresh_acquisition_receipt_authentication": "NOT_IMPLEMENTED/NOT_VERIFIED",
+  "same_run_replay_rejection": "NOT_MET by current size/hash-only diarization verifier; identical prior-run copies accepted",
+  "missing_corrupt_diarization_rejection": "4 missing and 4 same-size corrupt probes REJECTED; no build invoked",
+  "runner_capacity_and_dual_host_jobs": "NOT_RUN",
+  "exact_clean_source_and_final_plan_reviews": "NOT_ADMITTED",
+  "ci_product_implementation": "NOT_STARTED",
+  "public_release_gates": "NOT_RUN",
+  "inputs": [
+    {
+      "path": "docs/fork/evidence/macos-ci-onnx-source-census-2026-10-04.json",
+      "sha256": "8ec371d733fd5fcd71c7d1d76080b91437f3b35de3c39c705ad1f30f958439fb"
+    },
+    {
+      "path": "docs/fork/evidence/macos-ci-ffmpeg-source-census-2026-10-04.json",
+      "sha256": "999f4ac2038cf2423e1284e79f21838ee187b492ba988ed21a1d3562269cd248"
+    },
+    {
+      "path": "docs/fork/evidence/macos-ci-ffmpeg-intel-publisher-binding-2026-10-04.json",
+      "sha256": "016221a4f2c3dcd6f2f64f58a7671537234303c39cefe4e91cc9787da1d592cf"
+    },
+    {
+      "path": "docs/fork/evidence/macos-ci-ffmpeg-arm-publisher-binding-2026-10-04.json",
+      "sha256": "616dfc1532a2cfe762929e8aee17d3deb95ae9089bb9f774423e1ce8b3252df0"
+    },
+    {
+      "path": "docs/fork/evidence/macos-ci-diarization-source-census-2026-10-04.json",
+      "sha256": "d88d9614ba4988c5e567eb20fb7d742231bb1ad5a6d9f2d93fe69584c2db880a"
+    }
+  ],
+  "source_code_changed": false,
+  "downloaded_code_executed": false
+}

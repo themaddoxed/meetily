@@ -1,0 +1,8 @@
+{
+  "round2-denied-result.json": "26b623ed76ad21c5d21933646073e15bddd560860c9d7bb94831f8c18b2db620",
+  "round2-denied-recording.ax.txt": "be4ebdf4d217992531fc91d3fd91c77234ae1d2c365dc04cbdb12e1343f34428",
+  "round2-denied-end.ax.txt": "8510eb3fb7f3fe2ef157d73a5fbec476a68e7b61a2877fd5a2561b0ed145af86",
+  "round2-denied-settings.ax.txt": "cbcc7d855c04fbfbe774d3e9b54a398ee383348c26f23bcac70ae1a362e1498c",
+  "round2-restored-settings.ax.txt": "9b3ef142a7d7a40879604baec5e82cf76f61dc00d82ed4aa20d71fa1763ef976",
+  "round2-denied.stderr.log": "89961b6c5b325306def0f76ecd7c50e3be0297628c4159b2a5328af5f2dff83a"
+}

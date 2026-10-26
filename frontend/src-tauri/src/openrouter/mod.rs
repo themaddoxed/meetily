@@ -1,0 +1,6 @@
+#[path = "openrouter.rs"]
+pub mod client;
+pub mod commands;
+
+pub use client::*;
+// Don't re-export commands to avoid conflicts - lib.rs will import directly

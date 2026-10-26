@@ -1,0 +1,8 @@
+{
+  "permissions-tests-final.log": "226fdb844326f6a8d078134381056e9f5896a65e1297fe99e6c4613c6906e826",
+  "recording-session-tests.log": "d2979f3f9767de4f4db62fec8194cc936bd7b70fde4842f8846caec4f5c63497",
+  "permission-preflight-cancel.log": "0c6cb11048cec700b5f38c1d519a81d936c46129fc50406fd1ee4d8cf617f5c4",
+  "permission-preflight-downgrade.log": "983060f4d3ee09d24c0a0e6711b105670607727e5c0e29bc6953715129038cd6",
+  "permission-preflight-denial-retry.log": "e7191d79c4921dbdc7814dab68a62110423694598facba6eff7fc1e53804a964",
+  "rustfmt-permission-preflight-final.log": "08a6be6bafe82fe11046f4ad220ea7edc6b49920d35171c608fcbe37474c3f41"
+}

@@ -1,0 +1,180 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXWindow | AXTitle=Экран блокировки
+ AXRole=AXGroup
+  AXRole=AXSplitGroup
+   AXRole=AXGroup
+    AXRole=AXTextField | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle= | AXDescription=Поиск | AXEnabled=1
+    AXRole=AXScrollArea
+     AXRole=AXOutline | AXDescription=Боковое меню | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Даниил Кузин, Учетная запись Apple | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Семья | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Wi‑Fi | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Bluetooth | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Сеть | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=VPN | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Энергия | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Основные | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Дисплеи | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Заставка | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Обои | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Оформление | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Пункт управления | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Рабочий стол и Dock | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Универсальный доступ | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Siri | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Spotlight | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Уведомления | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Звук | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Фокусирование | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Экранное время | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Экран блокировки | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Конфиденциальность и безопасность | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Пароль для входа | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Пользователи и группы | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Учетные записи интернета | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Game Center | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=iCloud | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Wallet и Apple Pay | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Клавиатура | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Мышь | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Принтеры и сканеры | AXEnabled=1
+      AXRole=AXColumn
+     AXRole=AXScrollBar | AXValue=0.1368421052631579 | AXEnabled=1
+      AXRole=AXValueIndicator | AXValue=0.1368421052631579
+      AXRole=AXButton
+      AXRole=AXButton
+      AXRole=AXButton
+      AXRole=AXButton
+   AXRole=AXSplitter | AXValue=252 | AXEnabled=0
+   AXRole=AXGroup
+    AXRole=AXGroup
+     AXRole=AXScrollArea
+      AXRole=AXGroup | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Включать заставку при отсутствии активности | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Предупреждение Дисплей перейдет в режим сна перед запуском заставки. | AXEnabled=1
+       AXRole=AXPopUpButton | AXValue=1 час | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Выключать дисплей при отсутствии активности | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Предупреждение Чем дольше не выключается дисплей, когда этот Mac бездействует, тем выше может быть потребление энергии. | AXEnabled=1
+       AXRole=AXPopUpButton | AXValue=30 минут | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Запрашивать пароль при появлении заставки или выключении дисплея | AXEnabled=1
+       AXRole=AXPopUpButton | AXValue=Никогда | AXEnabled=1
+      AXRole=AXGroup | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Показывать крупные часы | AXEnabled=1
+       AXRole=AXPopUpButton | AXValue=На заблокированном экране | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Показывать время в 24‑часовом формате | AXEnabled=1
+       AXRole=AXCheckBox | AXValue=1 | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Показывать имя пользователя и фото | AXEnabled=1
+       AXRole=AXCheckBox | AXValue=1 | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Показывать подсказки паролей | AXEnabled=1
+       AXRole=AXCheckBox | AXValue=0 | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Показывать сообщение на заблокированном экране | AXEnabled=1
+       AXRole=AXCheckBox | AXDescription=Показывать сообщение на заблокированном экране | AXValue=0 | AXEnabled=1
+       AXRole=AXButton | AXDescription=Задать… | AXEnabled=0
+      AXRole=AXHeading | AXDescription=При смене пользователя | AXEnabled=1
+      AXRole=AXGroup | AXEnabled=1
+       AXRole=AXRadioGroup | AXEnabled=1
+        AXRole=AXStaticText | AXValue=Показывать в окне входа | AXEnabled=1
+        AXRole=AXRadioButton | AXDescription=список пользователей | AXValue=1 | AXEnabled=1
+        AXRole=AXRadioButton | AXDescription=поля имени и пароля | AXValue=0 | AXEnabled=1
+       AXRole=AXStaticText | AXValue=Показывать кнопки «Режим сна», «Перезагрузить», «Выключить» | AXEnabled=1
+       AXRole=AXCheckBox | AXValue=1 | AXEnabled=1
+      AXRole=AXButton | AXDescription=Параметры Универсального доступа… | AXEnabled=1
+      AXRole=AXButton | AXDescription=Справка | AXEnabled=1
+ AXRole=AXToolbar
+  AXRole=AXGroup
+   AXRole=AXGroup | AXEnabled=1
+    AXRole=AXButton | AXDescription=Назад | AXEnabled=1
+    AXRole=AXMenuButton | AXDescription=Вперед | AXEnabled=0
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXButton | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXGroup
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXStaticText | AXValue=Экран блокировки | AXEnabled=1

@@ -1,0 +1,46 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXWindow | AXTitle=meetily
+ AXRole=AXGroup | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXScrollArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+    AXRole=AXWebArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Expand sidebar | AXDescription=Expand sidebar | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXPopUpButton | AXTitle=About Meetily | AXDescription=About Meetily | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Home | AXDescription=Home | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Recording in progress | AXDescription=Recording in progress | AXHelp= | AXValue= | AXEnabled=0
+     AXRole=AXButton | AXTitle=Import Audio | AXDescription=Import Audio | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Meeting Notes | AXDescription=Meeting Notes | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Settings | AXDescription=Settings | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXPopUpButton | AXTitle= | AXDescription=About Meetily | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Recording | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=00:06 | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Listening for speech... | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Speak to see live transcription | AXEnabled=1
+      AXRole=AXButton | AXTitle=Pause recording | AXDescription=Pause recording | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXButton | AXTitle=Stop recording | AXDescription=Stop recording | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle=Notifications alt+T | AXDescription=Notifications alt+T | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+        AXRole=AXButton | AXTitle=Close toast | AXDescription=Close toast | AXHelp= | AXValue= | AXEnabled=1
+        AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+         AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=🔴 Recording Started | AXEnabled=1
+        AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+         AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Inform all participants this meeting is being recorded. | AXEnabled=1
+        AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+         AXRole=AXCheckBox | AXTitle=Don't show this again | AXDescription= | AXHelp= | AXValue=0 | AXEnabled=1
+         AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Don't show this again | AXEnabled=1
+        AXRole=AXButton | AXTitle=I've Notified Participants | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXButton | AXHelp=this button also has an action to zoom the window | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXGroup
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXStaticText | AXValue=meetily | AXEnabled=1

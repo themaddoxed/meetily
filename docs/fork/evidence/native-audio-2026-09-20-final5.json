@@ -1,0 +1,45 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprintBefore": "e645918f1723efe145348461a8850c1a7cd66a09d932346ac1067bbaea320998",
+  "sourceFingerprintAfter": "e645918f1723efe145348461a8850c1a7cd66a09d932346ac1067bbaea320998",
+  "architecture": "x86_64",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN",
+  "releaseEligible": false,
+  "buildExecutableSha256": "e72e6cf5935f1427427b46d4ab47ad38ec9cb02730653dd49e859e9ef568248e",
+  "packagedExecutableSha256": "2b3158904851ec399b870cf374fdc8b4398d9ab5badfea3eb1439031eefc9fe8",
+  "app": "target/diagnostic-dirty/fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c/run-20260920-permission-fast-fallback-final5/meetily.app",
+  "automated": {
+    "macosCaptureTests": "22 passed",
+    "recordingSessionTests": "48 passed, 1 ignored",
+    "permissionTests": "7 passed",
+    "frontendPolicyAndSurface": "25 passed",
+    "frontendPermissionPlaywright": "12 passed",
+    "releaseBuild": "PASS",
+    "codesignVerify": "PASS",
+    "gitDiffCheck": "PASS",
+    "strictClippy": "FAIL: 13 library findings and 16 test findings"
+  },
+  "native": {
+    "status": "NOT_RERUN_AFTER_TEST_ONLY_FINGERPRINT_CHANGE",
+    "equivalentRuntimeEvidence": "native-audio-2026-09-20-final4.json",
+    "reason": "The only change after final4 was a cfg(test) bounded-channel helper; the release executable SHA stayed identical. No new app launch or TCC reset was performed.",
+    "permissionSetup": "No additional permission prompt or TCC reset",
+    "priorRecordingFolder": "/Users/developer/Movies/meetily-recordings/Meeting 20_09_26_20_02_13_2026-09-20_17-02",
+    "priorMetadataStatus": "completed",
+    "priorSystemTrack": "no frames; microphone-only fallback"
+  },
+  "limits": [
+    "current exact final5 package has not been relaunched natively after the test-only source fingerprint change",
+    "physical microphone disconnect/reconnect was not exercised",
+    "full TCC denied/recovery matrix was not exercised",
+    "system audio delivered no test frames, so two-track mute/volume and pause/resume synchronization remain open",
+    "dirty source, ad-hoc signing, Intel-only artifact, and missing notarization prevent Alpha/release claims"
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

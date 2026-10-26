@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-03",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "task_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03",
+  "plan_sha256": "96094ccecd7e317004f555176d7ec013fb518d40a8083f9938075a8f61b03715",
+  "source_census": "docs/superpowers/plans/2026-10-02-theme-census.json",
+  "source_census_status": "unchanged 18 source hashes admitted; previous plan hash is historical provenance",
+  "oracle_sha256": "c58fead9f4727a15ef36cf595933653c4ae9e0472f36ee0b425a699fb0b9330d",
+  "eslint_exit": 0,
+  "typecheck_exit": 0,
+  "browser": {
+    "sandbox_exit": 1,
+    "sandbox_tests": 0,
+    "sandbox_cause": "listen EPERM 127.0.0.1:3118",
+    "authorized_loopback_exit": 1,
+    "passed": 2,
+    "failed": 6,
+    "reload_reached": false,
+    "log": "/private/tmp/meetily-theme-oracle-round3.log",
+    "log_sha256": "a27ddfc7c69078bc422445d62aa7191c32ab11e1e2cfc44b5a52d281a9c10924",
+    "artifacts": "/private/tmp/meetily-theme-oracle-round3"
+  },
+  "production_changed": false,
+  "snapshots_changed": false,
+  "native": "NOT_RUN",
+  "release": "NOT_RUN",
+  "plan_amendment_review": "SPEC/QUALITY PASS C0 I0",
+  "reviews": [
+    "docs/fork/theme-oracle-round3-spec-review-2026-10-03.md",
+    "docs/fork/theme-oracle-round3-quality-review-2026-10-03.md",
+    "docs/fork/theme-prepaint-amendment-quality-review-2026-10-03.md"
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

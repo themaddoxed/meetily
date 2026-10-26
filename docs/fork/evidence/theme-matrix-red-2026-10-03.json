@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-03",
+  "task": "FORK-152",
+  "task_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03",
+  "branch": "feature/semantic-theme-2026-10-03",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "source_test_sha256": "39a305239efd6bed0b63f0216b449c32441c184fd7855bd5629a43149bff3ad1",
+  "changed_product_paths": [
+    "frontend/tests/theme-foundation.spec.ts"
+  ],
+  "production_changes": [],
+  "runs": [
+    {
+      "name": "matrix RED round1",
+      "exit_status": 1,
+      "passed": 0,
+      "failed": 6,
+      "reload_cases_reached": 0,
+      "cleanup_error": "route continued during context teardown; report and traces preserved",
+      "log_sha256": "38c4d064e698dc5135d9980fa2110ecc99e72314b00550f156d5407ce73a2945"
+    },
+    {
+      "name": "matrix RED round2",
+      "exit_status": 1,
+      "passed": 0,
+      "failed": 6,
+      "reload_cases_reached": 0,
+      "cleanup_error": null,
+      "reason": "All six stored mode/OS rows fail root theme assertion while first CSS is held; scheme empty and dark=false while body absent.",
+      "log_sha256": "b319419f51b5a12e49fbfb770c92239140dba72ea91037396f780df184e89be3"
+    }
+  ],
+  "typecheck": {
+    "exit_status": 0,
+    "scope": "test before one-line cleanup wait addition; final check still required"
+  },
+  "diagnostic_limits": [
+    "No complete twelve-transition matrix PASS; reload not reached after navigation assertions failed.",
+    "First-renderable-frame, hydration and markup ordering assertions are not reached on this failing source.",
+    "Does not prove a visible wrong-theme frame.",
+    "No production correction, screenshot update, native or release acceptance."
+  ],
+  "framework_inspection": [
+    "Installed Next14.2.35 get-layer-assets.js sets stylesheet precedence.",
+    "Bundled React server writePreamble flushes styles before script/hoistable chunks.",
+    "useServerInsertedHTML inserts before closing head, not before first stylesheet.",
+    "These observations do not prove no allowed source seam can satisfy the contract."
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

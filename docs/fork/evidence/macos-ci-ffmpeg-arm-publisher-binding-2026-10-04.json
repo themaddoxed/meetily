@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-04",
+  "scope": "Observed byte-identical historical ARM package at candidate publisher URL; no signature/build/source/license completeness admission",
+  "publisher_page": {
+    "requested_url": "https://www.osxexperts.net/",
+    "lead_basis": "Unconfirmed candidate publisher; no origin assertion based on URL or filename",
+    "status": 200,
+    "final_url": "https://www.osxexperts.net/",
+    "bytes": 34849,
+    "sha256": "c272ce44792aa4d95d3ed5970fc9cf0bcc6485ed853b7dd4768cbb7cea26eca2"
+  },
+  "historical_archive_observation": {
+    "requested_url": "https://www.osxexperts.net/ffmpeg80arm.zip",
+    "name": "osxexperts-ffmpeg80arm.zip",
+    "downloaded_code_executed": false,
+    "lead_basis": "Historical archive URL candidate inferred from existing package basename; validated only by observed response and byte comparison",
+    "status": 200,
+    "final_url": "https://www.osxexperts.net/ffmpeg80arm.zip",
+    "bytes": 22400365,
+    "sha256": "0d4efcaf6a098430a708e0af694a84792938921fa126162787ae98c6151d7a95",
+    "members": [
+      "ffmpeg",
+      "__MACOSX/._ffmpeg"
+    ],
+    "raw_bytes": 51551944,
+    "raw_sha256": "77d2c853f431318d55ec02676d9b2f185ebfdddb9f7677a251fbe453affe025a",
+    "matches_project_arm_package": true,
+    "matches_project_arm_raw": true
+  },
+  "publisher_home_current_arm_links": [
+    "https://www.osxexperts.net/ffmpeg9arm.zip"
+  ],
+  "configuration_strings_observed_in_downloaded_member": [
+    "%sconfiguration: --prefix=/Volumes/tempdisk/sw --extra-cflags=-fno-stack-check --arch=arm64 --cc=/usr/bin/clang --enable-gpl --enable-libvmaf --enable-libopenjpeg --enable-libopus --enable-libmp3lame --enable-libx264 --enable-libx265 --enable-libvvenc --enable-libvpx --enable-libwebp --enable-libass --enable-libfreetype --enable-fontconfig --enable-libtheora --enable-libvorbis --enable-libsnappy --enable-libaom --enable-libvidstab --enable-libzimg --enable-libsvtav1 --enable-libharfbuzz --enable-libkvazaar --pkg-config-flags=--static --enable-ffplay --enable-neon --enable-runtime-cpudetect --disable-indev=qtkit --disable-indev=x11grab_xcb",
+    "--prefix=/Volumes/tempdisk/sw --extra-cflags=-fno-stack-check --arch=arm64 --cc=/usr/bin/clang --enable-gpl --enable-libvmaf --enable-libopenjpeg --enable-libopus --enable-libmp3lame --enable-libx264 --enable-libx265 --enable-libvvenc --enable-libvpx --enable-libwebp --enable-libass --enable-libfreetype --enable-fontconfig --enable-libtheora --enable-libvorbis --enable-libsnappy --enable-libaom --enable-libvidstab --enable-libzimg --enable-libsvtav1 --enable-libharfbuzz --enable-libkvazaar --pkg-config-flags=--static --enable-ffplay --enable-neon --enable-runtime-cpudetect --disable-indev=qtkit --disable-indev=x11grab_xcb"
+  ],
+  "publisher_license_page": {
+    "requested_url": "https://www.osxexperts.net/license.html",
+    "name": "osxexperts-license.html",
+    "downloaded_code_executed": false,
+    "lead_basis": "Historical archive URL candidate inferred from existing package basename; validated only by observed response and byte comparison",
+    "status": 200,
+    "final_url": "https://www.osxexperts.net/license.html",
+    "bytes": 12736,
+    "sha256": "2be05e9f5f0e3da03ec9c4b6d9d9adb59ef06eed95f33bf7a24650a0e43f7e2b",
+    "links": [
+      "index.html"
+    ]
+  },
+  "publisher_license_page_text_sha256": "0d9c2d47f2f80267b0e8ce4359e8bbd47df7d22c56bfddfb4de464ded048f096",
+  "license_scope": "Website license page contains Apache-2.0 with publisher copyright; it does not establish the license/source/notice requirements of the FFmpeg binary or linked components. Binary configuration string contains --enable-gpl. No legal-compliance conclusion.",
+  "raw_arm_matches_project_manifest": true,
+  "package_matches_github_asset": true,
+  "detached_signature": "NOT_VERIFIED",
+  "complete_build_source_license_provenance": "NOT_VERIFIED",
+  "ci_implementation_admitted": false,
+  "downloaded_binary_executed": false,
+  "retained_files": [
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/osxexperts-publisher.html",
+      "sha256": "c272ce44792aa4d95d3ed5970fc9cf0bcc6485ed853b7dd4768cbb7cea26eca2"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/osxexperts-ffmpeg80arm.zip",
+      "sha256": "0d4efcaf6a098430a708e0af694a84792938921fa126162787ae98c6151d7a95"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/osxexperts-license.html",
+      "sha256": "2be05e9f5f0e3da03ec9c4b6d9d9adb59ef06eed95f33bf7a24650a0e43f7e2b"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/osxexperts-binding-results.json",
+      "sha256": "67b33b15e84984ca7ebdea18d5be69205723898f11ed48a7202296185cf62729"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-04",
+  "status": "BOUNDED_FIRST_LAUNCH_CORRECTIONS_REVIEWED; implementation NOT_ADMITTED",
+  "v2_plan": {
+    "path": "docs/superpowers/plans/2026-10-04-webview-recovery-contract-v2.md",
+    "sha256": "2d68a99daa247f18d3442b805df9278765f4733e8521bb54818d96518dca4660"
+  },
+  "v2_reviews": [
+    {
+      "path": "docs/fork/webview-recovery-contract-v2-spec-review-2026-10-04.md",
+      "sha256": "0e62c06e44845bb9fcf5491da25ea0af6dfdee2d9a2fdb97bc5010a6491bcf02"
+    },
+    {
+      "path": "docs/fork/webview-recovery-contract-v2-quality-review-2026-10-04.md",
+      "sha256": "c44ba87b6a68fecf9482d3aae6b9aeadb0eb16c6d12c3b0873105a397e588081"
+    }
+  ],
+  "v3_plan": {
+    "path": "docs/superpowers/plans/2026-10-04-webview-recovery-contract-v3.md",
+    "sha256": "39b7bc3de8bb6f7e9a93207335fc8dcd33c67358be9a8ad9550fd1142a6b36f3"
+  },
+  "proposed_individual_paths": [
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "exists": true,
+      "sha256": "c74c350d01f5395c4e46d2aca6d962f48b674919d96dc45006229074b8c3aecf"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/setup.rs",
+      "exists": true,
+      "sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/commands.rs",
+      "exists": true,
+      "sha256": "4cd381cbb06b09d57dba0115b38aff10ff6d4ea362c9441f8f516fd752a78f6a"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration_commands.rs",
+      "exists": true,
+      "sha256": "e50615fbdf21e5de3385436c951c83260a375eca75621847b72692bc65710fad"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration.rs",
+      "exists": true,
+      "sha256": "f249093eaa83e3116aece3f754135afd92e531e97c5a438affac7acba6d9349c"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/mod.rs",
+      "exists": true,
+      "sha256": "f9061cdeaaa918ea5007ef8cff54834e2021b04a26868c46b8a3c0bcc01472ae"
+    },
+    {
+      "path": "frontend/src-tauri/tauri.conf.json",
+      "exists": true,
+      "sha256": "f433187d282bd644add0917d9910ae4a9def7e3c096a997613e98c104c6c934e"
+    },
+    {
+      "path": "frontend/src/services/webMigration.ts",
+      "exists": true,
+      "sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf"
+    },
+    {
+      "path": "frontend/src/services/indexedDBService.ts",
+      "exists": true,
+      "sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa"
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "exists": true,
+      "sha256": "8acfd90d71814a9653065cfbe97bf911106c09c34ef8b9ebcb9d3966d523801a"
+    },
+    {
+      "path": "frontend/src/contexts/OnboardingContext.tsx",
+      "exists": true,
+      "sha256": "a33f90576559b7f9044cecdccb81c60e49dbe6c1a706e12801788b5c7b7b4e69"
+    },
+    {
+      "path": "frontend/src/components/DatabaseImport/LegacyDatabaseImport.tsx",
+      "exists": true,
+      "sha256": "221f2739329fa218cf027dc21f99f90fa3f132d6de067191b5d4f8c538fb72b5"
+    },
+    {
+      "path": "frontend/src/components/PreferenceSettings.tsx",
+      "exists": true,
+      "sha256": "b5193068ab468c076833fee8268f45b5d2cffda2c6e93a9169cbd31d769e0eaa"
+    },
+    {
+      "path": "frontend/src/lib/i18n/catalog.ts",
+      "exists": true,
+      "sha256": "32a6d571b04c889bc648a40d02465ede0768cfda565c88bafe0ade462919120c"
+    },
+    {
+      "path": "frontend/tests/lib/web-migration.test.ts",
+      "exists": true,
+      "sha256": "e0022737941ac01a3129f575cac836697c59b5333ba6f7229a10040a4f2c62ca"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/profile_migration.rs",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/src/services/profileMigration.ts",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/src/components/DatabaseImport/ProfileMigrationGate.tsx",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/src/components/DatabaseImport/ProfileMigrationRecovery.tsx",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/src/app/profile-recovery/page.tsx",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/src-tauri/tests/profile_migration.rs",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/tests/profile-migration.spec.ts",
+      "exists": false,
+      "sha256": null
+    }
+  ],
+  "path_count": 22,
+  "source_is_dirty": true,
+  "old_11_path_census_matches_current": true,
+  "production_changed": false,
+  "new_schema_implemented": false,
+  "native_or_real_profile_checked": false,
+  "open_gates": [
+    "Explicit fresh-only owned-resume API: generic manager constructor can auto-import legacy; manager.rs not in mutation allowlist",
+    "Atomic no-clobber publication and owned-temporary recovery for admission and receipt; strict defaults only while fresh pending",
+    "Exact canonical persisted schemas",
+    "Locked plugin initialization and runtime registration/CSP-IPC admission",
+    "Clean implementation source after authorized QA integration",
+    "Actual producer and admitted source-target identity pair",
+    "Real temp-storage/browser crash tests",
+    "Authorized native store continuity and installed upgrade proof"
+  ],
+  "v3_reviews": {
+    "spec": {
+      "path": "docs/fork/webview-recovery-contract-v3-spec-review-2026-10-04.md",
+      "sha256": "06e2c44d10a82628ada982ea3deca7b4e83be612e78e24f138e2a9f0b6483aee",
+      "verdict": "C0/I0/M0 on bounded v2 corrections; no full-plan/code/native acceptance"
+    },
+    "quality": {
+      "path": "docs/fork/webview-recovery-contract-v3-quality-review-2026-10-04.md",
+      "sha256": "e7c6e7690fd0fb42c404a69ba732c9f83dde7b6f990c704a72d660ae15a3b76f",
+      "verdict": "C0/I0/M0 on bounded v2 corrections; no full-plan/code/native acceptance"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "status": "UNGATED",
+  "createdAt": "2026-09-21T05:01:31Z",
+  "verifiedAt": "2026-09-21T12:33:23Z",
+  "sourceCommit": "1ae518a1c90e3175539ac03ab286b5519d7e28fe",
+  "sourceFingerprint": "4bfe56ffe5396445cec3957248a066cce52e22f9f1f7f4b284be4548df991b5e",
+  "worktree": ".worktrees/feat071-audio-controls",
+  "purpose": "Universal macOS diagnostic .app after FORK-037 atomic publication/resume hardening, startup guards, WebView migration snapshot hardening, and registered Tauri prepare/publish/status commands; no app launch was performed.",
+  "artifact": {
+    "app": "target/universal-apple-darwin/release/bundle/macos/meetily.app",
+    "dmg": "target/universal-apple-darwin/release/bundle/dmg/meetily_0.4.1_universal.dmg",
+    "appSize": "313M",
+    "dmgSizeBytes": 157359136,
+    "buildExecutableSha256": "4517db1770cb0b1103617f884c51809d05e7bcd72fab6ea0b599748c26c0835c",
+    "meetilySha256": "839296853dbc2d854d40b9ced196b32610055f81ee2ccac3e04ba232604270fb",
+    "llamaHelperSha256": "150d095fd34ede47acb51c30443da4b34b8bc1e33ed6778854eae72ba2fe8dad",
+    "ffmpegSha256": "70f4175042ebf3993a0a7d7ea292d1c5f5e870f6460cda16d622d597eaea269c",
+    "dmgSha256": "d503d07ee18ccbc7a831c32899f3df685f51bc01b9b6821e199ab3a722b5f444",
+    "bundleFingerprint": "dca8c6bce6ec94e93b30644facf8216185cbb3e26890dad428d49f32d491ab2c",
+    "dmgFresh": true,
+    "dmgBuild": "PASS: hdiutil create completed outside the sandbox; DMG verify and mounted bundle-match passed",
+    "embeddedBundleFingerprint": "dca8c6bce6ec94e93b30644facf8216185cbb3e26890dad428d49f32d491ab2c"
+  },
+  "bundle": {
+    "identifier": "com.meetily.ai",
+    "name": "meetily",
+    "version": "0.4.1",
+    "minimumSystemVersion": "14.2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "executables": {
+      "meetily": "x86_64 arm64",
+      "llama-helper": "x86_64 arm64",
+      "ffmpeg": "x86_64 arm64"
+    },
+    "entitlements": [
+      "com.apple.security.device.audio-input",
+      "com.apple.security.device.audio-output",
+      "com.apple.security.device.microphone",
+      "com.apple.security.device.screen-capture"
+    ]
+  },
+  "signing": {
+    "mode": "ad-hoc",
+    "teamIdentifier": null,
+    "localCodeSigningIdentities": 0,
+    "codesignVerify": "PASS",
+    "notarization": "NOT_RUN",
+    "releaseEligible": false
+  },
+  "resources": {
+    "3dspeakerOnnxSha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+    "pyannoteOnnxSha256": "fed22097bca974bad329a930b60865703766ff89f05fa09060bf6fd44e92e319"
+  },
+  "automated": {
+    "releasePolicy": "PASS",
+    "universalBuildConfigPlaywright": "15 passed, 0 failed",
+    "diagnosticCandidateVerifier": {
+      "mode": "diagnostic",
+      "exitCode": 1,
+      "passingChecks": [
+        "bundle.metadata",
+        "bundle.executables",
+        "bundle.resources",
+        "bundle.architectures",
+        "bundle.diarization-runtime",
+        "bundle.static-scan",
+        "signature.integrity",
+        "signature.verify",
+        "signature.hardened-runtime",
+        "signature.entitlements",
+        "dmg.structure",
+        "dmg.verify",
+        "dmg.bundle-match"
+      ],
+      "expectedUngatedFailures": [
+        "release.eligibility: diagnostic mode and dirty worktree",
+        "signature.trust: ad-hoc signature with no TeamIdentifier",
+        "gatekeeper.assess: no trusted Developer ID artifact",
+        "notarization.validate: notarization was not run",
+        "dmg.signature.integrity",
+        "dmg.signature.trust",
+        "dmg.gatekeeper",
+        "dmg.notarization"
+      ],
+      "runId": "run-y4b28X",
+      "reportPath": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/artifacts/release-gate/diagnostic/1ae518a1c90e3175539ac03ab286b5519d7e28fe/run-y4b28X/candidate-report.json",
+      "reportGeneratedAt": "2026-09-21T12:32:53.729Z"
+    },
+    "migrationStagingCore": {
+      "rustTests": "33 migration command/core tests + 1 database-entry-point regression passed, 0 failed",
+      "clippy": "PASS",
+      "scope": "verified no-clobber staging, atomic UUID-temporary copy plus hard-link publication, real-directory and symlink-safe destination validation, durable monotonic journal phases, resumable publish/readback, inter-process lock acquisition/release, checked disk-budget arithmetic, caller-side statvfs free-space measurement and rejection, startup guard for incomplete operation journals, SHA-256 checks, path/root validation, SQLite WAL trio staging with source immutability and close/reopen integrity, and real IndexedDB source/sink adapter with idempotent marker and localStorage rollback; registered Tauri prepare/publish/status boundary with explicit identities, manifest budget, durable phases, and resumable retry"
+    },
+    "fullGate": {
+      "command": "./scripts/check.sh --full",
+      "status": "PASS",
+      "durationSeconds": 393,
+      "stages": {
+        "patchWhitespace": "PASS",
+        "productionPolicy": "PASS",
+        "frontendLint": "PASS",
+        "typescript": "PASS",
+        "frontendNodeSuite": "402 passed, 0 failed",
+        "frontendVitest": "61 passed, 0 failed",
+        "criticalPlaywright": "26 passed, 0 failed",
+        "productionFrontendBuild": "PASS",
+        "rustFormat": "PASS",
+        "workspaceClippy": "PASS",
+        "workspaceRustTests": "469 passed, 0 failed, 5 ignored",
+        "packagedFfmpegRecovery": "1 passed, 0 failed",
+        "migrationStagingCore": "33 migration command/core tests + 1 database-entry-point regression passed, 0 failed; Tauri prepare/publish/status boundary, atomic UUID-temporary copy and hard-link publication, symlink-safe destination validation, monotonic journal phases, resumable publish/readback, durable journal, inter-process lock, checked disk budget, caller-side statvfs, incomplete-journal guard across startup/check/import/fresh paths, SQLite WAL trio close/reopen integrity, and no-clobber verification included",
+        "webViewMigrationProtocol": "12 tests passed, 0 failed; single readonly IndexedDB snapshot transaction, explicit localStorage allowlist, per-entry/package checksums, schema validation including optional timing fields, identity-bound idempotent import marker and rollback"
+      }
+    },
+    "execution": "outside sandbox with Xcode and local sherpa-onnx/offline artifacts",
+    "webViewMigrationProtocol": {
+      "tests": "12 passed, 0 failed",
+      "scope": "single readonly IndexedDB snapshot transaction for meetings/transcripts, explicit localStorage allowlist excluding selected template state, per-entry and package SHA-256 checks, deterministic ordering, schema validation including optional transcript timing fields, identity-bound idempotent operation markers, collision-safe add semantics, and localStorage rollback on destination failure"
+    },
+    "macosAudioSmokeHarness": {
+      "status": "PASS",
+      "command": "MEETILY_AUDIO_SMOKE_HARNESS=1 scripts/smoke-macos-audio.sh",
+      "result": "Harness rejected zero-test enumeration/capture fixtures and accepted exact one-test fixtures.",
+      "hardwareMode": "NOT_RUN",
+      "verifiedAt": "2026-09-21T12:33:23Z"
+    },
+    "permissionLifecycleBrowserSuite": {
+      "status": "PASS",
+      "command": "cd frontend && pnpm exec playwright test tests/macos-permissions-lifecycle.spec.ts",
+      "tests": "12 passed, 0 failed",
+      "result": "Browser contract confirms one-shot microphone request behavior, settings-return refresh, optional system audio, and no repeated system-audio probe while recording.",
+      "execution": "outside sandbox with local Playwright web server; no packaged app launch",
+      "verifiedAt": "2026-09-21T12:33:23Z"
+    },
+    "permissionCoordinatorRustTests": {
+      "status": "PASS",
+      "command": "cargo test --manifest-path frontend/src-tauri/Cargo.toml -p meetily --lib audio::permissions::tests --locked --offline",
+      "tests": "7 passed, 0 failed",
+      "result": "Permission-state mapping, one-shot probe coordination, optional system audio, and retry semantics passed.",
+      "execution": "stable-x86_64-apple-darwin, offline dependencies",
+      "verifiedAt": "2026-09-21T12:33:23Z"
+    }
+  },
+  "native": {
+    "status": "NOT_RERUN",
+    "reason": "Current package was inspected and diagnostically verified without launching the app; native launch, TCC prompts, and microphone/system-audio capture were deliberately not repeated.",
+    "remaining": [
+      "current Universal app has no native recording cycle",
+      "physical microphone disconnect/reconnect is not exercised",
+      "full TCC deny/recovery matrix is not exercised",
+      "current-artifact system.mp4, native mute/gain and pause/resume synchronization are not accepted"
+    ]
+  },
+  "limits": [
+    "The current Universal app was packaged from exact local commit 1ae518a, but no native launch was performed.",
+    "The current Universal .app and DMG are ad-hoc signed and have no Developer ID team or notarization.",
+    "This diagnostic package is not a functional Alpha or release candidate."
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

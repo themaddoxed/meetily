@@ -1,0 +1,10 @@
+{
+  "sourceFingerprint": "c7a099438522206b7a4bec029e10ea3caff3994f24f3df2f8eb4916cfaa0eb8e",
+  "exit": 101,
+  "sha256": "560db52754ee37316528e51664b464b6c013ab57b912523074365a2955dd80d0",
+  "uniqueLocatedDiagnostics": 70,
+  "sourceSitesAlreadyPresentInHEAD": 69,
+  "headWasExecuted": false,
+  "introducedDiagnostic": "macos.rs repeat_n incompatible with declared Rust1.77; replaced after this check by repeat(...).take(...)",
+  "nextSourceFingerprint": "acd310dea937b537aaea3f40a3349145bfe4f1768c487579a726eedec5b24882"
+}

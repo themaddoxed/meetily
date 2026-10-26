@@ -1,0 +1,83 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprintBefore": "cbf0160ceba3644676ff6bdc2c017ce19901dc4f84d0170e8b792a803a41ff99",
+  "sourceFingerprintAfter": "cbf0160ceba3644676ff6bdc2c017ce19901dc4f84d0170e8b792a803a41ff99",
+  "architecture": "x86_64",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN",
+  "releaseEligible": false,
+  "buildExecutableSha256": "c7fa712f589dc0a2e84f5cc022e962276cf38be8a5eeb8f63b25666470355324",
+  "packagedExecutableSha256": "11ccee268b774e60d5165a548ce61333fc3d19b39b67576e6d08f8b43e338dab",
+  "app": "target/diagnostic-dirty/fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c/run-20260920-source-controls-final10/meetily.app",
+  "purpose": "Exact current package after writer terminal-state race fix; no native relaunch to avoid another TCC prompt.",
+  "automated": {
+    "macosCaptureTests": "23 passed",
+    "recordingSessionTests": "48 passed, 1 ignored",
+    "permissionsTests": "7 passed",
+    "frontendRecordingControls": "3 passed",
+    "frontendUnit": "49 passed",
+    "frontendPolicyAndSurface": "25 passed",
+    "frontendPermissionPlaywright": "12 passed",
+    "releasePolicyTests": "225 passed",
+    "frontendTypecheck": "PASS",
+    "releaseBuild": "PASS",
+    "codesignVerify": "PASS",
+    "gitDiffCheck": "PASS",
+    "strictClippy": "PASS",
+    "releasePolicyCommand": "PASS",
+    "fullReleaseRustLibrary": "433 passed, 0 failed, 5 ignored",
+    "writerRaceRegression": "PASS",
+    "fullCheck": {
+      "status": "PASS",
+      "evidence": "docs/fork/evidence/full-check-2026-09-20-final10.json",
+      "durationSeconds": 1083,
+      "execution": "outside sandbox with local sherpa-onnx cache and Xcode access",
+      "stages": {
+        "frontendNodeSuite": "401 passed",
+        "frontendVitest": "49 passed",
+        "criticalPlaywright": "26 passed",
+        "workspaceClippy": "PASS",
+        "workspaceRustTests": "PASS",
+        "packagedFfmpegRecovery": "1 passed"
+      }
+    },
+    "frontendNodeSuite": "401 passed",
+    "criticalPlaywright": "26 passed",
+    "workspaceClippy": "PASS",
+    "workspaceRustTests": "PASS",
+    "packagedFfmpegRecovery": "1 passed"
+  },
+  "native": {
+    "status": "NOT_RERUN",
+    "equivalentRuntimeEvidence": "native-audio-2026-09-20-final4.json",
+    "reason": "The exact package contains the writer terminal-state fix, but no new app launch was performed because the same ad-hoc identity already has TCC access and another launch would only repeat the permission flow.",
+    "permissionSetup": "Existing ad-hoc TCC grants were preserved; no reset or new prompt",
+    "priorRecordingFolder": "/Users/developer/Movies/meetily-recordings/Meeting 20_09_26_20_02_13_2026-09-20_17-02",
+    "priorMetadataStatus": "completed",
+    "priorSystemTrack": "no frames; microphone-only fallback"
+  },
+  "limits": [
+    "current exact final10 package has not been relaunched natively",
+    "physical microphone disconnect/reconnect was not exercised",
+    "full TCC denied/recovery matrix was not exercised",
+    "system audio delivered no test frames, so native two-track mute/volume and pause/resume synchronization remain open",
+    "dirty source, ad-hoc signing, Intel-only artifact, and missing notarization prevent Alpha/release claims",
+    "the full release Rust library run was executed outside the sandbox because the sandbox denied model-download temp files; the resulting run was green"
+  ],
+  "policyCorrection": "incremental_saver.rs accepts &ffmpeg only when assigned from find_ffmpeg_path(); regression fixture added.",
+  "createdAt": "2026-09-20T19:40:01Z",
+  "fullCheckEvidence": "full-check-2026-09-20-final10.json",
+  "identity": {
+    "bundleId": "com.meetily.ai",
+    "bundleName": "meetily",
+    "developerIdCodeSigningIdentities": 0,
+    "gitHead": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+    "dirtyPathCount": 50
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

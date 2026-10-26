@@ -1,0 +1,14 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "worktreeClean": false,
+  "sourceFingerprintBefore": "7a15cff2102519ef4e34413cf374e319bcb94f0fed4e1c37b05ebb04303a18f3",
+  "sourceFingerprintAfter": "7a15cff2102519ef4e34413cf374e319bcb94f0fed4e1c37b05ebb04303a18f3",
+  "purpose": "Local live-duration UI regression verification",
+  "releaseEligible": false,
+  "architecture": "x86_64",
+  "createdAt": "2026-09-20T06:22:54.430354+00:00",
+  "executableSha256": "0d2630d6085aa35db1ecafb9cd2a86f94b546a550407dfb98e7b79dad30e80cb",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN"
+}

@@ -1,0 +1,186 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXWindow | AXTitle=Запись экрана и системного звука
+ AXRole=AXGroup
+  AXRole=AXSplitGroup
+   AXRole=AXGroup
+    AXRole=AXTextField | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle= | AXDescription=Поиск | AXEnabled=1
+    AXRole=AXScrollArea
+     AXRole=AXOutline | AXDescription=Боковое меню | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Даниил Кузин, Учетная запись Apple | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Семья | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Wi‑Fi | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Bluetooth | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Сеть | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=VPN | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Энергия | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Основные | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Дисплеи | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Заставка | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Обои | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Оформление | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Пункт управления | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Рабочий стол и Dock | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Универсальный доступ | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Siri | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Spotlight | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Уведомления | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Звук | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Фокусирование | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Экранное время | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Экран блокировки | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Конфиденциальность и безопасность | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Пароль для входа | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Пользователи и группы | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Учетные записи интернета | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Game Center | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=iCloud | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Wallet и Apple Pay | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXGroup
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Клавиатура | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Мышь | AXEnabled=1
+      AXRole=AXRow
+       AXRole=AXCell | AXEnabled=1
+        AXRole=AXStaticText | AXHelp= | AXValue=Принтеры и сканеры | AXEnabled=1
+      AXRole=AXColumn
+     AXRole=AXScrollBar | AXValue=0.08991825613079019 | AXEnabled=1
+      AXRole=AXValueIndicator | AXValue=0.08991825613079019
+      AXRole=AXButton
+      AXRole=AXButton
+      AXRole=AXButton
+      AXRole=AXButton
+   AXRole=AXSplitter | AXValue=252 | AXEnabled=0
+   AXRole=AXGroup
+    AXRole=AXGroup
+     AXRole=AXScrollArea
+      AXRole=AXHeading | AXDescription=Запись экрана и системного звука | AXEnabled=1
+      AXRole=AXHeading | AXDescription=Разрешить этим приложениям вести запись экрана и записывать звук даже во время использования других приложений. | AXEnabled=1
+      AXRole=AXGroup | AXEnabled=1
+       AXRole=AXScrollArea
+        AXRole=AXOutline | AXEnabled=1
+         AXRole=AXRow
+          AXRole=AXCell | AXEnabled=1
+           AXRole=AXStaticText | AXValue=ChatGPT | AXEnabled=1
+           AXRole=AXCheckBox | AXValue=1 | AXEnabled=1
+         AXRole=AXColumn
+       AXRole=AXButton | AXDescription=Добавить | AXEnabled=1
+       AXRole=AXButton | AXDescription=Удалить | AXEnabled=0
+      AXRole=AXHeading | AXDescription=Только запись системного звука | AXEnabled=1
+      AXRole=AXHeading | AXDescription=Разрешить этим приложениям доступ к системному звуку и его записи. | AXEnabled=1
+      AXRole=AXGroup | AXEnabled=1
+       AXRole=AXScrollArea
+        AXRole=AXOutline | AXEnabled=1
+         AXRole=AXRow
+          AXRole=AXCell | AXEnabled=1
+           AXRole=AXStaticText | AXValue=ChatGPT | AXEnabled=1
+           AXRole=AXCheckBox | AXValue=1 | AXEnabled=1
+         AXRole=AXRow
+          AXRole=AXCell | AXEnabled=1
+           AXRole=AXStaticText | AXValue=meetily | AXEnabled=1
+           AXRole=AXCheckBox | AXValue=0 | AXEnabled=1
+         AXRole=AXColumn
+       AXRole=AXButton | AXDescription=Добавить | AXEnabled=1
+       AXRole=AXButton | AXDescription=Удалить | AXEnabled=1
+ AXRole=AXToolbar
+  AXRole=AXGroup
+   AXRole=AXGroup | AXEnabled=1
+    AXRole=AXButton | AXDescription=Назад | AXEnabled=1
+    AXRole=AXMenuButton | AXDescription=Вперед | AXEnabled=0
+ AXRole=AXButton | AXEnabled=0
+ AXRole=AXButton | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXGroup
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXStaticText | AXValue=Запись экрана и системного звука | AXEnabled=1
+ AXRole=AXSheet
+  AXRole=AXImage | AXDescription= | AXEnabled=1
+  AXRole=AXStaticText | AXValue=Конфиденциальность и безопасность | AXEnabled=1
+  AXRole=AXStaticText | AXValue=Приложение «Конфиденциальность и безопасность» собирается снять защиту с системных настроек. | AXEnabled=1
+  AXRole=AXStaticText | AXValue=Чтобы разрешить это действие, введите пароль. | AXEnabled=1
+  AXRole=AXTextField | AXValue=Local Developer | AXEnabled=1
+  AXRole=AXTextField | AXTitle=Пароль | AXDescription=Пароль | AXValue= | AXEnabled=1
+  AXRole=AXButton | AXTitle=Отменить | AXEnabled=1
+  AXRole=AXButton | AXTitle=Снять защиту | AXEnabled=1

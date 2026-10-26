@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-04",
+  "objective": "\u0434\u043e\u0434\u0435\u043b\u0430\u0439 \u043f\u043b\u0430\u043d",
+  "completion_proven": false,
+  "canonical_cli_open_tasks": 111,
+  "dependency_ready_exec_count": 8,
+  "dependency_ready_does_not_mean_admitted": true,
+  "ready_scope_audit": [
+    {
+      "id": "FORK-119",
+      "remaining_condition": "Exact artifact/operator/native admission pending"
+    },
+    {
+      "id": "FORK-123",
+      "remaining_condition": "Design corrections reviewed; canonical schemas/finite ownership/plugin-CSP and clean implementation admission open"
+    },
+    {
+      "id": "FORK-128",
+      "remaining_condition": "Clean QA-integrated source and fresh storage/caller census admission required"
+    },
+    {
+      "id": "FORK-134",
+      "remaining_condition": "Native installed local generation and offline verification not performed"
+    },
+    {
+      "id": "FORK-135",
+      "remaining_condition": "Authorized real Russian benchmark recordings/reference corpus absent"
+    },
+    {
+      "id": "FORK-145",
+      "remaining_condition": "Eight inputs fetched/verified; producer/build/license/authenticated same-run replay admission and dual-host/toolchain proof open"
+    },
+    {
+      "id": "FORK-152",
+      "remaining_condition": "Automatic theme implementation/full gate passed; native matrix and authorized integration open"
+    },
+    {
+      "id": "FORK-155",
+      "remaining_condition": "Owner identity decision parked; no invented name/bundleID/slug"
+    }
+  ],
+  "refs": {
+    "main": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+    "dev": "53f4415058fb01e38b8892a47ac036bfffa394ba"
+  },
+  "dev_worktree_clean": true,
+  "qa_source_paths_verified": 15,
+  "qa_full_log_hash_verified": true,
+  "qa_full_gate": {
+    "exit": 0,
+    "passed_stages": 11,
+    "duration_seconds": 438
+  },
+  "pending_human_input": [
+    "Exact QA feature commit and FF dev request has not received a real human answer",
+    "Native/operator theme matrix request pending; automatic continuation is not approval"
+  ],
+  "available_independent_work": [
+    "Freeze finite first-ownership bootstrap and canonical WebView DTO encoding from actual sources",
+    "Finish recovery plugin/CSP/bootstrap source inspection before full plan admission"
+  ],
+  "goal_blocked_claim": false,
+  "reason": "Concrete independent source/design admission work remains; not a full impasse",
+  "product_source_changed": false,
+  "git_refs_changed": false,
+  "tasks_closed": [],
+  "source_documents": [
+    {
+      "path": "docs/prd/macos-fork.md",
+      "sha256": "d048bf16b1583a877f8d7862e74cfb80e072b641ca7f71726a29c36ba1eac8b0"
+    },
+    {
+      "path": "docs/prd/fork-features.md",
+      "sha256": "88ec35aaf78cc3a8ad22b4df9860633526aabcd82ecc31ba3dc949df102c46ad"
+    },
+    {
+      "path": "docs/fork/evidence/qa-transfer-fixed-2026-10-04.json",
+      "sha256": "c3d9fe1e0806759ca6678fbb3580949f7e44414db968bca777a661b3c1d82efa"
+    },
+    {
+      "path": "docs/fork/evidence/webview-fresh-persistence-progress-2026-10-04.json",
+      "sha256": "54b4afe8f8c6dd724d90c741b092ab087ce5f5ceb5e13e90e811a14d8b9ca366"
+    }
+  ],
+  "theme_source_paths_verified": 13,
+  "theme_native_approval": {
+    "status": "PENDING explicit GUI/operator authorization",
+    "request": "current feature tauri:dev, theme eight-row macOS matrix only"
+  }
+}

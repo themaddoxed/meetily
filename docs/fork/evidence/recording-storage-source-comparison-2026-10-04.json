@@ -1,0 +1,590 @@
+{
+  "date": "2026-10-04",
+  "task": "FORK-128 Task0 source comparison only",
+  "canonical_root": "/Users/developer/Desktop/meeting-minutes",
+  "candidate_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/dev-integration-2026-10-03",
+  "candidate_head": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "candidate_clean": true,
+  "reviewed_plan_sha256": "814a48a60b0891fd24bfb03f52e9e65e0ccdf727b55b8061029e3418a9d1361f",
+  "reviewed_census_sha256": "267e105bc868342bcb36a688ec5f5071783c56ccbdbeb11de9fb91a5ce9eea33",
+  "paths": [
+    {
+      "path": "frontend/src-tauri/migrations/20261002000000_recording_root_storage.sql",
+      "action": "create",
+      "expected_census_sha256": null,
+      "candidate_sha256": null,
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": null,
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/recording_storage.rs",
+      "action": "create",
+      "expected_census_sha256": null,
+      "candidate_sha256": null,
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": null,
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/tests/recording_storage.rs",
+      "action": "create",
+      "expected_census_sha256": null,
+      "candidate_sha256": null,
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": null,
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/scripts/release-policy.mjs",
+      "action": "modify",
+      "expected_census_sha256": "b6ef218971f890af591126dd3ebcc27c5a6c9ee80d161a7c938fb9e54ac5f568",
+      "candidate_sha256": "b6ef218971f890af591126dd3ebcc27c5a6c9ee80d161a7c938fb9e54ac5f568",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "b6ef218971f890af591126dd3ebcc27c5a6c9ee80d161a7c938fb9e54ac5f568",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/release-policy.test.mjs",
+      "action": "modify",
+      "expected_census_sha256": "c872231635f1c421bbb35f7cba9f8937a22f2837d10e71291008c96daf6fa723",
+      "candidate_sha256": "c872231635f1c421bbb35f7cba9f8937a22f2837d10e71291008c96daf6fa723",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "c872231635f1c421bbb35f7cba9f8937a22f2837d10e71291008c96daf6fa723",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/mod.rs",
+      "action": "modify",
+      "expected_census_sha256": "27543a632ff737ce834e6eb504d01e3b441fa3e6cf14628051f1bcbe32503d74",
+      "candidate_sha256": "27543a632ff737ce834e6eb504d01e3b441fa3e6cf14628051f1bcbe32503d74",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "27543a632ff737ce834e6eb504d01e3b441fa3e6cf14628051f1bcbe32503d74",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/audio_processing.rs",
+      "action": "modify",
+      "expected_census_sha256": "1279f96540698f69a2521553eaef6cd3f5f4171dd93ab58d47f71adf015144be",
+      "candidate_sha256": "1279f96540698f69a2521553eaef6cd3f5f4171dd93ab58d47f71adf015144be",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "1279f96540698f69a2521553eaef6cd3f5f4171dd93ab58d47f71adf015144be",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/common.rs",
+      "action": "modify",
+      "expected_census_sha256": "50d7496eb523b5cab51429a54ae045ef145624509d9ed54de38f87f4175fbe9e",
+      "candidate_sha256": "50d7496eb523b5cab51429a54ae045ef145624509d9ed54de38f87f4175fbe9e",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "50d7496eb523b5cab51429a54ae045ef145624509d9ed54de38f87f4175fbe9e",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/incremental_saver.rs",
+      "action": "modify",
+      "expected_census_sha256": "7fcdef272ff8b0d0b6b182920fd34a9c8aa30d610997439a2aa55d41537915dd",
+      "candidate_sha256": "7fcdef272ff8b0d0b6b182920fd34a9c8aa30d610997439a2aa55d41537915dd",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "7fcdef272ff8b0d0b6b182920fd34a9c8aa30d610997439a2aa55d41537915dd",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/recording_saver.rs",
+      "action": "modify",
+      "expected_census_sha256": "de90b59e9ebee94bbf7b4c2796c45ad2855ff7b7eb2f12cdae769734f0da80ba",
+      "candidate_sha256": "de90b59e9ebee94bbf7b4c2796c45ad2855ff7b7eb2f12cdae769734f0da80ba",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "de90b59e9ebee94bbf7b4c2796c45ad2855ff7b7eb2f12cdae769734f0da80ba",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/recording_session.rs",
+      "action": "modify",
+      "expected_census_sha256": "5451fc9f84e13744facf456555740a80d400c291f2ffda4fe557c6f5b8605dbc",
+      "candidate_sha256": "5451fc9f84e13744facf456555740a80d400c291f2ffda4fe557c6f5b8605dbc",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "5451fc9f84e13744facf456555740a80d400c291f2ffda4fe557c6f5b8605dbc",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/recording_commands.rs",
+      "action": "modify",
+      "expected_census_sha256": "465c711df2e7888e7d9fce5a20d0e59cc80c4627b19db3ff8ee685b7233df210",
+      "candidate_sha256": "465c711df2e7888e7d9fce5a20d0e59cc80c4627b19db3ff8ee685b7233df210",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "465c711df2e7888e7d9fce5a20d0e59cc80c4627b19db3ff8ee685b7233df210",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/recording_preferences.rs",
+      "action": "modify",
+      "expected_census_sha256": "45b227ba8ca3edae0cb04ee8ab32f9c73911a9392a6cc05c53f2e4660efb1692",
+      "candidate_sha256": "45b227ba8ca3edae0cb04ee8ab32f9c73911a9392a6cc05c53f2e4660efb1692",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "45b227ba8ca3edae0cb04ee8ab32f9c73911a9392a6cc05c53f2e4660efb1692",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/import.rs",
+      "action": "modify",
+      "expected_census_sha256": "3981472475f11d2336ba75e4587c9fc40fa7ed9d9acaca618705658f2f911658",
+      "candidate_sha256": "3981472475f11d2336ba75e4587c9fc40fa7ed9d9acaca618705658f2f911658",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "3981472475f11d2336ba75e4587c9fc40fa7ed9d9acaca618705658f2f911658",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/retranscription.rs",
+      "action": "modify",
+      "expected_census_sha256": "dda55ca62f49afb655982e53710546970cbc3653270a71e095e050d6bbbbcfa3",
+      "candidate_sha256": "dda55ca62f49afb655982e53710546970cbc3653270a71e095e050d6bbbbcfa3",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "dda55ca62f49afb655982e53710546970cbc3653270a71e095e050d6bbbbcfa3",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/models.rs",
+      "action": "modify",
+      "expected_census_sha256": "b4e403423283db02da4f7a9c7a053cda637999fd064487b13183dc9e7622af7f",
+      "candidate_sha256": "b4e403423283db02da4f7a9c7a053cda637999fd064487b13183dc9e7622af7f",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "b4e403423283db02da4f7a9c7a053cda637999fd064487b13183dc9e7622af7f",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/meeting.rs",
+      "action": "modify",
+      "expected_census_sha256": "3a122592e1e521861bd7724785c3d94fb3075e4df1dde45ef0f49f6bcab6a0c6",
+      "candidate_sha256": "3a122592e1e521861bd7724785c3d94fb3075e4df1dde45ef0f49f6bcab6a0c6",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "3a122592e1e521861bd7724785c3d94fb3075e4df1dde45ef0f49f6bcab6a0c6",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/transcript.rs",
+      "action": "modify",
+      "expected_census_sha256": "d415e8c5bc28b362879c67a52913fcc14df453af6070e292d8518971e7334aea",
+      "candidate_sha256": "d415e8c5bc28b362879c67a52913fcc14df453af6070e292d8518971e7334aea",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "d415e8c5bc28b362879c67a52913fcc14df453af6070e292d8518971e7334aea",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/setup.rs",
+      "action": "modify",
+      "expected_census_sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "candidate_sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/state.rs",
+      "action": "modify",
+      "expected_census_sha256": "bb2067339b75659e7958cf57803dda4f0a1ab444282d3db44b85794b3957de29",
+      "candidate_sha256": "bb2067339b75659e7958cf57803dda4f0a1ab444282d3db44b85794b3957de29",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "bb2067339b75659e7958cf57803dda4f0a1ab444282d3db44b85794b3957de29",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/api/api.rs",
+      "action": "modify",
+      "expected_census_sha256": "21b3bd44bf41ce1d12a0d29c22c18a671e98d718a1738f36a6011f3e28d309e7",
+      "candidate_sha256": "81f4ead67a83e18bb21592337800a5b24a2dcf80cd80ba43883789ee7e0ffb89",
+      "candidate_matches_census": false,
+      "canonical_overlay_sha256": "21b3bd44bf41ce1d12a0d29c22c18a671e98d718a1738f36a6011f3e28d309e7",
+      "overlay_differs_from_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/commands.rs",
+      "action": "modify",
+      "expected_census_sha256": "b7f6fb8aacb3c454a7affc6df8a5ce5763588750acefaff77f94f9047b6b0667",
+      "candidate_sha256": "b7f6fb8aacb3c454a7affc6df8a5ce5763588750acefaff77f94f9047b6b0667",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "b7f6fb8aacb3c454a7affc6df8a5ce5763588750acefaff77f94f9047b6b0667",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/service.rs",
+      "action": "modify",
+      "expected_census_sha256": "7309e0ecce64a255747599a0292d61ad3699adc3b9891ce2190c79bbfea84c79",
+      "candidate_sha256": "7309e0ecce64a255747599a0292d61ad3699adc3b9891ce2190c79bbfea84c79",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "7309e0ecce64a255747599a0292d61ad3699adc3b9891ce2190c79bbfea84c79",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/diarization/coordinator.rs",
+      "action": "modify",
+      "expected_census_sha256": "b9d67e8b0560cf4c95f9959086ac6a53d0788c8037a8a2da1e2508bb4fa073a4",
+      "candidate_sha256": "b9d67e8b0560cf4c95f9959086ac6a53d0788c8037a8a2da1e2508bb4fa073a4",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "b9d67e8b0560cf4c95f9959086ac6a53d0788c8037a8a2da1e2508bb4fa073a4",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "action": "modify",
+      "expected_census_sha256": "ab3a0a10c42853ce7968d0787d62f99d50022b2c2c25e2d4acdc1815f6300dea",
+      "candidate_sha256": "085076e349686a5d43d4d385a0f9ba4d4f0c5a8797cbea44f7d8a02b78fc90ae",
+      "candidate_matches_census": false,
+      "canonical_overlay_sha256": "c74c350d01f5395c4e46d2aca6d962f48b674919d96dc45006229074b8c3aecf",
+      "overlay_differs_from_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/tests/data_integrity.rs",
+      "action": "modify",
+      "expected_census_sha256": "f2aafdd6ddf98811c14c5f482ba1d6381e6aee426821bd5acbe3a68000b41592",
+      "candidate_sha256": "f2aafdd6ddf98811c14c5f482ba1d6381e6aee426821bd5acbe3a68000b41592",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "f2aafdd6ddf98811c14c5f482ba1d6381e6aee426821bd5acbe3a68000b41592",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/tests/recording_recovery.rs",
+      "action": "modify",
+      "expected_census_sha256": "680588badde7274ed00f60dd69c6f1c202aa92a825810318e8a7cf1c0bbf2ed0",
+      "candidate_sha256": "680588badde7274ed00f60dd69c6f1c202aa92a825810318e8a7cf1c0bbf2ed0",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "680588badde7274ed00f60dd69c6f1c202aa92a825810318e8a7cf1c0bbf2ed0",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/tests/diarization_runtime.rs",
+      "action": "modify",
+      "expected_census_sha256": "807bb00eb4b1594aeca0ffe0ffbb7313adaa542c45d2e82ccd42a117a45eaf9e",
+      "candidate_sha256": "807bb00eb4b1594aeca0ffe0ffbb7313adaa542c45d2e82ccd42a117a45eaf9e",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "807bb00eb4b1594aeca0ffe0ffbb7313adaa542c45d2e82ccd42a117a45eaf9e",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/services/recordingService.ts",
+      "action": "modify",
+      "expected_census_sha256": "ae69c78cce9216bf7b1679a01443abfa69fd429c66f00fbb4f54d87fff8bbe22",
+      "candidate_sha256": "ae69c78cce9216bf7b1679a01443abfa69fd429c66f00fbb4f54d87fff8bbe22",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "ae69c78cce9216bf7b1679a01443abfa69fd429c66f00fbb4f54d87fff8bbe22",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/services/storageService.ts",
+      "action": "modify",
+      "expected_census_sha256": "a74f55a58a0460d2ec59b896be66dddf1ab4d9b02ce47063dc75312ae5b32516",
+      "candidate_sha256": "a74f55a58a0460d2ec59b896be66dddf1ab4d9b02ce47063dc75312ae5b32516",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "a74f55a58a0460d2ec59b896be66dddf1ab4d9b02ce47063dc75312ae5b32516",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/services/indexedDBService.ts",
+      "action": "modify",
+      "expected_census_sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+      "candidate_sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/hooks/useRecordingStart.ts",
+      "action": "modify",
+      "expected_census_sha256": "30c18b072f75c7b7a726aded39bd3afcd486bde8ffaf6acc1da15a150840f131",
+      "candidate_sha256": "30c18b072f75c7b7a726aded39bd3afcd486bde8ffaf6acc1da15a150840f131",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "30c18b072f75c7b7a726aded39bd3afcd486bde8ffaf6acc1da15a150840f131",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/hooks/useRecordingStop.ts",
+      "action": "modify",
+      "expected_census_sha256": "41bd65317a66e209d8a04ee3dd28774a62974018155c3ba1c91de92c732b9e3b",
+      "candidate_sha256": "41bd65317a66e209d8a04ee3dd28774a62974018155c3ba1c91de92c732b9e3b",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "41bd65317a66e209d8a04ee3dd28774a62974018155c3ba1c91de92c732b9e3b",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/hooks/useImportAudio.ts",
+      "action": "modify",
+      "expected_census_sha256": "cda8f401cd9a58582fde2305ce8787a0839318ea0b2e66ee90cb66e982fd1baa",
+      "candidate_sha256": "cda8f401cd9a58582fde2305ce8787a0839318ea0b2e66ee90cb66e982fd1baa",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "cda8f401cd9a58582fde2305ce8787a0839318ea0b2e66ee90cb66e982fd1baa",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/hooks/useTranscriptRecovery.ts",
+      "action": "modify",
+      "expected_census_sha256": "ad32668dcb76d00ba7f2e6820d71a3896fc75bcbd0209b4eeaceb08c1e98ea5d",
+      "candidate_sha256": "ad32668dcb76d00ba7f2e6820d71a3896fc75bcbd0209b4eeaceb08c1e98ea5d",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "ad32668dcb76d00ba7f2e6820d71a3896fc75bcbd0209b4eeaceb08c1e98ea5d",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/contexts/TranscriptContext.tsx",
+      "action": "modify",
+      "expected_census_sha256": "3b527796f654e84bbd9b5b5512699db12542736fb857c655eb2b48d2ef22b39a",
+      "candidate_sha256": "3b527796f654e84bbd9b5b5512699db12542736fb857c655eb2b48d2ef22b39a",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "3b527796f654e84bbd9b5b5512699db12542736fb857c655eb2b48d2ef22b39a",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/app/meeting-details/page.tsx",
+      "action": "modify",
+      "expected_census_sha256": "cbed853e1a85ee40583b81a875bcad78cfe02544f67343eb373ef3096bb24b12",
+      "candidate_sha256": "cbed853e1a85ee40583b81a875bcad78cfe02544f67343eb373ef3096bb24b12",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "cbed853e1a85ee40583b81a875bcad78cfe02544f67343eb373ef3096bb24b12",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/app/meeting-details/page-content.tsx",
+      "action": "modify",
+      "expected_census_sha256": "fc7e5e678ab083e36d53bd4bc759af8878ce61d25c1a624d8a894f45b1fd7cd5",
+      "candidate_sha256": "fc7e5e678ab083e36d53bd4bc759af8878ce61d25c1a624d8a894f45b1fd7cd5",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "775f744d56111c9e3386f41cebfbce5a2669a7c80463c6e9c17a62aa753150bb",
+      "overlay_differs_from_candidate": true
+    },
+    {
+      "path": "frontend/src/components/MeetingDetails/TranscriptButtonGroup.tsx",
+      "action": "modify",
+      "expected_census_sha256": "08d115477efc248dd330f9ac1526696d9f2ff0f18429ef6fdca67fd57edba268",
+      "candidate_sha256": "08d115477efc248dd330f9ac1526696d9f2ff0f18429ef6fdca67fd57edba268",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "08d115477efc248dd330f9ac1526696d9f2ff0f18429ef6fdca67fd57edba268",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/components/MeetingDetails/TranscriptPanel.tsx",
+      "action": "modify",
+      "expected_census_sha256": "d58dfb442e49c5c7df3f1d054a758ce29a3fd246baa864bb3bb51ed43f260cc5",
+      "candidate_sha256": "d58dfb442e49c5c7df3f1d054a758ce29a3fd246baa864bb3bb51ed43f260cc5",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "d58dfb442e49c5c7df3f1d054a758ce29a3fd246baa864bb3bb51ed43f260cc5",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/components/MeetingDetails/RetranscribeDialog.tsx",
+      "action": "modify",
+      "expected_census_sha256": "1ccd5c2af4482dc28e2fe596d7f55ab3d0fc09ba8a13de7849e6dba646242ca0",
+      "candidate_sha256": "1ccd5c2af4482dc28e2fe596d7f55ab3d0fc09ba8a13de7849e6dba646242ca0",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "1ccd5c2af4482dc28e2fe596d7f55ab3d0fc09ba8a13de7849e6dba646242ca0",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/components/TranscriptRecovery/TranscriptRecovery.tsx",
+      "action": "modify",
+      "expected_census_sha256": "20fcbb713918caedfe8f6997b581b2fcf4a106d3f3de31f19f75c91f18182166",
+      "candidate_sha256": "20fcbb713918caedfe8f6997b581b2fcf4a106d3f3de31f19f75c91f18182166",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "20fcbb713918caedfe8f6997b581b2fcf4a106d3f3de31f19f75c91f18182166",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/types/index.ts",
+      "action": "modify",
+      "expected_census_sha256": "fbc0857cc37d96b15385cb26f1ded4b2f197a945c94be0bca0303f9b22d4eea8",
+      "candidate_sha256": "fbc0857cc37d96b15385cb26f1ded4b2f197a945c94be0bca0303f9b22d4eea8",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "fbc0857cc37d96b15385cb26f1ded4b2f197a945c94be0bca0303f9b22d4eea8",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/testing/tauri-browser-mocks.ts",
+      "action": "modify",
+      "expected_census_sha256": "006985f3fd81881e7e228bd3f7c25a6aca0e17ee71d25ef1dddc33f3a72927eb",
+      "candidate_sha256": "006985f3fd81881e7e228bd3f7c25a6aca0e17ee71d25ef1dddc33f3a72927eb",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "006985f3fd81881e7e228bd3f7c25a6aca0e17ee71d25ef1dddc33f3a72927eb",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/lib/storage-service.test.mjs",
+      "action": "modify",
+      "expected_census_sha256": "33fdab0192462a0e73a46345c6b25ed942fdfe4210d2923c1295c18367bfdb02",
+      "candidate_sha256": "33fdab0192462a0e73a46345c6b25ed942fdfe4210d2923c1295c18367bfdb02",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "33fdab0192462a0e73a46345c6b25ed942fdfe4210d2923c1295c18367bfdb02",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/lib/import-audio-hook.test.mjs",
+      "action": "create",
+      "expected_census_sha256": null,
+      "candidate_sha256": null,
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": null,
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/lib/transcript-recovery-hook.test.mjs",
+      "action": "modify",
+      "expected_census_sha256": "3160a1b04790fe57a33c2703e0132219a9b3f6846a4a78823c98501d45fcab45",
+      "candidate_sha256": "3160a1b04790fe57a33c2703e0132219a9b3f6846a4a78823c98501d45fcab45",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "3160a1b04790fe57a33c2703e0132219a9b3f6846a4a78823c98501d45fcab45",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/lib/indexeddb-service.test.mjs",
+      "action": "modify",
+      "expected_census_sha256": "4de4897b33d5fbfe34619d142cfa4d506529d361f2fb31cafca6977b26c7d45b",
+      "candidate_sha256": "4de4897b33d5fbfe34619d142cfa4d506529d361f2fb31cafca6977b26c7d45b",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "4de4897b33d5fbfe34619d142cfa4d506529d361f2fb31cafca6977b26c7d45b",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/react-hooks-lifecycle.test.mjs",
+      "action": "modify",
+      "expected_census_sha256": "f4f1fff6c9bf7c9b8037422332a850ff0bfe617752d9101f748a36fd08f88ea9",
+      "candidate_sha256": "f4f1fff6c9bf7c9b8037422332a850ff0bfe617752d9101f748a36fd08f88ea9",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "f4f1fff6c9bf7c9b8037422332a850ff0bfe617752d9101f748a36fd08f88ea9",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/interrupted-recovery.spec.ts",
+      "action": "modify",
+      "expected_census_sha256": "7feaf9ff633010b4ee7f0024a57600834ff732127cfa98c440e9f5ef128693bd",
+      "candidate_sha256": "7feaf9ff633010b4ee7f0024a57600834ff732127cfa98c440e9f5ef128693bd",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "7feaf9ff633010b4ee7f0024a57600834ff732127cfa98c440e9f5ef128693bd",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/indexeddb-transcript-contract.spec.ts",
+      "action": "modify",
+      "expected_census_sha256": "d54af2ab51baefba2b2c372b6c14b3ee4702de2f81eeac08bf819cc92b5322c0",
+      "candidate_sha256": "d54af2ab51baefba2b2c372b6c14b3ee4702de2f81eeac08bf819cc92b5322c0",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "d54af2ab51baefba2b2c372b6c14b3ee4702de2f81eeac08bf819cc92b5322c0",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/tests/recording-folder-selection.spec.ts",
+      "action": "modify",
+      "expected_census_sha256": "e64ee29d21f5e4e7e7f286a4248ca4b9b3f5ebda90ade8fc77abb079f7e10869",
+      "candidate_sha256": "e64ee29d21f5e4e7e7f286a4248ca4b9b3f5ebda90ade8fc77abb079f7e10869",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "e64ee29d21f5e4e7e7f286a4248ca4b9b3f5ebda90ade8fc77abb079f7e10869",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src/components/RecordingSettings.tsx",
+      "action": "modify",
+      "expected_census_sha256": "d41e12c82149ee1c34dba8b46015f2415b4fe8eabbf212abdf826cad42bb8b53",
+      "candidate_sha256": "d41e12c82149ee1c34dba8b46015f2415b4fe8eabbf212abdf826cad42bb8b53",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "d41e12c82149ee1c34dba8b46015f2415b4fe8eabbf212abdf826cad42bb8b53",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/search.rs",
+      "action": "modify",
+      "expected_census_sha256": "61cec0bfd32289091b8cf1be624b29d1d3372213d73c42d7d28f4b9ce2320cee",
+      "candidate_sha256": "61cec0bfd32289091b8cf1be624b29d1d3372213d73c42d7d28f4b9ce2320cee",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "61cec0bfd32289091b8cf1be624b29d1d3372213d73c42d7d28f4b9ce2320cee",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/tests/meeting_search.rs",
+      "action": "modify",
+      "expected_census_sha256": "6fb4cb5576e8dc698abcfc2ffd96c347d6928c26573d8ab3233c507576ef26c9",
+      "candidate_sha256": "6fb4cb5576e8dc698abcfc2ffd96c347d6928c26573d8ab3233c507576ef26c9",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "6fb4cb5576e8dc698abcfc2ffd96c347d6928c26573d8ab3233c507576ef26c9",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/metadata.rs",
+      "action": "modify",
+      "expected_census_sha256": "0afa85964697d7e700c36d42a44438d43e50c2959f0b6ef6be5f8df5fc2a2da6",
+      "candidate_sha256": "0afa85964697d7e700c36d42a44438d43e50c2959f0b6ef6be5f8df5fc2a2da6",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "0afa85964697d7e700c36d42a44438d43e50c2959f0b6ef6be5f8df5fc2a2da6",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/persistence.rs",
+      "action": "modify",
+      "expected_census_sha256": "7722a375d478eae986be2646e0e99dcfb0755c41f3ea95889e3849a2a3cad486",
+      "candidate_sha256": "7722a375d478eae986be2646e0e99dcfb0755c41f3ea95889e3849a2a3cad486",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "7722a375d478eae986be2646e0e99dcfb0755c41f3ea95889e3849a2a3cad486",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/summary.rs",
+      "action": "modify",
+      "expected_census_sha256": "998ecc0ce0c9d069cb26f79eb20e2e2caf74d6fa01712d0233bca81e24a28015",
+      "candidate_sha256": "998ecc0ce0c9d069cb26f79eb20e2e2caf74d6fa01712d0233bca81e24a28015",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "998ecc0ce0c9d069cb26f79eb20e2e2caf74d6fa01712d0233bca81e24a28015",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/encode.rs",
+      "action": "modify",
+      "expected_census_sha256": "04fddadb0606b8f1748b0c3284e8d1f48e1e4debfcb24afc80c98c12b0f3f1e7",
+      "candidate_sha256": "04fddadb0606b8f1748b0c3284e8d1f48e1e4debfcb24afc80c98c12b0f3f1e7",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "04fddadb0606b8f1748b0c3284e8d1f48e1e4debfcb24afc80c98c12b0f3f1e7",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/audio/decoder.rs",
+      "action": "modify",
+      "expected_census_sha256": "e6281bbe8ee211a0ca70799d8c58dc9f8ecb043bbd9e3e8bc07a164a091cff1a",
+      "candidate_sha256": "e6281bbe8ee211a0ca70799d8c58dc9f8ecb043bbd9e3e8bc07a164a091cff1a",
+      "candidate_matches_census": true,
+      "canonical_overlay_sha256": "e6281bbe8ee211a0ca70799d8c58dc9f8ecb043bbd9e3e8bc07a164a091cff1a",
+      "overlay_differs_from_candidate": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/meeting_context.rs",
+      "action": "modify",
+      "expected_census_sha256": "64c28e74042a206c8ed4c1bc847165aa1741ee72f498921d62227c2ed3275558",
+      "candidate_sha256": null,
+      "candidate_matches_census": false,
+      "canonical_overlay_sha256": "64c28e74042a206c8ed4c1bc847165aa1741ee72f498921d62227c2ed3275558",
+      "overlay_differs_from_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/tests/meeting_context.rs",
+      "action": "modify",
+      "expected_census_sha256": "d067531d282955ee0bb82a5a28de91f75bb8804706acba81fafdca29caf190a9",
+      "candidate_sha256": null,
+      "candidate_matches_census": false,
+      "canonical_overlay_sha256": "d067531d282955ee0bb82a5a28de91f75bb8804706acba81fafdca29caf190a9",
+      "overlay_differs_from_candidate": true
+    }
+  ],
+  "paths_count": 62,
+  "all_candidate_paths_match_census": false,
+  "canonical_overlay_differs": [
+    "frontend/src-tauri/src/api/api.rs",
+    "frontend/src-tauri/src/lib.rs",
+    "frontend/src/app/meeting-details/page-content.tsx",
+    "frontend/src-tauri/src/database/repositories/meeting_context.rs",
+    "frontend/src-tauri/tests/meeting_context.rs"
+  ],
+  "implementation_admitted": false,
+  "limitations": [
+    "This comparison is not the complete storage/SQL/registered-command caller re-census or fresh independent Task0 reviews.",
+    "Canonical root contains preserved uncommitted product overlay; candidate53 comparison alone does not transfer or accept that overlay.",
+    "No branch/worktree creation, product mutation, commit or task close."
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

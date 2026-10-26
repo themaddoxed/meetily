@@ -1,0 +1,12 @@
+[
+  {
+    "path": "frontend/src-tauri/src/audio/capture/macos.rs",
+    "before_sha256": "69a029f9341d7882e84e53bff8b8ec1055d751ad72cc5f33456e685b8662a252",
+    "after_sha256": "abf37c85c06eacbd0cbf8948c3ce839ebd22bfd15f86a7e4d805ca6746c707c7"
+  },
+  {
+    "path": "frontend/src-tauri/src/audio/pipeline.rs",
+    "before_sha256": "263bcce827814f0ee4676ed1f5147efa01134d99c9c8d0ea71194d277334a333",
+    "after_sha256": "1f4aa0aefddd72033d61913eb091e0626d5f86af1db5f96970bacc3334c3d4e6"
+  }
+]

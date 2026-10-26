@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-03",
+  "task": "FORK-145",
+  "scope": "legacy retained workflow syntax baseline after archive-only acquisition checkpoint",
+  "tool": {
+    "version": "1.7.12",
+    "binary_sha256": "d1f7cee75ae2873609bd9567b4600bebc5315a5e733e73202987a44fafdd53b2",
+    "source_archive_sha256": "5b44c3bc2255115c9b69e30efc0fecdf498fdb63c5d58e17084fd5f16324c644",
+    "platform": "darwin/amd64"
+  },
+  "commands": [
+    {
+      "command": "actionlint -version",
+      "exit_status": 0,
+      "stdout": "1.7.12; installed by downloading from release page; built with go1.26.1 compiler for darwin/amd64"
+    },
+    {
+      "command": "actionlint .github/workflows/ci.yml .github/workflows/quality-gate.yml .github/workflows/release.yml",
+      "exit_status": 0,
+      "diagnostics": []
+    }
+  ],
+  "observation": "Coordinator terminal results, not a second rerun or reviewer execution.",
+  "workflows": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "3b294c3423bab1a29e4f1fc87b9ca3eb65349e9f8b2762ed36c232dc4b076560",
+      "matches_main_base": true
+    },
+    {
+      "path": ".github/workflows/quality-gate.yml",
+      "sha256": "481d039e03bf3d8d2ca4ad90a262d9b62eb3c615f7ea480da718b349cdefbc4e",
+      "matches_main_base": true
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "fef579569ee82bd9d81c7ef260ea62ed9998b2c8a8978e15808afeddf3035cbd",
+      "matches_main_base": true
+    }
+  ],
+  "limits": [
+    "Syntax baseline only: old mixed-platform workflows remain unchanged.",
+    "Does not prove macOS-only policy, Universal build, supply-chain gates, hosted scheduling or release readiness.",
+    "Arm64 binary not executed.",
+    "Archive-acquisition evidence described an earlier unexecuted checkpoint; this is the subsequent local amd64 run."
+  ],
+  "product_changed": false,
+  "git_refs_changed": false
+}

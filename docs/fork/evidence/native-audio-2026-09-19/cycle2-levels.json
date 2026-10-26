@@ -1,0 +1,23 @@
+{
+  "audio.mp4": {
+    "exit": 0,
+    "levels": [
+      "[Parsed_volumedetect_0 @ 0x7f92949052c0] mean_volume: -24.1 dB",
+      "[Parsed_volumedetect_0 @ 0x7f92949052c0] max_volume: -3.5 dB"
+    ]
+  },
+  "microphone.mp4": {
+    "exit": 0,
+    "levels": [
+      "[Parsed_volumedetect_0 @ 0x7fa79a104ec0] mean_volume: -54.1 dB",
+      "[Parsed_volumedetect_0 @ 0x7fa79a104ec0] max_volume: -34.8 dB"
+    ]
+  },
+  "system.mp4": {
+    "exit": 0,
+    "levels": [
+      "[Parsed_volumedetect_0 @ 0x7fdecc205280] mean_volume: -22.6 dB",
+      "[Parsed_volumedetect_0 @ 0x7fdecc205280] max_volume: -3.5 dB"
+    ]
+  }
+}

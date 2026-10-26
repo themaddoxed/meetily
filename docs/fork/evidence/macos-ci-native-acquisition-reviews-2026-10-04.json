@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-04",
+  "scope": "Retained acquisition bytes, locked/API source bindings and read-only architecture/hash verification only",
+  "reports": [
+    {
+      "path": "docs/fork/macos-ci-native-acquisition-spec-review-2026-10-04.md",
+      "sha256": "d1853d79e5860af4b1941e89a9642ec21ec881c9d3be345516d189aba7af03d2",
+      "result": "PASS",
+      "critical": 0,
+      "important": 0,
+      "minor": 0
+    },
+    {
+      "path": "docs/fork/macos-ci-native-acquisition-quality-review-2026-10-04.md",
+      "sha256": "18b79daf6bc4d41e67c7b4ca47cba20fbf7dc34a74d2a07744df724283c75297",
+      "result": "PASS",
+      "critical": 0,
+      "important": 0,
+      "minor": 0
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/fork/evidence/macos-ci-onnx-source-census-2026-10-04.json",
+      "sha256": "8ec371d733fd5fcd71c7d1d76080b91437f3b35de3c39c705ad1f30f958439fb"
+    },
+    {
+      "path": "docs/fork/evidence/macos-ci-ffmpeg-source-census-2026-10-04.json",
+      "sha256": "999f4ac2038cf2423e1284e79f21838ee187b492ba988ed21a1d3562269cd248"
+    }
+  ],
+  "producer_admitted": false,
+  "ci_implementation_admitted": false,
+  "hosted_jobs": "NOT_RUN",
+  "release_readiness": "NOT_ESTABLISHED"
+}

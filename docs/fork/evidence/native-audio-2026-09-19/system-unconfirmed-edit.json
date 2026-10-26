@@ -1,0 +1,45 @@
+[
+  {
+    "path": "frontend/src-tauri/src/audio/permissions.rs",
+    "before": "22b4fe590f98043a0a0ed8f39fd9336712ee0ffc9ff83ce9f0f6aa9d35896e2d",
+    "after": "fefbaf4cd6d1b0e51d800e4bedc9b58749d547144001c68298cfc4d2b6768167"
+  },
+  {
+    "path": "frontend/src/components/PermissionWarning.tsx",
+    "before": "c2cd8a800ee9ed717d1f1b60a427aac2a620efebdb650b0b7fb00aba64e0c8f3",
+    "after": "1a9f9787b980ae84734b66cb4816cb4a9fd8b2089e8f56d05efae04817d5f262"
+  },
+  {
+    "path": "frontend/src/app/_components/TranscriptPanel.tsx",
+    "before": "59d27557797caf8a77e0338fb1761fdc9e61167b2f9c26a67fc8d0cc915f7b10",
+    "after": "18b648bd3059b091698de90134695083157b28a1c7357ae4828b6013a3e0e448"
+  },
+  {
+    "path": "frontend/src/components/onboarding/steps/PermissionsStep.tsx",
+    "before": "03d68d6da18d31d22b2324ee95885b066c999365fdc303ff997fb724ba64a19d",
+    "after": "60e945ccc840e923db1d60b691371db9213184eb83f3174a48dd69ffdc2048c0"
+  },
+  {
+    "path": "frontend/src/lib/audioPermissions.ts",
+    "before": "ba5d6803e69a9141d237259dbbfe9b88a56a091997f3c987f15e28e0c109ecc3",
+    "after": "e41d7bfc5a2f03ee66f1e900ab8f4dec3fb7f9fdb6d3614a3170f702bd41fd7f"
+  },
+  {
+    "path": "frontend/src/lib/i18n/catalog.ts",
+    "before": "1e33bb98b6a59d83e3af619aa0f5d952858250522ec403c89df6a096f0b0af60",
+    "after": "d91820da6a635db4d26af2ea23b71a62fb07d8b9f1fe183a7fa3a34b095fe841"
+  },
+  {
+    "path": "frontend/src/testing/tauri-browser-mocks.ts",
+    "before": "140a661d13d2404b0b2b98648f0c34ffd7e235dcbdbfde9530f0b023ee128b95",
+    "after": "03aad10b3f4d395ae86e26eccbd0d9fb5828dd547c364b33124ddb571f583f09"
+  },
+  {
+    "path": "frontend/tests/lib/audio-permissions.test.ts",
+    "after": "e38121e9bf7596c934e3fad5707b209a5747b4fd6406c9dc4963d725d12a78a2"
+  },
+  {
+    "path": "frontend/tests/macos-permissions-lifecycle.spec.ts",
+    "after": "66338bb9849e3cd7a1f3d9f8a0193581064c7cbbaf0e656b2ec7f3b0c641aa6c"
+  }
+]

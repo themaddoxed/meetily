@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "FIX_PROVEN",
+  "reason": "The same reproducer changed from failing to passing and broader checks passed.",
+  "reproduction": "confirmed",
+  "full_suite": "passed",
+  "same_command": true,
+  "before": {
+    "schema_version": 1,
+    "label": "reproduced-production-startup",
+    "captured_at": "2026-07-25T21:27:20.680706+00:00",
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "meetily",
+      "--test",
+      "data_integrity",
+      "interrupted_summary_regeneration_does_not_remain_pending_after_restart",
+      "--",
+      "--exact",
+      "--nocapture"
+    ],
+    "cwd": "/Users/developer/Desktop/meeting-minutes/.worktrees/dev/frontend/src-tauri",
+    "runtime": "Python 3.14.6 on Darwin x86_64",
+    "duration_ms": 14985.389,
+    "exit_code": 101,
+    "timed_out": false,
+    "stdout": "\nrunning 1 test\ntest interrupted_summary_regeneration_does_not_remain_pending_after_restart ... FAILED\n\nfailures:\n\nfailures:\n    interrupted_summary_regeneration_does_not_remain_pending_after_restart\n\ntest result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 9 filtered out; finished in 0.05s\n\n",
+    "stderr": "   Compiling meetily v0.4.1 (/Users/developer/Desktop/meeting-minutes/.worktrees/dev/frontend/src-tauri)\nwarning: meetily@0.4.1: 🚀 Building Meetily for: macos\nwarning: meetily@0.4.1: ✅ macOS: Metal GPU acceleration ENABLED by default\nwarning: meetily@0.4.1: 🎬 Checking FFmpeg binary for target: x86_64-apple-darwin\nwarning: meetily@0.4.1: 🔍 Found cached FFmpeg binary: ffmpeg-x86_64-apple-darwin\nwarning: meetily@0.4.1: ✅ FFmpeg verification passed: ffmpeg version 8.0.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2025 the FFmpeg developers\nwarning: meetily@0.4.1: ✅ FFmpeg binary already cached and verified: ffmpeg-x86_64-apple-darwin\nwarning: meetily@0.4.1: ✅ Universal FFmpeg binary is ready\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.76s\n     Running tests/data_integrity.rs (/Users/developer/Desktop/meeting-minutes/.worktrees/dev/target/debug/deps/data_integrity-2e71db128b1760c5)\n\nthread 'interrupted_summary_regeneration_does_not_remain_pending_after_restart' (14934918) panicked at frontend/src-tauri/tests/data_integrity.rs:493:5:\nassertion `left != right` failed: a restarted process cannot resume the destroyed background task\n  left: \"PENDING\"\n right: \"PENDING\"\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nerror: test failed, to rerun pass `-p meetily --test data_integrity`\n",
+    "stdout_truncated": false,
+    "stderr_truncated": false,
+    "secrets_redacted": true
+  },
+  "after": {
+    "schema_version": 1,
+    "label": "fixed-production-startup",
+    "captured_at": "2026-07-26T04:17:14.251127+00:00",
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "meetily",
+      "--test",
+      "data_integrity",
+      "interrupted_summary_regeneration_does_not_remain_pending_after_restart",
+      "--",
+      "--exact",
+      "--nocapture"
+    ],
+    "cwd": "/Users/developer/Desktop/meeting-minutes/.worktrees/dev",
+    "runtime": "Python 3.14.6 on Darwin x86_64",
+    "duration_ms": 14958.137,
+    "exit_code": 0,
+    "timed_out": false,
+    "stdout": "\nrunning 1 test\ntest interrupted_summary_regeneration_does_not_remain_pending_after_restart ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 9 filtered out; finished in 0.05s\n\n",
+    "stderr": "   Compiling meetily v0.4.1 (/Users/developer/Desktop/meeting-minutes/.worktrees/dev/frontend/src-tauri)\nwarning: meetily@0.4.1: 🚀 Building Meetily for: macos\nwarning: meetily@0.4.1: ✅ macOS: Metal GPU acceleration ENABLED by default\nwarning: meetily@0.4.1: 🎬 Checking FFmpeg binary for target: x86_64-apple-darwin\nwarning: meetily@0.4.1: 🔍 Found cached FFmpeg binary: ffmpeg-x86_64-apple-darwin\nwarning: meetily@0.4.1: ✅ FFmpeg verification passed: ffmpeg version 8.0.1-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2025 the FFmpeg developers\nwarning: meetily@0.4.1: ✅ FFmpeg binary already cached and verified: ffmpeg-x86_64-apple-darwin\nwarning: meetily@0.4.1: ✅ Universal FFmpeg binary is ready\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.72s\n     Running tests/data_integrity.rs (target/debug/deps/data_integrity-fcfe3c454974d188)\n",
+    "stdout_truncated": false,
+    "stderr_truncated": false,
+    "secrets_redacted": true
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

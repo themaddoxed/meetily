@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-04",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "task_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03",
+  "plan": "docs/superpowers/plans/2026-10-04-theme-sidebar-snapshots.md",
+  "plan_sha256": "a751c5d4938cbc9e7469976bda669e1d2942fb27ffd59524c8973c2d08946f03",
+  "original_snapshot_hashes": {
+    "home-light-chromium-darwin.png": "aa3981eb38e051e6c64bdd17939d6b6f16c26ccfd6156b59f3662bf9f41fd44a",
+    "home-dark-chromium-darwin.png": "90d179e0141ec046eea4255e03ade4dcb1159f7f7dada411f14e440e1a3842e7"
+  },
+  "backup_path": "/private/tmp/meetily-theme-snapshots-2026-10-04",
+  "source_hashes": {
+    "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee"
+  },
+  "update": {
+    "exit": 0,
+    "passed": 2,
+    "log": "/private/tmp/meetily-theme-snapshots-2026-10-04/update.log",
+    "sha256": "b33b12226b4d1d6bc3c1c9bbc3a968847cdb0be8e9ac74fd8a72c11e3502995e"
+  },
+  "normal_comparison": {
+    "exit": 0,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "log": "/private/tmp/meetily-theme-snapshots-2026-10-04/compare.log",
+    "sha256": "ad4124914295a2b45c00ce51b293248284e7fb49e3138a49ce92d54e2e9ec09e"
+  },
+  "reviews": {
+    "SPEC": {
+      "report": "docs/fork/theme-sidebar-snapshot-implementation-spec-review-2026-10-04.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "bf477caad963a78e2808476916f4b71e58089064f51587c22a1f093998397172"
+    },
+    "QUALITY": {
+      "report": "docs/fork/theme-sidebar-snapshot-implementation-quality-review-2026-10-04.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "5b60c5f7ba09472f4898f6f7ed3140518e39e4c72fdd1968b7c883d46e310ca2"
+    }
+  },
+  "owner_visual_inspection": "old/actual/new light and dark PNGs viewed; date folder, Ready and 30:00 explained by integrated fb48ee9; no unexpected visible delta",
+  "full_five_historical": {
+    "exit": 1,
+    "passed": 128,
+    "failed": 2,
+    "reference": "/private/tmp/meetily-theme-full-current-2026-10-04.json"
+  },
+  "verification_scope": "128 unaffected full-suite passes plus two ordinary snapshot rerun passes; not a new all-130 run",
+  "typecheck_race": {
+    "result": "FAIL TS6053 generated .next/types disappeared while Next dev server ran",
+    "exit": "not captured separately in compound diagnostic command; shell exit0 was not typecheck success",
+    "resolved_by": "subsequent serial check.sh --full TypeScript stage PASS"
+  },
+  "native": "NOT_RUN",
+  "full_theme_acceptance": false,
+  "feature_committed": false,
+  "feature_integrated": false,
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

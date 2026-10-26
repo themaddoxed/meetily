@@ -1,0 +1,52 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprintBefore": "d69e40bde2fcbd6d9e78919a9626f9e45b47d0b52a381abfa4b1368e46a24bd3",
+  "sourceFingerprintAfter": "d69e40bde2fcbd6d9e78919a9626f9e45b47d0b52a381abfa4b1368e46a24bd3",
+  "architecture": "x86_64",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN",
+  "releaseEligible": false,
+  "buildExecutableSha256": "aa696bd5185da63aa9db124bba3a765b6e1cf802454baac9be22ee8a8b89e325",
+  "packagedExecutableSha256": "129825df4bd88d3fbd214ff05cbace0fac3d4688c86d62956ce8ffbe9a89300a",
+  "app": "target/diagnostic-dirty/fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c/run-20260920-source-controls-final9/meetily.app",
+  "purpose": "Exact current package after policy and strict-Clippy cleanup; no native relaunch to avoid another TCC prompt.",
+  "automated": {
+    "macosCaptureTests": "23 passed",
+    "recordingSessionTests": "48 passed, 1 ignored",
+    "permissionsTests": "7 passed",
+    "frontendRecordingControls": "3 passed",
+    "frontendUnit": "49 passed",
+    "frontendPolicyAndSurface": "25 passed",
+    "frontendPermissionPlaywright": "12 passed",
+    "releasePolicyTests": "225 passed",
+    "frontendTypecheck": "PASS",
+    "releaseBuild": "PASS",
+    "codesignVerify": "PASS",
+    "gitDiffCheck": "PASS",
+    "strictClippy": "PASS",
+    "releasePolicyCommand": "PASS"
+  },
+  "native": {
+    "status": "NOT_RERUN",
+    "equivalentRuntimeEvidence": "native-audio-2026-09-20-final4.json",
+    "reason": "The exact package contains the current source-control executable, but no new app launch was performed because the same ad-hoc identity already has TCC access and another launch would only repeat the permission flow.",
+    "permissionSetup": "Existing ad-hoc TCC grants were preserved; no reset or new prompt",
+    "priorRecordingFolder": "/Users/developer/Movies/meetily-recordings/Meeting 20_09_26_20_02_13_2026-09-20_17-02",
+    "priorMetadataStatus": "completed",
+    "priorSystemTrack": "no frames; microphone-only fallback"
+  },
+  "limits": [
+    "current exact final9 package has not been relaunched natively",
+    "physical microphone disconnect/reconnect was not exercised",
+    "full TCC denied/recovery matrix was not exercised",
+    "system audio delivered no test frames, so native two-track mute/volume and pause/resume synchronization remain open",
+    "dirty source, ad-hoc signing, Intel-only artifact, and missing notarization prevent Alpha/release claims"
+  ],
+  "policyCorrection": "incremental_saver.rs accepts &ffmpeg only when assigned from find_ffmpeg_path(); regression fixture added.",
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

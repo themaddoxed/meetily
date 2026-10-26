@@ -1,0 +1,487 @@
+{
+  "date": "2026-10-04",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "task_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03",
+  "plan": {
+    "path": "docs/superpowers/plans/2026-10-04-theme-background-proof-v4.md",
+    "sha256": "c61c921567f0d6e12f7760c6e0585bd7c529f51cb312585a7d00f08bf512a997",
+    "reviews": {
+      "SPEC": {
+        "report": "docs/fork/theme-background-proof-plan-v4-spec-review-2026-10-04.md",
+        "verdict": "PASS C0 I0 M0",
+        "sha256": "9b1381c56f719d497dfffc0a7459afc6c73ebef0e74e79d5f51254d94f4d74a7"
+      },
+      "QUALITY": {
+        "report": "docs/fork/theme-background-proof-plan-v4-quality-review-2026-10-04.md",
+        "verdict": "PASS C0 I0 M0",
+        "sha256": "deda9f0b369e82bcee6cbca15ede184e4afd034717cdddcb155ed4ba07012a60"
+      }
+    }
+  },
+  "source_hashes": {
+    "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+    "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f"
+  },
+  "diagnostic_inventory": {
+    "exit": 0,
+    "routes": 3,
+    "scope": "computed inventory only; not theme acceptance",
+    "log": "/private/tmp/meetily-bg-diag/report-fixed.log",
+    "log_sha256": "fb84004c018dfb0f9505af437f603e0da1f8c14baddfaecabc5f1fbb1156effd",
+    "inventory": "/private/tmp/meetily-bg-diag/inventory.json",
+    "inventory_sha256": "6a7ffb3165b68e9864a201185a8f27611a642576607386b1b9927b8e857ee885",
+    "summary": [
+      {
+        "route": "/",
+        "visible_nodes": 93,
+        "background_colors": {
+          "rgba(0, 0, 0, 0)": 76,
+          "rgb(10, 10, 10)": 7,
+          "rgb(38, 38, 38)": 1,
+          "rgb(248, 114, 114)": 1,
+          "rgba(85, 147, 247, 0.15)": 2,
+          "rgba(251, 217, 80, 0.1)": 1,
+          "rgb(251, 217, 80)": 1,
+          "rgba(251, 217, 80, 0.15)": 1,
+          "rgba(85, 147, 247, 0.1)": 1,
+          "rgb(85, 147, 247)": 2
+        },
+        "background_images": {},
+        "box_shadows": {
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px": 1,
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px": 2
+        }
+      },
+      {
+        "route": "/settings",
+        "visible_nodes": 123,
+        "background_colors": {
+          "rgba(0, 0, 0, 0)": 102,
+          "rgb(10, 10, 10)": 11,
+          "rgb(248, 114, 114)": 1,
+          "rgba(85, 147, 247, 0.15)": 1,
+          "rgb(38, 38, 38)": 2,
+          "rgba(38, 38, 38, 0.4)": 4,
+          "rgb(85, 147, 247)": 1,
+          "rgb(250, 250, 250)": 1
+        },
+        "background_images": {},
+        "box_shadows": {
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px": 1,
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px": 4,
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px": 1,
+          "rgba(255, 255, 255, 0.08) 0px 0px 0px 1px": 4,
+          "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(59, 130, 246, 0.5) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px": 1
+        }
+      },
+      {
+        "route": "/meeting-details?id=theme-test-meeting",
+        "visible_nodes": 152,
+        "background_colors": {
+          "rgba(0, 0, 0, 0)": 130,
+          "rgb(10, 10, 10)": 17,
+          "rgb(248, 114, 114)": 1,
+          "rgba(85, 147, 247, 0.15)": 1,
+          "rgb(38, 38, 38)": 1,
+          "rgba(38, 38, 38, 0.4)": 1,
+          "rgb(2, 8, 23)": 1
+        },
+        "background_images": {
+          "linear-gradient(to right, rgba(85, 147, 247, 0.1), rgba(85, 147, 247, 0.2))": 2
+        },
+        "box_shadows": {
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px": 1,
+          "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px": 15
+        }
+      }
+    ]
+  },
+  "rational_math_check": {
+    "exit": 0,
+    "result": {
+      "cases": 166698,
+      "violations": 0,
+      "minimum_gap": "0",
+      "scope": "exact rational finite scenario enumeration; supplemental evidence for proposed bound, not browser/implementation acceptance"
+    },
+    "script": "/private/tmp/meetily-bg-diag/check-opacity-bound.py",
+    "script_sha256": "1857bff900438246298306989d549dc7db3be73f0e90a95cef1898b1ffd3f599"
+  },
+  "review_regression": {
+    "RED": {
+      "exit": 1,
+      "failed": 6,
+      "log": "/private/tmp/meetily-bg-diag/review-red.log",
+      "sha256": "36908df5e858b760b0b9af551ea14ab799ecd39e59f9dfa68900c391a745e996"
+    },
+    "canvas_RED": {
+      "exit": 1,
+      "failed": 1,
+      "log": "/private/tmp/meetily-bg-diag/canvas-red.log",
+      "sha256": "4ccc0975561d29c941ccc2d2304f0a51349aa5108ff45800ac5b65f40377d943"
+    },
+    "final_fixtures": {
+      "exit": 0,
+      "passed": 45,
+      "log": "/private/tmp/meetily-bg-diag/canvas-fix-fixtures.log",
+      "sha256": "76041f59e740687ff998f11409d8a0a631fadd1fcf0ec16bb3a5285af2e4e03f"
+    }
+  },
+  "route_checks": {
+    "previous": {
+      "exit": 1,
+      "passed": 2,
+      "failed": 1,
+      "scope": "same helper but spec before added settling wait; Home and Details PASS, Settings refused transient scale",
+      "log": "/private/tmp/meetily-bg-diag/routes-fixed.log",
+      "sha256": "0bc9231ed5ce8833aac99d1daabb1f8efabd121af3770a79d8f4a98471461420",
+      "ledger": [
+        {
+          "path": "/",
+          "canvasProvider": "BODY",
+          "canvasRGB": [
+            10,
+            10,
+            10
+          ],
+          "scope": {
+            "left": 64,
+            "right": 1440,
+            "top": 0,
+            "bottom": 1000
+          },
+          "layers": 18,
+          "cells": 240,
+          "operations": 6606,
+          "exceptions": [],
+          "maxNearWhiteUpper": 84.50425576325247,
+          "worstCell": {
+            "box": {
+              "left": 836.671875,
+              "right": 844.671875,
+              "top": 183.4828338623047,
+              "bottom": 294.48284912109375
+            },
+            "upper": [
+              84.50425576325247,
+              146.09444052663795,
+              245.43344820951782
+            ],
+            "nodes": [
+              14,
+              18,
+              22,
+              35,
+              62,
+              64,
+              66,
+              97,
+              106,
+              112
+            ]
+          }
+        },
+        {
+          "path": "/meeting-details?id=theme-test-meeting",
+          "canvasProvider": "BODY",
+          "canvasRGB": [
+            10,
+            10,
+            10
+          ],
+          "scope": {
+            "left": 64,
+            "right": 1440,
+            "top": 0,
+            "bottom": 1000
+          },
+          "layers": 38,
+          "cells": 250,
+          "operations": 16491,
+          "exceptions": [],
+          "maxNearWhiteUpper": 33.9600000018,
+          "worstCell": {
+            "box": {
+              "left": 244.375,
+              "right": 324.15625,
+              "top": 16,
+              "bottom": 56
+            },
+            "upper": [
+              33.9600000018,
+              46.360000001799996,
+              66.3600000018
+            ],
+            "nodes": [
+              16,
+              19,
+              23,
+              36,
+              63,
+              65,
+              67,
+              71,
+              76,
+              82,
+              89,
+              93,
+              112,
+              118,
+              126,
+              137,
+              142,
+              150,
+              164,
+              170
+            ]
+          }
+        }
+      ]
+    },
+    "Settings_after_settling_wait": {
+      "exit": 0,
+      "passed": 1,
+      "failed": 0,
+      "log": "/private/tmp/meetily-bg-diag/settings-settled.log",
+      "sha256": "7d36acc7c083437427d68829dd873d950925736ae457dbe54087ab0430ff9630",
+      "ledger": [
+        {
+          "path": "/settings",
+          "canvasProvider": "BODY",
+          "canvasRGB": [
+            10,
+            10,
+            10
+          ],
+          "scope": {
+            "left": 64,
+            "right": 1440,
+            "top": 0,
+            "bottom": 1000
+          },
+          "layers": 29,
+          "cells": 390,
+          "operations": 19059,
+          "exceptions": [
+            146
+          ],
+          "maxNearWhiteUpper": 133.2131968042615,
+          "worstCell": {
+            "box": {
+              "left": 105,
+              "right": 224,
+              "top": 114,
+              "bottom": 159
+            },
+            "upper": [
+              133.2131968042615,
+              177.62956032426143,
+              249.26885632426144
+            ],
+            "nodes": [
+              14,
+              17,
+              21,
+              34,
+              61,
+              63,
+              101,
+              104,
+              128,
+              132,
+              141,
+              146,
+              147,
+              148
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "typecheck_exit": 0,
+  "targeted_eslint_exit": 0,
+  "full_theme_acceptance": false,
+  "native": "NOT_RUN",
+  "snapshots_changed": false,
+  "feature_committed": false,
+  "feature_integrated": false,
+  "final_source_reviews": {
+    "SPEC": {
+      "verdict": "PASS C0 I0 M0",
+      "report": "docs/fork/theme-background-proof-final-spec-review-2026-10-04.md",
+      "sha256": "b6035b8467e9e5dd221b11683c33d7a94337b832a1aa012c9b920d303ca2f6d8"
+    },
+    "QUALITY": {
+      "verdict": "PASS C0 I0 M0",
+      "report": "docs/fork/theme-background-proof-final-quality-review-2026-10-04.md",
+      "sha256": "8cd57971b6d62e4d5cbd34f9aa6f9ec720ae0515cf58bb7901c70e965d27ceea"
+    }
+  },
+  "full_five_theme": {
+    "exit": 1,
+    "passed": 128,
+    "failed": 2,
+    "skipped": 0,
+    "log": "/private/tmp/meetily-theme-full-current-2026-10-04.log",
+    "sha256": "0b5c0a1132b33f7cae7459c3a087e2a3bffb811b51cf4730027f1e4ec9a9a517",
+    "failure_kind": "two Sidebar snapshot mismatches; all background route checks passed",
+    "background_ledger": [
+      {
+        "path": "/",
+        "canvasProvider": "BODY",
+        "canvasRGB": [
+          10,
+          10,
+          10
+        ],
+        "scope": {
+          "left": 64,
+          "right": 1440,
+          "top": 0,
+          "bottom": 1000
+        },
+        "layers": 18,
+        "cells": 224,
+        "operations": 6180,
+        "exceptions": [],
+        "maxNearWhiteUpper": 85.000000001,
+        "worstCell": {
+          "box": {
+            "left": 543.5,
+            "right": 588.5,
+            "top": 182,
+            "bottom": 293
+          },
+          "upper": [
+            85.000000001,
+            147.000000001,
+            247.000000001
+          ],
+          "nodes": [
+            14,
+            18,
+            22,
+            35,
+            62,
+            64,
+            66,
+            97,
+            106
+          ]
+        }
+      },
+      {
+        "path": "/settings",
+        "canvasProvider": "BODY",
+        "canvasRGB": [
+          10,
+          10,
+          10
+        ],
+        "scope": {
+          "left": 64,
+          "right": 1440,
+          "top": 0,
+          "bottom": 1000
+        },
+        "layers": 29,
+        "cells": 390,
+        "operations": 19059,
+        "exceptions": [
+          146
+        ],
+        "maxNearWhiteUpper": 133.2131968042615,
+        "worstCell": {
+          "box": {
+            "left": 105,
+            "right": 224,
+            "top": 114,
+            "bottom": 159
+          },
+          "upper": [
+            133.2131968042615,
+            177.62956032426143,
+            249.26885632426144
+          ],
+          "nodes": [
+            14,
+            17,
+            21,
+            34,
+            61,
+            63,
+            101,
+            104,
+            128,
+            132,
+            141,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "canvasProvider": "BODY",
+        "canvasRGB": [
+          10,
+          10,
+          10
+        ],
+        "scope": {
+          "left": 64,
+          "right": 1440,
+          "top": 0,
+          "bottom": 1000
+        },
+        "layers": 38,
+        "cells": 250,
+        "operations": 16491,
+        "exceptions": [],
+        "maxNearWhiteUpper": 33.9600000018,
+        "worstCell": {
+          "box": {
+            "left": 244.375,
+            "right": 324.15625,
+            "top": 16,
+            "bottom": 56
+          },
+          "upper": [
+            33.9600000018,
+            46.360000001799996,
+            66.3600000018
+          ],
+          "nodes": [
+            16,
+            19,
+            23,
+            36,
+            63,
+            65,
+            67,
+            71,
+            76,
+            82,
+            89,
+            93,
+            112,
+            118,
+            126,
+            137,
+            142,
+            150,
+            164,
+            170
+          ]
+        }
+      }
+    ]
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

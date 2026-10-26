@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-03",
+  "task": "FORK-145",
+  "status": "PARTIAL_EXTERNAL_PREREQUISITES_RECORDED",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "prior_plan_sha256": "4f40b439579dc453743e3fd15c8d12ee74cce53ae5481364ece5b5b2255ce373",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/actions/runner-images/main/README.md",
+      "finding": "macos-15 arm64 and macos-15-intel x64 labels documented; macos-14 is deprecated."
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+      "finding": "macos-15-intel is documented as a standard runner for both public/private repositories; repository capacity not verified."
+    },
+    {
+      "url": "https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md",
+      "finding": "Xcode16.4 build16F6 at /Applications/Xcode_16.4.app; Rust1.98.0 and Node22.23.2 documented."
+    },
+    {
+      "url": "https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md",
+      "finding": "Xcode16.4 build16F6 at /Applications/Xcode_16.4.app; Rust1.98.1 and Node22.23.2 documented."
+    }
+  ],
+  "candidate_action_pins": "docs/fork/evidence/macos-ci-action-pins-2026-10-03.json",
+  "actionlint_downloads": "docs/fork/evidence/macos-ci-actionlint-2026-10-03.json",
+  "native_inputs": [
+    {
+      "name": "ffmpeg-aarch64-apple-darwin",
+      "sha256": "77d2c853f431318d55ec02676d9b2f185ebfdddb9f7677a251fbe453affe025a",
+      "declared_url": null,
+      "declared_size": null,
+      "declared_license": null,
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    },
+    {
+      "name": "ffmpeg-x86_64-apple-darwin",
+      "sha256": "430d60fbf419dab28daee9b679e7929a31ee9bae53f6e42e8ae26b725584290f",
+      "declared_url": null,
+      "declared_size": null,
+      "declared_license": null,
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    },
+    {
+      "name": "onnxruntime-aarch64-apple-darwin.a",
+      "sha256": "e5c83560aa9e88afa39d9dca9fb5f5a767e28adb5458d1c36fe0357131b6af8b",
+      "declared_url": null,
+      "declared_size": null,
+      "declared_license": null,
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    },
+    {
+      "name": "onnxruntime-x86_64-apple-darwin.a",
+      "sha256": "f41370c27dd380419c6cbdfe4f78238613a49506c8f491c0cb07084edac9d561",
+      "declared_url": null,
+      "declared_size": null,
+      "declared_license": null,
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    },
+    {
+      "name": "sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+      "sha256": "e2d704b01c392970ee7fb90d7e74fd854528a172de0381228e987b79ac479f8e",
+      "declared_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.2/sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+      "declared_size": 18686919,
+      "declared_license": {
+        "id": "Apache-2.0",
+        "source": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.2/LICENSE"
+      },
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    },
+    {
+      "name": "sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+      "sha256": "aba062391bd847bae6b839fd474f444442d1f45071f80ca0c429ec0fb23f9c52",
+      "declared_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.2/sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+      "declared_size": 18402047,
+      "declared_license": {
+        "id": "Apache-2.0",
+        "source": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.2/LICENSE"
+      },
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    },
+    {
+      "name": "pyannote-segmentation-3.0.onnx",
+      "sha256": "fed22097bca974bad329a930b60865703766ff89f05fa09060bf6fd44e92e319",
+      "declared_url": "https://huggingface.co/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/resolve/340b52f1f5cd12d45a30fa284691417eaad2ff92/model.onnx",
+      "declared_size": 5992778,
+      "declared_license": {
+        "id": "MIT",
+        "source": "https://huggingface.co/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/blob/340b52f1f5cd12d45a30fa284691417eaad2ff92/LICENSE"
+      },
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    },
+    {
+      "name": "3dspeaker-eres2net-base-16k.onnx",
+      "sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+      "declared_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx",
+      "declared_size": 39593761,
+      "declared_license": {
+        "id": "Apache-2.0",
+        "source": "https://github.com/modelscope/3D-Speaker/blob/065629c313eaf1a01c65c640c46d77e61e9607b4/LICENSE"
+      },
+      "fresh_acquisition": "NOT_RUN",
+      "immutable_producer_admitted": false
+    }
+  ],
+  "blockers": [
+    "Clean implementation route/base pending user selection.",
+    "Four FFmpeg/ONNX manifest entries lack immutable producer/download URL, size and license provenance. Local seed copy cannot prove fresh-run acquisition.",
+    "Fresh native/model acquisition, missing/corrupt/replayed fail-before-build proof not performed.",
+    "Proposed exact Rust/Node toolchains have not been installed or checked on hosted runners.",
+    "Full action source review and actual repository runner capacity remain unverified."
+  ],
+  "not_run": [
+    "hosted_workflow_dispatch",
+    "native_product_build",
+    "signing",
+    "notarization",
+    "draft_creation"
+  ],
+  "product_changed": false,
+  "git_refs_changed": false
+}

@@ -1,0 +1,172 @@
+name: Meetily quality gate
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  DEVELOPER_DIR: /Applications/Xcode.app/Contents/Developer
+
+jobs:
+  source-integrity:
+    name: Committed source integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reject committed whitespace errors
+        env:
+          MEETILY_CHECK_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before || '' }}
+        run: ./scripts/check-whitespace.sh
+
+  frontend:
+    name: Frontend policy, tests, and static export
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.17.1
+          run_install: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.17.0
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - name: Install frozen dependencies
+        run: pnpm --dir frontend install --frozen-lockfile
+      - name: Install Chromium
+        run: pnpm --dir frontend exec playwright install --with-deps chromium
+      - name: Production policy and accidental-secret scan
+        run: pnpm --dir frontend check:policy
+      - name: Frontend lint
+        run: pnpm --dir frontend lint
+      - name: TypeScript
+        run: pnpm --dir frontend typecheck
+      - name: Frontend unit tests
+        run: pnpm --dir frontend test:frontend
+      - name: Critical browser recovery and contracts
+        run: >-
+          pnpm --dir frontend exec playwright test
+          tests/interrupted-recovery.spec.ts
+          tests/indexeddb-transcript-contract.spec.ts
+          tests/fixture-contracts.spec.ts
+          tests/recording-folder-selection.spec.ts
+          tests/desktop-local-safety.spec.ts
+          tests/meeting-search.spec.ts
+          --workers=2
+      - name: Production static export
+        run: pnpm --dir frontend build
+
+  rust-sqlite:
+    name: macOS Rust, SQLite, migration, and data-integrity tests
+    runs-on: macos-14
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.17.1
+          run_install: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.17.0
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy,rustfmt
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: . -> target
+      - name: Install frozen dependencies
+        run: pnpm --dir frontend install --frozen-lockfile
+      - name: Build required host helper sidecar
+        shell: bash
+        run: |
+          cargo build --release --package llama-helper --features metal
+          HOST_TARGET=$(rustc -vV | sed -n 's/^host: //p')
+          mkdir -p frontend/src-tauri/binaries
+          cp target/release/llama-helper "frontend/src-tauri/binaries/llama-helper-${HOST_TARGET}"
+      - name: Rust format
+        run: cargo fmt --all -- --check
+      - name: Rust clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: Rust workspace tests including critical data suites
+        run: cargo test --workspace
+      - name: Record critical integration suites
+        run: |
+          cargo test -p meetily --test data_integrity
+          cargo test -p meetily --test diarization_migration --test diarization_apply
+          cargo test -p meetily --test export_integrity
+      - name: Packaged FFmpeg recovery integration
+        run: >-
+          cargo test -p meetily --test recording_recovery
+          successful_checkpoint_recovery_preserves_neighboring_meeting_files
+          -- --ignored
+
+  macos-production:
+    name: macOS production app evidence
+    needs: [frontend, rust-sqlite]
+    runs-on: macos-14
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.17.1
+          run_install: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.17.0
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: . -> target
+      - name: Install frozen dependencies
+        run: pnpm --dir frontend install --frozen-lockfile
+      - name: Build required host helper sidecar
+        shell: bash
+        run: |
+          cargo build --release --package llama-helper --features metal
+          HOST_TARGET=$(rustc -vV | sed -n 's/^host: //p')
+          mkdir -p frontend/src-tauri/binaries
+          cp target/release/llama-helper "frontend/src-tauri/binaries/llama-helper-${HOST_TARGET}"
+      - name: Production frontend build
+        run: pnpm --dir frontend build
+      - name: Build ad-hoc macOS app for inspection
+        run: pnpm --dir frontend exec tauri build --bundles app
+      - name: Upload production app evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: meetily-macos-production-app-${{ github.sha }}
+          path: target/release/bundle/macos/*.app
+          if-no-files-found: error
+          retention-days: 7
+
+  quality-gate:
+    name: Required quality gate
+    if: always()
+    needs: [source-integrity, frontend, rust-sqlite, macos-production]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require every quality job
+        env:
+          SOURCE_RESULT: ${{ needs.source-integrity.result }}
+          FRONTEND_RESULT: ${{ needs.frontend.result }}
+          RUST_RESULT: ${{ needs.rust-sqlite.result }}
+          PRODUCTION_RESULT: ${{ needs.macos-production.result }}
+        run: |
+          test "$SOURCE_RESULT" = success
+          test "$FRONTEND_RESULT" = success
+          test "$RUST_RESULT" = success
+          test "$PRODUCTION_RESULT" = success

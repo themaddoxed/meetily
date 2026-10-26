@@ -1,0 +1,52 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprintBefore": "fc4c9f6d7e090104ffe6de2be1ebcf7be3c83a8c8681f74bbb5fab3ed72904ca",
+  "sourceFingerprintAfter": "fc4c9f6d7e090104ffe6de2be1ebcf7be3c83a8c8681f74bbb5fab3ed72904ca",
+  "architecture": "x86_64",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN",
+  "releaseEligible": false,
+  "buildExecutableSha256": "0fce7a196a29bf61ac74951b000404a63e53f66dbf4508c0abd4c8586d8f49f5",
+  "packagedExecutableSha256": "c35ae0a9583e7b965da2baaf1cc388b1fb447bf3d39113152c220aaa97f1be63",
+  "app": "target/diagnostic-dirty/fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c/run-20260920-source-controls-final7/meetily.app",
+  "purpose": "Exact current package for FEAT-071 source controls; no native relaunch to avoid another TCC prompt.",
+  "automated": {
+    "macosCaptureTests": "23 passed",
+    "recordingSessionTests": "48 passed, 1 ignored",
+    "permissionsTests": "7 passed",
+    "frontendRecordingControls": "3 passed",
+    "frontendUnit": "49 passed",
+    "frontendPolicyAndSurface": "25 passed",
+    "frontendPermissionPlaywright": "12 passed",
+    "releasePolicyTests": "225 passed",
+    "frontendTypecheck": "PASS",
+    "releaseBuild": "PASS",
+    "codesignVerify": "PASS",
+    "gitDiffCheck": "PASS",
+    "strictClippy": "FAIL: 13 library findings and 16 test findings",
+    "releasePolicyCommand": "FAIL: legacy.launch-surface in incremental_saver.rs (existing FFmpeg policy false positive; no Python/FastAPI/Docker launch found)"
+  },
+  "native": {
+    "status": "NOT_RERUN",
+    "equivalentRuntimeEvidence": "native-audio-2026-09-20-final4.json",
+    "reason": "The exact package contains the current source-control executable, but no new app launch was performed because the same ad-hoc identity already has TCC access and another launch would only repeat the permission flow.",
+    "permissionSetup": "Existing ad-hoc TCC grants were preserved; no reset or new prompt",
+    "priorRecordingFolder": "/Users/developer/Movies/meetily-recordings/Meeting 20_09_26_20_02_13_2026-09-20_17-02",
+    "priorMetadataStatus": "completed",
+    "priorSystemTrack": "no frames; microphone-only fallback"
+  },
+  "limits": [
+    "current exact final7 package has not been relaunched natively",
+    "physical microphone disconnect/reconnect was not exercised",
+    "full TCC denied/recovery matrix was not exercised",
+    "system audio delivered no test frames, so native two-track mute/volume and pause/resume synchronization remain open",
+    "dirty source, ad-hoc signing, Intel-only artifact, and missing notarization prevent Alpha/release claims",
+    "strict Clippy and the repository release-policy command remain red for pre-existing findings"
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

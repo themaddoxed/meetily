@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-04",
+  "task": "FORK-145 prerequisite observation only",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "source": "locked ort-sys 2.0.0-rc.10 local registry dist.txt; upstream CDN locations are candidates, not acquisition proof",
+  "dist_path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ort-sys-2.0.0-rc.10/dist.txt",
+  "dist_sha256": "fb86c7652b69659ad3ec56acc39a59be3ed395bd4a89a3e4430e219333127219",
+  "entries": [
+    {
+      "target": "aarch64-apple-darwin",
+      "candidate_package_url": "https://cdn.pyke.io/0/pyke:ort-rs/ms@1.22.0/aarch64-apple-darwin.tgz",
+      "package_sha256_from_locked_crate": "00fbfd6f08bac2a4e28c66723af900d58d1b4b1c73efba6290637cd3019883d5",
+      "expected_library_sha256": "e5c83560aa9e88afa39d9dca9fb5f5a767e28adb5458d1c36fe0357131b6af8b",
+      "producer_admitted": false,
+      "fresh_download": "PASS temporary acquisition only",
+      "package_size": null,
+      "license_provenance_admitted": false,
+      "candidate_package_size": 19828171,
+      "fresh_library_sha256": "e5c83560aa9e88afa39d9dca9fb5f5a767e28adb5458d1c36fe0357131b6af8b",
+      "fresh_library_bytes": 71060144,
+      "license_members": [],
+      "fresh_evidence": {
+        "target": "aarch64-apple-darwin",
+        "url": "https://cdn.pyke.io/0/pyke:ort-rs/ms@1.22.0/aarch64-apple-darwin.tgz",
+        "status": "PASS",
+        "package_path": "/private/tmp/meetily-ci-onnx-source-2026-10-04/aarch64-apple-darwin.tgz",
+        "package_bytes": 19828171,
+        "package_sha256": "00fbfd6f08bac2a4e28c66723af900d58d1b4b1c73efba6290637cd3019883d5",
+        "library_path": "/private/tmp/meetily-ci-onnx-source-2026-10-04/onnxruntime-aarch64-apple-darwin.a",
+        "library_bytes": 71060144,
+        "library_sha256": "e5c83560aa9e88afa39d9dca9fb5f5a767e28adb5458d1c36fe0357131b6af8b",
+        "license_members": []
+      },
+      "project_sha256_architecture_verifier": "PASS exit0 after acquisition"
+    },
+    {
+      "target": "x86_64-apple-darwin",
+      "candidate_package_url": "https://cdn.pyke.io/0/pyke:ort-rs/ms@1.22.0/x86_64-apple-darwin.tgz",
+      "package_sha256_from_locked_crate": "e0538783248bbb77d2e97556134b8cc47cfc35ac3d762067d51eaf8355c0f48e",
+      "expected_library_sha256": "f41370c27dd380419c6cbdfe4f78238613a49506c8f491c0cb07084edac9d561",
+      "producer_admitted": false,
+      "fresh_download": "PASS temporary acquisition only",
+      "package_size": null,
+      "license_provenance_admitted": false,
+      "local_library": {
+        "path": "/Users/developer/Library/Caches/ort.pyke.io/dfbin/x86_64-apple-darwin/E0538783248BBB77D2E97556134B8CC47CFC35AC3D762067D51EAF8355C0F48E/onnxruntime/lib/libonnxruntime.a",
+        "bytes": 75893736,
+        "sha256": "f41370c27dd380419c6cbdfe4f78238613a49506c8f491c0cb07084edac9d561",
+        "project_sha256_architecture_verifier": "PASS exit0 x86_64"
+      },
+      "candidate_package_size": 20512981,
+      "fresh_library_sha256": "f41370c27dd380419c6cbdfe4f78238613a49506c8f491c0cb07084edac9d561",
+      "fresh_library_bytes": 75893736,
+      "license_members": [],
+      "fresh_evidence": {
+        "target": "x86_64-apple-darwin",
+        "url": "https://cdn.pyke.io/0/pyke:ort-rs/ms@1.22.0/x86_64-apple-darwin.tgz",
+        "status": "PASS",
+        "package_path": "/private/tmp/meetily-ci-onnx-source-2026-10-04/x86_64-apple-darwin.tgz",
+        "package_bytes": 20512981,
+        "package_sha256": "e0538783248bbb77d2e97556134b8cc47cfc35ac3d762067d51eaf8355c0f48e",
+        "library_path": "/private/tmp/meetily-ci-onnx-source-2026-10-04/onnxruntime-x86_64-apple-darwin.a",
+        "library_bytes": 75893736,
+        "library_sha256": "f41370c27dd380419c6cbdfe4f78238613a49506c8f491c0cb07084edac9d561",
+        "license_members": []
+      },
+      "project_sha256_architecture_verifier": "PASS exit0 after acquisition"
+    }
+  ],
+  "remaining": [
+    "independent admission of source/download/library bindings and producer build/license provenance; downloaded packages contain no LICENSE or NOTICE",
+    "FFmpeg source/producer prerequisites remain separate",
+    "hosted workflow execution, toolchains and repository capacity NOT_RUN"
+  ],
+  "product_changed": false,
+  "native_or_release_acceptance": false,
+  "upstream_root_license_observation": {
+    "url": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.22.0/LICENSE",
+    "method": "GET",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.22.0/LICENSE",
+    "content_length": "1073",
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 1073,
+    "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+    "distribution_license_provenance_complete": false
+  },
+  "fresh_download_result_sha256": "beabaf453e6c2be1ab3782bf4de95fccadefe267ef1f770d229da5877303628c",
+  "verifier_source_sha256": "9e66f4e858c4a2e1ae08bb6bacdacfadea5a6516c18e8866badabbf57232ec64",
+  "locked_source_binding": {
+    "cargo_lock_sha256": "b209fc096d95592ac0ffa296ce7664e0eda882f24d3434370ccddb37d5b14032",
+    "crate_package_checksum": "e2aba9f5c7c479925205799216e7e5d07cc1d4fa76ea8058c60a9a30f6a4e890",
+    "cached_crate_sha_matches_lock": true,
+    "cached_archive_dist_txt_equals_observed_dist": true,
+    "lock_matches_base": true,
+    "initial_checksum_file_probe": "not available in local extracted crate; package archive verification used instead"
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

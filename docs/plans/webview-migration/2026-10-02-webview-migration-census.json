@@ -1,0 +1,58 @@
+{
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "existing_command_commit": "1ae518a1c90e3175539ac03ab286b5519d7e28fe",
+  "ancestor_check_exit": 0,
+  "plan_sha256": "ced5dc22dc4495f8703ddc03b176824fe3a854528327c2270d914cb6a543a603",
+  "inspected_paths": [
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "sha256": "085076e349686a5d43d4d385a0f9ba4d4f0c5a8797cbea44f7d8a02b78fc90ae",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/setup.rs",
+      "sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration.rs",
+      "sha256": "f249093eaa83e3116aece3f754135afd92e531e97c5a438affac7acba6d9349c",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration_commands.rs",
+      "sha256": "e50615fbdf21e5de3385436c951c83260a375eca75621847b72692bc65710fad",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/services/webMigration.ts",
+      "sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/services/indexedDBService.ts",
+      "sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/DatabaseImport/LegacyDatabaseImport.tsx",
+      "sha256": "221f2739329fa218cf027dc21f99f90fa3f132d6de067191b5d4f8c538fb72b5",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "sha256": "8acfd90d71814a9653065cfbe97bf911106c09c34ef8b9ebcb9d3966d523801a",
+      "matches_base": true
+    }
+  ],
+  "findings": [
+    "Incomplete journal aborts app setup before recovery UI.",
+    "File-phase completion has no WebView import acknowledgement.",
+    "Existing legacy dialog is SQLite-only; adapter has no UI callers."
+  ],
+  "implementation": "NOT_STARTED",
+  "independent_review": "NOT_RUN",
+  "native_acceptance": "NOT_RUN",
+  "user_profile_accessed": false,
+  "current_source_admission": "NOT_ADMITTED: audited base snapshot; FEAT-100 lib registration overlay requires recensus before implementation"
+}

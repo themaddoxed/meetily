@@ -1,0 +1,42 @@
+[
+  {
+    "file": "ui-error-native-result.json",
+    "sha256": "ea5f40e42cadc74a23343d71868ca99fd430dbb7396ca56da9d2639655a2bc27"
+  },
+  {
+    "file": "ui-new-mic-denied.txt",
+    "sha256": "f73d03dd1e877a68fc8fd162e63df20007e90f4b5b9035722ffcf089387e776b"
+  },
+  {
+    "file": "ui-new-denied-start.txt",
+    "sha256": "f73d03dd1e877a68fc8fd162e63df20007e90f4b5b9035722ffcf089387e776b"
+  },
+  {
+    "file": "ui-new-system-pending.txt",
+    "sha256": "b57026880c95cacfb55600f3d93827f2ccda2e55f1bd3cca9e3263a76f6ffe71"
+  },
+  {
+    "file": "ui-new-system-accepted.txt",
+    "sha256": "99781bd03341b7eee9c48d9bbd33745e2d3e1177fabd78f94b9b3ea06df0a6ff"
+  },
+  {
+    "file": "ui-new-paused.txt",
+    "sha256": "0d06c9ea4e6e201a694eba94683812c45c01ee8603ac3b3db1e0d616bac4d4b0"
+  },
+  {
+    "file": "ui-new-paused-settled.txt",
+    "sha256": "0d06c9ea4e6e201a694eba94683812c45c01ee8603ac3b3db1e0d616bac4d4b0"
+  },
+  {
+    "file": "ui-new-resumed.txt",
+    "sha256": "5b3caff35f336200a7d7d5342af2cb8fd57f5bb2925aa0d64245c10a27450c14"
+  },
+  {
+    "file": "app-ui-error-native-regrant.stderr.log",
+    "sha256": "30f98fdb3393250a6532e2e4eb2c7f474acfb34c0c6705e40c0190db2f72a3aa"
+  },
+  {
+    "file": "mechanical-format-lint.json",
+    "sha256": "30a27ba8655415860b58c2fd56f75bbc96f3a1f88d54926c4667c80cfa6a6ac8"
+  }
+]

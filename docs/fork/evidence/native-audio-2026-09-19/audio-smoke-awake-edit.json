@@ -1,0 +1,10 @@
+{
+  "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/scripts/smoke-macos-audio.sh",
+  "before": "271b933da090452958b326835f35a80733604489d7b650c9f7735c894f0e35d2",
+  "after": "d126881db0726e590604e1865f51e12e38dc39dc939d67006e968138c0b78150",
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

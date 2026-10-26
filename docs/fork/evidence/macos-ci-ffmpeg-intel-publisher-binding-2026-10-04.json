@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-04",
+  "scope": "Intel byte-identical package publisher binding; no signature/build/license admission",
+  "official_ffmpeg_download_observation": {
+    "url": "https://ffmpeg.org/download.html",
+    "sha256": "e1b15edebbabe602905de2b10aa4784fa3b0ed6125582248b686ba3aab3c6442",
+    "publisher_links": [
+      "download.html#get-sources",
+      "#build-mac",
+      "https://launchpad.net/ubuntu/+source/ffmpeg",
+      "https://evermeet.cx/ffmpeg/"
+    ]
+  },
+  "publisher_page": {
+    "requested_url": "https://evermeet.cx/ffmpeg/",
+    "final_url": "https://evermeet.cx/ffmpeg/",
+    "bytes": 78514,
+    "sha256": "c98b25251b95138776b00639f9a88345cbc3ead28443fd6cdfdba19be46d1f78"
+  },
+  "historical_archive_observation": {
+    "requested_url": "https://evermeet.cx/ffmpeg/ffmpeg-8.0.1.zip",
+    "downloaded_binary_executed": false,
+    "status": 200,
+    "final_url": "https://e.deolaha.ca:4242/pub/ffmpeg/ffmpeg-8.0.1.zip",
+    "bytes": 25809598,
+    "sha256": "470e482f6e290eac92984ac12b2d67bad425b1e5269fd75fb6a3536c16e824e4",
+    "members": [
+      "ffmpeg"
+    ],
+    "raw_bytes": 80083328,
+    "raw_sha256": "430d60fbf419dab28daee9b679e7929a31ee9bae53f6e42e8ae26b725584290f",
+    "matches_project_intel_raw": true
+  },
+  "matches_project_intel_package": true,
+  "retained_files": [
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/official-download.html",
+      "sha256": "e1b15edebbabe602905de2b10aa4784fa3b0ed6125582248b686ba3aab3c6442"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/evermeet-publisher.html",
+      "sha256": "c98b25251b95138776b00639f9a88345cbc3ead28443fd6cdfdba19be46d1f78"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/evermeet-ffmpeg-8.0.1.zip",
+      "sha256": "470e482f6e290eac92984ac12b2d67bad425b1e5269fd75fb6a3536c16e824e4"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/evermeet-intel-binding-observation.json",
+      "sha256": "86f0661d4b86dd53314004048d39549d602f233b72a775d24740106bf55e21dd"
+    }
+  ],
+  "arm_origin": "NOT_VERIFIED",
+  "publisher_signature": "NOT_VERIFIED",
+  "complete_build_source_license_provenance": "NOT_VERIFIED",
+  "ci_implementation_admitted": false,
+  "downloaded_binary_executed": false
+}

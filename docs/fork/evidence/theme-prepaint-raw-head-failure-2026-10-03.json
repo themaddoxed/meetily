@@ -1,0 +1,22 @@
+{
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "plan_sha256": "96094ccecd7e317004f555176d7ec013fb518d40a8083f9938075a8f61b03715",
+  "hashes": {
+    "frontend/src/app/layout.tsx": "dac7ec01049f481d79ae32127c80578f4438defc3f18ecf7ad5b83001bcc7723",
+    "frontend/src/components/ThemeScript.tsx": "6cce905b099bfb26e40ce65564b79b042454ee464b6197dbce83f1611aa10601",
+    "frontend/tests/theme-foundation.spec.ts": "468ddcdf90136041271e0ba0c94739d5b0d68a458ab4382a6d556e71dc140781"
+  },
+  "browser_exit": 1,
+  "passed": 3,
+  "failed": 6,
+  "preCSS": "all first-navigation assertions reached PASS",
+  "hydration": "FAIL dangerouslySetInnerHTML compares full server head against client script-only markup",
+  "reload": "NOT_REACHED",
+  "log": "/private/tmp/meetily-theme-prepaint-green.log",
+  "typecheck_exit": 0,
+  "startup_node_passed": 8,
+  "startup_node_exit": 0,
+  "accepted": false,
+  "native": "NOT_RUN",
+  "release": "NOT_RUN"
+}

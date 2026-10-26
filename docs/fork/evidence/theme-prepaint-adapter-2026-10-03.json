@@ -1,0 +1,49 @@
+{
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "plan_sha256": "cb02d9b92fb27b7e0ed6a066ba8fa7d966644b4f5208e8afb7dc2203f413bd5f",
+  "source_hashes": {
+    "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+    "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+    "frontend/tests/theme-foundation.spec.ts": "113232a1ffbf0da13a7b667f81201323f8463271bad6bea81193f9849ab046a3"
+  },
+  "focused_browser": {
+    "exit": 0,
+    "passed": 9,
+    "navigation_reload_transitions": 12,
+    "hydration_diagnostics": 0,
+    "executions_per_document": 1,
+    "original_script_retained": true,
+    "checked_head_resources_retained": true,
+    "log": "/private/tmp/meetily-theme-prepaint-adapter.log"
+  },
+  "typecheck_exit": 0,
+  "eslint_exit": 0,
+  "startup_tests": {
+    "exit": 0,
+    "passed": 8
+  },
+  "theme_audit_exit": 0,
+  "native_configuration_tests": {
+    "exit": 0,
+    "passed": 2
+  },
+  "reviews": {
+    "SPEC": "PASS C0 I0 M0",
+    "QUALITY": "PASS C0 I0 M0"
+  },
+  "full_theme_acceptance": false,
+  "production_bundle": "NOT_RUN",
+  "native": "NOT_RUN",
+  "release": "NOT_RUN",
+  "five_theme_suites": {
+    "exit": 1,
+    "passed": 39,
+    "failed": 2,
+    "failures": [
+      "theme-shell light sidebar screenshot",
+      "theme-shell dark sidebar screenshot"
+    ],
+    "log": "/private/tmp/meetily-theme-five-suite-adapter.log",
+    "snapshots_changed": false
+  }
+}

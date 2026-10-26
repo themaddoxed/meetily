@@ -1,0 +1,620 @@
+{
+  "date": "2026-10-04",
+  "task_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "source_hashes": {
+    "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+    "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+    "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+    "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+    "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+    "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+    "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+    "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+    "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+    "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+    "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+  },
+  "command": "./scripts/check.sh --full",
+  "environment": {
+    "CARGO_NET_OFFLINE": "true",
+    "CARGO_TARGET_DIR": "/Users/developer/Desktop/meeting-minutes/target",
+    "PLAYWRIGHT_REUSE_EXISTING_SERVER": "0"
+  },
+  "exit": 1,
+  "log": "/private/tmp/meetily-theme-project-full-2026-10-04.log",
+  "log_sha256": "49727c60653c1bf8d40668c154ca7137d585783846eb52b86b990f9021425f03",
+  "stages": [
+    {
+      "stage": "Patch whitespace",
+      "status": "PASS",
+      "seconds": 0,
+      "exit": 0
+    },
+    {
+      "stage": "Production policy",
+      "status": "PASS",
+      "seconds": 5,
+      "exit": 0
+    },
+    {
+      "stage": "Frontend lint",
+      "status": "PASS",
+      "seconds": 5,
+      "exit": 0
+    },
+    {
+      "stage": "TypeScript",
+      "status": "PASS",
+      "seconds": 3,
+      "exit": 0
+    },
+    {
+      "stage": "Frontend unit tests",
+      "status": "PASS",
+      "seconds": 44,
+      "exit": 0
+    },
+    {
+      "stage": "Critical browser recovery and contracts",
+      "status": "PASS",
+      "seconds": 78,
+      "exit": 0
+    },
+    {
+      "stage": "Production frontend build",
+      "status": "PASS",
+      "seconds": 47,
+      "exit": 0
+    },
+    {
+      "stage": "Rust format",
+      "status": "PASS",
+      "seconds": 2,
+      "exit": 0
+    },
+    {
+      "stage": "Rust clippy",
+      "status": "FAIL",
+      "seconds": 177,
+      "exit": 101
+    },
+    {
+      "stage": "Rust tests",
+      "status": "FAIL",
+      "seconds": 194,
+      "exit": 101
+    },
+    {
+      "stage": "Packaged FFmpeg recovery",
+      "status": "FAIL",
+      "seconds": 18,
+      "exit": 101
+    }
+  ],
+  "skipped_stages": [],
+  "cause": {
+    "dependency": "ort-sys 2.0.0-rc.10",
+    "error": "empty search path given via -L",
+    "evidence": "build.rs offline branch returns PathBuf::default() and true; real_main emits rustc-link-search=native=; build output confirms empty path",
+    "product_regression_established": false
+  },
+  "retry": {
+    "status": "FAIL",
+    "session": 29003,
+    "scope": "three failed Rust stages only",
+    "ORT_LIB_LOCATION": "/Users/developer/Library/Caches/ort.pyke.io/dfbin/x86_64-apple-darwin/E0538783248BBB77D2E97556134B8CC47CFC35AC3D762067D51EAF8355C0F48E/onnxruntime",
+    "exit": 1,
+    "results": [
+      {
+        "stage": "clippy",
+        "command": [
+          "cargo",
+          "clippy",
+          "--workspace",
+          "--all-targets",
+          "--",
+          "-D",
+          "warnings"
+        ],
+        "exit": 101,
+        "log": "/private/tmp/meetily-theme-rust-local-ort-clippy-2026-10-04.log",
+        "sha256": "f1cb44aea4f33ee2020257d1ac7b1780564734f1899912fb13aa2585c5b4a4ac"
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "cargo",
+          "test",
+          "--workspace"
+        ],
+        "exit": 101,
+        "log": "/private/tmp/meetily-theme-rust-local-ort-tests-2026-10-04.log",
+        "sha256": "c4220d7f77f0f0174b2b900e352d50016bbb62f5bb6ff024875f20e4b03dd86b"
+      },
+      {
+        "stage": "ffmpeg",
+        "command": [
+          "cargo",
+          "test",
+          "--test",
+          "recording_recovery",
+          "successful_checkpoint_recovery_preserves_neighboring_meeting_files",
+          "--",
+          "--ignored"
+        ],
+        "exit": 101,
+        "log": "/private/tmp/meetily-theme-rust-local-ort-ffmpeg-2026-10-04.log",
+        "sha256": "7fd959249fa38bfa56bae2586ff942a6aa28b516958e30076028483acf272c0d"
+      }
+    ],
+    "cause": "Missing Tauri resource binaries/llama-helper-x86_64-apple-darwin"
+  },
+  "native_artifact_smoke": "NOT_RUN",
+  "release_candidate": "NOT_RUN",
+  "release_gate": "NOT_RUN",
+  "release_ready": false,
+  "helper_preparation": {
+    "status": "PASS",
+    "session": 75681,
+    "command": "cargo build --offline --package llama-helper --target x86_64-apple-darwin --no-default-features",
+    "scope": "debug test resource only, no install/run/signing",
+    "exit": 0,
+    "log": "/private/tmp/meetily-theme-helper-build-2026-10-04.log",
+    "log_sha256": "44c2803506b3f010e64003415415ff1b655054555acc5e4ac0a75668331c31fc",
+    "artifact": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03/frontend/src-tauri/binaries/llama-helper-x86_64-apple-darwin",
+    "artifact_sha256": "de36afcfff2cbe856c1b23a4154ad9ff6ed73ecd782e7f6119496331e0e99e22",
+    "file": "/Users/developer/Desktop/meeting-minutes/target/x86_64-apple-darwin/debug/llama-helper: Mach-O 64-bit executable x86_64",
+    "ignored_test_resource": true
+  },
+  "prepared_retry": {
+    "status": "PASS",
+    "session": 5591,
+    "scope": "three failed Rust stages only after current-source helper build",
+    "configuration_changed": false,
+    "results_so_far": [
+      {
+        "stage": "clippy",
+        "command": [
+          "cargo",
+          "clippy",
+          "--workspace",
+          "--all-targets",
+          "--",
+          "-D",
+          "warnings"
+        ],
+        "exit": 0,
+        "log": "/private/tmp/meetily-theme-rust-prepared-clippy-2026-10-04.log",
+        "sha256": "e9afb8a47719bbc03b133b3f2ea10e77cb7160690efb0e02fa9a50ca85356e36"
+      }
+    ],
+    "exit": 0,
+    "results": [
+      {
+        "stage": "clippy",
+        "command": [
+          "cargo",
+          "clippy",
+          "--workspace",
+          "--all-targets",
+          "--",
+          "-D",
+          "warnings"
+        ],
+        "exit": 0,
+        "log": "/private/tmp/meetily-theme-rust-prepared-clippy-2026-10-04.log",
+        "sha256": "e9afb8a47719bbc03b133b3f2ea10e77cb7160690efb0e02fa9a50ca85356e36"
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "cargo",
+          "test",
+          "--workspace"
+        ],
+        "exit": 0,
+        "log": "/private/tmp/meetily-theme-rust-prepared-tests-2026-10-04.log",
+        "sha256": "af57fc62cf98e448ed59be445ddc98c8e02bc075f2fa5c1bb74590644c6cd56d"
+      },
+      {
+        "stage": "ffmpeg",
+        "command": [
+          "cargo",
+          "test",
+          "--test",
+          "recording_recovery",
+          "successful_checkpoint_recovery_preserves_neighboring_meeting_files",
+          "--",
+          "--ignored"
+        ],
+        "exit": 0,
+        "log": "/private/tmp/meetily-theme-rust-prepared-ffmpeg-2026-10-04.log",
+        "sha256": "6a7cc0493a45974c5af5441eac84a6138cac69686cbc959811616f43f890cb6f"
+      }
+    ],
+    "rust_counts": {
+      "passed": 603,
+      "failed": 0,
+      "ignored": 10,
+      "test_result_groups": 16
+    },
+    "ignored_tests": [
+      "audio::capture::core_audio::tests::test_core_audio_capture",
+      "audio::devices::discovery::tests::macos_system_audio_devices_have_valid_names",
+      "audio::import::tests::test_import_pipeline_decode_vad",
+      "audio::recording_session::tests::live_track_writer_survives_first_checkpoint",
+      "audio::system_detector::tests::test_system_audio_detector",
+      "production_sherpa_runtime_detects_two_ordered_speakers_without_a_count",
+      "local_summary_helper_generates_expected_text",
+      "parakeet_installed_model_transcribes_known_speech",
+      "successful_checkpoint_recovery_preserves_neighboring_meeting_files",
+      "vocabulary_runtime_paths_use_the_same_resolved_terms"
+    ],
+    "ignored_test_subsequently_performed": "successful_checkpoint_recovery_preserves_neighboring_meeting_files: separate FFmpeg test exit0"
+  },
+  "frontend_all_e2e": {
+    "status": "FAIL",
+    "session": 17481,
+    "command": "pnpm test:e2e",
+    "log": "/private/tmp/meetily-theme-all-e2e-2026-10-04.log",
+    "selected": 216,
+    "workers": 3,
+    "initial_failures_observed": [
+      "indexeddb transcript reload: 30s test timeout",
+      "desktop-local-safety summary text: expect-visible failure",
+      "fixture-contracts summary text: expect-visible failure"
+    ],
+    "trace_backup": "/private/tmp/meetily-theme-all-e2e-failures-2026-10-04",
+    "failure_status": "pending terminal result and isolated reproduction after Rust compilation",
+    "exit": 1,
+    "passed": 210,
+    "failed": 6,
+    "skipped": 0,
+    "seconds": 324,
+    "log_sha256": "9d93fcc700ccbea7ec472e34cedebfab219d2505ff580caf4e72a0b7e9ceb0f1",
+    "failed_files": [
+      "indexeddb-transcript-contract.spec.ts",
+      "desktop-local-safety.spec.ts",
+      "fixture-contracts.spec.ts",
+      "interface-polish-acceptance.spec.ts",
+      "interface-polish-acceptance.spec.ts",
+      "summary-template-selection.spec.ts"
+    ],
+    "theme_passes": 130,
+    "theme_failures": 0,
+    "isolated_retry": {
+      "exit": 1,
+      "passed": 4,
+      "failed": 2,
+      "workers": 1,
+      "seconds": 46.4,
+      "log": "/private/tmp/meetily-theme-e2e-six-isolated-2026-10-04.log",
+      "sha256": "e4a65dc3c03a189d4cedee2a2c27c98228032502d363a64bfc4bcdff9c51c9c2",
+      "remaining": [
+        "ambiguous Settings locator",
+        "Section 1 title locator differs from existing Section title 1 aria-label"
+      ],
+      "invariants": "no timeout/assertion/product/fixture/baseline modification",
+      "prior_failures_retained": true
+    },
+    "source_hashes": {
+      "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+      "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+      "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+      "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+      "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+      "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+      "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+      "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+      "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+      "frontend/tests/interface-polish-acceptance.spec.ts": "8776a106a48b7896cf2a7e836727b359e6d734b6f40712e3a0f3c6ed55df10b0",
+      "frontend/tests/summary-template-selection.spec.ts": "66487c4a0b6a89f822ca1b18b8a8bc0866b797a1f966ad2bd3bfb5bc3170c7de"
+    }
+  },
+  "canonical_gate": "PASS exit0 canonical full prepared run; prior failed run retained",
+  "tool_versions": {
+    "node": {
+      "exit": 0,
+      "version": "v26.10.0"
+    },
+    "pnpm": {
+      "exit": 0,
+      "version": "10.17.1"
+    },
+    "rustc": {
+      "exit": 0,
+      "version": "rustc 1.98.1 (48a229cea 2026-09-01) (Homebrew)"
+    },
+    "cargo": {
+      "exit": 0,
+      "version": "cargo 1.98.1 (797e8a9bc 2026-08-05) (Homebrew)"
+    }
+  },
+  "source_hashes_verified_again": true,
+  "e2e_locator_plan": {
+    "path": "docs/superpowers/plans/2026-10-04-theme-e2e-locators.md",
+    "sha256": "432617704a37aec8e2139b7828bdf4c461a7ec2afcdda7068076822fac1fed36",
+    "status": "PASS independent SPEC/QUALITY C0 I0 M0",
+    "reviews": {
+      "SPEC": {
+        "report": "docs/fork/theme-e2e-locators-plan-spec-review-2026-10-04.md",
+        "sha256": "199bd340cc1504af45c09bee799df0a9985e990c553b39facaec82df5b1a21d3"
+      },
+      "QUALITY": {
+        "report": "docs/fork/theme-e2e-locators-plan-quality-review-2026-10-04.md",
+        "sha256": "cf4b7a670deedbcac0dc0deb7d8d6cbdcc62c8280b6509d92894640bcb21514b"
+      }
+    }
+  },
+  "native_boundary_static_contract": {
+    "exit": 0,
+    "passed": 2,
+    "failed": 0,
+    "log": "/private/tmp/meetily-theme-native-boundary-2026-10-04.log",
+    "sha256": "8a0d71294c2bc54b4d5b195c38e0bcf2c6ab59c689fe3a76aab239e67928b1a2",
+    "cwd": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03/frontend",
+    "native_runtime_proof": false
+  },
+  "e2e_locator_fix": {
+    "exit": 0,
+    "passed": 2,
+    "failed": 0,
+    "log": "/private/tmp/meetily-theme-e2e-locators-fix-2026-10-04.log",
+    "sha256": "97752b25272315416d6a2bddedd07c1645d9f6e25bee129f1dfdc52baa004f46",
+    "full_specs": {
+      "status": "PASS",
+      "session": 61110,
+      "log": "/private/tmp/meetily-theme-e2e-locators-full-specs-2026-10-04.log",
+      "exit": 0,
+      "passed": 9,
+      "failed": 0,
+      "sha256": "7802ad82449007a653f667ca65b6edafda7b0b29fd342182d33990e938e6af00"
+    },
+    "source_hashes": {
+      "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+      "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+      "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+      "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+      "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+      "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+      "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+      "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+      "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+      "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+      "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+    },
+    "reviews": {
+      "SPEC": {
+        "report": "docs/fork/theme-e2e-locators-implementation-spec-review-2026-10-04.md",
+        "sha256": "58a4f1f4858b1fca47bbb4c5f65a5d7374f3e93ab122170571d479fbe81e40ea",
+        "verdict": "PASS C0 I0 M0"
+      },
+      "QUALITY": {
+        "report": "docs/fork/theme-e2e-locators-implementation-quality-review-2026-10-04.md",
+        "sha256": "35f81184ab3693d615c08635a66e1ef3f16c8fee36584c19e56d3d7100300e8e",
+        "verdict": "PASS C0 I0 M0"
+      }
+    }
+  },
+  "initial_full_source_hashes": {
+    "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+    "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+    "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+    "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+    "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+    "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+    "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+    "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+    "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+    "frontend/tests/interface-polish-acceptance.spec.ts": "8776a106a48b7896cf2a7e836727b359e6d734b6f40712e3a0f3c6ed55df10b0",
+    "frontend/tests/summary-template-selection.spec.ts": "66487c4a0b6a89f822ca1b18b8a8bc0866b797a1f966ad2bd3bfb5bc3170c7de"
+  },
+  "frontend_all_e2e_fixed": {
+    "status": "PASS",
+    "session": 65342,
+    "log": "/private/tmp/meetily-theme-all-e2e-fixed-2026-10-04.log",
+    "source_hashes": {
+      "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+      "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+      "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+      "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+      "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+      "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+      "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+      "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+      "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+      "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+      "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+    },
+    "exit": 0,
+    "passed": 216,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 180,
+    "log_sha256": "e9ae3ae4ef459e550214686d345e2beab82ba3f6f72bb7eac0b2cb56a97dff4b"
+  },
+  "canonical_full_prepared": {
+    "status": "PASS",
+    "log": "/private/tmp/meetily-theme-project-full-prepared-2026-10-04.log",
+    "source_hashes": {
+      "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+      "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+      "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+      "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+      "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+      "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+      "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+      "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+      "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+      "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+      "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+    },
+    "configuration": "original check.sh --full; local ORT_LIB_LOCATION, offline cargo, existing target cache and current-source ignored helper",
+    "artifact_or_native_runtime_acceptance": false,
+    "session": 17570,
+    "completed_stages_so_far": [
+      {
+        "stage": "Patch whitespace",
+        "status": "PASS",
+        "seconds": 0,
+        "exit": 0
+      },
+      {
+        "stage": "Production policy",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend lint",
+        "status": "PASS",
+        "seconds": 7,
+        "exit": 0
+      },
+      {
+        "stage": "TypeScript",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend unit tests",
+        "status": "PASS",
+        "seconds": 44,
+        "exit": 0
+      },
+      {
+        "stage": "Critical browser recovery and contracts",
+        "status": "PASS",
+        "seconds": 79,
+        "exit": 0
+      },
+      {
+        "stage": "Production frontend build",
+        "status": "PASS",
+        "seconds": 26,
+        "exit": 0
+      },
+      {
+        "stage": "Rust format",
+        "status": "PASS",
+        "seconds": 2,
+        "exit": 0
+      },
+      {
+        "stage": "Rust clippy",
+        "status": "PASS",
+        "seconds": 13,
+        "exit": 0
+      }
+    ],
+    "exit": 0,
+    "seconds": 416,
+    "stages": [
+      {
+        "stage": "Patch whitespace",
+        "status": "PASS",
+        "seconds": 0,
+        "exit": 0
+      },
+      {
+        "stage": "Production policy",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend lint",
+        "status": "PASS",
+        "seconds": 7,
+        "exit": 0
+      },
+      {
+        "stage": "TypeScript",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend unit tests",
+        "status": "PASS",
+        "seconds": 44,
+        "exit": 0
+      },
+      {
+        "stage": "Critical browser recovery and contracts",
+        "status": "PASS",
+        "seconds": 79,
+        "exit": 0
+      },
+      {
+        "stage": "Production frontend build",
+        "status": "PASS",
+        "seconds": 26,
+        "exit": 0
+      },
+      {
+        "stage": "Rust format",
+        "status": "PASS",
+        "seconds": 2,
+        "exit": 0
+      },
+      {
+        "stage": "Rust clippy",
+        "status": "PASS",
+        "seconds": 13,
+        "exit": 0
+      },
+      {
+        "stage": "Rust tests",
+        "status": "PASS",
+        "seconds": 218,
+        "exit": 0
+      },
+      {
+        "stage": "Packaged FFmpeg recovery",
+        "status": "PASS",
+        "seconds": 17,
+        "exit": 0
+      }
+    ],
+    "failed_stages": [],
+    "skipped_stages": [],
+    "log_sha256": "3cf021e99c512bd4f8d2b2b3a8e3c05314049a540598943de730ad41a8f37e3b"
+  },
+  "draft_implementation_report": {
+    "path": "/private/tmp/fork-039-implementation-report-2026-10-04.md",
+    "status": "DRAFT incomplete canonical/native/integration gates",
+    "prescribed_report_path_ignored": false
+  },
+  "native_approval": {
+    "status": "PENDING explicit GUI/operator authorization",
+    "request": "current feature tauri:dev, theme eight-row macOS matrix only"
+  },
+  "implementation_report": {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03/.superpowers/sdd/macos-fork/fork-039-implementation-report.md",
+    "sha256": "a26578061f0c4e51a9671f77cb9c4496fec9be9f00a7485d51bb5ae0481b2bdb",
+    "status": "automatic PASS; native/commit/integration incomplete",
+    "ignored": true,
+    "ignore_scope": "new self-ignored task-local .superpowers directory only",
+    "root_or_global_ignore_changed": false
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

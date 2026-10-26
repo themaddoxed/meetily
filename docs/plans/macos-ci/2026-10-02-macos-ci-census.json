@@ -1,0 +1,709 @@
+{
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "tree": "bb8b8bdda6b53deaa926362f59b661410479ef78",
+  "historicalPlanSha256": "a1d57ae7e1e1c418e4c90d9495af402c1f078a44606eb0e8b44c8e6cb6db2637",
+  "workflows": [
+    {
+      "file": "build-devtest.yml",
+      "sha256": "5f06fbcf093bf44be0be4642824438d5e68f271c8b981190d5094b90c251f64c",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "build-devtest",
+          "runner": "${{ matrix.platform }}",
+          "call": null,
+          "needs": [],
+          "matrix": {
+            "include": [
+              {
+                "platform": "macos-latest",
+                "platform-name": "macOS",
+                "target": "aarch64-apple-darwin",
+                "args": "--target aarch64-apple-darwin"
+              },
+              {
+                "platform": "windows-latest",
+                "platform-name": "Windows",
+                "target": "x86_64-pc-windows-msvc",
+                "args": "--target x86_64-pc-windows-msvc"
+              },
+              {
+                "platform": "ubuntu-22.04",
+                "platform-name": "Linux (Ubuntu 22.04)",
+                "target": "x86_64-unknown-linux-gnu",
+                "args": "--target x86_64-unknown-linux-gnu --bundles deb"
+              },
+              {
+                "platform": "ubuntu-24.04",
+                "platform-name": "Linux (Ubuntu 24.04)",
+                "target": "x86_64-unknown-linux-gnu",
+                "args": "--target x86_64-unknown-linux-gnu --bundles appimage,rpm"
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        "actions/checkout@v4",
+        "pnpm/action-setup@v4",
+        "actions/setup-node@v4",
+        "actions/cache@v4",
+        "dtolnay/rust-toolchain@stable",
+        "swatinem/rust-cache@v2",
+        "humbletim/install-vulkan-sdk@v1.2",
+        "digicert/ssm-code-signing@v1.1.1",
+        "\"",
+        "tauri-apps/tauri-action@v0",
+        "actions/upload-artifact@v4"
+      ],
+      "artifacts": [
+        "meetily-devtest-${{ matrix.platform-name }}-${{ matrix.target }}-${{ steps.get-version.outputs.version }}"
+      ]
+    },
+    {
+      "file": "build-linux.yml",
+      "sha256": "4b37b8be1e2efc330ec0f97cfd5598e7b849280d2ac0cbe48f961c3273d91cc4",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "build-linux",
+          "runner": "${{ github.event.inputs.ubuntu-version || 'ubuntu-22.04' }}",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "actions/checkout@v4",
+        "pnpm/action-setup@v4",
+        "actions/setup-node@v4",
+        "actions/cache@v4",
+        "dtolnay/rust-toolchain@stable",
+        "swatinem/rust-cache@v2",
+        "tauri-apps/tauri-action@v0",
+        "actions/upload-artifact@v4"
+      ],
+      "artifacts": [
+        "meetily-linux-${{ github.event.inputs.ubuntu-version || 'ubuntu-22.04' }}-x64-${{ steps.build-profile.outputs.profile }}-${{ steps.get-version.outputs.version }}"
+      ]
+    },
+    {
+      "file": "build-macos.yml",
+      "sha256": "02fb14baa75665db32f45de06007e9c909555a8b6cda91a74eb94dfd389c821f",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "build-macos",
+          "runner": "macos-latest",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "actions/checkout@v4",
+        "pnpm/action-setup@v4",
+        "actions/setup-node@v4",
+        "actions/cache@v4",
+        "dtolnay/rust-toolchain@stable",
+        "swatinem/rust-cache@v2",
+        "tauri-apps/tauri-action@v0",
+        "actions/upload-artifact@v4"
+      ],
+      "artifacts": [
+        "meetily-macos-aarch64-${{ steps.build-profile.outputs.profile }}-${{ steps.get-version.outputs.version }}"
+      ]
+    },
+    {
+      "file": "build-test.yml",
+      "sha256": "1b298675c31c1ceb2a61aa900069d1a8cb3fb74d829c5e1d6a157cbfb1c97bf9",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "build-test",
+          "runner": null,
+          "call": "./.github/workflows/build.yml",
+          "needs": [],
+          "matrix": {
+            "include": [
+              {
+                "platform": "macos-latest",
+                "args": "--target aarch64-apple-darwin",
+                "target": "aarch64-apple-darwin"
+              },
+              {
+                "platform": "ubuntu-22.04",
+                "args": "--bundles deb",
+                "target": "x86_64-unknown-linux-gnu"
+              },
+              {
+                "platform": "ubuntu-24.04",
+                "args": "--bundles appimage,rpm",
+                "target": "x86_64-unknown-linux-gnu"
+              },
+              {
+                "platform": "windows-latest",
+                "args": "",
+                "target": "x86_64-pc-windows-msvc"
+              }
+            ]
+          }
+        }
+      ],
+      "actions": [
+        "./.github/workflows/build.yml"
+      ],
+      "artifacts": []
+    },
+    {
+      "file": "build-windows.yml",
+      "sha256": "d8634af04c90e5e638812a03d1058009b87bf92ff9bca93dc884dee67efc915f",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "build-windows",
+          "runner": "windows-latest",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "actions/checkout@v4",
+        "digicert/ssm-code-signing@v1.1.1",
+        "\"",
+        "pnpm/action-setup@v4",
+        "actions/setup-node@v4",
+        "actions/cache@v4",
+        "dtolnay/rust-toolchain@stable",
+        "swatinem/rust-cache@v2",
+        "humbletim/install-vulkan-sdk@v1.2",
+        "tauri-apps/tauri-action@v0",
+        "actions/upload-artifact@v4"
+      ],
+      "artifacts": [
+        "meetily-windows-x64-${{ steps.build-profile.outputs.profile }}-${{ steps.get-version.outputs.version }}"
+      ]
+    },
+    {
+      "file": "build.yml",
+      "sha256": "b286e1d0abd482b8c7e2778316029257461b6549981e8048941872f144f3ae00",
+      "triggers": [
+        "workflow_call"
+      ],
+      "jobs": [
+        {
+          "id": "build",
+          "runner": "${{ inputs.platform }}",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "actions/checkout@v4",
+        "pnpm/action-setup@v4",
+        "actions/setup-node@v4",
+        "actions/cache@v4",
+        "dtolnay/rust-toolchain@stable",
+        "swatinem/rust-cache@v2",
+        "humbletim/install-vulkan-sdk@v1.2",
+        "digicert/ssm-code-signing@v1.1.1",
+        "\"",
+        "tauri-apps/tauri-action@v0",
+        "actions/upload-artifact@v4"
+      ],
+      "artifacts": [
+        "${{ inputs.asset-prefix }}-${{ inputs.target }}",
+        "${{ inputs.asset-prefix }}-${{ inputs.platform }}-${{ inputs.target }}"
+      ]
+    },
+    {
+      "file": "ci.yml",
+      "sha256": "3b294c3423bab1a29e4f1fc87b9ca3eb65349e9f8b2762ed36c232dc4b076560",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "jobs": [
+        {
+          "id": "quality-gate",
+          "runner": null,
+          "call": "./.github/workflows/quality-gate.yml",
+          "needs": [],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "./.github/workflows/quality-gate.yml"
+      ],
+      "artifacts": []
+    },
+    {
+      "file": "pr-main-check.yml",
+      "sha256": "5865134f0db5cb28f26abbbf43d606e4f577e1bd8265dd0d6b4a3742fdd207fc",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "validation-check",
+          "runner": "ubuntu-latest",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "actions/checkout@v4"
+      ],
+      "artifacts": []
+    },
+    {
+      "file": "quality-gate.yml",
+      "sha256": "481d039e03bf3d8d2ca4ad90a262d9b62eb3c615f7ea480da718b349cdefbc4e",
+      "triggers": [
+        "workflow_call",
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "source-integrity",
+          "runner": "ubuntu-latest",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        },
+        {
+          "id": "frontend",
+          "runner": "ubuntu-latest",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        },
+        {
+          "id": "rust-sqlite",
+          "runner": "macos-14",
+          "call": null,
+          "needs": [],
+          "matrix": null
+        },
+        {
+          "id": "macos-production",
+          "runner": "macos-14",
+          "call": null,
+          "needs": [
+            "frontend",
+            "rust-sqlite"
+          ],
+          "matrix": null
+        },
+        {
+          "id": "quality-gate",
+          "runner": "ubuntu-latest",
+          "call": null,
+          "needs": [
+            "source-integrity",
+            "frontend",
+            "rust-sqlite",
+            "macos-production"
+          ],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "actions/checkout@v4",
+        "pnpm/action-setup@v4",
+        "actions/setup-node@v4",
+        "dtolnay/rust-toolchain@stable",
+        "swatinem/rust-cache@v2",
+        "actions/upload-artifact@v4"
+      ],
+      "artifacts": [
+        "meetily-macos-production-app-${{ github.sha }}"
+      ]
+    },
+    {
+      "file": "release.yml",
+      "sha256": "fef579569ee82bd9d81c7ef260ea62ed9998b2c8a8978e15808afeddf3035cbd",
+      "triggers": [
+        "workflow_dispatch"
+      ],
+      "jobs": [
+        {
+          "id": "quality-gate",
+          "runner": null,
+          "call": "./.github/workflows/quality-gate.yml",
+          "needs": [],
+          "matrix": null
+        },
+        {
+          "id": "manual-attestation",
+          "runner": "ubuntu-latest",
+          "call": null,
+          "needs": "quality-gate",
+          "matrix": null
+        },
+        {
+          "id": "create-release",
+          "runner": "ubuntu-latest",
+          "call": null,
+          "needs": [
+            "quality-gate",
+            "manual-attestation"
+          ],
+          "matrix": null
+        },
+        {
+          "id": "build-all-platforms",
+          "runner": null,
+          "call": "./.github/workflows/build.yml",
+          "needs": "create-release",
+          "matrix": {
+            "include": [
+              {
+                "platform": "macos-latest",
+                "args": "--target aarch64-apple-darwin",
+                "target": "aarch64-apple-darwin"
+              },
+              {
+                "platform": "windows-latest",
+                "args": "",
+                "target": "x86_64-pc-windows-msvc"
+              }
+            ]
+          }
+        },
+        {
+          "id": "release-summary",
+          "runner": "ubuntu-latest",
+          "call": null,
+          "needs": [
+            "create-release",
+            "build-all-platforms"
+          ],
+          "matrix": null
+        }
+      ],
+      "actions": [
+        "./.github/workflows/quality-gate.yml",
+        "actions/checkout@v4",
+        "actions/github-script@v7",
+        "./.github/workflows/build.yml"
+      ],
+      "artifacts": []
+    }
+  ],
+  "productAllowlistInventory": [
+    {
+      "path": ".cargo/config.toml",
+      "type": "missing",
+      "tracked": false,
+      "sha256": null
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "type": "missing",
+      "tracked": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/scripts/macos-bundle-contract.mjs",
+      "type": "missing",
+      "tracked": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/tests/macos-bundle-contract.test.mjs",
+      "type": "missing",
+      "tracked": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/scripts/macos-artifact-transport.mjs",
+      "type": "missing",
+      "tracked": false,
+      "sha256": null
+    },
+    {
+      "path": "frontend/tests/macos-artifact-transport.test.mjs",
+      "type": "missing",
+      "tracked": false,
+      "sha256": null
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "3b294c3423bab1a29e4f1fc87b9ca3eb65349e9f8b2762ed36c232dc4b076560"
+    },
+    {
+      "path": ".github/workflows/quality-gate.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "481d039e03bf3d8d2ca4ad90a262d9b62eb3c615f7ea480da718b349cdefbc4e"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "fef579569ee82bd9d81c7ef260ea62ed9998b2c8a8978e15808afeddf3035cbd"
+    },
+    {
+      "path": "frontend/scripts/release-policy.mjs",
+      "type": "file",
+      "tracked": true,
+      "sha256": "b6ef218971f890af591126dd3ebcc27c5a6c9ee80d161a7c938fb9e54ac5f568"
+    },
+    {
+      "path": "frontend/tests/release-policy.test.mjs",
+      "type": "file",
+      "tracked": true,
+      "sha256": "c872231635f1c421bbb35f7cba9f8937a22f2837d10e71291008c96daf6fa723"
+    },
+    {
+      "path": "frontend/tests/workflow-gate.test.mjs",
+      "type": "file",
+      "tracked": true,
+      "sha256": "87e4ef4bb96d903a01dd4733d1c0d2b2085870b3dc88e01c78543bcd7b56f7f2"
+    },
+    {
+      "path": "frontend/scripts/build-universal-macos.js",
+      "type": "file",
+      "tracked": true,
+      "sha256": "39028a98a093e738dd8d5126d21797ea818bff320678686f78ff139c47486c1d"
+    },
+    {
+      "path": "frontend/tests/universal-build-config.spec.ts",
+      "type": "file",
+      "tracked": true,
+      "sha256": "c7aa6adcc0c2173f07a99c13161031d7109bed12ceb3ab89c9b8a211fa91462f"
+    },
+    {
+      "path": "frontend/scripts/verify-release-candidate.mjs",
+      "type": "file",
+      "tracked": true,
+      "sha256": "49745abdf7164325b5e27e4a210120423497dbb38e6a77e8dab078f46093cd4e"
+    },
+    {
+      "path": "frontend/tests/release-candidate.test.mjs",
+      "type": "file",
+      "tracked": true,
+      "sha256": "11278add5b37c53e4d5aea758acbabbf625c663bf3e737ee061b0362e42652e7"
+    },
+    {
+      "path": "scripts/release-candidate.sh",
+      "type": "file",
+      "tracked": true,
+      "sha256": "3a1d8721b94727c1ae27ce3be974d40d3ec602a23fe773a9e4730e4a65455f01"
+    },
+    {
+      "path": "frontend/src-tauri/tauri.conf.json",
+      "type": "file",
+      "tracked": true,
+      "sha256": "f433187d282bd644add0917d9910ae4a9def7e3c096a997613e98c104c6c934e"
+    },
+    {
+      "path": "frontend/src-tauri/tauri.universal.conf.json",
+      "type": "file",
+      "tracked": true,
+      "sha256": "b3c9b43c78323b89c947cf9c4e88a23d76179cb4180439ca120f5cfd90e54619"
+    },
+    {
+      "path": "docs/testing.md",
+      "type": "file",
+      "tracked": true,
+      "sha256": "ea573bdd6be8f71dbdb15f0ede9c670ac65529564a050d25a0a6549e28b8ff46"
+    },
+    {
+      "path": "docs/development/universal-macos-local-artifacts.md",
+      "type": "file",
+      "tracked": true,
+      "sha256": "90be79111aa3b230c4296934c3856976bc9587669d683d019de16ea769e58e0a"
+    },
+    {
+      "path": "frontend/src-tauri/.cargo/config.toml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "ce7c60961ae9d7a1b0feefb65750bed566671f8801dabf38a499d15fb18feab8"
+    },
+    {
+      "path": ".github/workflows/build-devtest.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "5f06fbcf093bf44be0be4642824438d5e68f271c8b981190d5094b90c251f64c"
+    },
+    {
+      "path": ".github/workflows/build-linux.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "4b37b8be1e2efc330ec0f97cfd5598e7b849280d2ac0cbe48f961c3273d91cc4"
+    },
+    {
+      "path": ".github/workflows/build-macos.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "02fb14baa75665db32f45de06007e9c909555a8b6cda91a74eb94dfd389c821f"
+    },
+    {
+      "path": ".github/workflows/build-test.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "1b298675c31c1ceb2a61aa900069d1a8cb3fb74d829c5e1d6a157cbfb1c97bf9"
+    },
+    {
+      "path": ".github/workflows/build-windows.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "d8634af04c90e5e638812a03d1058009b87bf92ff9bca93dc884dee67efc915f"
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "b286e1d0abd482b8c7e2778316029257461b6549981e8048941872f144f3ae00"
+    },
+    {
+      "path": ".github/workflows/pr-main-check.yml",
+      "type": "file",
+      "tracked": true,
+      "sha256": "5865134f0db5cb28f26abbbf43d606e4f577e1bd8265dd0d6b4a3742fdd207fc"
+    },
+    {
+      "path": ".github/workflows/ACCELERATION_GUIDE.md",
+      "type": "file",
+      "tracked": true,
+      "sha256": "5d87661b586b609a5ddf23ee62b0ebcb668e28f490422299723176ef2f43e0ec"
+    },
+    {
+      "path": ".github/workflows/README_DEVTEST.md",
+      "type": "file",
+      "tracked": true,
+      "sha256": "a3177e7c5cb035ccf4019734bd23091fde82c68962561c77056200e13cfdf2b3"
+    },
+    {
+      "path": ".github/workflows/WORKFLOWS_OVERVIEW.md",
+      "type": "file",
+      "tracked": true,
+      "sha256": "8a87c391f10868a70f48728d4bb624c07f098f767122152c8c804fed172abc64"
+    }
+  ],
+  "currentTauriConfigs": {
+    "frontend/src-tauri/tauri.conf.json": {
+      "active": true,
+      "targets": [
+        "app",
+        "dmg"
+      ],
+      "icon": [
+        "icons/icon.png",
+        "icons/app_icon.icns"
+      ],
+      "resources": {
+        "templates/": "templates/",
+        "resources/diarization/": "diarization/"
+      },
+      "externalBin": [
+        "binaries/llama-helper",
+        "binaries/ffmpeg"
+      ],
+      "macOS": {
+        "entitlements": "entitlements.plist",
+        "signingIdentity": "-",
+        "hardenedRuntime": true,
+        "minimumSystemVersion": "14.2"
+      }
+    },
+    "frontend/src-tauri/tauri.universal.conf.json": {
+      "resources": {
+        "templates/": "templates/",
+        "resources/diarization/": "diarization/"
+      }
+    }
+  },
+  "scriptCallers": {
+    "build-devtest.yml": [],
+    "build-linux.yml": [],
+    "build-macos.yml": [],
+    "build-test.yml": [],
+    "build-windows.yml": [
+      "scripts/sign-windows.ps1"
+    ],
+    "build.yml": [],
+    "ci.yml": [],
+    "pr-main-check.yml": [],
+    "quality-gate.yml": [
+      "./scripts/check-whitespace.sh"
+    ],
+    "release.yml": []
+  },
+  "buildAdapters": {
+    "scripts/check.sh": {
+      "sha256": "559e73f6751686300931110922d9dbf092f4f82335dbba269d4727d6cedba542",
+      "localScriptCalls": [
+        "./scripts/check-whitespace.sh",
+        "./scripts/check.sh",
+        "./scripts/release-candidate.sh"
+      ]
+    },
+    "scripts/release-candidate.sh": {
+      "sha256": "3a1d8721b94727c1ae27ce3be974d40d3ec602a23fe773a9e4730e4a65455f01",
+      "localScriptCalls": [
+        "./scripts/release-candidate.sh",
+        "scripts/source-fingerprint.mjs",
+        "scripts/verify-release-candidate.mjs"
+      ]
+    },
+    "scripts/release-gate.sh": {
+      "sha256": "e8182cc47be65db05b7ac080b4ee6cf5e9cff0d80518c7d89fc1fc4c3954f9f3",
+      "localScriptCalls": [
+        "./scripts/release-gate.sh",
+        "frontend/scripts/source-fingerprint.mjs",
+        "frontend/scripts/verify-smoke-report.mjs"
+      ]
+    },
+    "scripts/test-plan-gate.sh": {
+      "sha256": "bc64b0d15c2ba6d2002e82ec8a06bd8490ac29f194bb59355a549b9a3e9a319c",
+      "localScriptCalls": [
+        "./scripts/test-plan-gate.sh",
+        "frontend/scripts/verify-smoke-report.mjs"
+      ]
+    },
+    "frontend/scripts/build-universal-macos.js": {
+      "sha256": "39028a98a093e738dd8d5126d21797ea818bff320678686f78ff139c47486c1d",
+      "localScriptCalls": []
+    },
+    "frontend/scripts/verify-release-candidate.mjs": {
+      "sha256": "49745abdf7164325b5e27e4a210120423497dbb38e6a77e8dab078f46093cd4e",
+      "localScriptCalls": [
+        "scripts/verify-release-candidate.mjs"
+      ]
+    },
+    "frontend/scripts/provision-universal-artifacts.js": {
+      "sha256": "cf2d12045013e98a20f2cfc835df0c0a5f2ac6b3201ea724bb0803e16839fd67",
+      "localScriptCalls": []
+    },
+    "frontend/scripts/universal-onnx-runtime.js": {
+      "sha256": "9e66f4e858c4a2e1ae08bb6bacdacfadea5a6516c18e8866badabbf57232ec64",
+      "localScriptCalls": []
+    },
+    "frontend/scripts/verify-universal-ffmpeg.js": {
+      "sha256": "7b678cd5ee6fce17c242422e0ba594dac9b0877a90e5c14ce12cabba700adf7a",
+      "localScriptCalls": []
+    },
+    "frontend/scripts/diarization-artifacts.js": {
+      "sha256": "8df8086086e065bd107bfd564e8931e6b08d260c14545dea2465fccd360685a5",
+      "localScriptCalls": []
+    }
+  }
+}

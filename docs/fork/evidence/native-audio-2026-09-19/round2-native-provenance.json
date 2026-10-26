@@ -1,0 +1,22 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "worktreeClean": false,
+  "sourceFingerprintBefore": "52a49335bb2d883b18fd8e282917046d0525c3f331c26f1ca45c10f931fa0508",
+  "sourceFingerprintAfter": "52a49335bb2d883b18fd8e282917046d0525c3f331c26f1ca45c10f931fa0508",
+  "purpose": "Local standalone permissions, source stop and incomplete recording diagnostics",
+  "releaseEligible": false,
+  "automaticCheck": "NOT_RELEASE_GATE: see snapshot-bound individual test logs; strict Clippy remains open",
+  "architecture": "x86_64",
+  "createdAt": "2026-09-20T13:34:45.551200+00:00",
+  "executableSha256": "bb5391819e7199db81d37af1890eb75d225ada51e01fd569e91bc36d00c5c75d",
+  "buildExecutableSha256": "950fb0b0c24367d9b86b1d45d30fb6659e9c161a3226217f5c8e4d5f54b69950",
+  "resourceBundleBase": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/target/diagnostic-dirty/fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c/run-20260920-ui-error-fixed/meetily.app",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN",
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

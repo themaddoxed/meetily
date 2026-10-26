@@ -1,0 +1,150 @@
+{
+  "task": "FEAT-102",
+  "status": "ACCEPTED_CONTROLLED_LOCAL_FEAT102",
+  "model": "gemma4:e2b",
+  "artifact_path": "/Users/developer/Library/Application Support/com.meetily.ai/models/summary/gemma-4-E2B-it-Q4_K_M.gguf",
+  "bytes": 3106736256,
+  "sha256": "9378bc471710229ef165709b62e34bfb62231420ddaf6d729e727305b5b8672d",
+  "matches_trusted_manifest": true,
+  "manifest_source": "frontend/src-tauri/src/model_download.rs:1462",
+  "revision": "90f9618340396838ee7ff5b0ba2da27da62953d3",
+  "source_base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "method": "stat and GGUF magic; shasum -a 256 completed exit0 session97220, read-only local file",
+  "inference": "REAL_LOCAL_GEMMA4_E2B_CPU_PASS_CONTROLLED_CASES",
+  "network": "NOT_RUN",
+  "user_settings_changed": false,
+  "next_action": "Run selected-meeting real local inference on an isolated temporary SQLite fixture after FEAT-101 acceptance; do not substitute checksum for model behavior.",
+  "test": {
+    "path": ".worktrees/main-features-2026-10-02/frontend/src-tauri/tests/meeting_questions_local_model.rs",
+    "sha256": "19d78d66e275d7b96fd30fcd6a5f0e1dfdbf58867c15c7629d171f4c6dc2f2dd",
+    "status": "REVIEWED_AND_COPIED_TO_MAIN_OPT_IN",
+    "meaning_oracle": "Full normalized affirmative factual-claim whitelist; negations/additional facts/unrecognized paraphrases fail closed.",
+    "fixture": "independent regular temporary copy; same production model integrity verification",
+    "root_path": "frontend/src-tauri/tests/meeting_questions_local_model.rs"
+  },
+  "build_handles": {
+    "cpu_helper": {
+      "session_id": 51942,
+      "last_observed": "TERMINAL exit0",
+      "log": ".worktrees/integration-backups-2026-10-02/feat102-helper-build.log"
+    },
+    "test_compile": {
+      "session_id": 76050,
+      "last_observed": "TERMINAL exit0 (run1 test)",
+      "log": ".worktrees/integration-backups-2026-10-02/feat102-test-build.log"
+    }
+  },
+  "local_issue": "meeting-minutes-63h",
+  "plan_review": "Independent plans_spec PASS C0/I0 reported in thread before test creation; source-only.",
+  "quality_review": "Preflight PASS before fixture correction; regular-file correction pending review",
+  "helper": {
+    "path": ".worktrees/feat071-audio-controls/target/check-full/debug/llama-helper",
+    "sha256": "2fadd975d96596d46cf26f6a8917e8d10da44e1ec56207b30df68de728113720",
+    "format": "Mach-O 64-bit x86_64",
+    "build_command": "cargo build --locked -p llama-helper --no-default-features",
+    "network": "offline",
+    "exit": 0,
+    "session_id": 51942,
+    "build_log_sha256": "38e6617f1fc7f369a04bc2c7c8f63cc09c5401d9331b8b26924f685c92d32731"
+  },
+  "run1": {
+    "exit": 101,
+    "session_id": 89932,
+    "status": "FIXTURE_FAILED_BEFORE_INFERENCE",
+    "log": ".worktrees/integration-backups-2026-10-02/feat102-local-inference-run1.log",
+    "cause": "production model identity function rejects symlink; cached original weights verified",
+    "fix": "regular temporary file copy; production integrity unchanged"
+  },
+  "run2": {
+    "session_id": 64427,
+    "status": "FAIL_TIMEOUT",
+    "log": ".worktrees/integration-backups-2026-10-02/feat102-local-inference-run2.log",
+    "reason": "new regular-file fixture replaces forbidden symlink; no repeated identical hypothesis",
+    "exit": 101,
+    "elapsed_ms": 128033,
+    "cleanup_completed_in_eight_seconds": false,
+    "log_sha256": "57d32f2db7c2fafff67a0a0b12b108303de844023d46357b079718bdc861ba78",
+    "raw_answer_received": false
+  },
+  "hypothesis": "Cold debug-build manifest SHA verification may consume deadline before helper startup; unconfirmed until phase logging.",
+  "run3": {
+    "status": "FAIL_TIMEOUT_BEFORE_HELPER_PHASE",
+    "exit": 101,
+    "session_id": 37623,
+    "elapsed_ms": 128057,
+    "cleanup_completed_in_eight_seconds": false,
+    "log": ".worktrees/integration-backups-2026-10-02/feat102-local-inference-run3-phases.log",
+    "phase": "last INFO Model: gemma4:e2b; no ensure_running/startup INFO",
+    "process_observation": "During run test process98.5% CPU19MB RSS, no llama-helper row; after run none",
+    "root_cause_status": "Uncancellable integrity-await source defect confirmed; exact timeout duration attributed to cold debug SHA is consistent but not separately benchmarked"
+  },
+  "cold_cancel_candidate": {
+    "path": ".worktrees/main-features-2026-10-02/frontend/src-tauri/src/summary/summary_engine/client.rs",
+    "sha256": "0a512f4cbd1bd56f26461bd30a6b2d64534f620f69980b1927164ba1726a23bb",
+    "status": "REVIEWED_FIX_IN_MAIN_WORKING_TREE",
+    "unit_session": 62342,
+    "unit_log": ".worktrees/integration-backups-2026-10-02/feat101-cold-cancel-unit.log",
+    "root_updated": true,
+    "unit_exit": 0,
+    "unit_passed": 6,
+    "clippy_exit": 0,
+    "clippy_session": 6157,
+    "fmt_exit": 0,
+    "fmt_session": 12094,
+    "new_review_reports": {
+      "spec": "2f1f3402967e9ad222310bc896a7379016840bae2addbe7159d474db4e2bc81d",
+      "quality": "ad5bc9d450b58bd67c1c7066bdae534f8b32e5606a1e7a0e21b77860b2cee892"
+    }
+  },
+  "run4": {
+    "status": "PASS",
+    "session_id": 97663,
+    "log": ".worktrees/integration-backups-2026-10-02/feat102-local-inference-run4-optimized-sha.log",
+    "cargo_version": "1.98.1",
+    "profile_override": "profile.dev.package.sha2.opt-level=3",
+    "documentation": "https://doc.rust-lang.org/cargo/reference/config.html",
+    "purpose": "optimize full cryptographic computation only; no checksum bypass, model/prompt/schema/120s deadline change",
+    "exit": 0,
+    "passed_tests": 1,
+    "fixture_cases": [
+      "affirmative Friday/Mira with2exactcitations",
+      "unknownbudget insufficient",
+      "neighborcodeword insufficient",
+      "emptycontext no generator",
+      "SQLite preservation/reopen"
+    ],
+    "elapsed_ms": [
+      95808,
+      17921,
+      16623
+    ],
+    "test_duration_seconds": 130.62,
+    "log_sha256": "ed8657a9e19b4db31a949e510be3d520eb978616a1c71745d0d9b86adeb57049",
+    "test_binary_sha256": "d13308feba657d629d67c91e679fb0caf4b8425fad750f6ff620e5dbdd7c4221",
+    "post_terminal_process_snapshot": "no test/helper rows matched; command exit1 from empty rg; not prior timeout PID proof"
+  },
+  "task_closed": true,
+  "independent_review": {
+    "spec": {
+      "path": "docs/fork/meeting-questions-local-model-spec-review-2026-10-03.md",
+      "sha256": "2876d4132547d925e1bcef9e2fb3d81554b3fc148f2759c77135a4b228b7cdab",
+      "status": "PASS",
+      "critical": 0,
+      "important": 0,
+      "minor": 0
+    },
+    "quality": {
+      "path": "docs/fork/meeting-questions-local-model-quality-review-2026-10-03.md",
+      "sha256": "34b94cffb9affe0d5c079ceebe6fb95fcbf2c0320d63db0a43a599100a91cec1",
+      "status": "PASS",
+      "critical": 0,
+      "important": 0,
+      "minor": 0
+    }
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-04",
+  "exit": 0,
+  "browser": "149.0.7827.55",
+  "playwright_version": "1.61.0",
+  "tools_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03/frontend",
+  "actual_storage": "Real Chromium IndexedDB and localStorage at isolated owned loopback origin",
+  "source_hashes": [
+    {
+      "path": "src/services/indexedDBService.ts",
+      "sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa"
+    },
+    {
+      "path": "src/services/webMigration.ts",
+      "sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf"
+    }
+  ],
+  "first_import": {
+    "result": "imported",
+    "preference": "light"
+  },
+  "after_preference_fault_and_page_reload": {
+    "result": "already_imported",
+    "preference": "dark",
+    "meeting_count": 1,
+    "transcript_count": 0,
+    "has_matching_marker": true
+  },
+  "conclusion": "Durable IDB marker/records survive reload without duplication; already_imported does not verify or restore divergent preferences of a still-pending combined operation.",
+  "limits": [
+    "Adapter/source diagnostic only; no product UI integration, Rust file publish/journal/receipt or native app flow.",
+    "Preference divergence explicitly injected to test retry/readback behavior; this is not proof of naturally occurring crash data loss.",
+    "Not a request to restore migrated preferences after completed operations and legitimate user edits."
+  ],
+  "user_profile_accessed": false,
+  "product_changes": false,
+  "initial_browser_attempt": {
+    "exit": 1,
+    "product_browser_probe": "NOT_RUN",
+    "reason": "Canonical root Playwright1.60 requested absent browser1223; used already prepared feature toolchain Playwright1.61 and cache without installing dependencies."
+  },
+  "retained_probe_script": {
+    "path": "/private/tmp/meetily-webview-browser-marker-probe-2026-10-04.cjs",
+    "sha256": "f44f6dda27ba9519cd4aaa9d03ab5b35c951ca1fb2e268962147937f2015e90d"
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

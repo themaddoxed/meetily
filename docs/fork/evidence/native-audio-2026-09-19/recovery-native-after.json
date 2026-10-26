@@ -1,0 +1,20 @@
+{
+  "after": {
+    "transcripts.json": "9e25bd8add43cd20d00f9a77bed098ac5b1d2ebeaea50231aa5d0cd61b3dd9d8",
+    "metadata.json": "444cef093c5e87ce463eace9234ae212eb0dedb4a5ddcfca574e3e7a088f5071",
+    "audio.mp4": "814427d6508af73c04561f29d369ea54910cb3ca7db6fa19a8c53b930704347d",
+    "microphone.mp4": "a71778609a87cca037b9c013e17b5dd686fdd543ca276908fe1ef674962a7a8e",
+    "system.mp4": "3c2999a6ca1e3da38bf31f7aeda28349d79688410cb68e643e011ce141a8d4b1",
+    ".tracks/microphone/track.json": "e702a8e8fbd6f06c9e9ed0ce1c042c80cfbffad533df5b7fa861e8fe5434f062",
+    ".tracks/system/track.json": "5b9eace2b7c5de16f213e273b3f1ba59c5349909d171b0dc8eb6d7f359cac23e",
+    ".tracks/system/.checkpoints/system_chunk_000.mp4": "ad669040473ff6edbf31da176fe4bf01c99479a0a9414e08c2b4109ce85213ae",
+    ".tracks/system/.checkpoints/system_chunk_001.mp4": "dbaeaa328e960321aaa2e0c238a6804c6020f424686a40bb0e210e9e8be25d5c",
+    ".tracks/system/.checkpoints/concat_list.txt": "373bb7b20fefb4e4ab598f45f65966eae2a73e297c7834242b835e1db3001b91",
+    ".tracks/microphone/.checkpoints/microphone_chunk_001.mp4": "f0f968d801d9cd97de2e94e5a8a2ab7dbf8549e50d0460b30bc3537a3c864de8",
+    ".tracks/microphone/.checkpoints/microphone_chunk_000.mp4": "82de543ae381fa57424c64d03dda7d4fea2e1c5e10bdb70a566fe475cffee2d1",
+    ".tracks/microphone/.checkpoints/concat_list.txt": "dd38cf60c3bbd9da6b25285dcae8c6a63d4f25bb1803243a4cec68bcb03afd0a"
+  },
+  "removed": [],
+  "changed": [],
+  "audioUnchanged": true
+}

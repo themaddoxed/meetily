@@ -1,0 +1,40 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXWindow | AXTitle=meetily
+ AXRole=AXGroup | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXScrollArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+    AXRole=AXWebArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Expand sidebar | AXDescription=Expand sidebar | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXPopUpButton | AXTitle=About Meetily | AXDescription=About Meetily | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Home | AXDescription=Home | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Recording in progress | AXDescription=Recording in progress | AXHelp= | AXValue= | AXEnabled=0
+     AXRole=AXButton | AXTitle=Import Audio | AXDescription=Import Audio | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Meeting Notes | AXDescription=Meeting Notes | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Settings | AXDescription=Settings | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXPopUpButton | AXTitle= | AXDescription=About Meetily | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Copy | AXDescription= | AXHelp=Copy Transcript | AXValue= | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Paused | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=01:00 | AXEnabled=1
+      AXRole=AXButton | AXTitle=[00:37] | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Найти фрейкординг тест. | AXEnabled=1
+      AXRole=AXButton | AXTitle=[00:38] | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=The microphone permission was accepted after a delay. | AXEnabled=1
+      AXRole=AXButton | AXTitle=[00:42] | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=This recording must survive quitting the application. | AXEnabled=1
+      AXRole=AXButton | AXTitle=Resume recording | AXDescription=Resume recording | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXButton | AXTitle=Stop recording | AXDescription=Stop recording | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle=Notifications alt+T | AXDescription=Notifications alt+T | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXButton | AXHelp=this button also has an action to zoom the window | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXGroup
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXStaticText | AXValue=meetily | AXEnabled=1

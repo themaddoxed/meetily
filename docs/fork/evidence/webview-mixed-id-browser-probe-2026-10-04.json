@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-04",
+  "exit": 0,
+  "browser": "149.0.7827.55",
+  "storage": "Real Chromium IDB; separate ephemeral owned contexts at loopback origin",
+  "source_hashes": [
+    {
+      "path": "src/services/indexedDBService.ts",
+      "sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa"
+    },
+    {
+      "path": "src/services/webMigration.ts",
+      "sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf"
+    }
+  ],
+  "outcomes": [
+    {
+      "mode": "original_order",
+      "result": null,
+      "error": {
+        "name": "ConstraintError",
+        "message": "Key already exists in the object store."
+      },
+      "meetings": [],
+      "transcripts": [],
+      "marker": false,
+      "package_order": [
+        {
+          "text": "generated",
+          "id": null
+        },
+        {
+          "text": "explicit",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "mode": "explicit_first",
+      "result": "imported",
+      "error": null,
+      "meetings": [
+        {
+          "meetingId": "mixed-probe",
+          "title": "Mixed keys",
+          "startTime": 1,
+          "lastUpdated": 1,
+          "transcriptCount": 2,
+          "savedToSQLite": false
+        }
+      ],
+      "transcripts": [
+        {
+          "id": 2,
+          "meetingId": "mixed-probe",
+          "text": "generated",
+          "timestamp": "2026-10-04T00:00:00Z",
+          "confidence": 0.5,
+          "sequenceId": 0,
+          "storedAt": 1
+        },
+        {
+          "id": 1,
+          "meetingId": "mixed-probe",
+          "text": "explicit",
+          "timestamp": "2026-10-04T00:00:00Z",
+          "confidence": 0.5,
+          "sequenceId": 1,
+          "storedAt": 1
+        }
+      ],
+      "marker": true,
+      "package_order": [
+        {
+          "text": "generated",
+          "id": null
+        },
+        {
+          "text": "explicit",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "mode": "genuine_collision",
+      "result": null,
+      "error": {
+        "name": "ConstraintError",
+        "message": "Key already exists in the object store."
+      },
+      "meetings": [
+        {
+          "meetingId": "neighbor",
+          "title": "Preserved neighbor",
+          "startTime": 1,
+          "lastUpdated": 1,
+          "transcriptCount": 1,
+          "savedToSQLite": false
+        }
+      ],
+      "transcripts": [
+        {
+          "id": 1,
+          "meetingId": "neighbor",
+          "text": "neighbor preserved",
+          "timestamp": "2026-10-04T00:00:00Z",
+          "confidence": 0.5,
+          "sequenceId": 0,
+          "storedAt": 1
+        }
+      ],
+      "marker": false,
+      "package_order": [
+        {
+          "text": "generated",
+          "id": null
+        },
+        {
+          "text": "explicit",
+          "id": 1
+        }
+      ]
+    }
+  ],
+  "scope": "Actual current public package/import/IDB APIs. Original importer mixed-ID failure reproduced. Explicit-first reordered snapshot checks proposed scheduling through current commit primitive, not a product fix or versioned mapping implementation.",
+  "limits": [
+    "No product changes, user profile, native app, Rust journal/receipt or migration UI",
+    "Green is controlled scheduling diagnostic; new complete persistent mapping/readback protocol not implemented"
+  ],
+  "user_profile_accessed": false,
+  "product_changes": false,
+  "script": {
+    "path": "/private/tmp/meetily-webview-mixed-id-probe-2026-10-04.cjs",
+    "sha256": "ff5a6926be581cda37c4878b43d67ed66721cb8911e74df6ab79e0a6478f6751"
+  },
+  "log": {
+    "path": "/private/tmp/meetily-webview-mixed-id-probe-2026-10-04.log",
+    "sha256": "731d2816b132fa1cff7f296d38b22c1e5323cc2bef00cea7473ecfb82ce180fd"
+  }
+}

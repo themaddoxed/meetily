@@ -1,0 +1,53 @@
+{
+  "audio.mp4": {
+    "sha256": "4005d7f0f1575f5b8a06fb9583e239ace0d803c5cc2a2e05f20d2bf621e01f8c",
+    "probe": {
+      "format": {
+        "duration": "119.421333",
+        "size": "2386381"
+      }
+    },
+    "decodeExit": 0,
+    "decodeError": ""
+  },
+  "microphone.mp4": {
+    "sha256": "a057d8fd6a277f984a470fb3509d6ac47bf96e17315ed53fe7fcca44ec92e6d8",
+    "probe": {
+      "format": {
+        "duration": "119.092333",
+        "size": "2884100"
+      }
+    },
+    "decodeExit": 0,
+    "decodeError": ""
+  },
+  "system.mp4": {
+    "sha256": "44d772010407c4bf8c9cf51591f574ecb573bb585e30c1bc22ca0bd1787e9219",
+    "probe": {
+      "format": {
+        "duration": "100.937667",
+        "size": "308263"
+      }
+    },
+    "decodeExit": 0,
+    "decodeError": ""
+  },
+  "metadata": {
+    "audio_file": "audio.mp4",
+    "completed_at": "2026-09-20T06:08:24.802677+00:00",
+    "created_at": "2026-09-20T06:05:43.492+00:00",
+    "detected_summary_language": "en",
+    "devices": {
+      "microphone": null,
+      "system_audio": null
+    },
+    "duration_seconds": 161.223239556,
+    "meeting_id": "3a4f420e-5af9-4cc9-ac5a-553924aafa7f",
+    "meeting_name": "Meeting 20_09_26_09_05_43",
+    "sample_rate": 48000,
+    "session_id": "8449c82c-6ac9-472a-a6bd-b0e2e245b380",
+    "status": "completed",
+    "transcript_file": "transcripts.json",
+    "version": "1.0"
+  }
+}

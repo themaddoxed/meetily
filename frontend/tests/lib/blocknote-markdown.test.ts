@@ -1,0 +1,76 @@
+import type { Block } from '@blocknote/core';
+import { afterEach, describe, expect, test, vi } from 'vitest';
+import { blocksToMarkdownSafely } from "../../src/lib/blocknote-markdown";
+
+describe("blocksToMarkdownSafely", () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  test("returns markdown when conversion succeeds", async () => {
+    const editor = {
+      blocksToMarkdownLossy: vi.fn(async () => "# Summary"),
+    };
+
+    const result = await blocksToMarkdownSafely(editor, [] as Block[], {
+      source: "test-success",
+    });
+
+    expect(result).toEqual({
+      markdown: "# Summary",
+      ok: true,
+    });
+    expect(editor.blocksToMarkdownLossy).toHaveBeenCalledTimes(1);
+  });
+
+  test("returns fallback markdown when conversion throws", async () => {
+    const error = new Error("conversion failed");
+    const editor = {
+      blocksToMarkdownLossy: vi.fn(async () => {
+        throw error;
+      }),
+    };
+    const consoleError = vi.spyOn(console, 'error').mockImplementation(() => {});
+
+    const result = await blocksToMarkdownSafely(
+      editor,
+      [{ id: "block-1" }] as unknown as Block[],
+      {
+        source: "test-fallback",
+        fallbackMarkdown: "existing markdown",
+      },
+    );
+
+    expect(result).toEqual({
+      markdown: "existing markdown",
+      ok: false,
+    });
+    expect(consoleError).toHaveBeenCalledTimes(1);
+    expect(consoleError).toHaveBeenCalledWith(
+      "Failed to convert BlockNote blocks to markdown",
+      {
+        source: "test-fallback",
+        blocksCount: 1,
+        error,
+      },
+    );
+  });
+
+  test("omits markdown when conversion throws without fallback", async () => {
+    const editor = {
+      blocksToMarkdownLossy: vi.fn(async () => {
+        throw new Error("conversion failed");
+      }),
+    };
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+
+    const result = await blocksToMarkdownSafely(editor, [] as Block[], {
+      source: "test-empty-fallback",
+    });
+
+    expect(result).toEqual({
+      markdown: undefined,
+      ok: false,
+    });
+  });
+});

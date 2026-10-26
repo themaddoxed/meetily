@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-03",
+  "task": "FORK-152",
+  "status": "SOURCE_MATCHES_ROUTE_PENDING",
+  "source_root": "/Users/developer/Desktop/meeting-minutes",
+  "main_commit": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "main_tree": "bb8b8bdda6b53deaa926362f59b661410479ef78",
+  "dev_commit": "6f2c4488edc6b9fffd45f8b2dd31bcd6079fe37e",
+  "dev_main_distance": [
+    "0",
+    "82"
+  ],
+  "plan_sha256": "ee091492f7fef678e8cf2c07f62c2e6615fe150c747a49d321273720f5f41d17",
+  "allowlist": [
+    {
+      "path": "frontend/tests/theme-foundation.spec.ts",
+      "sha256": "ba9800d8633a4a79061bc2a96824210109ae9288305250f0e6ced9d2a48e048f",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/tests/theme-primitives.spec.ts",
+      "sha256": "437903165739552210bd71f52ed269fd6102e54203f2f7fb7ea0daa1408731e2",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/tests/theme-dark-surfaces.spec.ts",
+      "sha256": "0029581236ddc977a9aa4b83f8e44a1df400555aee36127a23be7173888f07c9",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/tests/theme-secondary-surfaces.spec.ts",
+      "sha256": "87a5dc1689bef99550f4a09acafb151f950591a76ec8ae0959ee5692b029c6bd",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/tests/theme-shell.spec.ts",
+      "sha256": "31ca3eb53f9bf6262162f3f59c86b06707dd92bdcd423421ac5c612af2f3485f",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/tests/e2e-build-boundary.test.mjs",
+      "sha256": "e995f7ce2021f9a0598e111eaa2b46bb37e32861fe8af184c9b86ee2f2f6493f",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/scripts/check-theme-tokens.mjs",
+      "sha256": "bb9cc97b853213c17be319b68c8a9c116f3e8ef5d74cfc35f58d553c3d40a82b",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/src/lib/theme.ts",
+      "sha256": "6283eb0bfcbc88f400eb239fb538e0890bef733b69d39497ad291d26a22c5064",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/src/components/ThemeScript.tsx",
+      "sha256": "11e2dfca5441cb2417a9d4089f8c27a516578d2cbdd8bda5f93201199b01eab6",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/src/contexts/ConfigContext.tsx",
+      "sha256": "9430eed994ec2f8fee2a27606b4609a1e0e8272ccc79089e9751044d76efd4ea",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": false
+    },
+    {
+      "path": "frontend/src/components/PreferenceSettings.tsx",
+      "sha256": "b5193068ab468c076833fee8268f45b5d2cffda2c6e93a9169cbd31d769e0eaa",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": false
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "sha256": "2b55982ac9adb5a8dd9c7c506fa3c12f338a5021cb9a2758e9c74c07a0757c99",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/tailwind.config.js",
+      "sha256": "b89fe6e39888f89480c3d7bf2be53ceaa442f09a5618548838159af245e2e980",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/src/testing/tauri-browser-mocks.ts",
+      "sha256": "006985f3fd81881e7e228bd3f7c25a6aca0e17ee71d25ef1dddc33f3a72927eb",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": false
+    },
+    {
+      "path": "frontend/src-tauri/tauri.conf.json",
+      "sha256": "f433187d282bd644add0917d9910ae4a9def7e3c096a997613e98c104c6c934e",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": false
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "sha256": "8acfd90d71814a9653065cfbe97bf911106c09c34ef8b9ebcb9d3966d523801a",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": false
+    },
+    {
+      "path": "frontend/src/components/BlockNoteEditor/Editor.tsx",
+      "sha256": "ea21cec73901fe6f993cf7ae41763d1da6724e12f724c06da65ecf48b9a1fe4e",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    },
+    {
+      "path": "frontend/src/components/AISummary/BlockNoteSummaryView.tsx",
+      "sha256": "f64ad509fabdfb47873ffc96b8d1c0030d031b6c61dbdbe9d14e648f680e7d9b",
+      "matches_reviewed_census": true,
+      "matches_main_base": true,
+      "matches_dev": true
+    }
+  ],
+  "owners": {
+    "pre_hydration": "ThemeScript",
+    "runtime": "ConfigContext",
+    "mount_count": 1,
+    "preference_key": "themeMode",
+    "blocknote_consumers": "isDarkTheme only",
+    "webMigration": "opaque preference preservation only"
+  },
+  "admission": {
+    "clean_task_root": null,
+    "route": "AWAITING_USER_DECISION",
+    "product_edits": false,
+    "new_resolver_or_key_found": false,
+    "native_evidence": "NOT_RUN",
+    "release_evidence": "NOT_RUN"
+  },
+  "notes": [
+    "Root dirty changes preserved. This report does not admit a clean implementation base.",
+    "dev differs from the reviewed source in five allowlisted paths.",
+    "Historical 30 pass / 3 fail browser result remains RED; no snapshots updated."
+  ],
+  "diagnostic": {
+    "status": "RED_PREPAINT_ORDER_CONTRACT",
+    "exit_status": 0,
+    "assertion_runner": false,
+    "browser": "Playwright 1.61.0 / Chromium 1228",
+    "server": "Next 14.2.35 development E2E fixture on loopback",
+    "report_sha256": "47b7ef364edbcbf2f5c049aabb4c9bdde765a02cc7310c12eed607889dc9dce9",
+    "observations": {
+      "diagnostic": true,
+      "storedMode": "dark",
+      "os": "light",
+      "htmlStatus": 200,
+      "cssIndex": 129,
+      "themeScriptIndex": 736,
+      "themeBeforeStylesheet": false,
+      "beforeCssRelease": {
+        "bodyAbsent": true,
+        "dark": false,
+        "colorScheme": "",
+        "events": [],
+        "readyState": "loading"
+      },
+      "afterReady": {
+        "dark": true,
+        "colorScheme": "dark",
+        "events": [
+          {
+            "force": true,
+            "bodyAbsent": true,
+            "readyState": "loading"
+          },
+          {
+            "force": true,
+            "bodyAbsent": false,
+            "readyState": "complete"
+          }
+        ]
+      },
+      "pageErrors": [],
+      "sourceRoot": "/Users/developer/Desktop/meeting-minutes/.worktrees/main-features-2026-10-02",
+      "sourceAdmission": "theme hashes match reviewed base; checkout has unrelated Q&A/scanner overlay; not implementation admission"
+    },
+    "limits": [
+      "Single stored dark / OS light navigation, not full twelve-transition test matrix.",
+      "Does not prove a visible flash or production bundle behavior.",
+      "First toggle bodyAbsent=true; the historical assertion is overwritten by a later runtime toggle.",
+      "No snapshot correction, native appearance or release validation."
+    ]
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

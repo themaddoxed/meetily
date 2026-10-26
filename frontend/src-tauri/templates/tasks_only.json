@@ -1,0 +1,12 @@
+{
+  "name": "Tasks Only",
+  "description": "A focused meeting summary containing only assigned tasks, owners, due dates, and supporting transcript references.",
+  "sections": [
+    {
+      "title": "Action Items",
+      "instruction": "List every task assigned during the meeting. Include the owner, due date when stated, current status, and a short supporting transcript reference with its timestamp. Do not add unassigned ideas or general discussion.",
+      "format": "list",
+      "item_format": "| **Owner** | **Task** | **Due** | **Status** | **Reference Transcript Segment** | **Segment Timestamp** |\n| --- | --- | --- | --- | --- | --- |"
+    }
+  ]
+}

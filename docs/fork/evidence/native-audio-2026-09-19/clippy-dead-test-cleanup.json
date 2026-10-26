@@ -1,0 +1,32 @@
+[
+  {
+    "path": "database/repositories/setting.rs",
+    "change": "move test module unchanged to end",
+    "before": "0e910f220f8db95452dfaea1d0f90753e04390ca7d2818f77d13432505d0f2b7",
+    "after": "a0a4be3df825b04da24cf64c7faffd82156b483a599feca6038c0833ce27a063"
+  },
+  {
+    "path": "audio/hardware_detector.rs",
+    "change": "move test module unchanged to end",
+    "before": "bc79e17eddabce8267c99b496073883356e9ee54c81866c4728e04a698c0edaa",
+    "after": "036ffd7b9fcbce06ba2f727c4346de54c5ec3a6998b902a3b834ac5318cf5499"
+  },
+  {
+    "path": "tray.rs",
+    "change": "move test module unchanged to end",
+    "before": "b7542eb61f2ed831fc853f7ecfa91750abc8838ebaf688117576fe66c0933e9b",
+    "after": "9a441effb95562f41bfb14a8587e6116e1a2df851dceb9822fde6ed48698ef2c"
+  },
+  {
+    "path": "summary/template_selection.rs",
+    "change": "remove four unused legacy path wrappers, app-specific implementations retained",
+    "before": "a9a52f879cda5dcd0d7d1a9c2bfb1035910926138fe8b5c4b55c678f22611a59",
+    "after": "1dd7cc0bd36b1bdfb15e6b5b19274f036563c2c8fefe1f787ed7e1822ecd524a"
+  },
+  {
+    "path": "audio/import.rs",
+    "change": "remove uncalled wrapper; two fixture helpers test-only; redundant closure/two &&str binds",
+    "before": "7554c875a6f210a0041859d02f882a2ce373e56a41b747a16d1cde4f8afe2357",
+    "after": "537d0de242289d180b83675a93a92da9a1b579edaf5cdf57c19a60cdcdc5a2b6"
+  }
+]

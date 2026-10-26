@@ -1,0 +1,102 @@
+{
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "task": "FEAT-076",
+  "scope": "Existing integrated search, temporary SQLite and fixture IPC browser acceptance",
+  "inspected_paths": [
+    {
+      "path": "frontend/src-tauri/src/database/repositories/search.rs",
+      "sha256": "61cec0bfd32289091b8cf1be624b29d1d3372213d73c42d7d28f4b9ce2320cee",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/transcript.rs",
+      "sha256": "d415e8c5bc28b362879c67a52913fcc14df453af6070e292d8518971e7334aea",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/meeting.rs",
+      "sha256": "3a122592e1e521861bd7724785c3d94fb3075e4df1dde45ef0f49f6bcab6a0c6",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/repositories/summary.rs",
+      "sha256": "998ecc0ce0c9d069cb26f79eb20e2e2caf74d6fa01712d0233bca81e24a28015",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/src/api/api.rs",
+      "sha256": "81f4ead67a83e18bb21592337800a5b24a2dcf80cd80ba43883789ee7e0ffb89",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/tests/meeting_search.rs",
+      "sha256": "6fb4cb5576e8dc698abcfc2ffd96c347d6928c26573d8ab3233c507576ef26c9",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src-tauri/migrations/20260926000000_add_meeting_search_index.sql",
+      "sha256": "d61e2a2cf4e1415f3d2dfe971130e5c702a4c8e07d636cbe691b9f3d8da3a8d4",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src/lib/meeting-search.ts",
+      "sha256": "f663b5357b67a294a4d6f49ca9430d7f1105bd6f536297396db233666c74f169",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src/components/Sidebar/index.tsx",
+      "sha256": "a8be0aa2f5c613fc6b7d3b2f290dd7383dac13f7c01c0bd933954a588ab63926",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/src/app/meeting-details/page.tsx",
+      "sha256": "cbed853e1a85ee40583b81a875bcad78cfe02544f67343eb373ef3096bb24b12",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/tests/meeting-search.spec.ts",
+      "sha256": "8b6f1218cf40026ea78e0045aa64039a4ca86a158282d8375489fa15589f44f1",
+      "matches_base": true,
+      "matches_candidate": true
+    },
+    {
+      "path": "frontend/tests/lib/meeting-search.test.mjs",
+      "sha256": "15c6eaa2d16f88de8f2231577420e90c9d2458309353bbc1e9f1e5babaeaafcb",
+      "matches_base": true,
+      "matches_candidate": true
+    }
+  ],
+  "checks": {
+    "rust": {
+      "exit": 0,
+      "passed": 5,
+      "log": "/private/tmp/meetily-search-milestone-rust.log"
+    },
+    "node": {
+      "exit": 0,
+      "passed": 3,
+      "log": "/private/tmp/meetily-search-milestone-node.log"
+    },
+    "browser": {
+      "exit": 0,
+      "passed": 3,
+      "skipped": 0,
+      "flaky": 0,
+      "log": "/private/tmp/meetily-search-milestone-browser.json"
+    }
+  },
+  "native_installed_application": "NOT_RUN",
+  "user_data_accessed": false,
+  "product_code_changed": false,
+  "release_ready": false
+}

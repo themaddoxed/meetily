@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "scope": "Incomplete design candidate and source observations, not executable plan admission",
+  "reports": [
+    {
+      "path": "docs/fork/webview-recovery-contract-spec-review-2026-10-04.md",
+      "sha256": "d293444fb79b516f466b7552db92db58de5f3c2d7d14ec78a4ee25269d3a0436"
+    },
+    {
+      "path": "docs/fork/webview-recovery-contract-quality-review-2026-10-04.md",
+      "sha256": "1f78a0af3bdc952391939ae328144d71ce981f9199f5f742525b057ecc237143"
+    }
+  ],
+  "reviewed_design_candidate_sha256": "e517235c686d6ed08c23ac0da5d377298d99910ca2bd9ccdf96749b793e968b3",
+  "reviewed_evidence_sha256": "a218576b6f034d79dadef2b603002af74547b3147ece11d42feb6008f95cdcff",
+  "minor_locator_correction": {
+    "path": "docs/fork/evidence/webview-migration-rebind-corrected-2026-10-04.json",
+    "sha256": "b5948cc17353df8d6bff699b7bd84b67a955a690c007d22674ea100563ee879c",
+    "expected_plugin_dispatch_line": 1863
+  },
+  "supplemental_browser_diagnostic": {
+    "path": "docs/fork/evidence/webview-migration-browser-marker-2026-10-04.json",
+    "sha256": "fd84d44691b8deba2eee54ba6f7dda130b80edab7e340891df207b470253e3df",
+    "independent_reviews_include_this_later_browser_probe": false
+  },
+  "implementation_admitted": false,
+  "identity_pair_admitted": false,
+  "required_next_decisions": [
+    "Versioned bootstrap/intent/marker/readback/receipt schemas and exact capability/IPC scope",
+    "Preparing phase owned resume and legacy journal/marker compatibility",
+    "Absent/equal-only preference collision policy and no replay after terminal receipt",
+    "Explicit Settings export control and source/actual-target identity admission",
+    "Clean product checkout source and fresh execution-plan reviews"
+  ]
+}

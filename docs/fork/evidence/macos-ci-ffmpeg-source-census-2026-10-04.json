@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-04",
+  "task": "FORK-145 prerequisite observation only",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "status": "fresh FFmpeg acquisition and manifest binding PASS; producer/license admission incomplete",
+  "producer_repository": [
+    {
+      "url": "https://api.github.com/repos/Zackriya-Solutions/ffmpeg-binaries",
+      "data": {
+        "full_name": "Zackriya-Solutions/ffmpeg-binaries",
+        "default_branch": "main",
+        "license": null,
+        "description": null,
+        "html_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/Zackriya-Solutions/ffmpeg-binaries/contents",
+      "data": [
+        {
+          "name": "README.md",
+          "path": "README.md",
+          "type": "file",
+          "sha": "80acb1693912f167de1a0d087760e465bc071e13",
+          "download_url": "https://raw.githubusercontent.com/Zackriya-Solutions/ffmpeg-binaries/main/README.md"
+        }
+      ]
+    }
+  ],
+  "producer_readme": {
+    "git_blob_sha": "80acb1693912f167de1a0d087760e465bc071e13",
+    "content_sha256": "fcfabc89227707f8d16643ebb0cf977899abc8d5aca059079636df869f9e41c6",
+    "scope": "README contains only repository heading; observed root listing has no build source/license file"
+  },
+  "release": {
+    "source_url": "https://api.github.com/repos/Zackriya-Solutions/ffmpeg-binaries/releases/tags/0.0.1",
+    "tag": "0.0.1",
+    "id": 284185983,
+    "published_at": "2026-02-08T16:47:38Z",
+    "body": "This is the ffmpeg binaries used for meetily application building.\r\n- apple intel -> ffmpeg-8.0.1.zip\r\n- apple silicon -> ffmpeg80arm.zip\r\n- linux arm -> ffmpeg-release-arm64-static.tar.xz\r\n- linux_x86_64 -> ffmpeg-release-amd64-static.tar.xz\r\n- windows -> ffmpeg-8.0.1-essentials_build.zip\r\n",
+    "assets": [
+      {
+        "id": 352661168,
+        "name": "ffmpeg-8.0.1-essentials_build.zip",
+        "size": 106259850,
+        "digest": "sha256:e2aaeaa0fdbc397d4794828086424d4aaa2102cef1fb6874f6ffd29c0b88b673",
+        "browser_download_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries/releases/download/0.0.1/ffmpeg-8.0.1-essentials_build.zip",
+        "updated_at": "2026-02-08T16:45:55Z"
+      },
+      {
+        "id": 352660047,
+        "name": "ffmpeg-8.0.1.zip",
+        "size": 25809598,
+        "digest": "sha256:470e482f6e290eac92984ac12b2d67bad425b1e5269fd75fb6a3536c16e824e4",
+        "browser_download_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries/releases/download/0.0.1/ffmpeg-8.0.1.zip",
+        "updated_at": "2026-02-08T16:40:39Z"
+      },
+      {
+        "id": 352661032,
+        "name": "ffmpeg-release-amd64-static.tar.xz",
+        "size": 41888096,
+        "digest": "sha256:abda8d77ce8309141f83ab8edf0596834087c52467f6badf376a6a2a4c87cf67",
+        "browser_download_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries/releases/download/0.0.1/ffmpeg-release-amd64-static.tar.xz",
+        "updated_at": "2026-02-08T16:44:29Z"
+      },
+      {
+        "id": 352660916,
+        "name": "ffmpeg-release-arm64-static.tar.xz",
+        "size": 19337412,
+        "digest": "sha256:f4149bb2b0784e30e99bdda85471c9b5930d3402014e934a5098b41d0f7201b1",
+        "browser_download_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries/releases/download/0.0.1/ffmpeg-release-arm64-static.tar.xz",
+        "updated_at": "2026-02-08T16:43:31Z"
+      },
+      {
+        "id": 352660758,
+        "name": "ffmpeg80arm.zip",
+        "size": 22400365,
+        "digest": "sha256:0d4efcaf6a098430a708e0af694a84792938921fa126162787ae98c6151d7a95",
+        "browser_download_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries/releases/download/0.0.1/ffmpeg80arm.zip",
+        "updated_at": "2026-02-08T16:42:50Z"
+      }
+    ]
+  },
+  "results": [
+    {
+      "target": "aarch64-apple-darwin",
+      "asset": {
+        "id": 352660758,
+        "name": "ffmpeg80arm.zip",
+        "size": 22400365,
+        "digest": "sha256:0d4efcaf6a098430a708e0af694a84792938921fa126162787ae98c6151d7a95",
+        "browser_download_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries/releases/download/0.0.1/ffmpeg80arm.zip",
+        "updated_at": "2026-02-08T16:42:50Z"
+      },
+      "expected_binary_sha256": "77d2c853f431318d55ec02676d9b2f185ebfdddb9f7677a251fbe453affe025a",
+      "status": "PASS",
+      "package_path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/ffmpeg80arm.zip",
+      "package_bytes": 22400365,
+      "package_sha256": "0d4efcaf6a098430a708e0af694a84792938921fa126162787ae98c6151d7a95",
+      "binary_path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/ffmpeg-aarch64-apple-darwin",
+      "binary_bytes": 51551944,
+      "binary_sha256": "77d2c853f431318d55ec02676d9b2f185ebfdddb9f7677a251fbe453affe025a",
+      "license_members": [],
+      "project_preflight": "PASS exit0 verify-universal-ffmpeg.js; header CPU, executable bit and SHA-256 checked; no downloaded binary executed",
+      "binary_archive_member": "ffmpeg",
+      "binary_archive_mode": "0o755"
+    },
+    {
+      "target": "x86_64-apple-darwin",
+      "asset": {
+        "id": 352660047,
+        "name": "ffmpeg-8.0.1.zip",
+        "size": 25809598,
+        "digest": "sha256:470e482f6e290eac92984ac12b2d67bad425b1e5269fd75fb6a3536c16e824e4",
+        "browser_download_url": "https://github.com/Zackriya-Solutions/ffmpeg-binaries/releases/download/0.0.1/ffmpeg-8.0.1.zip",
+        "updated_at": "2026-02-08T16:40:39Z"
+      },
+      "expected_binary_sha256": "430d60fbf419dab28daee9b679e7929a31ee9bae53f6e42e8ae26b725584290f",
+      "status": "PASS",
+      "package_path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/ffmpeg-8.0.1.zip",
+      "package_bytes": 25809598,
+      "package_sha256": "470e482f6e290eac92984ac12b2d67bad425b1e5269fd75fb6a3536c16e824e4",
+      "binary_path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/ffmpeg-x86_64-apple-darwin",
+      "binary_bytes": 80083328,
+      "binary_sha256": "430d60fbf419dab28daee9b679e7929a31ee9bae53f6e42e8ae26b725584290f",
+      "license_members": [],
+      "project_preflight": "PASS exit0 verify-universal-ffmpeg.js; header CPU, executable bit and SHA-256 checked; no downloaded binary executed",
+      "binary_archive_member": "ffmpeg",
+      "binary_archive_mode": "0o755"
+    }
+  ],
+  "verifier_source_sha256": "7b678cd5ee6fce17c242422e0ba594dac9b0877a90e5c14ce12cabba700adf7a",
+  "build_source_sha256": "f10836c35278abda4834b893d72d7d47fdbc8e7a9e1f40e1e57944871c5869fe",
+  "fresh_evidence_sha256": "02ab312092eea47c2d78f9dc2f6943dc75fda9ead977a3eb9f9e0e290e7b70fe",
+  "producer_admitted": false,
+  "remaining": [
+    "independent admission of source/download/binary bindings",
+    "build/source/license provenance for pinned actual binaries; downloaded archives contain no LICENSE/COPYING/NOTICE and producer root listing has no build/source/license file",
+    "hosted runner/toolchain/capacity and actual dual-host jobs NOT_RUN"
+  ],
+  "product_changed": false,
+  "downloaded_code_executed": false,
+  "installed": false,
+  "published": false
+}

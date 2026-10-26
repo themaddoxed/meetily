@@ -1,0 +1,20 @@
+[
+  {
+    "path": "frontend/src-tauri/src/api/api.rs",
+    "count": 26,
+    "before": "e4d401acef99465ff035f56dedb752db26bbda3f636948bf26d5dcf5aef0ed94",
+    "after": "3b94b338b18422b2fe93e2b243c6f6e1abb89ffe949be354ff5943b74f1d821e"
+  },
+  {
+    "path": "frontend/src-tauri/src/summary/commands.rs",
+    "count": 6,
+    "before": "319776a05639f2f62e0230444f06a74a8a48b113fbd95c540f690e79faaecac6",
+    "after": "f6873754d50bb126b150faf44ebc7d1cf049212ea20047c31a029374eaf5281e"
+  },
+  {
+    "path": "frontend/src-tauri/src/summary/service.rs",
+    "count": 2,
+    "before": "4eead01ef65b33569dcafadc7f5a3a95c75af7e71f9fe4c25bb658b498ab9c14",
+    "after": "81817b7f694d125864c159833ecffacdfb4ecf5a3c5b80ecd9e7d9f04aa71d7f"
+  }
+]

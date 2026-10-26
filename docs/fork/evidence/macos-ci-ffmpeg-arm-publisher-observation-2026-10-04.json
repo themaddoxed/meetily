@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-04",
+  "publisher": "Evermeet",
+  "requested_url": "https://evermeet.cx/ffmpeg/apple-silicon-arm",
+  "page_sha256": "5a5b1383bdf5a4f8616678736639edc13aa584670fceb4003b94c157b3c4540e",
+  "observed_statement": "Publisher states that it does not plan to provide native Apple Silicon ARM ffmpeg binaries.",
+  "implication": "Intel byte-identical publisher binding does not establish origin of ffmpeg80arm.zip.",
+  "arm_origin": "NOT_VERIFIED",
+  "producer_admitted": false,
+  "retained_observation": {
+    "path": "/private/tmp/meetily-ci-ffmpeg-source-2026-10-04/evermeet-arm-observation.json",
+    "sha256": "4768ec2da12b257864bf18f3206d39e33202e3d4731257a1d638ceafd9437c76"
+  }
+}

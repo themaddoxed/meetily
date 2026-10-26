@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "audio_file": "audio.mp4",
+    "completed_at": "2026-09-19T18:47:38.640272+00:00",
+    "created_at": "2026-09-19T18:46:57.861+00:00",
+    "detected_summary_language": "en",
+    "devices": {
+      "microphone": null,
+      "system_audio": null
+    },
+    "duration_seconds": 40.63466147,
+    "meeting_id": "fb6a0d93-9adb-4e68-84ad-6cd7eb7f88fc",
+    "meeting_name": "Meeting 19_09_26_21_46_57",
+    "sample_rate": 48000,
+    "session_id": "50df7543-9ec4-43b4-8b58-2d8ba704800e",
+    "status": "completed",
+    "transcript_file": "transcripts.json",
+    "version": "1.0"
+  },
+  "audio": {
+    "audio.mp4": {
+      "bytes": 159694,
+      "sha256": "d5a6dc61abbd808f845f1cbfd2c585ae7f62b9ae07ddd07268d84f9df43a662d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "7.821333"
+        }
+      }
+    },
+    "microphone.mp4": {
+      "bytes": 203053,
+      "sha256": "7dde16bc5c2af2862811e4876b37e1c711e23267ad21f81ac467ac8804a0d3bf",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "8.330000"
+        }
+      }
+    },
+    "system.mp4": {
+      "bytes": 74229,
+      "sha256": "380c552188700ec818e50d2695818fddb570935f8be30c9259a114fc9de3d319",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "5.642000"
+        }
+      }
+    }
+  }
+}

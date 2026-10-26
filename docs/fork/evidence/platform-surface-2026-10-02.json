@@ -1,0 +1,275 @@
+{
+  "source_commit": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "worktree_clean": false,
+  "release_evidence": false,
+  "scanner_exit": 1,
+  "findings": [
+    {
+      "code": "platform.docs",
+      "path": ".github/workflows/ACCELERATION_GUIDE.md",
+      "message": "Current instructions advertise or install a foreign platform."
+    },
+    {
+      "code": "platform.docs",
+      "path": ".github/workflows/README_DEVTEST.md",
+      "message": "Current instructions advertise or install a foreign platform."
+    },
+    {
+      "code": "platform.docs",
+      "path": ".github/workflows/WORKFLOWS_OVERVIEW.md",
+      "message": "Current instructions advertise or install a foreign platform."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Job build-devtest has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Job build-devtest has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Job build-devtest has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Job build-devtest has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Job build-devtest has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Job build-devtest has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Job build-devtest has a foreign platform condition."
+    },
+    {
+      "code": "platform.target",
+      "path": ".github/workflows/build-devtest.yml",
+      "message": "Foreign platform compilation target."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/build-linux.yml",
+      "message": "Job build-linux has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.target",
+      "path": ".github/workflows/build-linux.yml",
+      "message": "Foreign platform compilation target."
+    },
+    {
+      "code": "platform.target",
+      "path": ".github/workflows/build-test.yml",
+      "message": "Foreign platform compilation target."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/build-windows.yml",
+      "message": "Job build-windows has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.target",
+      "path": ".github/workflows/build-windows.yml",
+      "message": "Foreign platform compilation target."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.workflow-condition",
+      "path": ".github/workflows/build.yml",
+      "message": "Job build has a foreign platform condition."
+    },
+    {
+      "code": "platform.target",
+      "path": ".github/workflows/build.yml",
+      "message": "Foreign platform compilation target."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/pr-main-check.yml",
+      "message": "Job validation-check has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/quality-gate.yml",
+      "message": "Job source-integrity has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/quality-gate.yml",
+      "message": "Job frontend has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/quality-gate.yml",
+      "message": "Job quality-gate has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/release.yml",
+      "message": "Job manual-attestation has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/release.yml",
+      "message": "Job create-release has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.workflow-runner",
+      "path": ".github/workflows/release.yml",
+      "message": "Job release-summary has a non-macOS or unresolved runner."
+    },
+    {
+      "code": "platform.target",
+      "path": ".github/workflows/release.yml",
+      "message": "Foreign platform compilation target."
+    },
+    {
+      "code": "platform.docs",
+      "path": "README.md",
+      "message": "Current instructions advertise or install a foreign platform."
+    },
+    {
+      "code": "platform.docs",
+      "path": "docs/building_in_linux.md",
+      "message": "Current instructions advertise or install a foreign platform."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/decoder.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/device_detection.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/devices/discovery.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/devices/speakers.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/diagnostics.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/encode.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/incremental_saver.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/playback_monitor.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    },
+    {
+      "code": "platform.condition",
+      "path": "frontend/src-tauri/src/audio/recording_preferences.rs",
+      "message": "Rust cfg contains a foreign platform condition."
+    }
+  ],
+  "audited_paths": 370,
+  "excluded_paths": 446,
+  "changed_source_sha256": {
+    "frontend/package.json": "58edc61777a139da453aa165fb21ebfb72450349c93a4705dd75ddd2fb547802",
+    "frontend/scripts/platform-surface.mjs": "dbb2d552b12d90fdbe3ebfd5dc78177a645b304ad541f81b24f86b0dffb24b74",
+    "frontend/tests/platform-surface.test.mjs": "95403c492575b7f5f0c6774dab462759ec95a161cd930b7239856dd3e6f69581"
+  },
+  "checks": {
+    "focused_node": {
+      "exit": 0,
+      "passed": 30
+    },
+    "all_node": {
+      "exit": 0,
+      "passed": 454
+    },
+    "lint": {
+      "exit": 0
+    },
+    "typecheck": {
+      "exit": 0
+    },
+    "focused_lint_after_final_fix": {
+      "exit": 0
+    }
+  },
+  "execution": "Tests used the isolated checkout of the same source commit with exact pnpm dependencies. The scanner CLI audited the root dirty overlay with identical scanner/package/test bytes."
+}

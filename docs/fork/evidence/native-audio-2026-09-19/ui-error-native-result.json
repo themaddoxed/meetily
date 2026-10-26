@@ -1,0 +1,64 @@
+{
+  "app": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/target/diagnostic-dirty/fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c/run-20260920-ui-error-fixed/meetily.app",
+  "source_fingerprint": "acd310dea937b537aaea3f40a3349145bfe4f1768c487579a726eedec5b24882",
+  "launch": "LaunchServices open -n",
+  "pid": 54945,
+  "metadata": {
+    "audio_file": "audio.mp4",
+    "completed_at": "2026-09-20T10:59:51.700152+00:00",
+    "created_at": "2026-09-20T10:58:06.855+00:00",
+    "devices": {
+      "microphone": null,
+      "system_audio": null
+    },
+    "duration_seconds": 102.889559523,
+    "meeting_id": "d540a7ed-e1d1-45ff-99a3-81843448a3f7",
+    "meeting_name": "Meeting 20_09_26_13_57_41",
+    "sample_rate": 48000,
+    "session_id": "30b95d6d-ba40-4afe-bd6a-d12b77103ed2",
+    "status": "completed",
+    "transcript_file": "transcripts.json",
+    "version": "1.0"
+  },
+  "files": [
+    {
+      "file": "audio.mp4",
+      "sha256": "21efcb28421a27e918d6840322553a8dfff82b9a9553689f6111697979009a67",
+      "decode_exit": 0,
+      "decoded_seconds": 76.90675,
+      "warnings": "[f32le @ 0x7fbc6df154c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 480112 >= 480112\n"
+    },
+    {
+      "file": "microphone.mp4",
+      "sha256": "b972cc75e7cd023c637e1b47d3dc3dee148a075e3ad10b404bfe5640491a9a27",
+      "decode_exit": 0,
+      "decoded_seconds": 77.16275,
+      "warnings": "[f32le @ 0x7f7f287154c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 480152 >= 480152\n"
+    },
+    {
+      "file": "system.mp4",
+      "sha256": "024f98d617a54110ec9a2fe682aa83e38aca7024495ec95a0d1f7b9503c21305",
+      "decode_exit": 0,
+      "decoded_seconds": 56.896,
+      "warnings": ""
+    }
+  ],
+  "native_checks": {
+    "microphone_denial": "blocked with settings guidance; no recording observed",
+    "delayed_system_grant": "recording active; Recording Failed absent in accepted/paused/resumed AX",
+    "pause": "00:49 unchanged across two reads",
+    "resume": "01:09; Pause recording available",
+    "quit": "all final files before database cleanup; process absent"
+  },
+  "limits": [
+    "failure-to-success banner retry within same process not reproduced",
+    "physical unplug not tested",
+    "raw-track timeline known defect persists",
+    "not an Alpha/release"
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

@@ -1,0 +1,861 @@
+{
+  "status": "SCHEMA_INVENTORY_ONLY",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprint": "4ec41cb8751e0ed2e6e90496fa00d1e1ea6c6f32335fa8aa45a4c420d24f1247",
+  "sqliteVersion": "3.53.4",
+  "migrationCount": 15,
+  "migrations": [
+    {
+      "name": "20250916100000_initial_schema.sql",
+      "sha256": "1eed8720bfbec937b7f5032f61db6ec78411ae7cd9c37e5f2e158cfe83fe2b65"
+    },
+    {
+      "name": "20250920155811_add_openrouter_api_key.sql",
+      "sha256": "96839c8dd47fa1de98595deff59080efcb850fd5222cfb2bd659aabd71f381d5"
+    },
+    {
+      "name": "20251006000000_add_audio_sync_fields.sql",
+      "sha256": "eab71c0b6723574278f3c97dda2159905841a620eb9f5b0a57787a22a4bc4cfe"
+    },
+    {
+      "name": "20251010153942_add_ollama_endpoint.sql",
+      "sha256": "72538e9b6c382106687d0083443c7c5d01f254fc3d60004bb96c665549256665"
+    },
+    {
+      "name": "20251101000000_add_summary_backup.sql",
+      "sha256": "e35f579a753f2a3011a20507ce62f58b5496d6967cb5dee211a043023249ac21"
+    },
+    {
+      "name": "20251105120000_add_pro_license_custom_openai.sql",
+      "sha256": "1addc77cf5f14b4778ea44ab7a04875946a6332b550bb83346f0876c05af13f0"
+    },
+    {
+      "name": "20251110000000_add_grace_period_to_licensing.sql",
+      "sha256": "bc8e5ede41ac5d1abeebf323ea302aec6267587d0f918d24186601105a4126b7"
+    },
+    {
+      "name": "20251110000001_add_speaker_field.sql",
+      "sha256": "fe6d59369e9b994f066741745527670eaed49f767ca0daf1098902e29a831dff"
+    },
+    {
+      "name": "20251223000000_add_meeting_notes.sql",
+      "sha256": "bef41b8e452806ebc0fc7139fa89a8ccf228a3221e09c42bbbac7899c3ae2680"
+    },
+    {
+      "name": "20251229000000_add_gemini_api_key.sql",
+      "sha256": "57f8116122aa488219f1c89d010833d1512755aa86cb8bb1afe7681950260bf2"
+    },
+    {
+      "name": "20260626000100_add_diarization_foundation.sql",
+      "sha256": "72642493fd138f888ec039859da56dbd909dc9a0e997fceca140ddc9206e9874"
+    },
+    {
+      "name": "20260713000100_harden_diarization_foundation.sql",
+      "sha256": "2ec338c570fd1f27a63d1f44ebdfbf3a5c38805cdcd93528d4188fd7e8f12733"
+    },
+    {
+      "name": "20260908000100_add_transcription_vocabulary.sql",
+      "sha256": "f7aae1c0284b362ced70d3c838f54965c1b6a359793e3a53baeeed7c67d4335a"
+    },
+    {
+      "name": "20260908000200_add_meeting_provenance.sql",
+      "sha256": "0049adeb5c4a44e172378f90ba9af8c18697975e2e90132e064792a940dcfdf1"
+    },
+    {
+      "name": "20260913000100_add_meeting_lifecycle.sql",
+      "sha256": "479aa20b3b5d3dec696ccf17b4b5723ed0a077e8e3231620f22784a9113d6f08"
+    }
+  ],
+  "tables": [
+    {
+      "name": "diarization_settings",
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "enabled",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "mode",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "show_provisional_labels",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "post_call_refinement_enabled",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "overlap_handling",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "speaker_review_enabled",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE \"diarization_settings\" (\n    id TEXT PRIMARY KEY NOT NULL DEFAULT '1',\n    enabled INTEGER NOT NULL DEFAULT 0 CHECK (enabled IN (0, 1)),\n    mode TEXT NOT NULL DEFAULT 'live_plus_post_call'\n        CHECK (mode IN ('live_plus_post_call', 'post_call_only', 'off')),\n    show_provisional_labels INTEGER NOT NULL DEFAULT 1\n        CHECK (show_provisional_labels IN (0, 1)),\n    post_call_refinement_enabled INTEGER NOT NULL DEFAULT 1\n        CHECK (post_call_refinement_enabled IN (0, 1)),\n    overlap_handling TEXT NOT NULL DEFAULT 'multiple_speakers'\n        CHECK (overlap_handling = 'multiple_speakers'),\n    speaker_review_enabled INTEGER NOT NULL DEFAULT 1\n        CHECK (speaker_review_enabled IN (0, 1)),\n    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP\n)"
+    },
+    {
+      "name": "licensing",
+      "columns": [
+        {
+          "name": "license_key",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "encrypted_key",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "signature_hash",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "activation_date",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "expiry_date",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "soft_expiry_date",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "max_activation_time",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "duration",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "generated_on",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "is_soft_expired",
+          "type": "INTEGER",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "grace_period",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE licensing (\n    license_key TEXT PRIMARY KEY,           -- Decrypted license ID\n    encrypted_key TEXT NOT NULL,            -- Original encrypted key (RSA + Base64)\n    signature_hash TEXT NOT NULL,           -- SHA-256 hash of encrypted_key for integrity\n    activation_date TEXT NOT NULL,          -- ISO 8601 timestamp of activation\n    expiry_date TEXT NOT NULL,              -- activation_date + duration\n    soft_expiry_date TEXT NOT NULL,         -- expiry_date + grace period\n    max_activation_time TEXT NOT NULL,      -- From decrypted license data\n    duration INTEGER NOT NULL,              -- Duration in seconds\n    generated_on TEXT NOT NULL,             -- ISO 8601 timestamp when license was generated\n    is_soft_expired INTEGER DEFAULT 0       -- 0=active, 1=soft expired, 2=hard blocked\n, grace_period INTEGER NOT NULL DEFAULT 604800)"
+    },
+    {
+      "name": "meeting_diarization_status",
+      "columns": [
+        {
+          "name": "meeting_id",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "enabled",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "live_enabled",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "post_call_enabled",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "current_status",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "quality_flags",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "processed_at",
+          "type": "DATETIME",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE \"meeting_diarization_status\" (\n    meeting_id TEXT PRIMARY KEY NOT NULL,\n    enabled INTEGER NOT NULL DEFAULT 0 CHECK (enabled IN (0, 1)),\n    live_enabled INTEGER NOT NULL DEFAULT 0 CHECK (live_enabled IN (0, 1)),\n    post_call_enabled INTEGER NOT NULL DEFAULT 0 CHECK (post_call_enabled IN (0, 1)),\n    current_status TEXT NOT NULL DEFAULT 'none'\n        CHECK (current_status IN (\n            'none', 'provisional', 'final', 'fallback_to_live', 'failed', 'needs_review'\n        )),\n    quality_flags TEXT,\n    processed_at DATETIME,\n    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n    FOREIGN KEY (meeting_id) REFERENCES meetings(id) ON DELETE CASCADE\n)"
+    },
+    {
+      "name": "meeting_notes",
+      "columns": [
+        {
+          "name": "meeting_id",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "notes_markdown",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "notes_json",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "updated_at",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE meeting_notes (\n    meeting_id TEXT PRIMARY KEY NOT NULL,\n    notes_markdown TEXT,\n    notes_json TEXT,\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL,\n    FOREIGN KEY (meeting_id) REFERENCES meetings(id) ON DELETE CASCADE\n)"
+    },
+    {
+      "name": "meeting_transcript_vocabulary",
+      "columns": [
+        {
+          "name": "meeting_id",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "vocabulary",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE meeting_transcript_vocabulary (\n    meeting_id TEXT PRIMARY KEY NOT NULL,\n    vocabulary TEXT,\n    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n    FOREIGN KEY (meeting_id) REFERENCES meetings(id) ON DELETE CASCADE\n)"
+    },
+    {
+      "name": "meetings",
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "updated_at",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "folder_path",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "title_source",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "started_at_ms",
+          "type": "INTEGER",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "duration_seconds",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "lifecycle_error",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "lifecycle_operation",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "lifecycle_run_id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE meetings (\n    id TEXT PRIMARY KEY,\n    title TEXT NOT NULL,\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n, folder_path TEXT, title_source TEXT NOT NULL DEFAULT 'legacy', started_at_ms INTEGER, status TEXT NOT NULL DEFAULT 'ready', duration_seconds REAL, lifecycle_error TEXT, lifecycle_operation TEXT, lifecycle_run_id TEXT)"
+    },
+    {
+      "name": "settings",
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "provider",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "model",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "whisperModel",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "groqApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "openaiApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "anthropicApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "ollamaApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "openRouterApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "ollamaEndpoint",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "customOpenAIConfig",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "geminiApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE \"settings\" (\n    id TEXT PRIMARY KEY,\n    provider TEXT NOT NULL,\n    model TEXT NOT NULL,\n    whisperModel TEXT NOT NULL,\n    groqApiKey TEXT,\n    openaiApiKey TEXT,\n    anthropicApiKey TEXT,\n    ollamaApiKey TEXT,\n    openRouterApiKey TEXT\n, ollamaEndpoint TEXT, customOpenAIConfig TEXT, geminiApiKey TEXT)"
+    },
+    {
+      "name": "speaker_segments",
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "meeting_id",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "source",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "start_time",
+          "type": "REAL",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "end_time",
+          "type": "REAL",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "speaker_id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "speaker_label",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "confidence",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "is_overlap",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "diarization_status",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "diarization_method",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE \"speaker_segments\" (\n    id TEXT PRIMARY KEY NOT NULL,\n    meeting_id TEXT NOT NULL,\n    source TEXT NOT NULL,\n    start_time REAL NOT NULL,\n    end_time REAL NOT NULL CHECK (end_time > start_time),\n    speaker_id TEXT,\n    speaker_label TEXT,\n    confidence REAL CHECK (confidence IS NULL OR confidence BETWEEN 0.0 AND 1.0),\n    is_overlap INTEGER NOT NULL DEFAULT 0 CHECK (is_overlap IN (0, 1)),\n    diarization_status TEXT NOT NULL\n        CHECK (diarization_status IN (\n            'none', 'provisional', 'final', 'fallback_to_live', 'failed', 'needs_review'\n        )),\n    diarization_method TEXT,\n    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n    CHECK (is_overlap = 0 OR (speaker_id IS NULL AND speaker_label IS NULL)),\n    FOREIGN KEY (meeting_id) REFERENCES meetings(id) ON DELETE CASCADE\n)"
+    },
+    {
+      "name": "summary_processes",
+      "columns": [
+        {
+          "name": "meeting_id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "updated_at",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "error",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "result",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "start_time",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "end_time",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "chunk_count",
+          "type": "INTEGER",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "processing_time",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "metadata",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "result_backup",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "result_backup_timestamp",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE summary_processes (\n    meeting_id TEXT PRIMARY KEY,\n    status TEXT NOT NULL,\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL,\n    error TEXT,\n    result TEXT,\n    start_time TEXT,\n    end_time TEXT,\n    chunk_count INTEGER DEFAULT 0,\n    processing_time REAL DEFAULT 0.0,\n    metadata TEXT, result_backup TEXT, result_backup_timestamp TEXT,\n    FOREIGN KEY (meeting_id) REFERENCES meetings(id) ON DELETE CASCADE\n)"
+    },
+    {
+      "name": "transcript_chunks",
+      "columns": [
+        {
+          "name": "meeting_id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "meeting_name",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "transcript_text",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "model",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "model_name",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "chunk_size",
+          "type": "INTEGER",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "overlap",
+          "type": "INTEGER",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "created_at",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE transcript_chunks (\n    meeting_id TEXT PRIMARY KEY,\n    meeting_name TEXT,\n    transcript_text TEXT NOT NULL,\n    model TEXT NOT NULL,\n    model_name TEXT NOT NULL,\n    chunk_size INTEGER,\n    overlap INTEGER,\n    created_at TEXT NOT NULL,\n    FOREIGN KEY (meeting_id) REFERENCES meetings(id) ON DELETE CASCADE\n)"
+    },
+    {
+      "name": "transcript_settings",
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "provider",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "model",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "whisperApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "deepgramApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "elevenLabsApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "groqApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "openaiApiKey",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "whisperVocabulary",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE transcript_settings (\n    id TEXT PRIMARY KEY,\n    provider TEXT NOT NULL,\n    model TEXT NOT NULL,\n    whisperApiKey TEXT,\n    deepgramApiKey TEXT,\n    elevenLabsApiKey TEXT,\n    groqApiKey TEXT,\n    openaiApiKey TEXT\n, whisperVocabulary TEXT)"
+    },
+    {
+      "name": "transcripts",
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 1
+        },
+        {
+          "name": "meeting_id",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "transcript",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "timestamp",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "summary",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "action_items",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "key_points",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "audio_start_time",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "audio_end_time",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "duration",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "speaker",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "speaker_id",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "speaker_label",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "speaker_color",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "is_overlap",
+          "type": "INTEGER",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "diarization_status",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "diarization_method",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        },
+        {
+          "name": "diarization_confidence",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKeyOrder": 0
+        }
+      ],
+      "schemaSql": "CREATE TABLE \"transcripts\" (\n    id TEXT PRIMARY KEY,\n    meeting_id TEXT NOT NULL,\n    transcript TEXT NOT NULL,\n    timestamp TEXT NOT NULL,\n    summary TEXT,\n    action_items TEXT,\n    key_points TEXT,\n    audio_start_time REAL,\n    audio_end_time REAL,\n    duration REAL,\n    speaker TEXT,\n    speaker_id TEXT,\n    speaker_label TEXT,\n    speaker_color TEXT,\n    is_overlap INTEGER NOT NULL DEFAULT 0 CHECK (is_overlap IN (0, 1)),\n    diarization_status TEXT NOT NULL DEFAULT 'none'\n        CHECK (diarization_status IN (\n            'none', 'provisional', 'final', 'fallback_to_live', 'failed', 'needs_review'\n        )),\n    diarization_method TEXT,\n    diarization_confidence REAL\n        CHECK (diarization_confidence IS NULL OR diarization_confidence BETWEEN 0.0 AND 1.0),\n    FOREIGN KEY (meeting_id) REFERENCES meetings(id) ON DELETE CASCADE\n)"
+    }
+  ],
+  "integrityCheck": "ok",
+  "userDataRead": false,
+  "sqlxLedgerCreated": false,
+  "migrationRuntimeVerified": false
+}

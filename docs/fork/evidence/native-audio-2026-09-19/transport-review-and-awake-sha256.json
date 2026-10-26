@@ -1,0 +1,10 @@
+{
+  "transport-workspace-tests.log": "abaa71716ca69eb59eb88a8659d4ac2dc38ef0b3eaf5987463c8fd96e2ca4042",
+  "transport-checkpoint-clippy.log": "950eb918674e757a99c853376c2453593c6253e8378fa6e1fc7c5ea117c5477f",
+  "audio-smoke-awake-edit.json": "f5a1389ab3544638eec65fbd60f31debb27f4abf2c4e1e2ed22276e54006fe5f",
+  "audio-smoke-awake-harness.log": "6202b1ef34e6f0f5723596a60803cd8e6a22c1fd059fbea33b71f92584cd0ebe",
+  "audio-smoke-awake-contract.log": "be00495308d86bae191e6e7267da68a8087befdffef93b8fc8d8c604c44e4fdb",
+  "power-lockscreen-settings.txt": "a1b21be9f1059784f206cdad25771d7ca639404107aca0d9803c19208668d1a9",
+  "power-after-display-never.txt": "cfe472f177ad171ae9cb619cbae1ac6b691e11b141e2e293c20bfd47a8151825",
+  "power-display-reopened.txt": "6505bd13fb9a6128a0e3cb9a011fbafd59f3852775114d27ccdc1d0d82f64ec4"
+}

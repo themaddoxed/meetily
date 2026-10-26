@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-04",
+  "scope": "Locked dependency source plus deterministic IPC-template probe; not runtime/native isolation proof",
+  "crates": [
+    {
+      "name": "tauri",
+      "version": "2.11.1",
+      "cache_sha256": "b93bd86d231f0a8138f11a02a584769fe4b703dc36ae133d783228dbc4801405",
+      "matches_lock": true
+    },
+    {
+      "name": "tauri-codegen",
+      "version": "2.6.1",
+      "cache_sha256": "6bd11644962add2549a60b7e7c6800f17d7020156e02f516021d8103e80cc528",
+      "matches_lock": true
+    }
+  ],
+  "files": [
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/webview/mod.rs",
+      "sha256": "954cf212cb79d6b566c10b76d2ff2da05bc637cfc9f666c2f03d4e3dddf35f1c"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/manager/webview.rs",
+      "sha256": "5b2610ddf033a646ab3e62ca6403d548ab111d9d1df967b81132f8bf17a87ff0"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/manager/mod.rs",
+      "sha256": "3b35d04bded3a068d3d9e1737d52a66a69ccfbc4b2300ec00ed6a5deaa85c79a"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/protocol/tauri.rs",
+      "sha256": "393cf458c003d72d1505b7438fa4d36ee3bf3dc8a3f1480705dc3c81685297b1"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/ipc/protocol.rs",
+      "sha256": "000d8a26eb5aa181e32c8b7631410c184941624fa34585d68cbc932abb8d45d6"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/ipc/channel.rs",
+      "sha256": "8533436b36afb959401052ab0bd7990c63817e9d984fe0daa49a80bc6ed35e5f"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/app.rs",
+      "sha256": "d2bbeff336c5699ca74b1455ed7575b48ad3315e2266b9871e8355cfab6e61c1"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/scripts/ipc-protocol.js",
+      "sha256": "68ae690606006f733bde75dd8bb6748464954a22c7e83914a93b1abc221d7072"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/scripts/process-ipc-message-fn.js",
+      "sha256": "d51917f89e4d3d318d63f1f4f5a7ac7ea1399a5b85c81a840c4d606597f29132"
+    },
+    {
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-codegen-2.6.1/src/context.rs",
+      "sha256": "ea13b70394f0166813d3aa1938d423ddd3ed809f81ecf541586c2f32f15255bd"
+    }
+  ],
+  "observations": [
+    {
+      "path": "tauri/src/webview/mod.rs",
+      "lines": [
+        440,
+        450
+      ],
+      "fact": "Resource hook only tauri URI protocol; external dev URL excluded."
+    },
+    {
+      "path": "tauri-codegen/src/context.rs",
+      "lines": [
+        176,
+        181
+      ],
+      "fact": "Default embedded assets empty when dev && dev_url present."
+    },
+    {
+      "path": "tauri/src/manager/mod.rs",
+      "lines": [
+        389,
+        426
+      ],
+      "fact": "Missing requested asset can fall back to index.html; must require exact recovery asset rather than route-string success."
+    },
+    {
+      "path": "tauri/scripts/ipc-protocol.js",
+      "lines": [
+        24,
+        84
+      ],
+      "fact": "macOS attempts custom-protocol fetch and falls back to native window.ipc.postMessage after error including CSP failure."
+    },
+    {
+      "path": "tauri/src/webview/mod.rs",
+      "lines": [
+        1820,
+        1833
+      ],
+      "fact": "Internal channel fetch excluded from ACL rejection; plugin dispatch precedes application handler."
+    },
+    {
+      "path": "tauri/src/ipc/channel.rs",
+      "lines": [
+        319,
+        343
+      ],
+      "fact": "Internal fetch removes by numeric id from managed shared cache; no invoking-webview parameter."
+    },
+    {
+      "path": "tauri/src/app.rs",
+      "lines": [
+        2403,
+        2404
+      ],
+      "fact": "Channel queue managed and plugin registered internally during app construction."
+    }
+  ],
+  "implementation_admitted": false,
+  "product_source_changed": false,
+  "native_performed": false,
+  "ipc_probe": {
+    "exit": 0,
+    "script": "/private/tmp/meetily-recovery-ipc-template-probe-2026-10-04.cjs",
+    "script_sha256": "5b5e8b2bf454564eab314d491d6c5cafd7805f77ae45cb9f4abb2d45d8387900",
+    "result": "/private/tmp/meetily-recovery-ipc-template-probe-2026-10-04.json",
+    "result_sha256": "30b3c283522959468beb91f4233c7a1b4bc73ba5bdde41eac87945f4af74240e",
+    "passed_scenarios": 2,
+    "limits": "Mocked fetch/native bridge in Node VM; no actual CSP, WKWebView or native IPC"
+  },
+  "plan": {
+    "path": "/Users/developer/Desktop/meeting-minutes/docs/superpowers/plans/2026-10-04-webview-recovery-transport.md",
+    "sha256": "929bdc73d043b78a8971a9a2f5dd33a00f7f1571e6b65cc56fe24e1154937715"
+  },
+  "review_status": "PENDING",
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

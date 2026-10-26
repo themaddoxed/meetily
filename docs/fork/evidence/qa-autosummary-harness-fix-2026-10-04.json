@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-04",
+  "scope": "One dependency stub in isolated auto-summary PageContent harness; no product behavior or assertion changes",
+  "path": "frontend/tests/react-hooks-lifecycle.test.mjs",
+  "source_sha256": "b86ef3a7a4d2073e5c47a7c7bf2be2428739de8ae101598f090c535f04db9879",
+  "cause": "New MeetingQuestions child import was absent from exact mock dependency map; five existing auto-summary scenarios stopped before their assertions",
+  "change": "Add MeetingQuestions Symbol mock matching existing TranscriptPanel and SummaryPanel isolation",
+  "red": {
+    "selected_tests": 5,
+    "failed": 5,
+    "exit": 1,
+    "log": "/private/tmp/meetily-qa-autosummary-harness-red-2026-10-04.log",
+    "log_sha256": "aba9c06d9ee3c39efdc7e02e378e7eb2e081b35485014fb1e3db5cda83d9875c"
+  },
+  "green": {
+    "selected_tests": 5,
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "exit": 0,
+    "log": "/private/tmp/meetily-qa-autosummary-harness-green-2026-10-04.log",
+    "log_sha256": "7daed4d15a603af73c5cb99fbd6893beb9f40bc12fed941bf83171af78c03e2f"
+  },
+  "assertions_preserved": true,
+  "full_candidate_gate": "PASS exit0; corrected15 paths; 11/11 stages; 438s",
+  "native_or_release_acceptance": false,
+  "main_thread_review": {
+    "scope": "Exact one-line dependency map addition",
+    "result": "No actionable issue found; mirrors existing two child Symbol stubs; all five existing behavior assertions are unchanged",
+    "reviewer_ran_targeted_tests": true,
+    "product_component_changed": false
+  },
+  "candidate_evidence": "docs/fork/evidence/qa-transfer-fixed-2026-10-04.json"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "createdAt": "2026-09-20T19:40:01Z",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprint": "cbf0160ceba3644676ff6bdc2c017ce19901dc4f84d0170e8b792a803a41ff99",
+  "command": "./scripts/check.sh --full",
+  "durationSeconds": 1083,
+  "execution": "outside sandbox with local sherpa-onnx cache and Xcode access",
+  "environment": {
+    "DEVELOPER_DIR": "/Applications/Xcode.app/Contents/Developer",
+    "SHERPA_ONNX_LIB_DIR": "/Users/developer/Desktop/meeting-minutes/.worktrees/macos-fork-integration/target/sherpa-onnx-prebuilt/sherpa-onnx-v1.13.2-osx-x64-static-lib/lib",
+    "CARGO_TARGET_DIR": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/target/check-full"
+  },
+  "stages": {
+    "patchWhitespace": "PASS",
+    "productionPolicy": "PASS",
+    "frontendLint": "PASS",
+    "typescript": "PASS",
+    "frontendNodeSuite": "401 passed",
+    "frontendVitest": "49 passed",
+    "criticalPlaywright": "26 passed",
+    "productionFrontendBuild": "PASS",
+    "rustFormat": "PASS",
+    "workspaceClippy": "PASS",
+    "workspaceRustTests": "PASS",
+    "packagedFfmpegRecovery": "1 passed"
+  },
+  "notes": [
+    "The sandboxed attempt was not used as final evidence because loopback, DNS, and Xcode DerivedData are unavailable there.",
+    "No application launch, TCC reset, user data migration, commit, push, or publication was performed by this gate."
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

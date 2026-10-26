@@ -1,0 +1,570 @@
+{
+  "date": "2026-10-04",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "scope": "Fresh public acquisition and local byte/architecture/root-license observations only",
+  "source_manifest_path": "frontend/scripts/diarization-artifacts.js",
+  "source_manifest_sha256": "8df8086086e065bd107bfd564e8931e6b08d260c14545dea2465fccd360685a5",
+  "source_equals_base": true,
+  "fresh_empty_directory": "/private/tmp/meetily-ci-diarization-source-2026-10-04",
+  "acquisition_exit": 0,
+  "artifact_manifest": [
+    {
+      "kind": "native-archive",
+      "name": "sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+      "target": "aarch64-apple-darwin",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.2/sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+      "size": 18686919,
+      "sha256": "e2d704b01c392970ee7fb90d7e74fd854528a172de0381228e987b79ac479f8e",
+      "license": {
+        "id": "Apache-2.0",
+        "source": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.2/LICENSE"
+      }
+    },
+    {
+      "kind": "native-archive",
+      "name": "sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+      "target": "x86_64-apple-darwin",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.2/sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+      "size": 18402047,
+      "sha256": "aba062391bd847bae6b839fd474f444442d1f45071f80ca0c429ec0fb23f9c52",
+      "license": {
+        "id": "Apache-2.0",
+        "source": "https://github.com/k2-fsa/sherpa-onnx/blob/v1.13.2/LICENSE"
+      }
+    },
+    {
+      "kind": "model",
+      "name": "pyannote-segmentation-3.0.onnx",
+      "resourcePath": "diarization/models/pyannote-segmentation-3.0.onnx",
+      "url": "https://huggingface.co/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/resolve/340b52f1f5cd12d45a30fa284691417eaad2ff92/model.onnx",
+      "size": 5992778,
+      "sha256": "fed22097bca974bad329a930b60865703766ff89f05fa09060bf6fd44e92e319",
+      "license": {
+        "id": "MIT",
+        "source": "https://huggingface.co/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/blob/340b52f1f5cd12d45a30fa284691417eaad2ff92/LICENSE"
+      }
+    },
+    {
+      "kind": "model",
+      "name": "3dspeaker-eres2net-base-16k.onnx",
+      "resourcePath": "diarization/models/3dspeaker-eres2net-base-16k.onnx",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx",
+      "size": 39593761,
+      "sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+      "license": {
+        "id": "Apache-2.0",
+        "source": "https://github.com/modelscope/3D-Speaker/blob/065629c313eaf1a01c65c640c46d77e61e9607b4/LICENSE"
+      }
+    }
+  ],
+  "acquisitions": [
+    {
+      "name": "sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+      "requested_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.2/sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+      "expected_sha256": "e2d704b01c392970ee7fb90d7e74fd854528a172de0381228e987b79ac479f8e",
+      "expected_size": 18686919,
+      "downloaded_input_executed": false,
+      "status": 200,
+      "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/531380835/2f1a9f9c-0c42-4a30-8b97-18894eae6d68",
+      "bytes": 18686919,
+      "sha256": "e2d704b01c392970ee7fb90d7e74fd854528a172de0381228e987b79ac479f8e",
+      "matches_manifest": true,
+      "archive_members": [
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-fst.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-kaldifst-core.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-fstfar.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-core.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libpiper_phonemize.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libespeak-ng.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libkaldi-native-fbank-core.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libkissfft-float.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libonnxruntime.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-c-api.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libucd.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libkaldi-decoder-core.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-portaudio_static.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-cxx-api.a",
+        "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libssentencepiece_core.a"
+      ],
+      "license_notice_members": [],
+      "redirect_query_omitted": true
+    },
+    {
+      "name": "sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+      "requested_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.2/sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+      "expected_sha256": "aba062391bd847bae6b839fd474f444442d1f45071f80ca0c429ec0fb23f9c52",
+      "expected_size": 18402047,
+      "downloaded_input_executed": false,
+      "status": 200,
+      "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/531380835/28e17a3d-8ca4-46a0-a78c-18d25d8fbcf4",
+      "bytes": 18402047,
+      "sha256": "aba062391bd847bae6b839fd474f444442d1f45071f80ca0c429ec0fb23f9c52",
+      "matches_manifest": true,
+      "archive_members": [
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-fst.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-kaldifst-core.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-fstfar.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-core.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libpiper_phonemize.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libespeak-ng.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libkaldi-native-fbank-core.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libkissfft-float.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libonnxruntime.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-c-api.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libucd.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libkaldi-decoder-core.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-portaudio_static.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-cxx-api.a",
+        "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libssentencepiece_core.a"
+      ],
+      "license_notice_members": [],
+      "redirect_query_omitted": true
+    },
+    {
+      "name": "pyannote-segmentation-3.0.onnx",
+      "requested_url": "https://huggingface.co/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/resolve/340b52f1f5cd12d45a30fa284691417eaad2ff92/model.onnx",
+      "expected_sha256": "fed22097bca974bad329a930b60865703766ff89f05fa09060bf6fd44e92e319",
+      "expected_size": 5992778,
+      "downloaded_input_executed": false,
+      "status": 200,
+      "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/66f8ec4456a2aa7fe9648b30/04f39ad3e19c97e61ef78344dad032c1e981ffc17d1a91e01ebebd6e3df82a2d",
+      "bytes": 5992778,
+      "sha256": "fed22097bca974bad329a930b60865703766ff89f05fa09060bf6fd44e92e319",
+      "matches_manifest": true,
+      "redirect_query_omitted": true
+    },
+    {
+      "name": "3dspeaker-eres2net-base-16k.onnx",
+      "requested_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx",
+      "expected_sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+      "expected_size": 39593761,
+      "downloaded_input_executed": false,
+      "status": 200,
+      "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/531380835/c6df7da2-6160-4068-8ec2-915efeea9128",
+      "bytes": 39593761,
+      "sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+      "matches_manifest": true,
+      "redirect_query_omitted": true
+    }
+  ],
+  "architecture_inspection_exit": 0,
+  "architecture_inspections": [
+    {
+      "name": "sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+      "target": "aarch64-apple-darwin",
+      "static_libraries": [
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-fst.a",
+          "bytes": 2510016,
+          "sha256": "b3413a5aebc5b8c558c7adaccb453b58cd99c2ad035e93c53a01b72e646d3ffe",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-kaldifst-core.a",
+          "bytes": 1565216,
+          "sha256": "83ea0218168961a92049b63e525b633f42f6c9016e17a40c72b61464f038335e",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-fstfar.a",
+          "bytes": 53368,
+          "sha256": "852d6e1b893d0dbfa7e0d76d17ce65fd4e895c4cdfcd557284d5b8840e55a6be",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-core.a",
+          "bytes": 14203584,
+          "sha256": "61f4f07a7ece4f8906f9fb3c9beb5c64efbd6f51b83239d7ff5bc55590b0cf11",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libpiper_phonemize.a",
+          "bytes": 380104,
+          "sha256": "d6cbad7d7df3875da2f010f7bed98bb5f9bedddcc9f916d2af83c62ca2990e1c",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libespeak-ng.a",
+          "bytes": 445520,
+          "sha256": "77744b1565973bde54079bd952462995aefd9d12333aa9462b66e9a17721f129",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libkaldi-native-fbank-core.a",
+          "bytes": 226904,
+          "sha256": "e0022c6b2d590e947e1e3917c76ae33db66153a39cdae92fdb801568e5984622",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libkissfft-float.a",
+          "bytes": 20480,
+          "sha256": "277305c97a5244c0c217823d2509f1b324722b0a347bcef3a63081d0b4c23174",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libonnxruntime.a",
+          "bytes": 64960512,
+          "sha256": "fc65a04ab948debea799efbaca5fb98b699b9eb07aef67116167bb08dda8ad61",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-c-api.a",
+          "bytes": 365848,
+          "sha256": "6b4927f22bee4289dcfd96079e1af450fb07c41dcd6490dfc2fa6787eb56b91a",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libucd.a",
+          "bytes": 205296,
+          "sha256": "d334de12cae354b8919bc265cdc4f948bf5213d695d81722e7a5f4d7dbd3e366",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libkaldi-decoder-core.a",
+          "bytes": 713928,
+          "sha256": "5f5a6f3e59488cc78ecc8e6255038862772163f4254d25211a397d1793dde48c",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-portaudio_static.a",
+          "bytes": 119648,
+          "sha256": "1566da01fd1811ca63f5cd328715d25a2c35cd3d26de76cad9f3b49cf89d29f9",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libsherpa-onnx-cxx-api.a",
+          "bytes": 127600,
+          "sha256": "943c885d7275262ce7d5d530abcdf6de65f0dac8e0c68d9d0a7a848e79306b01",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-arm64-static-lib/lib/libssentencepiece_core.a",
+          "bytes": 147008,
+          "sha256": "9eace42ac9b8129f1595da126de05d617fc4b37e0a876fa8437f0de36f4e43cd",
+          "lipo_exit": 0,
+          "archs": "arm64",
+          "stderr": ""
+        }
+      ],
+      "all_expected_thin_architecture": true,
+      "downloaded_code_executed": false
+    },
+    {
+      "name": "sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+      "target": "x86_64-apple-darwin",
+      "static_libraries": [
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-fst.a",
+          "bytes": 2696296,
+          "sha256": "936ee41be59261cb9aab0a087812d290e1f50481179b855e4b2f850c195fc9b5",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-kaldifst-core.a",
+          "bytes": 1593432,
+          "sha256": "92d6290ca7a70733a3bcb0675cb9650e1655f4d8c2bda00ec167b4f201d2a4ca",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-fstfar.a",
+          "bytes": 58736,
+          "sha256": "dfe7eb3b079cc6593279fab4bf0bac65d27fc4c8008aca413df2fb3cb885073b",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-core.a",
+          "bytes": 14605112,
+          "sha256": "8ac8d1a446d70a2cfdc9f93ad35f2d5d360528dd441b982ed7b2efb7452f8584",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libpiper_phonemize.a",
+          "bytes": 393432,
+          "sha256": "5173c3b62dc41a24e72c63ad29f60d3c22c534ccb4969a562ef0adaf3c8b514d",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libespeak-ng.a",
+          "bytes": 444792,
+          "sha256": "20070be8a66daaeb8f61169648e5cf02f9b0d4a5ab899ad52bf488ad906fbad8",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libkaldi-native-fbank-core.a",
+          "bytes": 241888,
+          "sha256": "dd7dafaba5f706ded6ff09fbab050442d2e8008e963c9a0b63e553d588cedc4e",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libkissfft-float.a",
+          "bytes": 26168,
+          "sha256": "9a9ce262263a8b31b2a3e0877c40fa56a1bf3868db90030767d02486836a04e1",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libonnxruntime.a",
+          "bytes": 68588032,
+          "sha256": "f30b1b3fbc3f294e17b5bc1105c94282bcc2f55c0be31fe1b8acca6e227fcafb",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-c-api.a",
+          "bytes": 370440,
+          "sha256": "e76cf2171cc6b70c9b98f954be76db3ad9c183c474c15030c724d2e008fca5b4",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libucd.a",
+          "bytes": 203104,
+          "sha256": "0b2a35c74f5044a85ef543e5229f145c6a04e499fd6e8d71be78e25a2abdf2c0",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libkaldi-decoder-core.a",
+          "bytes": 745480,
+          "sha256": "16f5b3aa7a5880c7893cebdb5ee33bd11757b1148ae961e03c59e5f09cb21bb9",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-portaudio_static.a",
+          "bytes": 136800,
+          "sha256": "b5d5c7fd6650e6074b6431b8da6599fca7435071069e58c497975dfd637f1c70",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libsherpa-onnx-cxx-api.a",
+          "bytes": 139776,
+          "sha256": "dd86b37490032ed78383713e41eb4008e9aabf29360c5f21b8e7677e2108ccca",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        },
+        {
+          "member": "sherpa-onnx-v1.13.2-osx-x64-static-lib/lib/libssentencepiece_core.a",
+          "bytes": 153648,
+          "sha256": "5a820c8db088e9d1d532de1a3893a651aabb8798109d6571f8ec0af9e783fa0c",
+          "lipo_exit": 0,
+          "archs": "x86_64",
+          "stderr": ""
+        }
+      ],
+      "all_expected_thin_architecture": true,
+      "downloaded_code_executed": false
+    }
+  ],
+  "root_license_observations": [
+    {
+      "name": "sherpa-license",
+      "requested_url": "https://raw.githubusercontent.com/k2-fsa/sherpa-onnx/v1.13.2/LICENSE",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/k2-fsa/sherpa-onnx/v1.13.2/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "redirect_query_omitted": true
+    },
+    {
+      "name": "pyannote-license",
+      "requested_url": "https://huggingface.co/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/resolve/340b52f1f5cd12d45a30fa284691417eaad2ff92/LICENSE",
+      "status": 200,
+      "final_url": "https://huggingface.co/api/resolve-cache/models/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/340b52f1f5cd12d45a30fa284691417eaad2ff92/LICENSE",
+      "bytes": 1061,
+      "sha256": "14d7016ad68e7394d6e6b78d96cc2ae431c905287b89674cfdf021e79e62b8ba",
+      "redirect_query_omitted": true
+    },
+    {
+      "name": "3dspeaker-license",
+      "requested_url": "https://raw.githubusercontent.com/modelscope/3D-Speaker/065629c313eaf1a01c65c640c46d77e61e9607b4/LICENSE",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/modelscope/3D-Speaker/065629c313eaf1a01c65c640c46d77e61e9607b4/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "redirect_query_omitted": true
+    }
+  ],
+  "bundled_license_comparison": [
+    {
+      "observed_license": "sherpa-license.txt",
+      "bundled_license_path": "frontend/src-tauri/resources/diarization/licenses/Apache-2.0.txt",
+      "bundled_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "byte_equal": false,
+      "whitespace_trimmed_equal": true
+    },
+    {
+      "observed_license": "pyannote-license.txt",
+      "bundled_license_path": "frontend/src-tauri/resources/diarization/licenses/MIT-pyannote.txt",
+      "bundled_sha256": "14d7016ad68e7394d6e6b78d96cc2ae431c905287b89674cfdf021e79e62b8ba",
+      "byte_equal": true,
+      "whitespace_trimmed_equal": true
+    },
+    {
+      "observed_license": "3dspeaker-license.txt",
+      "bundled_license_path": "frontend/src-tauri/resources/diarization/licenses/Apache-2.0.txt",
+      "bundled_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "byte_equal": true,
+      "whitespace_trimmed_equal": true
+    }
+  ],
+  "verifier_probes_exit": 0,
+  "verifier_probes": {
+    "rows": [
+      {
+        "name": "sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2",
+        "positive_verifier": "PASS",
+        "missing": {
+          "result": "REJECTED",
+          "error": "Local diarization artifact store is incomplete: /private/tmp/meetily-ci-diarization-source-2026-10-04/negative-probes/missing-sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2"
+        },
+        "corrupt_same_size": {
+          "result": "REJECTED",
+          "error": "SHA-256 mismatch for sherpa-onnx-v1.13.2-osx-arm64-static-lib.tar.bz2: expected e2d704b01c392970ee7fb90d7e74fd854528a172de0381228e987b79ac479f8e, got e7a8ccde450a46e4d260a16733ff73e617d625431c197016c2307f0b199654b6"
+        },
+        "same_bytes_prior_run_copy": {
+          "result": "ACCEPTED",
+          "interpretation": "Hash/size-only verifier does not enforce acquisition run/receipt freshness. Full Task0 replay rejection remains unproven."
+        }
+      },
+      {
+        "name": "sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2",
+        "positive_verifier": "PASS",
+        "missing": {
+          "result": "REJECTED",
+          "error": "Local diarization artifact store is incomplete: /private/tmp/meetily-ci-diarization-source-2026-10-04/negative-probes/missing-sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2"
+        },
+        "corrupt_same_size": {
+          "result": "REJECTED",
+          "error": "SHA-256 mismatch for sherpa-onnx-v1.13.2-osx-x64-static-lib.tar.bz2: expected aba062391bd847bae6b839fd474f444442d1f45071f80ca0c429ec0fb23f9c52, got 0afa06451701d6a007397459e3a68433600a1de66da40c43f8346c5d22334277"
+        },
+        "same_bytes_prior_run_copy": {
+          "result": "ACCEPTED",
+          "interpretation": "Hash/size-only verifier does not enforce acquisition run/receipt freshness. Full Task0 replay rejection remains unproven."
+        }
+      },
+      {
+        "name": "pyannote-segmentation-3.0.onnx",
+        "positive_verifier": "PASS",
+        "missing": {
+          "result": "REJECTED",
+          "error": "Local diarization artifact store is incomplete: /private/tmp/meetily-ci-diarization-source-2026-10-04/negative-probes/missing-pyannote-segmentation-3.0.onnx"
+        },
+        "corrupt_same_size": {
+          "result": "REJECTED",
+          "error": "SHA-256 mismatch for pyannote-segmentation-3.0.onnx: expected fed22097bca974bad329a930b60865703766ff89f05fa09060bf6fd44e92e319, got 96aa8a62a990ed52dfa2b46190098c803abc07160e2616353a839cf8775e9181"
+        },
+        "same_bytes_prior_run_copy": {
+          "result": "ACCEPTED",
+          "interpretation": "Hash/size-only verifier does not enforce acquisition run/receipt freshness. Full Task0 replay rejection remains unproven."
+        }
+      },
+      {
+        "name": "3dspeaker-eres2net-base-16k.onnx",
+        "positive_verifier": "PASS",
+        "missing": {
+          "result": "REJECTED",
+          "error": "Local diarization artifact store is incomplete: /private/tmp/meetily-ci-diarization-source-2026-10-04/negative-probes/missing-3dspeaker-eres2net-base-16k.onnx"
+        },
+        "corrupt_same_size": {
+          "result": "REJECTED",
+          "error": "SHA-256 mismatch for 3dspeaker-eres2net-base-16k.onnx: expected 1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b, got 7b14cd53f2e015433861cb0d562687b87d844995a5f3ab120ce5587e005b1e5e"
+        },
+        "same_bytes_prior_run_copy": {
+          "result": "ACCEPTED",
+          "interpretation": "Hash/size-only verifier does not enforce acquisition run/receipt freshness. Full Task0 replay rejection remains unproven."
+        }
+      }
+    ],
+    "build_invoked": false,
+    "downloaded_code_executed": false,
+    "ci_input_authentication_admitted": false
+  },
+  "authentication_scope": "Anonymous public HTTPS GET; no operator credentials, detached signature, build attestation or same-run acquisition receipt validated",
+  "producer_admitted": false,
+  "ci_implementation_admitted": false,
+  "hosted_jobs": "NOT_RUN",
+  "downloaded_code_executed": false,
+  "limitations": [
+    "All archive static libraries have expected thin CPU architecture; model loading/inference and native integration were not run.",
+    "Sherpa archives have no LICENSE/NOTICE members; observed project root licenses and bundled notice do not establish complete binary third-party source/notice provenance.",
+    "Missing and same-size-corrupt probes are rejected by size/hash verifier; identical prior-run copies are accepted, so required run/receipt replay rejection is not implemented or proved.",
+    "Other Task0 inputs, sources, exact clean base review, runner/toolchain/action pins and real dual-host capacity remain separate admission requirements."
+  ],
+  "retained_observations": [
+    {
+      "path": "/private/tmp/meetily-ci-diarization-source-2026-10-04/manifest.json",
+      "sha256": "c5bff8cea14c6161efb0262ac92dd052bf0be1f9ccc3bea54b2949a16a5104be"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-diarization-source-2026-10-04/fresh-acquisition-results.json",
+      "sha256": "56d83f5428aef892d761599a2717a3d1a9f5c3a0425e4a58da3f73be164a7469"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-diarization-source-2026-10-04/archive-architecture-results.json",
+      "sha256": "9ee7e532875fcad4ee8fcd8bb680d1ea875985a5506cc6b6e48be5dd5f9edc4b"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-diarization-source-2026-10-04/license-observations.json",
+      "sha256": "dbad10aecea158a21ec79b9c4feb6b7dba496733f0927621520441a28b7b67e3"
+    },
+    {
+      "path": "/private/tmp/meetily-ci-diarization-source-2026-10-04/verifier-probe-results.json",
+      "sha256": "1337a457ed433b0975527cb4a292e8c38c5fb29166d18a1df45758433af0a801"
+    }
+  ]
+}

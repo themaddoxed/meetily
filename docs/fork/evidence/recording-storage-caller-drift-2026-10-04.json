@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-04",
+  "scope": "Prior 88 caller hashes compared to current canonical root plus conservative lexical expansion; semantic recensus incomplete",
+  "prior_caller_count": 88,
+  "changed_prior_callers": [
+    {
+      "path": "frontend/src/lib/i18n/catalog.ts",
+      "prior_sha256": "99f579b0ed16305ee17e147ea02e9f005d772165eb88bb313eecfbbe83ead315",
+      "current_sha256": "32a6d571b04c889bc648a40d02465ede0768cfda565c88bafe0ade462919120c"
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/client.rs",
+      "prior_sha256": "d944994753b0ef103e183ccf311c46045d33e436642926183164c4f653b61e49",
+      "current_sha256": "0a512f4cbd1bd56f26461bd30a6b2d64534f620f69980b1927164ba1726a23bb"
+    },
+    {
+      "path": "frontend/src/app/meeting-details/page-content.tsx",
+      "prior_sha256": "fc7e5e678ab083e36d53bd4bc759af8878ce61d25c1a624d8a894f45b1fd7cd5",
+      "current_sha256": "775f744d56111c9e3386f41cebfbce5a2669a7c80463c6e9c17a62aa753150bb"
+    },
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "prior_sha256": "ab3a0a10c42853ce7968d0787d62f99d50022b2c2c25e2d4acdc1815f6300dea",
+      "current_sha256": "c74c350d01f5395c4e46d2aca6d962f48b674919d96dc45006229074b8c3aecf"
+    }
+  ],
+  "preliminary_lexical_inventory": {
+    "path": "/private/tmp/meetily-storage-recensus-2026-10-04.json",
+    "sha256": "531f14712dbfd599d96dea5dd6e0ef1200a69c283d3f0595d4ab02fa5cf2fdb5",
+    "paths_count": 187,
+    "classification": "Unreconciled; includes unrelated invoke/config/test/resource matches; no allowlist expansion inferred"
+  },
+  "new_meeting_question_reader": {
+    "path": "frontend/src-tauri/src/meeting_questions.rs",
+    "sha256": "4415b364a1fa35ffe36b55b3e40fa5f45b120c77a546118da8835774de3bbcf6",
+    "context_read_lines": [
+      321,
+      335
+    ],
+    "effect": "Consumes MeetingContextRepository before and after model generation; hidden-meeting denial must remain authoritative in that repository and characterize both read phases."
+  },
+  "required_next_steps": [
+    "Admit a source containing reviewed FEAT-100 and FEAT-101/102 overlay, preserving unrelated dirty work.",
+    "Reconcile fresh storage/SQL/registered-command matches and freeze updated caller snapshot; amend allowlist only for required mutation paths.",
+    "Obtain fresh SPEC/QUALITY on the exact plan and source before storage product changes."
+  ],
+  "implementation_admitted": false,
+  "source_product_changes": [],
+  "source_refs_changed": false
+}

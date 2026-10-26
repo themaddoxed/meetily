@@ -1,0 +1,38 @@
+[
+  {
+    "file": "system-denied-native-result.json",
+    "sha256": "aa3e6fba690c1342e5848fb1f8dccc922357be5baacc1f13f8664eff0fdc53d9"
+  },
+  {
+    "file": "system-before-denial-new.txt",
+    "sha256": "aea891051af018f0866b15feb7bf4955a056a82b91147c204f509a10fe5c97ae"
+  },
+  {
+    "file": "system-after-denial-new.txt",
+    "sha256": "472e2e8cbb39bd69d69105fddec31c5452b133371491d021320d9c9d3a190940"
+  },
+  {
+    "file": "system-denied-app-initial.txt",
+    "sha256": "b57026880c95cacfb55600f3d93827f2ccda2e55f1bd3cca9e3263a76f6ffe71"
+  },
+  {
+    "file": "system-denied-start-settled.txt",
+    "sha256": "18304d605f6842a9438c5b4928df3920c310be1632946f3f4cb4c49020ec1919"
+  },
+  {
+    "file": "app-ui-system-denied.stderr.log",
+    "sha256": "6f5fce759081c734e38ea2c1067579ec4db58a53b735e34f22c7762ebec4ec6d"
+  },
+  {
+    "file": "dts-audit-results.json",
+    "sha256": "3f1db8f57737fb66c778f2d98a95e1d700e14f26280d9396ea4749b623f2f9c6"
+  },
+  {
+    "file": "dts-audit-concat.json",
+    "sha256": "7eeb1f52e07ea267ab28737ed61be9710473d6f678b42a8c8ed4c693d9e1502f"
+  },
+  {
+    "file": "mechanical-lint-small.json",
+    "sha256": "e558dce9ea5b8f1866c7e370b130a286cdcda760b3bff2fbe9acf15a5cdfda61"
+  }
+]

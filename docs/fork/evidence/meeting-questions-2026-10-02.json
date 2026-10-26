@@ -1,0 +1,175 @@
+{
+  "task": "FEAT-101",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "worktree": "/Users/developer/Desktop/meeting-minutes/.worktrees/main-features-2026-10-02",
+  "root_baseline": "main base plus reviewed FEAT100 overlay; no other source modifications in owned paths",
+  "paths": [
+    {
+      "path": "frontend/src-tauri/src/meeting_questions.rs",
+      "candidate_sha256": "4415b364a1fa35ffe36b55b3e40fa5f45b120c77a546118da8835774de3bbcf6",
+      "root_before_sha256": null
+    },
+    {
+      "path": "frontend/src-tauri/tests/meeting_questions.rs",
+      "candidate_sha256": "90fd76efb42e9019ad8ceebdd48c8647f0b0d50d3453548fe36798a4fdb7e002",
+      "root_before_sha256": null
+    },
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "candidate_sha256": "c74c350d01f5395c4e46d2aca6d962f48b674919d96dc45006229074b8c3aecf",
+      "root_before_sha256": "ab3a0a10c42853ce7968d0787d62f99d50022b2c2c25e2d4acdc1815f6300dea"
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/client.rs",
+      "candidate_sha256": "06e29d2d21a681c69024fda753e1b8dbdd657921f8d9b51698d2e5853411c50b",
+      "root_before_sha256": "d944994753b0ef103e183ccf311c46045d33e436642926183164c4f653b61e49"
+    },
+    {
+      "path": "frontend/src-tauri/src/summary/summary_engine/sidecar.rs",
+      "candidate_sha256": "94d232e5e9a226246231fdc5785d0749f931fb691461287f06c9c382fd086baa",
+      "root_before_sha256": "b3b7a0b3023df314518b56ec6f6591e7ce5ce9a0614ca2472a33f07ea50976fc"
+    },
+    {
+      "path": "frontend/src/components/MeetingDetails/MeetingQuestions.tsx",
+      "candidate_sha256": "85a78ae706c5bb32c51143c339e3eb631a9cd28007442441b74b56dc8abd7dff",
+      "root_before_sha256": null
+    },
+    {
+      "path": "frontend/src/app/meeting-details/page-content.tsx",
+      "candidate_sha256": "775f744d56111c9e3386f41cebfbce5a2669a7c80463c6e9c17a62aa753150bb",
+      "root_before_sha256": "fc7e5e678ab083e36d53bd4bc759af8878ce61d25c1a624d8a894f45b1fd7cd5"
+    },
+    {
+      "path": "frontend/src/lib/i18n/catalog.ts",
+      "candidate_sha256": "32a6d571b04c889bc648a40d02465ede0768cfda565c88bafe0ade462919120c",
+      "root_before_sha256": "99f579b0ed16305ee17e147ea02e9f005d772165eb88bb313eecfbbe83ead315"
+    },
+    {
+      "path": "frontend/tests/meeting-questions.spec.ts",
+      "candidate_sha256": "c5f66bdde46069442ea8ccec71c8da2bec73f06a9c1e008bdb5ee480f6287725",
+      "root_before_sha256": null
+    }
+  ],
+  "revision": "round4: refresh regression locates disabled submit while localized text changes to Asking",
+  "status": "ACCEPTED_FEAT101_WITH_COLD_CANCEL_FIX",
+  "integrated_into_main": true,
+  "task_closed": true,
+  "checks": {
+    "temporary_sqlite_parser": {
+      "passed": 8,
+      "basis": "prior execution recorded in thread; temporary log now unavailable"
+    },
+    "configuration_http_cancel": {
+      "passed": 4,
+      "basis": "prior execution recorded in thread; temporary log now unavailable"
+    },
+    "subprocess_cleanup": {
+      "passed": 4,
+      "basis": "prior execution recorded in thread; temporary log now unavailable"
+    },
+    "typescript": {
+      "exit": 0,
+      "session": 34803
+    },
+    "lint": {
+      "exit": 0,
+      "session": 58077
+    },
+    "fmt": {
+      "exit": 0,
+      "session": 30339
+    },
+    "clippy": {
+      "exit": 0,
+      "session": 52573
+    },
+    "browser_round3": {
+      "passed": 5,
+      "failed": 1,
+      "basis": "observed tool output; pending-refresh button name fixture failure"
+    },
+    "browser_refresh_round4": {
+      "passed": 1,
+      "exit": 0,
+      "session": 53276,
+      "basis": "observed tool output; corrected localized busy-label locator",
+      "retained_last_run": {
+        "path": ".worktrees/main-features-2026-10-02/frontend/test-results/.last-run.json",
+        "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+        "content": {
+          "status": "passed",
+          "failedTests": []
+        },
+        "scope": "one selected model_configuration_changed test; does not prove all six"
+      }
+    }
+  },
+  "independent_review": {
+    "quality_round3": "PASS reported, C0/I0/M0; final report was in temporary storage and is now unavailable",
+    "quality_round4": "reviewer message confirmed nine hashes/root baseline and sole test locator correction; final report interrupted by usage limit",
+    "spec_round4": "finalization interrupted by usage limit; no final PASS claimed",
+    "final": {
+      "spec": {
+        "path": "docs/fork/meeting-questions-spec-review-2026-10-03.md",
+        "sha256": "a14f3dbfa52f636034be29830b4fe757117be4ca5362c85fb2ca6921a2f71589",
+        "status": "PASS",
+        "critical": 0,
+        "important": 0,
+        "minor": 0
+      },
+      "quality": {
+        "path": "docs/fork/meeting-questions-quality-review-2026-10-03.md",
+        "sha256": "c17a65de866a851142896d163b5f6560d67b52c97f5d456a89714b1d158ef52e",
+        "status": "PASS",
+        "critical": 0,
+        "important": 0,
+        "minor": 0
+      }
+    }
+  },
+  "limits": [
+    "actual model inference NOT_RUN",
+    "native installed IPC NOT_RUN",
+    "semantic faithfulness FEAT-102 NOT_RUN",
+    "full release gates NOT_RUN",
+    "temporary logs and prepared browser cache unavailable on 2026-10-03"
+  ],
+  "fresh_source_verification": {
+    "all_nine_candidate_hashes_match": true,
+    "all_nine_root_baselines_unchanged": true
+  },
+  "next_action": "Complete final independent SPEC review and preserve durable final reports before main copy; do not close FEAT-101.",
+  "integration": {
+    "date": "2026-10-03",
+    "method": "exact-byte owned files copy, root baseline guards",
+    "verified_files": 9,
+    "committed": false,
+    "source_review_manifest_sha256": "e073f5d73d0ab1319dd959cb5e46ffbd4fd8366f21c1af37f7a32b4d05a84938"
+  },
+  "new_findings": [
+    {
+      "severity": "Important",
+      "date": "2026-10-03",
+      "source": "isolated client awaits uncancellable model integrity then starts helper before next cancel check",
+      "report": "docs/fork/meeting-questions-local-test-review-2026-10-03.md",
+      "status": "RESOLVED"
+    }
+  ],
+  "cold_cancel_fix": {
+    "status": "FIX_REVIEWED_TRANSFERRED_AND_LOCAL_INFERENCE_VERIFIED",
+    "path": "frontend/src-tauri/src/summary/summary_engine/client.rs",
+    "sha256": "0a512f4cbd1bd56f26461bd30a6b2d64534f620f69980b1927164ba1726a23bb",
+    "focused_tests_passed": 6,
+    "clippy_exit": 0,
+    "fmt_exit": 0,
+    "reviews": [
+      "docs/fork/meeting-questions-cold-cancel-spec-review-2026-10-03.md",
+      "docs/fork/meeting-questions-cold-cancel-quality-review-2026-10-03.md"
+    ]
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

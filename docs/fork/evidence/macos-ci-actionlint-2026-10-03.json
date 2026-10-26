@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-03",
+  "release_id": 303326868,
+  "release_url": "https://github.com/rhysd/actionlint/releases/tag/v1.7.12",
+  "store": "/private/tmp/meetily-actionlint-audit-2026-10-03",
+  "archives": [
+    {
+      "name": "actionlint_1.7.12_darwin_arm64.tar.gz",
+      "asset_id": 384924893,
+      "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_darwin_arm64.tar.gz",
+      "size": 2164202,
+      "expected_sha256": "aba9ced2dee8d27fecca3dc7feb1a7f9a52caefa1eb46f3271ea66b6e0e6953f",
+      "sha256": "aba9ced2dee8d27fecca3dc7feb1a7f9a52caefa1eb46f3271ea66b6e0e6953f",
+      "matches_plan": true,
+      "api_digest": "sha256:aba9ced2dee8d27fecca3dc7feb1a7f9a52caefa1eb46f3271ea66b6e0e6953f",
+      "executed": false,
+      "status": "DOWNLOADED_MATCH"
+    },
+    {
+      "name": "actionlint_1.7.12_darwin_amd64.tar.gz",
+      "asset_id": 384924880,
+      "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_darwin_amd64.tar.gz",
+      "size": 2355828,
+      "expected_sha256": "5b44c3bc2255115c9b69e30efc0fecdf498fdb63c5d58e17084fd5f16324c644",
+      "sha256": "5b44c3bc2255115c9b69e30efc0fecdf498fdb63c5d58e17084fd5f16324c644",
+      "matches_plan": true,
+      "api_digest": "sha256:5b44c3bc2255115c9b69e30efc0fecdf498fdb63c5d58e17084fd5f16324c644",
+      "executed": false,
+      "status": "DOWNLOADED_MATCH"
+    }
+  ],
+  "limits": [
+    "Public HTTPS acquisition only; no archive extraction or binary execution.",
+    "Archive checks do not prove workflow lint PASS or hosted availability."
+  ]
+}

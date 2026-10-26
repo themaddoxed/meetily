@@ -1,0 +1,52 @@
+{
+  "recording_folder": "/Users/developer/Movies/meetily-recordings/Meeting 20_09_26_10_31_22_2026-09-20_07-31",
+  "metadata": {
+    "audio_file": "audio.mp4",
+    "completed_at": "2026-09-20T07:33:10.297945+00:00",
+    "created_at": "2026-09-20T07:31:22.656+00:00",
+    "devices": {
+      "microphone": null,
+      "system_audio": null
+    },
+    "duration_seconds": 105.509214384,
+    "meeting_id": "cef3a5fe-162f-4e33-9b57-6ba601ca3f31",
+    "meeting_name": "Meeting 20_09_26_10_31_22",
+    "sample_rate": 48000,
+    "session_id": "b1e21fb7-d583-425b-b93a-3ee174c412e7",
+    "status": "completed",
+    "transcript_file": "transcripts.json",
+    "version": "1.0"
+  },
+  "tracks": [
+    {
+      "file": "audio.mp4",
+      "sha256": "ad08a224a6740d255f6d5aa75a3144f7768ec3c487c08438dc54389f6d2ff756",
+      "duration": "81.621333",
+      "decode_exit": 0,
+      "decode_errors": ""
+    },
+    {
+      "file": "microphone.mp4",
+      "sha256": "7159a9123092496b914b4ee842081729eddc31c1933cab95704374d4c846777b",
+      "duration": "81.823333",
+      "decode_exit": 0,
+      "decode_errors": ""
+    },
+    {
+      "file": "system.mp4",
+      "sha256": "bc87c1bd71fd32c92c189241285e9de455aa50c35509250782a8f45c1bd14911",
+      "duration": "44.831667",
+      "decode_exit": 0,
+      "decode_errors": ""
+    }
+  ],
+  "finalized_before_database_cleanup": true,
+  "capture_failed_in_log": false,
+  "source_fingerprint": "bdfcf1421dad36bb6a56407de3618f358d7e1680ee34b8b5234fbba03f49f595",
+  "executable_sha256": "fc63ecaaf2ba75551ccd2bed582b0eff1da5a5acc987242cfee1be8f0a266a75",
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

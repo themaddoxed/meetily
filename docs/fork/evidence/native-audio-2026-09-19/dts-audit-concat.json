@@ -1,0 +1,12 @@
+{
+  "microphone": {
+    "exit": 0,
+    "stderr": "[aost#0:0/copy @ 0x7fbb13f178c0] Non-monotonic DTS; previous: 1440768, current: 1440240; changing to 1440769. This may result in incorrect timestamps in the output file.\n[aost#0:0/copy @ 0x7fbb13f178c0] Non-monotonic DTS; previous: 2881008, current: 2880480; changing to 2881009. This may result in incorrect timestamps in the output file.\n",
+    "parts": 3
+  },
+  "system": {
+    "exit": 0,
+    "stderr": "[aost#0:0/copy @ 0x7f8951a0b940] Non-monotonic DTS; previous: 1440768, current: 1440240; changing to 1440769. This may result in incorrect timestamps in the output file.\n",
+    "parts": 2
+  }
+}

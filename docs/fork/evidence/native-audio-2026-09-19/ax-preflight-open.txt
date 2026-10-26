@@ -1,0 +1,222 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXApplication | AXTitle=meetily
+ AXRole=AXApplication | AXTitle=meetily
+  AXRole=AXApplication | AXTitle=meetily
+   AXRole=AXApplication | AXTitle=meetily
+    AXRole=AXApplication | AXTitle=meetily
+     AXRole=AXApplication | AXTitle=meetily
+      AXRole=AXApplication | AXTitle=meetily
+       AXRole=AXApplication | AXTitle=meetily
+        AXRole=AXApplication | AXTitle=meetily
+         AXRole=AXApplication | AXTitle=meetily
+          AXRole=AXApplication | AXTitle=meetily
+           AXRole=AXApplication | AXTitle=meetily
+            AXRole=AXApplication | AXTitle=meetily
+            AXRole=AXMenuBar | AXEnabled=1
+            AXRole=AXMenuBar | AXEnabled=1
+           AXRole=AXMenuBar | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle=Apple | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle=meetily | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle=File | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle=Edit | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle=View | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle=Window | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle=Help | AXEnabled=1
+           AXRole=AXMenuBar | AXEnabled=1
+            AXRole=AXMenuBarItem | AXTitle= | AXHelp=Meetily | AXEnabled=1
+          AXRole=AXMenuBar | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle=Apple | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle=meetily | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle=File | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle=Edit | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle=View | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle=Window | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle=Help | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+          AXRole=AXMenuBar | AXEnabled=1
+           AXRole=AXMenuBarItem | AXTitle= | AXHelp=Meetily | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+         AXRole=AXMenuBar | AXEnabled=1
+          AXRole=AXMenuBarItem | AXTitle=Apple | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Об этом Mac | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Информация о системе | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Системные настройки… | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=App Store | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Недавние объекты | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Завершить принудительно… | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Завершить meetily принудительно | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Режим сна | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Перезагрузить… | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Перезагрузить | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Выключить… | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Выключить | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Заблокировать экран | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Завершить сеанс Local Developer… | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Завершить сеанс Local Developer | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+          AXRole=AXMenuBarItem | AXTitle=meetily | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=About meetily | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Services | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Hide meetily | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Hide Others | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Quit meetily | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Quit and Keep Windows | AXEnabled=1
+          AXRole=AXMenuBarItem | AXTitle=File | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Close Window | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Close All | AXEnabled=1
+          AXRole=AXMenuBarItem | AXTitle=Edit | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Undo | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Redo | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Cut | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Copy | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Paste | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Select All | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=AutoFill | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Start Dictation… | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Emoji & Symbols | AXEnabled=1
+          AXRole=AXMenuBarItem | AXTitle=View | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Toggle Full Screen | AXEnabled=1
+          AXRole=AXMenuBarItem | AXTitle=Window | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Minimize | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Minimize All | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Zoom | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Zoom All | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Fill | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Center | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Move & Resize | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Full Screen Tile | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Remove Window from Set | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Close Window | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=meetily | AXEnabled=1
+          AXRole=AXMenuBarItem | AXTitle=Help | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+         AXRole=AXMenuBar | AXEnabled=1
+          AXRole=AXMenuBarItem | AXTitle= | AXHelp=Meetily | AXEnabled=1
+           AXRole=AXMenu | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Start Recording | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Open Main Window | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle=Settings | AXEnabled=1
+            AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+            AXRole=AXMenuItem | AXTitle=Quit | AXEnabled=1
+        AXRole=AXMenuBar | AXEnabled=1
+         AXRole=AXMenuBarItem | AXTitle=Apple | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Об этом Mac | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Информация о системе | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Системные настройки… | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=App Store | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Недавние объекты | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Завершить принудительно… | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Завершить meetily принудительно | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Режим сна | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Перезагрузить… | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Перезагрузить | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Выключить… | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Выключить | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Заблокировать экран | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Завершить сеанс Local Developer… | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Завершить сеанс Local Developer | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+         AXRole=AXMenuBarItem | AXTitle=meetily | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=About meetily | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Services | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Hide meetily | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Hide Others | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Quit meetily | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Quit and Keep Windows | AXEnabled=1
+         AXRole=AXMenuBarItem | AXTitle=File | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Close Window | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Close All | AXEnabled=1
+         AXRole=AXMenuBarItem | AXTitle=Edit | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Undo | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Redo | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Cut | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Copy | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Paste | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Select All | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=AutoFill | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Start Dictation… | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Emoji & Symbols | AXEnabled=1
+         AXRole=AXMenuBarItem | AXTitle=View | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Toggle Full Screen | AXEnabled=1
+         AXRole=AXMenuBarItem | AXTitle=Window | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Minimize | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Minimize All | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Zoom | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Zoom All | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Fill | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Center | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Move & Resize | AXEnabled=1
+            AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Full Screen Tile | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Remove Window from Set | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Close Window | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=meetily | AXEnabled=1
+         AXRole=AXMenuBarItem | AXTitle=Help | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+        AXRole=AXMenuBar | AXEnabled=1
+         AXRole=AXMenuBarItem | AXTitle= | AXHelp=Meetily | AXEnabled=1
+          AXRole=AXMenu | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Start Recording | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Open Main Window | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle=Settings | AXEnabled=1
+           AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+           AXRole=AXMenuItem | AXTitle=Quit | AXEnabled=1
+       AXRole=AXMenuBar | AXEnabled=1
+        AXRole=AXMenuBarItem | AXTitle=Apple | AXEnabled=1
+         AXRole=AXMenu | AXEnabled=1
+          AXRole=AXMenuItem | AXTitle=Об этом Mac | AXEnabled=1
+          AXRole=AXMenuItem | AXTitle=Информация о системе | AXEnabled=1
+          AXRole=AXMenuItem | AXTitle= | AXEnabled=0
+          AXRole=AXMenuItem | AXTitle=Системные настройки… | AXEnabled=1

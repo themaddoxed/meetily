@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-04",
+  "status": "BOUNDED_MIXED_ID_DESIGN_CORRECTION_REVIEWED; implementation NOT_ADMITTED",
+  "plan": {
+    "path": "docs/superpowers/plans/2026-10-04-webview-schema-ownership.md",
+    "sha256": "da7c4686f4159c453eac1b9a1d1fcd3dd823a4226dd7bb9a187c960c225f0908"
+  },
+  "source_bindings": [
+    {
+      "path": "frontend/src/services/webMigration.ts",
+      "sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf"
+    },
+    {
+      "path": "frontend/src/services/indexedDBService.ts",
+      "sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration.rs",
+      "sha256": "f249093eaa83e3116aece3f754135afd92e531e97c5a438affac7acba6d9349c"
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration_commands.rs",
+      "sha256": "e50615fbdf21e5de3385436c951c83260a375eca75621847b72692bc65710fad"
+    }
+  ],
+  "proposed_canonical_format_check": {
+    "scope": "Standalone format encoders only; not product code, DTO validation, duplicate-key parser, actual migration or browser/native proof",
+    "golden_vectors": {
+      "path": "docs/fork/evidence/webview-canonical-golden-vectors-2026-10-04.json",
+      "sha256": "61661aa4daf89a64a409541ca9f5cd2be3e3c4a5533a006ca21c800764f9f214",
+      "count": 10
+    },
+    "python": {
+      "script": "/private/tmp/meetily-canonical-fixtures-2026-10-04.py",
+      "sha256": "7057ae1b661db6bf5b725fe2b8073d9fbff294aea28a102e7db6a455481220ad",
+      "exit_code": 0,
+      "invalid_inputs_rejected": 3
+    },
+    "node": {
+      "script": "/private/tmp/meetily-canonical-fixtures-2026-10-04.mjs",
+      "sha256": "827ce05b9393dda839fcbb1618d76aa1cc99bfb3c632d24f10863a92c18b9d3a",
+      "exit_code": 0,
+      "vectors_byte_and_hash_matched": 10,
+      "invalid_inputs_rejected": 5
+    },
+    "result_attribution": "Actual main-agent tool executions observed in this turn; no independent reviewer execution claim"
+  },
+  "proposed_contract": [
+    "First immutable intent bootstraps authority without recursive owner entry; pre-intent unbound setup fails closed without live data mutation",
+    "Record add result keys mapped by store/packageIndex in same IDB txn; no sequenceId primary-key assumption",
+    "Separate versioned canonical digests preserve existing browser v1 payload checksum"
+  ],
+  "open_gates": [
+    "Legacy mixed-ID fix proven only in isolated v2 candidate; canonical main/dev remains unfixed until authorized selective integration. Historical explicit-first scheduling rejected for legacy 2^53 regression; new combined protocol has separately stricter key policy.",
+    "Exact DTO validator/finite fresh SQLx classifier proof",
+    "Recovery CSP/IPC and managed-state startup source/runtime admission",
+    "Clean source after authorized QA commit/dev integration",
+    "Actual producer/pair admission",
+    "Real temporary SQLite/FS/IDB interruption and native user-flow gates"
+  ],
+  "product_source_changed": false,
+  "git_refs_changed": false,
+  "real_profiles_accessed": false,
+  "task_closed": false,
+  "original_reviews": {
+    "spec": {
+      "path": "docs/fork/webview-schema-ownership-spec-review-2026-10-04.md",
+      "sha256": "ebee9c0423c1ea85f9c3c5d83da4e1a3ef5d98d1cbbee857b094165e0a0609a2",
+      "verdict": "C0/I1/M0 mixed-ID scheduling gap"
+    },
+    "quality": {
+      "path": "docs/fork/webview-schema-ownership-quality-review-2026-10-04.md",
+      "sha256": "20fbbf859187e52adba58b83d0acd67c75aacf635728c68a44c4da0993ae6cdf",
+      "verdict": "C0/I0/M0 bounded coherent design"
+    }
+  },
+  "fixed_reviews": {
+    "spec": {
+      "path": "docs/fork/webview-schema-ownership-v2-spec-review-2026-10-04.md",
+      "sha256": "9f13ce6844e319746603c65722c8de91a064f49838716bef02b9fa8a875828b4",
+      "verdict": "C0/I0/M0 bounded mixed-ID correction; no product/full-plan admission"
+    },
+    "quality": {
+      "path": "docs/fork/webview-schema-ownership-v2-quality-review-2026-10-04.md",
+      "sha256": "2a90ff729390c0ba3af313ced2f62dea786aedb6c99cbf15133675437ec85206",
+      "verdict": "C0/I0/M0 bounded mixed-ID correction; no product/full-plan admission"
+    }
+  },
+  "fixed_plan": {
+    "path": "docs/superpowers/plans/2026-10-04-webview-schema-ownership-v2.md",
+    "sha256": "86fa8fe7c9932d2b7794ae7330bfaea6ff3a90a177b850242bc9833e8643b53a"
+  },
+  "browser_probe": "docs/fork/evidence/webview-mixed-id-browser-probe-2026-10-04.json",
+  "legacy_import_candidate": "/Users/developer/Desktop/meeting-minutes/docs/fork/evidence/webview-mixed-id-fix-v2-2026-10-04.json",
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

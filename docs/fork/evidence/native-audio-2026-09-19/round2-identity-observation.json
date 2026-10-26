@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-09-20T13:51:20.192746+00:00",
+  "bundle_id": "com.meetily.ai",
+  "native_app_requirement": "cdhash H\"89b51050e6616f85cad2e2b24b0158e4ddf1c0f9\"",
+  "installed_app_requirement": "cdhash H\"5e5cec113319c882a05f253beba76de6f60e071a\" or cdhash H\"6c8817965bec17d7a3dbbb8cea148829eafe25be\"",
+  "NSWorkspace_default_app": "/Applications/Meetily.app",
+  "inference": "Multiple ad-hoc identities with same bundle ID exist; Settings row alone does not identify which code requirement was changed. Exact effective TCC denial remains unverified.",
+  "methods": [
+    "codesign -d -r- exact diagnostic app",
+    "codesign -d -r- /Applications/Meetily.app",
+    "NSWorkspace.urlForApplication(withBundleIdentifier:)"
+  ],
+  "tcc_database_read": false,
+  "tcc_reset": false
+}

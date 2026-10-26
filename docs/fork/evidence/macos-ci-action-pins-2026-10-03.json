@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-03",
+  "scope": "public read-only ref resolution; no credentials; no workflow dispatch",
+  "status": "CANDIDATE_PINS_NOT_ADOPTED",
+  "actions": [
+    {
+      "repository": "actions/checkout",
+      "observed_ref": "v4",
+      "commit": "11d5960a326750d5838078e36cf38b85af677262",
+      "commit_url": "https://github.com/actions/checkout/commit/11d5960a326750d5838078e36cf38b85af677262",
+      "action_url": "https://raw.githubusercontent.com/actions/checkout/11d5960a326750d5838078e36cf38b85af677262/action.yml",
+      "action_manifest_sha256": "6188f6991491ed38977347cdaad0b0cd921a6d6232892363c91f433c22954f4f",
+      "manifest_using_lines": [
+        "using: node20"
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    },
+    {
+      "repository": "actions/setup-node",
+      "observed_ref": "v4",
+      "commit": "49933ea5288caeca8642d1e84afbd3f7d6820020",
+      "commit_url": "https://github.com/actions/setup-node/commit/49933ea5288caeca8642d1e84afbd3f7d6820020",
+      "action_url": "https://raw.githubusercontent.com/actions/setup-node/49933ea5288caeca8642d1e84afbd3f7d6820020/action.yml",
+      "action_manifest_sha256": "8aee59063ebc272d850507febb30930de2684be1b1240cf5f3dff13179fcff0b",
+      "manifest_using_lines": [
+        "using: 'node20'"
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    },
+    {
+      "repository": "pnpm/action-setup",
+      "observed_ref": "v4",
+      "commit": "b906affcce14559ad1aafd4ab0e942779e9f58b1",
+      "commit_url": "https://github.com/pnpm/action-setup/commit/b906affcce14559ad1aafd4ab0e942779e9f58b1",
+      "action_url": "https://raw.githubusercontent.com/pnpm/action-setup/b906affcce14559ad1aafd4ab0e942779e9f58b1/action.yml",
+      "action_manifest_sha256": "5fb508882756b5d3f2a10531e09acd2006b2cd00e71c2e22361149a2105acec6",
+      "manifest_using_lines": [
+        "using: node20"
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    },
+    {
+      "repository": "dtolnay/rust-toolchain",
+      "observed_ref": "stable",
+      "commit": "89b12181fb390509a0842a86cc55eeb8eb928c1d",
+      "commit_url": "https://github.com/dtolnay/rust-toolchain/commit/89b12181fb390509a0842a86cc55eeb8eb928c1d",
+      "action_url": "https://raw.githubusercontent.com/dtolnay/rust-toolchain/89b12181fb390509a0842a86cc55eeb8eb928c1d/action.yml",
+      "action_manifest_sha256": "88e5ba8078257c53aadfc8097bff99a3a7e1a5fb210343faa19528e2e21f2e91",
+      "manifest_using_lines": [
+        "using: composite"
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    },
+    {
+      "repository": "swatinem/rust-cache",
+      "observed_ref": "v2",
+      "commit": "6323deb102c322ba6fcbdcafc7e3dddab59af2b6",
+      "commit_url": "https://github.com/Swatinem/rust-cache/commit/6323deb102c322ba6fcbdcafc7e3dddab59af2b6",
+      "action_url": "https://raw.githubusercontent.com/swatinem/rust-cache/6323deb102c322ba6fcbdcafc7e3dddab59af2b6/action.yml",
+      "action_manifest_sha256": "0bf18e525796c2e43b4cccbc5c914e745de700a4e56735f53a8f1b0e6504aa2a",
+      "manifest_using_lines": [
+        "using: \"node24\""
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    },
+    {
+      "repository": "actions/upload-artifact",
+      "observed_ref": "v4",
+      "commit": "ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "commit_url": "https://github.com/actions/upload-artifact/commit/ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "action_url": "https://raw.githubusercontent.com/actions/upload-artifact/ea165f8d65b6e75b540449e92b4886f43607fa02/action.yml",
+      "action_manifest_sha256": "29b21270ff44638a165ea12abb4481796770c629e513217af7b4df1aa3821177",
+      "manifest_using_lines": [
+        "using: 'node20'"
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    },
+    {
+      "repository": "actions/download-artifact",
+      "observed_ref": "v4",
+      "commit": "d3f86a106a0bac45b974a628896c90dbdf5c8093",
+      "commit_url": "https://github.com/actions/download-artifact/commit/d3f86a106a0bac45b974a628896c90dbdf5c8093",
+      "action_url": "https://raw.githubusercontent.com/actions/download-artifact/d3f86a106a0bac45b974a628896c90dbdf5c8093/action.yml",
+      "action_manifest_sha256": "f81d687a5bb7c2c9428a2cfc32fc099c823d56faf533e7d0e1f3cdc0e10f9cc7",
+      "manifest_using_lines": [
+        "using: 'node20'"
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    },
+    {
+      "repository": "actions/github-script",
+      "observed_ref": "v7",
+      "commit": "f28e40c7f34bde8b3046d885e986cb6290c5673b",
+      "commit_url": "https://github.com/actions/github-script/commit/f28e40c7f34bde8b3046d885e986cb6290c5673b",
+      "action_url": "https://raw.githubusercontent.com/actions/github-script/f28e40c7f34bde8b3046d885e986cb6290c5673b/action.yml",
+      "action_manifest_sha256": "e80f52aff39c92b2a6b668edbd6101d77c00b27109cb1c786f7bc6eb54d5ac5a",
+      "manifest_using_lines": [
+        "using: node20"
+      ],
+      "status": "PUBLIC_COMMIT_AND_MANIFEST_RESOLVED",
+      "reviewed_for_adoption": false
+    }
+  ],
+  "limits": [
+    "Ref resolution and manifest hashes are not independent action source review.",
+    "Workflow and Git refs unchanged.",
+    "These are existing action major lines, not unrequested upgrades."
+  ]
+}

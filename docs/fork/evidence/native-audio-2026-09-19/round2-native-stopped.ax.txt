@@ -1,0 +1,40 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXWindow | AXTitle=meetily
+ AXRole=AXGroup | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXScrollArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+    AXRole=AXWebArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Expand sidebar | AXDescription=Expand sidebar | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXPopUpButton | AXTitle=About Meetily | AXDescription=About Meetily | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Home | AXDescription=Home | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Start Recording | AXDescription=Start Recording | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Import Audio | AXDescription=Import Audio | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Meeting Notes | AXDescription=Meeting Notes | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXButton | AXTitle=Settings | AXDescription=Settings | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXPopUpButton | AXTitle= | AXDescription=About Meetily | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Copy | AXDescription= | AXHelp=No transcript available | AXValue= | AXEnabled=0
+       AXRole=AXButton | AXTitle= | AXDescription=No transcript available | AXHelp= | AXValue= | AXEnabled=0
+       AXRole=AXButton | AXTitle=Export | AXDescription= | AXHelp=No transcript available | AXValue= | AXEnabled=0
+       AXRole=AXButton | AXTitle=Recording | AXDescription= | AXHelp=Open Recording Folder | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Enhance | AXDescription= | AXHelp=Retranscribe to enhance your recorded audio | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Welcome to Meetily! | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Start recording to see live transcription | AXEnabled=1
+      AXRole=AXHeading | AXTitle=No Summary Generated Yet | AXDescription= | AXHelp= | AXValue=3 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=No Summary Generated Yet | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Generate an AI-powered summary of your meeting transcript to get key points, action items, and decisions. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXButton | AXTitle=Generate AI Summary | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle=Notifications alt+T | AXDescription=Notifications alt+T | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXButton | AXHelp=this button also has an action to zoom the window | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXGroup
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXStaticText | AXValue=meetily | AXEnabled=1

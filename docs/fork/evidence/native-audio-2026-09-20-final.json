@@ -1,0 +1,43 @@
+{
+  "status": "UNGATED",
+  "sourceCommit": "fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c",
+  "sourceFingerprint": "dc4b92b2e1de1cada3a2da4ef912928d908e6700b026c6825240741275a7f32b",
+  "architecture": "x86_64",
+  "signing": "ad-hoc",
+  "notarization": "NOT_RUN",
+  "buildExecutableSha256": "a9d4cd9b83de8f53693856c748a320f044049f4e977872c77865f74932fc7081",
+  "packagedExecutableSha256": "3707e1b6e53f2bc9713f2f22a90fffd4bf19c993c5c7c2051805bbcde510d814",
+  "app": "target/diagnostic-dirty/fcfa6e0ba4b0953b2c03c87cde24153f92e74e0c/run-20260920-permission-fast-fallback-final/meetily.app",
+  "automated": {
+    "macosCaptureTests": "21 passed",
+    "recordingSessionTests": "48 passed, 1 ignored",
+    "permissionTests": "7 passed",
+    "releaseBuild": "PASS",
+    "gitDiffCheck": "PASS"
+  },
+  "native": {
+    "permissions": "microphone and system-audio prompts allowed through UserNotificationCenter",
+    "lifecycle": [
+      "start",
+      "pause",
+      "resume",
+      "stop"
+    ],
+    "metadataStatus": "completed",
+    "metadataError": null,
+    "recordingFolder": "/Users/developer/Movies/meetily-recordings/Meeting 20_09_26_18_57_50_2026-09-20_15-57",
+    "systemTrack": "not produced; CoreAudio tap delivered no frames",
+    "fallback": "microphone-only completion"
+  },
+  "limits": [
+    "physical microphone disconnect/reconnect was not exercised",
+    "full TCC denied/recovery matrix was not exercised",
+    "two-track system-audio acceptance and pause/resume synchronization remain open",
+    "dirty source and ad-hoc signing prevent Alpha/release claims"
+  ],
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "date": "2026-10-04",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "task_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03",
+  "plan_sha256": "83e82c5891c7d699485ab0910936a67bf4a8e6690e42eb2b6ec43df07767de41",
+  "source_hashes": {
+    "frontend/tests/helpers/rendered-contrast.ts": "009af7c626199e6e94d56b2565d721f6c4823e12adb36581ab2f2e0ed2652b79",
+    "frontend/tests/theme-dark-surfaces.spec.ts": "84fa37ba59d71c8a483295266e46547444fe294dc072c24ca90880b4fdd468be"
+  },
+  "fixture_check": {
+    "exit": 0,
+    "passed": 9,
+    "log": "/private/tmp/meetily-theme-shadow-atomic-fixtures.log",
+    "sha256": "785458104da23827b921fbf687422d8b90066b2b3f9e4f430960f46c88ce58ed"
+  },
+  "real_text_check": {
+    "exit": 0,
+    "passed": 2,
+    "failed": 0,
+    "samples": 18,
+    "log": "/private/tmp/meetily-theme-real-text-atomic.log",
+    "sha256": "4f914d59ecf898d3fed5190286c0d88d1d2231439a1b37c58f5ef270758a2f74",
+    "minimum_ratio": {
+      "light": 4.542288769612194,
+      "dark": 5.999400854306462
+    },
+    "ledger": [
+      {
+        "path": "/",
+        "label": "Welcome to Meetily!",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.952143998137194,
+        "shadowEvidence": [],
+        "mode": "light"
+      },
+      {
+        "path": "/settings",
+        "label": "Appearance",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          10,
+          10,
+          10
+        ],
+        "ratio": 19.79814571052481,
+        "shadowEvidence": [],
+        "mode": "light"
+      },
+      {
+        "path": "/settings",
+        "label": "Choose how Meetily should render the interface",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.952143998137194,
+        "shadowEvidence": [],
+        "mode": "light"
+      },
+      {
+        "path": "/settings",
+        "label": "System",
+        "background": [
+          245,
+          245,
+          245
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.542288769612194,
+        "shadowEvidence": [],
+        "mode": "light"
+      },
+      {
+        "path": "/settings",
+        "label": "Light",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          10,
+          10,
+          10
+        ],
+        "ratio": 19.79814571052481,
+        "shadowEvidence": [],
+        "mode": "light"
+      },
+      {
+        "path": "/settings",
+        "label": "Dark",
+        "background": [
+          245,
+          245,
+          245
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.542288769612194,
+        "shadowEvidence": [],
+        "mode": "light"
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "label": "Theme Test Meeting",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          2,
+          8,
+          23
+        ],
+        "ratio": 20.00596813007275,
+        "shadowEvidence": [],
+        "mode": "light"
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "label": "We approved the dark theme.",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          10,
+          10,
+          10
+        ],
+        "ratio": 19.79814571052481,
+        "shadowEvidence": [
+          {
+            "jointIndices": [
+              19
+            ],
+            "fingerprints": [
+              "6b5568679aaa78e914831167d83c008b369d6fd75a9b34aae507cb3e38959e1b"
+            ],
+            "clip": {
+              "x": 162,
+              "y": 125,
+              "width": 216,
+              "height": 18
+            },
+            "pngSHA256": "aad8b63d9b746584271890ac2748f0bbdd5ccb566a2db784aa3861235dae0fa6",
+            "baseline_png_path": "/private/tmp/meetily-theme-text-light-7-0.png"
+          }
+        ],
+        "mode": "light"
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "label": "[00:00]",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.952143998137194,
+        "shadowEvidence": [
+          {
+            "jointIndices": [
+              19
+            ],
+            "fingerprints": [
+              "6b5568679aaa78e914831167d83c008b369d6fd75a9b34aae507cb3e38959e1b"
+            ],
+            "clip": {
+              "x": 112,
+              "y": 127,
+              "width": 43,
+              "height": 15
+            },
+            "pngSHA256": "a7a46a135251a83291d0da5666a9bbda0ba7635fe84c2908a7846eba4ec3dfb3",
+            "baseline_png_path": "/private/tmp/meetily-theme-text-light-8-0.png"
+          }
+        ],
+        "mode": "light"
+      },
+      {
+        "path": "/",
+        "label": "Welcome to Meetily!",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 7.848599561952364,
+        "shadowEvidence": [],
+        "mode": "dark"
+      },
+      {
+        "path": "/settings",
+        "label": "Appearance",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          250,
+          250,
+          250
+        ],
+        "ratio": 18.96800669384249,
+        "shadowEvidence": [],
+        "mode": "dark"
+      },
+      {
+        "path": "/settings",
+        "label": "Choose how Meetily should render the interface",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 7.848599561952364,
+        "shadowEvidence": [],
+        "mode": "dark"
+      },
+      {
+        "path": "/settings",
+        "label": "System",
+        "background": [
+          38,
+          38,
+          38
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 5.999400854306462,
+        "shadowEvidence": [],
+        "mode": "dark"
+      },
+      {
+        "path": "/settings",
+        "label": "Light",
+        "background": [
+          38,
+          38,
+          38
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 5.999400854306462,
+        "shadowEvidence": [],
+        "mode": "dark"
+      },
+      {
+        "path": "/settings",
+        "label": "Dark",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          250,
+          250,
+          250
+        ],
+        "ratio": 18.96800669384249,
+        "shadowEvidence": [],
+        "mode": "dark"
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "label": "Theme Test Meeting",
+        "background": [
+          2,
+          8,
+          23
+        ],
+        "foreground": [
+          248,
+          250,
+          252
+        ],
+        "ratio": 19.121122795349486,
+        "shadowEvidence": [],
+        "mode": "dark"
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "label": "We approved the dark theme.",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          250,
+          250,
+          250
+        ],
+        "ratio": 18.96800669384249,
+        "shadowEvidence": [
+          {
+            "jointIndices": [
+              19
+            ],
+            "fingerprints": [
+              "02d1fcb788885171939672ac0e4a55dd83dc30c967ad3bf5d701851505fe1d11"
+            ],
+            "clip": {
+              "x": 162,
+              "y": 125,
+              "width": 216,
+              "height": 18
+            },
+            "pngSHA256": "fdd97e90fc4373fe907c8134166b13b312cfc22c83e49f7933b200e00da65744",
+            "baseline_png_path": "/private/tmp/meetily-theme-text-dark-16-0.png"
+          }
+        ],
+        "mode": "dark"
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "label": "[00:00]",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 7.848599561952364,
+        "shadowEvidence": [
+          {
+            "jointIndices": [
+              19
+            ],
+            "fingerprints": [
+              "02d1fcb788885171939672ac0e4a55dd83dc30c967ad3bf5d701851505fe1d11"
+            ],
+            "clip": {
+              "x": 112,
+              "y": 127,
+              "width": 43,
+              "height": 15
+            },
+            "pngSHA256": "966f8577a86268158db7cd7bae3ae64f290b54add45433a9bd52a41d889d7dcd",
+            "baseline_png_path": "/private/tmp/meetily-theme-text-dark-17-0.png"
+          }
+        ],
+        "mode": "dark"
+      }
+    ]
+  },
+  "typecheck_exit": 0,
+  "targeted_eslint_exit": 0,
+  "background_check": {
+    "exit": 1,
+    "passed": 0,
+    "failed": 3,
+    "log": "/private/tmp/meetily-theme-background-current.log",
+    "sha256": "4893e1d7c2510d7ea3d67a07333356adb3d77967a46471136c5cfae6bb10c527",
+    "failure_kind": "unresolved intersecting sidebar expand button paint; not a numeric light-surface finding"
+  },
+  "scope": "Text-only foreign-shadow proof; complete theme acceptance, native and release gates remain open",
+  "full_theme_acceptance": false,
+  "native": "NOT_RUN",
+  "snapshots_changed": false,
+  "source_reviews": {
+    "SPEC": {
+      "report": "docs/fork/theme-shadow-proof-atomic-spec-review-2026-10-03.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "4a0eb48440a50a0cd4d1256b7694e8f9eefc6c1cbd27be5e83ccd59a86d2d035"
+    },
+    "QUALITY": {
+      "report": "docs/fork/theme-shadow-proof-atomic-quality-review-2026-10-03.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "6108ef337bc6fa956e4a6eb399c69e9323ae076b347078f967bff02aa0ed77b5"
+    }
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

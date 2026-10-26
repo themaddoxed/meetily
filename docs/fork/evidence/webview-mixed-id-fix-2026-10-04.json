@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-04",
+  "scope": "Existing legacy IDB import mixed-key scheduling only; not combined coordinator/schema implementation",
+  "task_root": "/private/tmp/meetily-webview-mixed-id-fix-2026-10-04",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "branch": "themaddoxed/webview-mixed-id-2026-10-04",
+  "source_before_sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+  "paths": [
+    {
+      "path": "frontend/src/services/indexedDBService.ts",
+      "sha256": "0e89234b20a9163ea348498daa3afaeaac4f2bbe09188f00bc43b74490b5a77e"
+    },
+    {
+      "path": "frontend/tests/indexeddb-migration-keys.spec.ts",
+      "sha256": "110d2b9cfdb71f406e165f86dd674f1a9e7890b5eb9ae53c741055885dd4dcb6"
+    }
+  ],
+  "regression": {
+    "red_exit": 1,
+    "red_failed": 1,
+    "red_passed": 1,
+    "green_exit": 0,
+    "green_passed": 2,
+    "red_log": "/private/tmp/meetily-mixed-id-regression-red-2026-10-04.log",
+    "green_log": "/private/tmp/meetily-mixed-id-regression-green-2026-10-04.log",
+    "red_log_sha256": "3f405bc7c1430790ebddc074166e3695d3004896addbee7517598065d94d52e1",
+    "green_log_sha256": "9fdae7d608b0f4b5933713d9d477e45a7bda664245b022d090e50226ca6fc072"
+  },
+  "checks": {
+    "frontend": {
+      "exit": 0,
+      "node_passed": 424,
+      "vitest_passed": 61,
+      "log": "/private/tmp/meetily-mixed-id-frontend-2026-10-04.log",
+      "log_sha256": "b657ecbb91e6a9d2fc960a0b25fad12b31ace655fdf78e32c3c9e8d85ebb0f56"
+    },
+    "typecheck": {
+      "exit": 0,
+      "log": "/private/tmp/meetily-mixed-id-types-2026-10-04.log",
+      "log_sha256": "056c34d0e1c885a6957c09198ddfc28dc35d7a9a60e6a54550056dd65b471b58"
+    },
+    "lint": {
+      "exit": 0,
+      "log": "/private/tmp/meetily-mixed-id-lint-2026-10-04.log",
+      "log_sha256": "f554b0edfdc1ec70e6005cf5fc6ad5d720033eba53a2ceeb7f5c5afc84fbb393"
+    },
+    "critical_browser": {
+      "status": "PASS",
+      "log": "/private/tmp/meetily-mixed-id-critical-2026-10-04.log",
+      "exit": 0,
+      "passed": 29,
+      "log_sha256": "a496b9350472f053850a77aa87b9d94a35d68e154ac890ef55cff20dd9a24208"
+    },
+    "build": {
+      "exit": 0,
+      "log": "/private/tmp/meetily-mixed-id-build-2026-10-04.log",
+      "log_sha256": "3502093611a8ca2f3e05fede17eba86a0aad0df11f12154b1f176ca3350b4039"
+    }
+  },
+  "independent_code_review": [
+    {
+      "path": "/Users/developer/Desktop/meeting-minutes/docs/fork/webview-mixed-id-fix-spec-review-2026-10-04.md",
+      "sha256": "59d4d41ef60b18eacecfae716a16463c8c7ade34a17ff1b52e34dcb8c898b3c7",
+      "result": "historical bounded C0/I0/M0"
+    },
+    {
+      "path": "/Users/developer/Desktop/meeting-minutes/docs/fork/webview-mixed-id-fix-quality-review-2026-10-04.md",
+      "sha256": "3316356e184be8b6882c8f367632598c409228c47d7e17dff3b2257efee36891",
+      "result": "historical bounded C0/I0/M0"
+    }
+  ],
+  "root_product_unchanged": true,
+  "source_refs_changed": false,
+  "committed": false,
+  "integrated": false,
+  "native_or_release_ready": false,
+  "status": "FIX_REGRESSION",
+  "reason": "Explicit-first candidate exhausted IDB generator for legacy-valid explicit ID 2^53; independent public-import comparison old succeeded, candidate failed. Superseded by v2.",
+  "boundary_probe": {
+    "before": "/private/tmp/meetily-max-key-before.json",
+    "after": "/private/tmp/meetily-max-key-after.json"
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

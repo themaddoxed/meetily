@@ -1,0 +1,220 @@
+name: "Release"
+
+on:
+  workflow_dispatch:
+    inputs:
+      manual-smoke-passed:
+        description: "I ran the release gate for this exact commit and candidate"
+        required: true
+        type: boolean
+        default: false
+      smoke-report-reference:
+        description: "Path or immutable link to the completed smoke report"
+        required: true
+        type: string
+      release-commit:
+        description: "Exact full commit SHA covered by the smoke report"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+# Prevent duplicate releases
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false  # Don't cancel releases, fail instead
+
+jobs:
+  quality-gate:
+    uses: ./.github/workflows/quality-gate.yml
+
+  manual-attestation:
+    needs: quality-gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require manual smoke evidence for the exact workflow commit
+        env:
+          MANUAL_SMOKE_PASSED: ${{ github.event.inputs['manual-smoke-passed'] }}
+          SMOKE_REPORT_REFERENCE: ${{ github.event.inputs['smoke-report-reference'] }}
+          RELEASE_COMMIT: ${{ github.event.inputs['release-commit'] }}
+          WORKFLOW_COMMIT: ${{ github.sha }}
+        run: |
+          test "$MANUAL_SMOKE_PASSED" = true
+          test -n "$SMOKE_REPORT_REFERENCE"
+          test "$SMOKE_REPORT_REFERENCE" != "<smoke-report>"
+          test "$RELEASE_COMMIT" = "$WORKFLOW_COMMIT"
+
+  # A draft can exist only after automatic and manual gates succeed.
+  create-release:
+    needs: [quality-gate, manual-attestation]
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    outputs:
+      release-id: ${{ steps.create-release.outputs.result }}
+      version: ${{ steps.get-version.outputs.version }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all tags
+
+      - name: Get version from tauri.conf.json and check for existing tags
+        id: get-version
+        shell: bash
+        run: |
+          BASE_VERSION=$(grep -o '"version": "[^"]*"' frontend/src-tauri/tauri.conf.json | cut -d'"' -f4)
+          echo "Base version from tauri.conf.json: $BASE_VERSION"
+
+          # Fetch all tags
+          git fetch --tags
+
+          # Check if base version tag exists
+          if git tag -l "v${BASE_VERSION}" | grep -q .; then
+            echo "Tag v${BASE_VERSION} already exists, looking for minor updates..."
+
+            # Find all existing minor versions (e.g., 0.1.1.1, 0.1.1.2, etc.)
+            LATEST_MINOR=0
+            for i in $(seq 1 100); do
+              if git tag -l "v${BASE_VERSION}.${i}" | grep -q .; then
+                LATEST_MINOR=$i
+              else
+                break
+              fi
+            done
+
+            # Increment to next minor version
+            NEXT_MINOR=$((LATEST_MINOR + 1))
+
+            if [ $NEXT_MINOR -gt 100 ]; then
+              echo "ERROR: Maximum minor version (100) reached for ${BASE_VERSION}"
+              echo "Please update the version in tauri.conf.json"
+              exit 1
+            fi
+
+            VERSION="${BASE_VERSION}.${NEXT_MINOR}"
+            echo "Using minor update version: $VERSION"
+          else
+            VERSION="${BASE_VERSION}"
+            echo "Using base version: $VERSION"
+          fi
+
+          echo "Final version: $VERSION"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Create Draft Release
+        id: create-release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data } = await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: `v${{ steps.get-version.outputs.version }}`,
+              name: `Meetily v${{ steps.get-version.outputs.version }}`,
+              draft: true,
+              prerelease: false,
+              generate_release_notes: true
+            })
+            console.log(`Created draft release with ID: ${data.id}`)
+            return data.id
+
+  # STEP 2: Build all platforms and upload directly to release
+  # Note: Linux builds are excluded from release (only macOS and Windows)
+  build-all-platforms:
+    needs: create-release
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: "macos-latest" # for Apple Silicon only (M1 and above)
+            args: "--target aarch64-apple-darwin"
+            target: "aarch64-apple-darwin"
+          - platform: "windows-latest"
+            args: ""
+            target: "x86_64-pc-windows-msvc"
+
+    uses: ./.github/workflows/build.yml
+    with:
+      platform: ${{ matrix.platform }}
+      target: ${{ matrix.target }}
+      build-args: ${{ matrix.args }}
+      sign-binaries: true
+      asset-prefix: "meetily"
+      upload-artifacts: false  # tauri-action uploads directly to release
+      release-id: ${{ needs.create-release.outputs.release-id }}
+    secrets: inherit
+
+  # STEP 3: Show release summary
+  release-summary:
+    needs: [create-release, build-all-platforms]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Get release assets
+        id: release-info
+        run: |
+          VERSION="${{ needs.create-release.outputs.version }}"
+          RELEASE_ID="${{ needs.create-release.outputs.release-id }}"
+
+          echo "## Release Assets" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # List all release assets
+          echo "### Files in Release" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          gh api repos/${{ github.repository }}/releases/${RELEASE_ID}/assets --jq '.[] | "\(.name) (\(.size / 1048576 | floor)MB)"' >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Download links
+          echo "### Download Links" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Release page:** https://github.com/${{ github.repository }}/releases/tag/v${VERSION}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Download all as ZIP:** https://github.com/${{ github.repository }}/archive/refs/tags/v${VERSION}.zip" >> $GITHUB_STEP_SUMMARY
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release Summary
+        run: |
+          echo "============================================"
+          echo "=== Release Created Successfully ==="
+          echo "============================================"
+          echo "Version: v${{ needs.create-release.outputs.version }}"
+          echo "Release URL: https://github.com/${{ github.repository }}/releases/tag/v${{ needs.create-release.outputs.version }}"
+          echo ""
+          echo "Uploaded assets (via tauri-action):"
+          echo "  - macOS: DMG installer"
+          echo "  - Windows: MSI + NSIS installers (SIGNED via signCommand)"
+          echo ""
+          echo "Next steps:"
+          echo "  1. Review the draft release"
+          echo "  2. Edit release notes if needed"
+          echo "  3. Publish the release when ready"
+          echo "============================================"
+
+          # Add to GitHub Step Summary
+          echo "## Release Created Successfully" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** v${{ needs.create-release.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Release URL:** [View Release](https://github.com/${{ github.repository }}/releases/tag/v${{ needs.create-release.outputs.version }})" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Uploaded Assets" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Platform | Assets |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| **macOS** | DMG installer |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Windows** | MSI installer (SIGNED), NSIS installer (SIGNED) |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "1. [Review the draft release](https://github.com/${{ github.repository }}/releases/tag/v${{ needs.create-release.outputs.version }})" >> $GITHUB_STEP_SUMMARY
+          echo "2. Edit release notes if needed" >> $GITHUB_STEP_SUMMARY
+          echo "3. Publish the release when ready" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY

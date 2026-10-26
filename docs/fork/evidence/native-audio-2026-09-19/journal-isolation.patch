@@ -1,0 +1,163 @@
+--- before/incremental_saver.rs
++++ after/incremental_saver.rs
+@@ -9,12 +9,17 @@
+ use std::path::{Path, PathBuf};
+ use std::process::Stdio;
+
+-use super::capture::backend::{TrackBlockKind, TrackChunk, TrackKind};
++#[cfg(test)]
++use super::capture::backend::TrackBlockKind;
++use super::capture::backend::{TrackChunk, TrackKind};
+ use super::ffmpeg::find_ffmpeg_path;
+
+ pub const MIXED_CHECKPOINT_QUEUE_MAX_MESSAGES: usize = 64;
++#[cfg(test)]
+ pub const MAX_TIMELINE_EVENT_BYTES: usize = 4 * 1024;
++#[cfg(test)]
+ pub const MAX_TIMELINE_EVENTS: usize = 4 * 1024;
++#[cfg(test)]
+ pub const MAX_TIMELINE_BYTES: usize = 4 * 1024 * 1024;
+
+ #[derive(Debug)]
+@@ -52,6 +57,7 @@
+     sha256: String,
+ }
+
++#[cfg(test)]
+ #[derive(Clone, Debug, Deserialize, Serialize)]
+ struct TimelineEvent {
+     seq: u64,
+@@ -95,10 +101,15 @@
+     checkpoints: Vec<CheckpointEvidence>,
+     final_sha256: Option<String>,
+     manifest_path: PathBuf,
++    #[cfg(test)]
+     journal_path: PathBuf,
++    #[cfg(test)]
+     timeline_events: Vec<TimelineEvent>,
++    #[cfg(test)]
+     timeline_bytes: usize,
++    #[cfg(test)]
+     known_frame_prefix: u64,
++    #[cfg(test)]
+     timeline_seq: u64,
+     incomplete: bool,
+ }
+@@ -111,6 +122,7 @@
+         };
+         let checkpoints_dir = meeting_folder.join(source_namespace).join(".checkpoints");
+         let manifest_path = meeting_folder.join(source_namespace).join("track.json");
++        #[cfg(test)]
+         let journal_path = meeting_folder.join(source_namespace).join("timeline.jsonl");
+         std::fs::create_dir_all(&checkpoints_dir)?;
+         Ok(Self {
+@@ -125,15 +137,21 @@
+             checkpoints: Vec::new(),
+             final_sha256: None,
+             manifest_path,
++            #[cfg(test)]
+             journal_path,
++            #[cfg(test)]
+             timeline_events: Vec::new(),
++            #[cfg(test)]
+             timeline_bytes: 0,
++            #[cfg(test)]
+             known_frame_prefix: 0,
++            #[cfg(test)]
+             timeline_seq: 0,
+             incomplete: false,
+         })
+     }
+
++    #[cfg(test)]
+     fn append_timeline_event(&mut self, chunk: &TrackChunk) -> Result<()> {
+         let frame_count = if chunk.channels == 0 {
+             0
+@@ -221,7 +239,6 @@
+                 if sample_rate == chunk.sample_rate && channels == chunk.channels => {}
+             _ => return Err(anyhow!("Inconsistent {:?} Track chunks", self.kind)),
+         }
+-        self.append_timeline_event(&chunk)?;
+         self.sample_count = self.sample_count.saturating_add(chunk.samples.len() as u64);
+         self.samples.extend(chunk.samples);
+         let checkpoint_samples = chunk.sample_rate as usize * chunk.channels as usize * 30;
+@@ -286,16 +303,11 @@
+             sample_count: self.sample_count,
+             checkpoints: self.checkpoints.clone(),
+             final_sha256: self.final_sha256.clone(),
+-            timeline_journal: Some(
+-                self.journal_path
+-                    .file_name()
+-                    .and_then(|name| name.to_str())
+-                    .unwrap_or("timeline.jsonl")
+-                    .to_owned(),
+-            ),
+-            timeline_event_count: self.timeline_events.len() as u64,
+-            timeline_bytes: self.timeline_bytes as u64,
+-            known_frame_prefix: self.known_frame_prefix,
++            // Timeline recovery is not validated yet; publish only checkpoint evidence.
++            timeline_journal: None,
++            timeline_event_count: 0,
++            timeline_bytes: 0,
++            known_frame_prefix: 0,
+             incomplete: self.incomplete,
+         };
+         persist_source_manifest(&self.manifest_path, &manifest)
+@@ -400,16 +412,11 @@
+             sample_count: self.sample_count,
+             checkpoints: self.checkpoints.clone(),
+             final_sha256: None,
+-            timeline_journal: Some(
+-                self.journal_path
+-                    .file_name()
+-                    .and_then(|name| name.to_str())
+-                    .unwrap_or("timeline.jsonl")
+-                    .to_owned(),
+-            ),
+-            timeline_event_count: self.timeline_events.len() as u64,
+-            timeline_bytes: self.timeline_bytes as u64,
+-            known_frame_prefix: self.known_frame_prefix,
++            // Timeline recovery is not validated yet; publish only checkpoint evidence.
++            timeline_journal: None,
++            timeline_event_count: 0,
++            timeline_bytes: 0,
++            known_frame_prefix: 0,
+             incomplete: self.incomplete,
+         };
+         validate_checkpoint_evidence(&self.checkpoints_dir, self.kind, &manifest)?;
+@@ -1580,11 +1587,35 @@
+                 .unwrap();
+         }
+
++        let namespace = temp.path().join(".tracks/microphone");
++        let manifest_path = namespace.join("track.json");
++        assert!(!namespace.join("timeline.jsonl").exists());
++        let checkpoint_manifest: SourceTrackManifest =
++            serde_json::from_slice(&std::fs::read(&manifest_path).unwrap()).unwrap();
++        assert!(checkpoint_manifest.timeline_journal.is_none());
++        assert_eq!(checkpoint_manifest.timeline_event_count, 0);
++        assert_eq!(checkpoint_manifest.timeline_bytes, 0);
++        assert_eq!(checkpoint_manifest.known_frame_prefix, 0);
++
+         let finalized = saver.finalize().unwrap();
+         assert_eq!(finalized.sample_rate, 48_000);
+         assert_eq!(finalized.channels, 1);
+         assert_eq!(finalized.sample_count, 2_880_000);
+
++        // Older manifests have no optional timeline or incomplete fields.
++        let mut legacy: serde_json::Value =
++            serde_json::from_slice(&std::fs::read(&manifest_path).unwrap()).unwrap();
++        assert!(legacy["timeline_journal"].is_null());
++        for field in [
++            "timeline_journal",
++            "timeline_event_count",
++            "timeline_bytes",
++            "known_frame_prefix",
++            "incomplete",
++        ] {
++            legacy.as_object_mut().unwrap().remove(field);
++        }
++        std::fs::write(&manifest_path, serde_json::to_vec(&legacy).unwrap()).unwrap();
+         let recovered = SourceTrackSaver::recover(temp.path(), TrackKind::Microphone)
+             .unwrap()
+             .unwrap();

@@ -1,0 +1,80 @@
+{
+  "scope": "temporary prototype; originals unchanged; not product implementation",
+  "method": "each checkpoint decoded separately, encoder padding trimmed to recorded input_sample_count; bounded 64KiB copy to single final AAC encoder",
+  "results": [
+    {
+      "track": "microphone",
+      "output": "/private/tmp/meetily-urgent-20260919/dts-pcm-prototype/microphone.mp4",
+      "expected_seconds": 77.07733333333333,
+      "pieces": [
+        {
+          "index": 0,
+          "expected_samples": 2880512,
+          "decoded_samples": 2881536,
+          "padding_trimmed_samples": 1024
+        },
+        {
+          "index": 1,
+          "expected_samples": 2880512,
+          "decoded_samples": 2881536,
+          "padding_trimmed_samples": 1024
+        },
+        {
+          "index": 2,
+          "expected_samples": 1638400,
+          "decoded_samples": 1638400,
+          "padding_trimmed_samples": 0
+        }
+      ],
+      "encoder_log": "[aist#0:0/pcm_f32le @ 0x7fda4b9095c0] Guessed Channel Layout: stereo\n",
+      "decode8k_exit": 0,
+      "decode8k_log": "",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 2,
+            "duration": "77.077000"
+          }
+        ]
+      },
+      "output_sha256": "edc1b4a3fa8a9efccf5baa96fde902b35cf019c4039b7f84acfec72dad86662c"
+    },
+    {
+      "track": "system",
+      "output": "/private/tmp/meetily-urgent-20260919/dts-pcm-prototype/system.mp4",
+      "expected_seconds": 56.832,
+      "pieces": [
+        {
+          "index": 0,
+          "expected_samples": 1440256,
+          "decoded_samples": 1440768,
+          "padding_trimmed_samples": 512
+        },
+        {
+          "index": 1,
+          "expected_samples": 1287680,
+          "decoded_samples": 1288192,
+          "padding_trimmed_samples": 512
+        }
+      ],
+      "encoder_log": "[aist#0:0/pcm_f32le @ 0x7fd020707c00] Guessed Channel Layout: mono\n",
+      "decode8k_exit": 0,
+      "decode8k_log": "",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 1,
+            "duration": "56.832000"
+          }
+        ]
+      },
+      "output_sha256": "db16ddabed77c776a4717e3fe1ffbe72ecf95cfe059c631bffe97fa6e43ccbcf"
+    }
+  ]
+}

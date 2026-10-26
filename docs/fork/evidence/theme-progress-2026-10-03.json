@@ -1,0 +1,1026 @@
+{
+  "date": "2026-10-03",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "branch": "feature/semantic-theme-2026-10-03",
+  "task_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03",
+  "integration_root": "/Users/developer/Desktop/meeting-minutes/.worktrees/dev-integration-2026-10-03",
+  "backup_ref": "themaddoxed/dev-before-main-2026-10-03",
+  "plan_sha256": "83e82c5891c7d699485ab0910936a67bf4a8e6690e42eb2b6ec43df07767de41",
+  "source_hashes": {
+    "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+    "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+    "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+    "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+    "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+    "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+    "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+    "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+    "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+    "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+    "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+    "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+  },
+  "source_reviews": {
+    "SPEC": "PASS C0 I0 M0 bounded adapter, contrast correction and final test delta",
+    "QUALITY": "PASS C0 I0 M0 same bounded scope"
+  },
+  "prepaint": {
+    "reference": "docs/fork/evidence/theme-prepaint-adapter-2026-10-03.json",
+    "passed": 9,
+    "transitions": 12,
+    "production_hashes_unchanged_since_accepted_adapter": true
+  },
+  "final_checks": {
+    "typecheck_exit": 0,
+    "targeted_eslint_exit": 0,
+    "full_eslint_exit": 0,
+    "full_eslint_scope": "historical before the current PreferenceSettings and test additions; current targeted ESLint passed",
+    "theme_audit_exit": 0,
+    "persistence_OS_pressure": {
+      "exit": 0,
+      "passed": 4,
+      "log": "/private/tmp/meetily-theme-persistence-pressure-final.log"
+    },
+    "text": {
+      "exit": 1,
+      "passed": 1,
+      "failed": 2,
+      "failure_kind": "unresolved foreign shadow paint for composite route samples; no numeric low contrast or timeout",
+      "report": "/private/tmp/meetily-theme-final-text.json",
+      "log": "/private/tmp/meetily-theme-final-text.log",
+      "scope": "historical failed run before text-only joint foreign-shadow proof; superseded by real_text_shadow_proof"
+    },
+    "Appearance_ledger": [
+      {
+        "mode": "light",
+        "label": "Choose how Meetily should render the interface",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.952143998137194
+      },
+      {
+        "mode": "light",
+        "label": "System",
+        "background": [
+          245,
+          245,
+          245
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.542288769612194
+      },
+      {
+        "mode": "light",
+        "label": "Light",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          10,
+          10,
+          10
+        ],
+        "ratio": 19.79814571052481
+      },
+      {
+        "mode": "light",
+        "label": "Dark",
+        "background": [
+          245,
+          245,
+          245
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.542288769612194
+      },
+      {
+        "mode": "dark",
+        "label": "Choose how Meetily should render the interface",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 7.848599561952364
+      },
+      {
+        "mode": "dark",
+        "label": "System",
+        "background": [
+          38,
+          38,
+          38
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 5.999400854306462
+      },
+      {
+        "mode": "dark",
+        "label": "Light",
+        "background": [
+          38,
+          38,
+          38
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 5.999400854306462
+      },
+      {
+        "mode": "dark",
+        "label": "Dark",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          250,
+          250,
+          250
+        ],
+        "ratio": 18.96800669384249
+      }
+    ],
+    "text_math_and_Appearance_regression": {
+      "exit": 0,
+      "passed": 8,
+      "failed": 0,
+      "log": "/private/tmp/meetily-theme-focus-text-regression.log",
+      "scope": "alpha/opacity and unsupported paint fixtures plus real Appearance text only"
+    },
+    "real_text_shadow_proof": {
+      "exit": 0,
+      "passed": 2,
+      "failed": 0,
+      "samples": 18,
+      "log": "/private/tmp/meetily-theme-real-text-atomic.log",
+      "sha256": "4f914d59ecf898d3fed5190286c0d88d1d2231439a1b37c58f5ef270758a2f74",
+      "minimum_ratio": {
+        "light": 4.542288769612194,
+        "dark": 5.999400854306462
+      }
+    },
+    "shadow_proof_fixtures": {
+      "exit": 0,
+      "passed": 9,
+      "log": "/private/tmp/meetily-theme-shadow-atomic-fixtures.log",
+      "sha256": "785458104da23827b921fbf687422d8b90066b2b3f9e4f430960f46c88ce58ed"
+    },
+    "background_current": {
+      "exit": 0,
+      "passed": 3,
+      "failed": 0,
+      "scope": "three actual route cases within full_five_theme run; representative settled surfaces; first-paint gate separate",
+      "ledger": [
+        {
+          "path": "/",
+          "canvasProvider": "BODY",
+          "canvasRGB": [
+            10,
+            10,
+            10
+          ],
+          "scope": {
+            "left": 64,
+            "right": 1440,
+            "top": 0,
+            "bottom": 1000
+          },
+          "layers": 18,
+          "cells": 224,
+          "operations": 6180,
+          "exceptions": [],
+          "maxNearWhiteUpper": 85.000000001,
+          "worstCell": {
+            "box": {
+              "left": 543.5,
+              "right": 588.5,
+              "top": 182,
+              "bottom": 293
+            },
+            "upper": [
+              85.000000001,
+              147.000000001,
+              247.000000001
+            ],
+            "nodes": [
+              14,
+              18,
+              22,
+              35,
+              62,
+              64,
+              66,
+              97,
+              106
+            ]
+          }
+        },
+        {
+          "path": "/settings",
+          "canvasProvider": "BODY",
+          "canvasRGB": [
+            10,
+            10,
+            10
+          ],
+          "scope": {
+            "left": 64,
+            "right": 1440,
+            "top": 0,
+            "bottom": 1000
+          },
+          "layers": 29,
+          "cells": 390,
+          "operations": 19059,
+          "exceptions": [
+            146
+          ],
+          "maxNearWhiteUpper": 133.2131968042615,
+          "worstCell": {
+            "box": {
+              "left": 105,
+              "right": 224,
+              "top": 114,
+              "bottom": 159
+            },
+            "upper": [
+              133.2131968042615,
+              177.62956032426143,
+              249.26885632426144
+            ],
+            "nodes": [
+              14,
+              17,
+              21,
+              34,
+              61,
+              63,
+              101,
+              104,
+              128,
+              132,
+              141,
+              146,
+              147,
+              148
+            ]
+          }
+        },
+        {
+          "path": "/meeting-details?id=theme-test-meeting",
+          "canvasProvider": "BODY",
+          "canvasRGB": [
+            10,
+            10,
+            10
+          ],
+          "scope": {
+            "left": 64,
+            "right": 1440,
+            "top": 0,
+            "bottom": 1000
+          },
+          "layers": 38,
+          "cells": 250,
+          "operations": 16491,
+          "exceptions": [],
+          "maxNearWhiteUpper": 33.9600000018,
+          "worstCell": {
+            "box": {
+              "left": 244.375,
+              "right": 324.15625,
+              "top": 16,
+              "bottom": 56
+            },
+            "upper": [
+              33.9600000018,
+              46.360000001799996,
+              66.3600000018
+            ],
+            "nodes": [
+              16,
+              19,
+              23,
+              36,
+              63,
+              65,
+              67,
+              71,
+              76,
+              82,
+              89,
+              93,
+              112,
+              118,
+              126,
+              137,
+              142,
+              150,
+              164,
+              170
+            ]
+          }
+        }
+      ]
+    },
+    "background_fixtures": {
+      "exit": 0,
+      "passed": 45,
+      "log": "/private/tmp/meetily-bg-diag/canvas-fix-fixtures.log",
+      "sha256": "76041f59e740687ff998f11409d8a0a631fadd1fcf0ec16bb3a5285af2e4e03f"
+    },
+    "Sidebar_normal_snapshot_comparison": {
+      "exit": 0,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "log": "/private/tmp/meetily-theme-snapshots-2026-10-04/compare.log",
+      "sha256": "ad4124914295a2b45c00ce51b293248284e7fb49e3138a49ce92d54e2e9ec09e"
+    },
+    "project_full": {
+      "exit": 1,
+      "passed_stages": 8,
+      "failed_stages": 3,
+      "skipped_stages": 0,
+      "retry": "FAIL: local ONNX Runtime resolved empty path; all three stages exit101 on missing llama-helper",
+      "helper_preparation": "PASS: actual current-source Intel Mach-O debug helper, ignored test resource",
+      "prepared_retry": "PASS: Clippy, workspace tests and FFmpeg recovery exit0",
+      "prepared_clippy_exit": 0,
+      "rust_counts": {
+        "passed": 603,
+        "failed": 0,
+        "ignored": 10,
+        "test_result_groups": 16
+      }
+    }
+  },
+  "previous_five_suite_snapshot": {
+    "exit": 1,
+    "passed": 48,
+    "failed": 8,
+    "final_bytes": false,
+    "log": "/private/tmp/meetily-theme-post-token.log",
+    "source_delta_after_run": "90s composite-case budget and persistence/OS-pressure test additions",
+    "failures": {
+      "composite_route_timeout": 1,
+      "unresolved_paint": 4,
+      "unresolved_UA_auto_focus": 1,
+      "sidebar_screenshot_mismatch": 2
+    }
+  },
+  "remaining": [
+    "actual Tauri/macOS eight-row accessibility and exact-window acceptance (GUI/operator authorization pending)",
+    "staged review / product commit and approved integration"
+  ],
+  "full_theme_acceptance": false,
+  "task_closed": false,
+  "snapshots_changed": true,
+  "feature_committed": false,
+  "feature_integrated": false,
+  "native": "NOT_RUN",
+  "release_candidate": "NOT_RUN",
+  "release_gate": "NOT_RUN",
+  "policy_fixtures": {
+    "status": "PASS",
+    "count": 1,
+    "forbidden_inputs": 11,
+    "clean_semantic_input": true,
+    "production_audit_changed": false,
+    "log": "/private/tmp/meetily-theme-policy.log",
+    "configuration": "temporary Node-only Playwright configuration; webServer disabled; no page/browser fixture",
+    "eslint_exit": 0,
+    "typecheck_exit": 0,
+    "reviews": {
+      "spec": {
+        "path": "docs/fork/theme-policy-fixtures-spec-review-2026-10-03.md",
+        "sha256": "edd34c75ee17edb80ae6b275c708f19b1c93a14e7e0115bda94a697948e49f48",
+        "result": "C0/I0/M0"
+      },
+      "quality": {
+        "path": "docs/fork/theme-policy-fixtures-quality-review-2026-10-03.md",
+        "sha256": "e7cf9eb4f52b7d6aec4555e153a29ec7618d8b2b5868321f1bbd9c7ac2e59dfe",
+        "result": "C0/I0/M0"
+      }
+    }
+  },
+  "focus": {
+    "status": "PASS",
+    "exit": 0,
+    "passed": 22,
+    "failed": 0,
+    "skipped": 0,
+    "report": "/private/tmp/meetily-theme-focus-review-fix.json",
+    "log": "/private/tmp/meetily-theme-focus-review-fix.log",
+    "real_Tab_measurements": 6,
+    "horizontal_overflow": "PASS at 1440x1000 in light/dark",
+    "screenshots": [
+      "/private/tmp/Appearance-focus-light-final.png",
+      "/private/tmp/Appearance-focus-dark-final.png"
+    ],
+    "ledger": [
+      {
+        "mode": "light",
+        "option": "System",
+        "background": [
+          245,
+          245,
+          245
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.542288769612194,
+        "focusInner": 7.014688543268176,
+        "focusOuter": 7.014688543268176
+      },
+      {
+        "mode": "light",
+        "option": "Light",
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "foreground": [
+          10,
+          10,
+          10
+        ],
+        "ratio": 19.79814571052481,
+        "focusInner": 7.64763085974233,
+        "focusOuter": 7.014688543268176
+      },
+      {
+        "mode": "light",
+        "option": "Dark",
+        "background": [
+          245,
+          245,
+          245
+        ],
+        "foreground": [
+          112,
+          112,
+          112
+        ],
+        "ratio": 4.542288769612194,
+        "focusInner": 7.014688543268176,
+        "focusOuter": 7.014688543268176
+      },
+      {
+        "mode": "dark",
+        "option": "System",
+        "background": [
+          38,
+          38,
+          38
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 5.999400854306462,
+        "focusInner": 4.974482213656899,
+        "focusOuter": 4.974482213656899
+      },
+      {
+        "mode": "dark",
+        "option": "Light",
+        "background": [
+          38,
+          38,
+          38
+        ],
+        "foreground": [
+          163,
+          163,
+          163
+        ],
+        "ratio": 5.999400854306462,
+        "focusInner": 4.974482213656899,
+        "focusOuter": 4.974482213656899
+      },
+      {
+        "mode": "dark",
+        "option": "Dark",
+        "background": [
+          10,
+          10,
+          10
+        ],
+        "foreground": [
+          250,
+          250,
+          250
+        ],
+        "ratio": 18.96800669384249,
+        "focusInner": 6.507769670870035,
+        "focusOuter": 4.974482213656899
+      }
+    ],
+    "scope": "Browser Appearance focus and geometry fixtures only; not full theme or native acceptance",
+    "prior_transform_regression": {
+      "log": "/private/tmp/meetily-theme-focus-transform-red.log",
+      "passed": 4,
+      "failed": 1,
+      "exit": 1
+    },
+    "reviews": {
+      "spec": {
+        "path": "docs/fork/theme-focus-review-fix-spec-review-2026-10-03.md",
+        "sha256": "4ec70a54c7d268f732b841b42291f399b9ed67caa87ecb02905d3a5f9daad9e3",
+        "result": "C0/I0/M0"
+      },
+      "quality": {
+        "path": "docs/fork/theme-focus-review-fix-quality-review-2026-10-03.md",
+        "sha256": "65d42b4841eff1c6fc1827e38bb0b35573d23878f5d551d9d4f10e0f6d99731c",
+        "result": "C0/I0/M0"
+      }
+    }
+  },
+  "updated_date": "2026-10-04",
+  "shadow_proof_reviews": {
+    "SPEC": {
+      "report": "docs/fork/theme-shadow-proof-atomic-spec-review-2026-10-03.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "4a0eb48440a50a0cd4d1256b7694e8f9eefc6c1cbd27be5e83ccd59a86d2d035"
+    },
+    "QUALITY": {
+      "report": "docs/fork/theme-shadow-proof-atomic-quality-review-2026-10-03.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "6108ef337bc6fa956e4a6eb399c69e9323ae076b347078f967bff02aa0ed77b5"
+    }
+  },
+  "shadow_proof_evidence": "docs/fork/evidence/theme-shadow-proof-2026-10-04.json",
+  "background_evidence": "docs/fork/evidence/theme-background-proof-2026-10-04.json",
+  "background_plan_sha256": "c61c921567f0d6e12f7760c6e0585bd7c529f51cb312585a7d00f08bf512a997",
+  "background_source_reviews": {
+    "SPEC": {
+      "verdict": "PASS C0 I0 M0",
+      "report": "docs/fork/theme-background-proof-final-spec-review-2026-10-04.md",
+      "sha256": "b6035b8467e9e5dd221b11683c33d7a94337b832a1aa012c9b920d303ca2f6d8"
+    },
+    "QUALITY": {
+      "verdict": "PASS C0 I0 M0",
+      "report": "docs/fork/theme-background-proof-final-quality-review-2026-10-04.md",
+      "sha256": "8cd57971b6d62e4d5cbd34f9aa6f9ec720ae0515cf58bb7901c70e965d27ceea"
+    }
+  },
+  "full_five_theme_current": {
+    "exit": 1,
+    "passed": 128,
+    "failed": 2,
+    "skipped": 0,
+    "log": "/private/tmp/meetily-theme-full-current-2026-10-04.log",
+    "sha256": "0b5c0a1132b33f7cae7459c3a087e2a3bffb811b51cf4730027f1e4ec9a9a517",
+    "failure_kind": "two Sidebar snapshot mismatches; all background route checks passed",
+    "background_ledger": [
+      {
+        "path": "/",
+        "canvasProvider": "BODY",
+        "canvasRGB": [
+          10,
+          10,
+          10
+        ],
+        "scope": {
+          "left": 64,
+          "right": 1440,
+          "top": 0,
+          "bottom": 1000
+        },
+        "layers": 18,
+        "cells": 224,
+        "operations": 6180,
+        "exceptions": [],
+        "maxNearWhiteUpper": 85.000000001,
+        "worstCell": {
+          "box": {
+            "left": 543.5,
+            "right": 588.5,
+            "top": 182,
+            "bottom": 293
+          },
+          "upper": [
+            85.000000001,
+            147.000000001,
+            247.000000001
+          ],
+          "nodes": [
+            14,
+            18,
+            22,
+            35,
+            62,
+            64,
+            66,
+            97,
+            106
+          ]
+        }
+      },
+      {
+        "path": "/settings",
+        "canvasProvider": "BODY",
+        "canvasRGB": [
+          10,
+          10,
+          10
+        ],
+        "scope": {
+          "left": 64,
+          "right": 1440,
+          "top": 0,
+          "bottom": 1000
+        },
+        "layers": 29,
+        "cells": 390,
+        "operations": 19059,
+        "exceptions": [
+          146
+        ],
+        "maxNearWhiteUpper": 133.2131968042615,
+        "worstCell": {
+          "box": {
+            "left": 105,
+            "right": 224,
+            "top": 114,
+            "bottom": 159
+          },
+          "upper": [
+            133.2131968042615,
+            177.62956032426143,
+            249.26885632426144
+          ],
+          "nodes": [
+            14,
+            17,
+            21,
+            34,
+            61,
+            63,
+            101,
+            104,
+            128,
+            132,
+            141,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      {
+        "path": "/meeting-details?id=theme-test-meeting",
+        "canvasProvider": "BODY",
+        "canvasRGB": [
+          10,
+          10,
+          10
+        ],
+        "scope": {
+          "left": 64,
+          "right": 1440,
+          "top": 0,
+          "bottom": 1000
+        },
+        "layers": 38,
+        "cells": 250,
+        "operations": 16491,
+        "exceptions": [],
+        "maxNearWhiteUpper": 33.9600000018,
+        "worstCell": {
+          "box": {
+            "left": 244.375,
+            "right": 324.15625,
+            "top": 16,
+            "bottom": 56
+          },
+          "upper": [
+            33.9600000018,
+            46.360000001799996,
+            66.3600000018
+          ],
+          "nodes": [
+            16,
+            19,
+            23,
+            36,
+            63,
+            65,
+            67,
+            71,
+            76,
+            82,
+            89,
+            93,
+            112,
+            118,
+            126,
+            137,
+            142,
+            150,
+            164,
+            170
+          ]
+        }
+      }
+    ]
+  },
+  "snapshot_evidence": "docs/fork/evidence/theme-sidebar-snapshots-2026-10-04.json",
+  "snapshot_plan_sha256": "a751c5d4938cbc9e7469976bda669e1d2942fb27ffd59524c8973c2d08946f03",
+  "snapshot_reviews": {
+    "SPEC": {
+      "report": "docs/fork/theme-sidebar-snapshot-implementation-spec-review-2026-10-04.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "bf477caad963a78e2808476916f4b71e58089064f51587c22a1f093998397172"
+    },
+    "QUALITY": {
+      "report": "docs/fork/theme-sidebar-snapshot-implementation-quality-review-2026-10-04.md",
+      "verdict": "PASS C0 I0 M0",
+      "sha256": "5b60c5f7ba09472f4898f6f7ed3140518e39e4c72fdd1968b7c883d46e310ca2"
+    }
+  },
+  "theme_browser_scope": "all130 theme cases PASS within actual mandatory full frontend run (210PASS/6FAIL); full e2e gate remains FAIL",
+  "project_full_evidence": "docs/fork/evidence/theme-project-full-2026-10-04.json",
+  "full_frontend_e2e": {
+    "status": "FAIL",
+    "exit": 1,
+    "passed": 210,
+    "failed": 6,
+    "theme_passed": 130,
+    "theme_failed": 0,
+    "evidence": "docs/fork/evidence/theme-project-full-2026-10-04.json"
+  },
+  "e2e_locator_fix": {
+    "exit": 0,
+    "passed": 2,
+    "failed": 0,
+    "log": "/private/tmp/meetily-theme-e2e-locators-fix-2026-10-04.log",
+    "sha256": "97752b25272315416d6a2bddedd07c1645d9f6e25bee129f1dfdc52baa004f46",
+    "full_specs": {
+      "status": "PASS",
+      "session": 61110,
+      "log": "/private/tmp/meetily-theme-e2e-locators-full-specs-2026-10-04.log",
+      "exit": 0,
+      "passed": 9,
+      "failed": 0,
+      "sha256": "7802ad82449007a653f667ca65b6edafda7b0b29fd342182d33990e938e6af00"
+    },
+    "source_hashes": {
+      "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+      "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+      "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+      "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+      "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+      "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+      "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+      "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+      "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+      "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+      "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+    },
+    "reviews": {
+      "SPEC": {
+        "report": "docs/fork/theme-e2e-locators-implementation-spec-review-2026-10-04.md",
+        "sha256": "58a4f1f4858b1fca47bbb4c5f65a5d7374f3e93ab122170571d479fbe81e40ea",
+        "verdict": "PASS C0 I0 M0"
+      },
+      "QUALITY": {
+        "report": "docs/fork/theme-e2e-locators-implementation-quality-review-2026-10-04.md",
+        "sha256": "35f81184ab3693d615c08635a66e1ef3f16c8fee36584c19e56d3d7100300e8e",
+        "verdict": "PASS C0 I0 M0"
+      }
+    }
+  },
+  "admitted_paths": 23,
+  "changed_product_paths": 13,
+  "full_frontend_e2e_fixed": {
+    "status": "PASS",
+    "session": 65342,
+    "log": "/private/tmp/meetily-theme-all-e2e-fixed-2026-10-04.log",
+    "source_hashes": {
+      "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+      "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+      "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+      "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+      "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+      "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+      "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+      "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+      "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+      "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+      "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+    },
+    "exit": 0,
+    "passed": 216,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 180,
+    "log_sha256": "e9ae3ae4ef459e550214686d345e2beab82ba3f6f72bb7eac0b2cb56a97dff4b"
+  },
+  "canonical_full_prepared": {
+    "status": "PASS",
+    "log": "/private/tmp/meetily-theme-project-full-prepared-2026-10-04.log",
+    "source_hashes": {
+      "frontend/src/app/globals.css": "a1f8eb1684c7a6e09e9476587e23f715c8689d233b7dbbf27826e8d512e96e99",
+      "frontend/src/app/layout.tsx": "656fbe7d72285e8e644455c3ed29ef7c8b5e0ca65758d11572d938c4cd5ca0f0",
+      "frontend/src/components/ThemeScript.tsx": "995e8340bfdc49d53cd71ee459f8d9281a6760e3f1bcdf8a9580f6debe9a0ced",
+      "frontend/tests/theme-foundation.spec.ts": "18528fc93dfe8bfbe635c9a845748e5b83a38654a3870219b15719b5547b58e7",
+      "frontend/tests/theme-dark-surfaces.spec.ts": "31d8afbe359dfef17a4f4b02f7dbbc01e828478a26e9fff1c37e3265ee69757f",
+      "frontend/tests/helpers/rendered-contrast.ts": "eb1e22b0f3669f100add85587ea3646b1e989755c43b75cbd8bf011cdbd8e52f",
+      "frontend/tests/theme-primitives.spec.ts": "e3b78982d27a263783a98c468ec1c60024bd71f93caaa79cebae172c94eec648",
+      "frontend/src/components/PreferenceSettings.tsx": "7078398c24cf894a1ba676ecf16c57a5ac5aecb1cc83be82e5d26281d5163972",
+      "frontend/tests/theme-shell.spec.ts": "445a31b71611320b4a2429debdbec31ba7270da8e1eb21c65814ecf741760088",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-light-chromium-darwin.png": "e694118eca915f75fe9219b06a19d2e12773340c5662dc0fd2d2045cbd679fa1",
+      "frontend/tests/theme-shell.spec.ts-snapshots/home-dark-chromium-darwin.png": "ec27aedc113d3248eb801eed8ab4072f3128bad45edd159e17acd0326bebfeee",
+      "frontend/tests/interface-polish-acceptance.spec.ts": "ea3ae619a0d814bf377840e5d0b9777dae5b516faeae95faf0d15ccc98e56755",
+      "frontend/tests/summary-template-selection.spec.ts": "36325558b7d1ebedd4364f6bce48a489f6a2004b836d7fe50c6f20453b43ef25"
+    },
+    "configuration": "original check.sh --full; local ORT_LIB_LOCATION, offline cargo, existing target cache and current-source ignored helper",
+    "artifact_or_native_runtime_acceptance": false,
+    "session": 17570,
+    "completed_stages_so_far": [
+      {
+        "stage": "Patch whitespace",
+        "status": "PASS",
+        "seconds": 0,
+        "exit": 0
+      },
+      {
+        "stage": "Production policy",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend lint",
+        "status": "PASS",
+        "seconds": 7,
+        "exit": 0
+      },
+      {
+        "stage": "TypeScript",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend unit tests",
+        "status": "PASS",
+        "seconds": 44,
+        "exit": 0
+      },
+      {
+        "stage": "Critical browser recovery and contracts",
+        "status": "PASS",
+        "seconds": 79,
+        "exit": 0
+      },
+      {
+        "stage": "Production frontend build",
+        "status": "PASS",
+        "seconds": 26,
+        "exit": 0
+      },
+      {
+        "stage": "Rust format",
+        "status": "PASS",
+        "seconds": 2,
+        "exit": 0
+      },
+      {
+        "stage": "Rust clippy",
+        "status": "PASS",
+        "seconds": 13,
+        "exit": 0
+      }
+    ],
+    "exit": 0,
+    "seconds": 416,
+    "stages": [
+      {
+        "stage": "Patch whitespace",
+        "status": "PASS",
+        "seconds": 0,
+        "exit": 0
+      },
+      {
+        "stage": "Production policy",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend lint",
+        "status": "PASS",
+        "seconds": 7,
+        "exit": 0
+      },
+      {
+        "stage": "TypeScript",
+        "status": "PASS",
+        "seconds": 5,
+        "exit": 0
+      },
+      {
+        "stage": "Frontend unit tests",
+        "status": "PASS",
+        "seconds": 44,
+        "exit": 0
+      },
+      {
+        "stage": "Critical browser recovery and contracts",
+        "status": "PASS",
+        "seconds": 79,
+        "exit": 0
+      },
+      {
+        "stage": "Production frontend build",
+        "status": "PASS",
+        "seconds": 26,
+        "exit": 0
+      },
+      {
+        "stage": "Rust format",
+        "status": "PASS",
+        "seconds": 2,
+        "exit": 0
+      },
+      {
+        "stage": "Rust clippy",
+        "status": "PASS",
+        "seconds": 13,
+        "exit": 0
+      },
+      {
+        "stage": "Rust tests",
+        "status": "PASS",
+        "seconds": 218,
+        "exit": 0
+      },
+      {
+        "stage": "Packaged FFmpeg recovery",
+        "status": "PASS",
+        "seconds": 17,
+        "exit": 0
+      }
+    ],
+    "failed_stages": [],
+    "skipped_stages": [],
+    "log_sha256": "3cf021e99c512bd4f8d2b2b3a8e3c05314049a540598943de730ad41a8f37e3b"
+  },
+  "implementation_report": {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/semantic-theme-2026-10-03/.superpowers/sdd/macos-fork/fork-039-implementation-report.md",
+    "sha256": "a26578061f0c4e51a9671f77cb9c4496fec9be9f00a7485d51bb5ae0481b2bdb",
+    "status": "automatic PASS; native/commit/integration incomplete",
+    "ignored": true,
+    "ignore_scope": "new self-ignored task-local .superpowers directory only",
+    "root_or_global_ignore_changed": false
+  },
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

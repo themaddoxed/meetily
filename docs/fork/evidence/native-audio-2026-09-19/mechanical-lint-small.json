@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/frontend/src-tauri/src/database/repositories/setting.rs",
+    "before": "4f755ba2df9df9587eb58ef53812a756e7d645340ba5ed2032f6f29c46fd083c",
+    "after": "4630c73404dd2d10679f76e1acc800ed0aaeacdb03ac26085eec3c50dcc50446",
+    "edits": [
+      [
+        "sqlx::Error::Protocol(error.into())",
+        "sqlx::Error::Protocol(error)",
+        2
+      ]
+    ]
+  },
+  {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/frontend/src-tauri/src/database/repositories/transcript.rs",
+    "before": "0c7a1e72960646708470b1fad3c89214869257b290ce1c93b2c146aa55e40791",
+    "after": "dbc252192dfdb7f862627fc41f29cc0e435fc88806731b3db8501ded1e64229c",
+    "edits": [
+      [
+        ".and_then(|value| chrono::DateTime::<Utc>::from_timestamp_millis(value))",
+        ".and_then(chrono::DateTime::<Utc>::from_timestamp_millis)",
+        1
+      ]
+    ]
+  },
+  {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/frontend/src-tauri/src/model_download.rs",
+    "before": "0093c181eaf5982ae9aa0f393f8b3fd4a735825734c1190cb82eb9bd2af0f7a0",
+    "after": "532c644dc59e8866209ff9037f2854ba50c7793ba4e38e34e3a82e6481bd74c8",
+    "edits": [
+      [
+        "valid_range.map_or(false, |(_, end, _)| {",
+        "valid_range.is_some_and(|(_, end, _)| {",
+        1
+      ]
+    ]
+  },
+  {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/frontend/src-tauri/src/summary/persistence.rs",
+    "before": "9db23aad005c8d7ddc21c87a351f9a0d3c4ff6a69afffd2e87c9494fa39afffe",
+    "after": "8d9ba1831cde26f6d605f991f99b84fd5d5273878cc840ef66c3da9829215360",
+    "edits": [
+      [
+        "fs::rename(&temporary, &destination)",
+        "fs::rename(&temporary, destination)",
+        1
+      ]
+    ]
+  },
+  {
+    "path": "/Users/developer/Desktop/meeting-minutes/.worktrees/feat071-audio-controls/frontend/src-tauri/src/summary/template_selection.rs",
+    "before": "3585af5378edf51bedde37a904a5ecda9b7f370a1ffaf150deab60d071ee5f6e",
+    "after": "a9a52f879cda5dcd0d7d1a9c2bfb1035910926138fe8b5c4b55c678f22611a59",
+    "edits": [
+      [
+        "let selection = load_selection_at(&path, available_template_ids)?;",
+        "let selection = load_selection_at(path, available_template_ids)?;",
+        1
+      ]
+    ]
+  }
+]

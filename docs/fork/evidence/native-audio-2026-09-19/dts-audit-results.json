@@ -1,0 +1,259 @@
+[
+  {
+    "name": "audio",
+    "sha256": "21efcb28421a27e918d6840322553a8dfff82b9a9553689f6111697979009a67",
+    "native_null": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "8k_null": {
+      "exit": 0,
+      "stderr": "[null @ 0x7f95b8b06ec0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 480112 >= 480112\n"
+    },
+    "8k_reset": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "packet_count": 3605,
+    "non1024_delta": [
+      {
+        "index": 1408,
+        "delta": 1,
+        "prev": {
+          "pts": 1440768,
+          "pts_time": "30.016000",
+          "dts": 1440768,
+          "dts_time": "30.016000",
+          "duration": 1,
+          "duration_time": "0.000021"
+        },
+        "current": {
+          "pts": 1440769,
+          "pts_time": "30.016021",
+          "dts": 1440769,
+          "dts_time": "30.016021",
+          "duration": 255,
+          "duration_time": "0.005312"
+        }
+      },
+      {
+        "index": 1409,
+        "delta": 255,
+        "prev": {
+          "pts": 1440769,
+          "pts_time": "30.016021",
+          "dts": 1440769,
+          "dts_time": "30.016021",
+          "duration": 255,
+          "duration_time": "0.005312"
+        },
+        "current": {
+          "pts": 1441024,
+          "pts_time": "30.021333",
+          "dts": 1441024,
+          "dts_time": "30.021333",
+          "duration": 1024,
+          "duration_time": "0.021333"
+        }
+      },
+      {
+        "index": 2816,
+        "delta": 1,
+        "prev": {
+          "pts": 2880768,
+          "pts_time": "60.016000",
+          "dts": 2880768,
+          "dts_time": "60.016000",
+          "duration": 1,
+          "duration_time": "0.000021"
+        },
+        "current": {
+          "pts": 2880769,
+          "pts_time": "60.016021",
+          "dts": 2880769,
+          "dts_time": "60.016021",
+          "duration": 255,
+          "duration_time": "0.005312"
+        }
+      },
+      {
+        "index": 2817,
+        "delta": 255,
+        "prev": {
+          "pts": 2880769,
+          "pts_time": "60.016021",
+          "dts": 2880769,
+          "dts_time": "60.016021",
+          "duration": 255,
+          "duration_time": "0.005312"
+        },
+        "current": {
+          "pts": 2881024,
+          "pts_time": "60.021333",
+          "dts": 2881024,
+          "dts_time": "60.021333",
+          "duration": 1024,
+          "duration_time": "0.021333"
+        }
+      }
+    ]
+  },
+  {
+    "name": "microphone",
+    "sha256": "b972cc75e7cd023c637e1b47d3dc3dee148a075e3ad10b404bfe5640491a9a27",
+    "native_null": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "8k_null": {
+      "exit": 0,
+      "stderr": "[null @ 0x7fa57a71cc80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 480152 >= 480152\n"
+    },
+    "8k_reset": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "packet_count": 3617,
+    "non1024_delta": [
+      {
+        "index": 1408,
+        "delta": 1,
+        "prev": {
+          "pts": 1440768,
+          "pts_time": "30.016000",
+          "dts": 1440768,
+          "dts_time": "30.016000",
+          "duration": 1,
+          "duration_time": "0.000021"
+        },
+        "current": {
+          "pts": 1440769,
+          "pts_time": "30.016021",
+          "dts": 1440769,
+          "dts_time": "30.016021",
+          "duration": 495,
+          "duration_time": "0.010313"
+        }
+      },
+      {
+        "index": 1409,
+        "delta": 495,
+        "prev": {
+          "pts": 1440769,
+          "pts_time": "30.016021",
+          "dts": 1440769,
+          "dts_time": "30.016021",
+          "duration": 495,
+          "duration_time": "0.010313"
+        },
+        "current": {
+          "pts": 1441264,
+          "pts_time": "30.026333",
+          "dts": 1441264,
+          "dts_time": "30.026333",
+          "duration": 1024,
+          "duration_time": "0.021333"
+        }
+      },
+      {
+        "index": 2816,
+        "delta": 1,
+        "prev": {
+          "pts": 2881008,
+          "pts_time": "60.021000",
+          "dts": 2881008,
+          "dts_time": "60.021000",
+          "duration": 1,
+          "duration_time": "0.000021"
+        },
+        "current": {
+          "pts": 2881009,
+          "pts_time": "60.021021",
+          "dts": 2881009,
+          "dts_time": "60.021021",
+          "duration": 495,
+          "duration_time": "0.010313"
+        }
+      },
+      {
+        "index": 2817,
+        "delta": 495,
+        "prev": {
+          "pts": 2881009,
+          "pts_time": "60.021021",
+          "dts": 2881009,
+          "dts_time": "60.021021",
+          "duration": 495,
+          "duration_time": "0.010313"
+        },
+        "current": {
+          "pts": 2881504,
+          "pts_time": "60.031333",
+          "dts": 2881504,
+          "dts_time": "60.031333",
+          "duration": 1024,
+          "duration_time": "0.021333"
+        }
+      }
+    ]
+  },
+  {
+    "name": "system",
+    "sha256": "024f98d617a54110ec9a2fe682aa83e38aca7024495ec95a0d1f7b9503c21305",
+    "native_null": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "8k_null": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "8k_reset": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "packet_count": 2667,
+    "non1024_delta": [
+      {
+        "index": 1408,
+        "delta": 1,
+        "prev": {
+          "pts": 1440768,
+          "pts_time": "30.016000",
+          "dts": 1440768,
+          "dts_time": "30.016000",
+          "duration": 1,
+          "duration_time": "0.000021"
+        },
+        "current": {
+          "pts": 1440769,
+          "pts_time": "30.016021",
+          "dts": 1440769,
+          "dts_time": "30.016021",
+          "duration": 495,
+          "duration_time": "0.010313"
+        }
+      },
+      {
+        "index": 1409,
+        "delta": 495,
+        "prev": {
+          "pts": 1440769,
+          "pts_time": "30.016021",
+          "dts": 1440769,
+          "dts_time": "30.016021",
+          "duration": 495,
+          "duration_time": "0.010313"
+        },
+        "current": {
+          "pts": 1441264,
+          "pts_time": "30.026333",
+          "dts": 1441264,
+          "dts_time": "30.026333",
+          "duration": 1024,
+          "duration_time": "0.021333"
+        }
+      }
+    ]
+  }
+]

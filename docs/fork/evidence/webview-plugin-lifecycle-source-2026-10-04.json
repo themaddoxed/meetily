@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-04",
+  "scope": "Locked macOS desktop plugin/API source; no execution or native permission claim",
+  "verified_sources": [
+    {
+      "crate": "tauri-plugin-dialog-2.7.1",
+      "crate_sha256": "65981abb771e74e571a38196c3baa11c459379164791eba0e67abc1a5fac9884",
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-plugin-dialog-2.7.1/src/desktop.rs",
+      "sha256": "874fa17bc276992d82bdf86ce6c227d73291ad9a2f23949a7ceee24d3bf77b24"
+    },
+    {
+      "crate": "tauri-plugin-notification-2.3.3",
+      "crate_sha256": "01fc2c5ff41105bd1f7242d8201fdf3efd70749b82fa013a17f2126357d194cc",
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-plugin-notification-2.3.3/src/desktop.rs",
+      "sha256": "92bcd5f2c0e1935292e0a29433cb923a9a648bdd439791718bf09d1e3425e66f"
+    },
+    {
+      "crate": "tauri-2.11.1",
+      "crate_sha256": "b93bd86d231f0a8138f11a02a584769fe4b703dc36ae133d783228dbc4801405",
+      "path": "/Users/developer/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tauri-2.11.1/src/app.rs",
+      "sha256": "d2bbeff336c5699ca74b1455ed7575b48ad3315e2266b9871e8355cfab6e61c1"
+    }
+  ],
+  "observations": {
+    "dialog_init": "desktop init clones AppHandle; plugin setup manages Dialog. Native picker effects occur when selected later.",
+    "notification_init": "desktop init clones AppHandle; setup manages Notification. This does not claim permission/native delivery acceptance.",
+    "runtime_registration": "Locked tauri app.rs AppHandle::plugin_boxed initializes then registers a plugin; runtime normal-only registration is supported in source. Must happen before creating normal window needing init scripts; exact startup sequencing still needs implementation tests.",
+    "store": "Existing source census: manages empty StoreState; Exit saves loaded stores. No recovery store loads permitted.",
+    "single_instance": "Existing source census: identifier-derived /tmp socket coordination, second-process exit and cleanup. Not side-effect-free."
+  },
+  "candidate_startup_order": [
+    "Builder keeps only inspected single-instance and native dialog support",
+    "Native setup classifies under app-data gate before normal services",
+    "Recovery: exact isolated window/provider/capability and no normal notification/store registration",
+    "Normal: register notification/store dynamically before main WebView creation, initialize admitted DB/services",
+    "Errors keep startup fail-closed; never create normal window after failed registration"
+  ],
+  "open": [
+    "Recovery CSP/IPC transport and no egress proof",
+    "Window/store origin continuity in actual native WebView",
+    "Managed-state constructor effects and runtime sequencing proof",
+    "Exact sender/state command guards and capabilities",
+    "Clean source and identity-pair admission"
+  ],
+  "implementation_admitted": false,
+  "product_source_changed": false,
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

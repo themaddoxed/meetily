@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-04",
+  "base": "53f4415058fb01e38b8892a47ac036bfffa394ba",
+  "canonical_source_is_dirty": true,
+  "inspected_paths": [
+    {
+      "path": "frontend/src-tauri/src/lib.rs",
+      "current_sha256": "c74c350d01f5395c4e46d2aca6d962f48b674919d96dc45006229074b8c3aecf",
+      "base_sha256": "085076e349686a5d43d4d385a0f9ba4d4f0c5a8797cbea44f7d8a02b78fc90ae",
+      "matches_base": false
+    },
+    {
+      "path": "frontend/src-tauri/src/database/setup.rs",
+      "current_sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "base_sha256": "30d2d7fb1eed6336e8bb4c3eb9fc526be9c272a113478330e053b9cd0932d610",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration.rs",
+      "current_sha256": "f249093eaa83e3116aece3f754135afd92e531e97c5a438affac7acba6d9349c",
+      "base_sha256": "f249093eaa83e3116aece3f754135afd92e531e97c5a438affac7acba6d9349c",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/src/database/migration_commands.rs",
+      "current_sha256": "e50615fbdf21e5de3385436c951c83260a375eca75621847b72692bc65710fad",
+      "base_sha256": "e50615fbdf21e5de3385436c951c83260a375eca75621847b72692bc65710fad",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/services/webMigration.ts",
+      "current_sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf",
+      "base_sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/services/indexedDBService.ts",
+      "current_sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+      "base_sha256": "fea62c36fe851b7c29cbe8948fb545f838048d5f5ccdefb07af90371c273a6aa",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/components/DatabaseImport/LegacyDatabaseImport.tsx",
+      "current_sha256": "221f2739329fa218cf027dc21f99f90fa3f132d6de067191b5d4f8c538fb72b5",
+      "base_sha256": "221f2739329fa218cf027dc21f99f90fa3f132d6de067191b5d4f8c538fb72b5",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "current_sha256": "8acfd90d71814a9653065cfbe97bf911106c09c34ef8b9ebcb9d3966d523801a",
+      "base_sha256": "8acfd90d71814a9653065cfbe97bf911106c09c34ef8b9ebcb9d3966d523801a",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src-tauri/tauri.conf.json",
+      "current_sha256": "f433187d282bd644add0917d9910ae4a9def7e3c096a997613e98c104c6c934e",
+      "base_sha256": "f433187d282bd644add0917d9910ae4a9def7e3c096a997613e98c104c6c934e",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/src/contexts/OnboardingContext.tsx",
+      "current_sha256": "a33f90576559b7f9044cecdccb81c60e49dbe6c1a706e12801788b5c7b7b4e69",
+      "base_sha256": "a33f90576559b7f9044cecdccb81c60e49dbe6c1a706e12801788b5c7b7b4e69",
+      "matches_base": true
+    },
+    {
+      "path": "frontend/tests/lib/web-migration.test.ts",
+      "current_sha256": "e0022737941ac01a3129f575cac836697c59b5333ba6f7229a10040a4f2c62ca",
+      "base_sha256": "e0022737941ac01a3129f575cac836697c59b5333ba6f7229a10040a4f2c62ca",
+      "matches_base": true
+    }
+  ],
+  "current_overlay_changed_paths": [
+    "frontend/src-tauri/src/lib.rs"
+  ],
+  "marker_retry_diagnostic": {
+    "date": "2026-10-04",
+    "source": "/Users/developer/Desktop/meeting-minutes/frontend/src/services/webMigration.ts",
+    "source_sha256": "974740764867a367d695ab1166e52f0e2a47d5bb8bb3761ca0f90482adf04ebf",
+    "scenario": "Unfinished combined profile migration retries with matching durable IDB marker but a preference differing from verified package",
+    "result": "already_imported",
+    "expected_package_theme": "light",
+    "remaining_target_theme": "dark",
+    "marker_reads": 1,
+    "IDB_commits": 0,
+    "preference_writes": 0,
+    "conclusion": "already_imported alone does not verify or repair preferences; combined completion requires an explicit pending-operation preference/readback protocol",
+    "scope": "Source-bound Node VM diagnostic using actual transpiled public functions and fake Storage/IDB target; no real browser, native app, user profile or product changes",
+    "exit": 0
+  },
+  "marker_retry_initial_harness_attempt": {
+    "exit": 1,
+    "cause": "CJS wrapper exports name collided with probe local declaration; corrected to probeExports before running product public functions",
+    "product_execution_performed": false
+  },
+  "probe_script": {
+    "path": "/private/tmp/meetily-webview-marker-probe-2026-10-04.cjs",
+    "sha256": "5fdd3b9f755844b93a68fe2bf210c41fc93dfcb15245ac35ef07e241ab9e8f9c"
+  },
+  "locked_tauri_dispatch_source": {
+    "version": "2.11.1",
+    "crate_sha256": "b93bd86d231f0a8138f11a02a584769fe4b703dc36ae133d783228dbc4801405",
+    "matches_Cargo_lock": true,
+    "local_webview_source_matches_locked_archive": true,
+    "webview_source_sha256": "954cf212cb79d6b566c10b76d2ff2da05bc637cfc9f666c2f03d4e3dddf35f1c",
+    "plugin_dispatch_line": 1866,
+    "application_dispatch_line": 1909,
+    "conclusion": "Application invoke_handler gate does not intercept plugin dispatch; recovery window capabilities/plugin exposure must be reviewed separately."
+  },
+  "implementation_admitted": false,
+  "real_browser_or_native_profile_probe": "NOT_RUN",
+  "product_source_changed": false,
+  "user_profile_accessed": false,
+  "_publicSanitization": {
+    "anonymized": true,
+    "exactOriginalEvidence": false,
+    "note": "Local paths and identity fields redacted; original artifact hashes describe historical private originals."
+  }
+}

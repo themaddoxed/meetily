@@ -1,0 +1,95 @@
+AX_TRUSTED=true
+WINDOWS=1
+AXRole=AXWindow | AXTitle=meetily
+ AXRole=AXGroup | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXScrollArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+    AXRole=AXWebArea | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle=Notifications alt+T | AXDescription=Notifications alt+T | AXHelp= | AXValue= | AXEnabled=1
+     AXRole=AXGroup | AXTitle=Model Settings | AXDescription=Model Settings | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXHeading | AXTitle=Model Settings | AXDescription= | AXHelp= | AXValue=2 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Model Settings | AXEnabled=1
+      AXRole=AXHeading | AXTitle=Model Settings | AXDescription= | AXHelp= | AXValue=3 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Model Settings | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Summarization Model | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Summarization Model | AXEnabled=1
+      AXRole=AXComboBox | AXTitle= | AXDescription= | AXHelp= | AXValue=Built-in AI (Offline, No API needed)
+ | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Built-in AI (Offline, No API needed) | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Summary System Prompt | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Summary System Prompt | AXEnabled=1
+      AXRole=AXTextArea | AXTitle=Summary System Prompt | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+        AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Add persistent system-level instructions for meeting summaries... | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Applied to every summary generated with this app. Meeting-specific context can still be added before generation. | AXEnabled=1
+      AXRole=AXHeading | AXTitle=Built-in AI Models | AXDescription= | AXHelp= | AXValue=4 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Built-in AI Models | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Qwen 3.5 4B (High Quality) | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Selected | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Corrupted | AXEnabled=1
+      AXRole=AXButton | AXTitle=Retry | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXButton | AXTitle=Delete | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=High-quality Qwen 3.5 model for built-in summaries. Best local Qwen option in the current lineup. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=File is corrupted. Retry download or delete. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=~2.6 GiB | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=32768 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= tokens | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Gemma 4 E2B (Enhanced) | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Ready | AXEnabled=1
+      AXRole=AXButton | AXTitle= | AXDescription=Delete model | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Enhanced Gemma 4 model for built-in summaries. Strong quality with moderate local requirements. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=~2.9 GiB | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=32768 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= tokens | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Qwen 3.5 2B (Balanced) | AXEnabled=1
+      AXRole=AXButton | AXTitle=Download | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Balanced Qwen 3.5 model for built-in summaries. Higher quality with modest local requirements. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=~1.2 GiB | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=32768 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= tokens | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Gemma 3 4B (Balanced) | AXEnabled=1
+      AXRole=AXButton | AXTitle=Download | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Balanced model. Great quality/speed trade-off. Requires ~3.5GB RAM. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=~2.3 GiB | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=32768 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= tokens | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Gemma 4 E4B (High Quality) | AXEnabled=1
+      AXRole=AXButton | AXTitle=Download | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=High-quality Gemma 4 model for built-in summaries. Best Gemma option in the current lineup. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=~5.0 GiB | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=32768 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= tokens | AXEnabled=1
+      AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Gemma 3 1B (Fast) | AXEnabled=1
+      AXRole=AXButton | AXTitle=Download | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=Fastest model. Runs on any hardware with ~1GB RAM. Good for quick summaries. | AXEnabled=1
+      AXRole=AXGroup | AXTitle= | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=~1019 MiB | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= •  | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue=32768 | AXEnabled=1
+       AXRole=AXStaticText | AXTitle= | AXDescription= | AXHelp= | AXValue= tokens | AXEnabled=1
+      AXRole=AXButton | AXTitle=Save | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+      AXRole=AXButton | AXTitle=Close | AXDescription= | AXHelp= | AXValue= | AXEnabled=1
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXButton | AXHelp=this button also has an action to zoom the window | AXEnabled=1
+  AXRole=AXGroup
+   AXRole=AXGroup
+ AXRole=AXButton | AXEnabled=1
+ AXRole=AXStaticText | AXValue=meetily | AXEnabled=1
