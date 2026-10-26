@@ -1195,6 +1195,7 @@ mod tests {
         sinks: Option<TrackSinks>,
         expected: BTreeSet<TrackKind>,
         runtime_events: VecDeque<CaptureRuntimeEvent>,
+        runtime_events_drained: Option<SyncSender<()>>,
     }
 
     impl FakeCaptureBackend {
@@ -1241,6 +1242,7 @@ mod tests {
                 sinks: None,
                 expected: BTreeSet::new(),
                 runtime_events,
+                runtime_events_drained: None,
             }
         }
 
@@ -1304,7 +1306,13 @@ mod tests {
             } else if matches!(self.mode, FakeMode::PumpFails) {
                 Err(CaptureCause::CaptureFailed("fake pump".into()))
             } else {
-                Ok(self.runtime_events.pop_front())
+                let event = self.runtime_events.pop_front();
+                if event.is_none() {
+                    if let Some(drained) = self.runtime_events_drained.take() {
+                        let _ = drained.send(());
+                    }
+                }
+                Ok(event)
             }
         }
 
@@ -1540,10 +1548,21 @@ mod tests {
     fn saturated_runtime_event_channel_keeps_owner_running_and_forwards_retained_route() {
         let events = Arc::new(Mutex::new(Vec::new()));
         let dropped = Arc::new(AtomicBool::new(false));
-        let mut handle = spawn_fake(FakeMode::RuntimeEventsSaturate, events, dropped).unwrap();
+        let (drained_tx, drained_rx) = mpsc::sync_channel(1);
+        let (request, sinks) = fake_request_and_sinks();
+        let mut handle = CaptureThreadHandle::spawn_with_backend(request, sinks, move || {
+            let mut backend =
+                FakeCaptureBackend::new(FakeMode::RuntimeEventsSaturate, events, dropped);
+            backend.runtime_events_drained = Some(drained_tx);
+            backend
+        })
+        .unwrap();
         let runtime_event_rx = handle.take_runtime_event_receiver().unwrap();
 
-        std::thread::sleep(Duration::from_millis(150));
+        // Keep the receiver blocked until all generated events have traversed
+        // the owner loop. A sleep cannot establish channel saturation on CI:
+        // early draining forwards degraded-8 before route coalescing happens.
+        drained_rx.recv_timeout(CAPTURE_REPLY_TIMEOUT).unwrap();
         for _ in 0..CAPTURE_CONTROL_MAX_MESSAGES {
             assert!(matches!(
                 runtime_event_rx

@@ -3,6 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   testMatch: '**/*.spec.ts',
+  globalSetup: './tests/global-setup.ts',
   timeout: 30_000,
   expect: {
     timeout: 5_000,
@@ -27,7 +28,8 @@ export default defineConfig({
     env: {
       NEXT_PUBLIC_E2E_TESTING: '1',
     },
-    url: 'http://127.0.0.1:3118',
+    // Wait for the listener; globalSetup separately verifies compiled HTTP routes.
+    port: 3118,
     reuseExistingServer:
       process.env.PLAYWRIGHT_REUSE_EXISTING_SERVER === '1',
     timeout: 120_000,
